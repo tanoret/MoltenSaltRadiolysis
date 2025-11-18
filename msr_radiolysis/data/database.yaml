@@ -1,0 +1,134 @@
+
+version: 0.1
+units:
+  concentration: "mol/m^3"
+  k_bimolecular: "m^3/(mol s)"
+  first_order: "s^-1"
+  temperature: "K"
+  henry: "C = kH * p  (kH in mol/(m^3 Pa), p in Pa)"
+constants:
+  R_gas_J_mol_K: 8.314462618
+
+# Minimal Henry coefficients (placeholder values; calibrate for your melt)
+henry:
+  Cl2_mol_m3_Pa: 1.0e-5   # mol/(m^3 Pa)  (placeholder)
+  F2_mol_m3_Pa:  1.0e-6   # mol/(m^3 Pa)  (placeholder)
+
+# Core kernels
+kernels:
+  chloride:
+    species: ["e_s-", "Cl-", "Cl•", "Cl2•-", "Cl3-", "Cl2_diss"]
+    phases:
+      e_s-: liq
+      Cl-: liq
+      Cl•: liq
+      Cl2•-: liq
+      Cl3-: liq
+      Cl2_diss: liq
+    reactions:
+      # R1: hole capture / radical anion formation
+      - name: "Cl• + Cl- -> Cl2•-"
+        reactants: {"Cl•": 1, "Cl-": 1}
+        products:  {"Cl2•-": 1}
+        params: { k_ref: 1.0e7, T_ref: 673.15, Ea_J_mol: 2.0e4 }
+        notes: "Approximate; set near diffusion-limited. k_ref (SI) ~ 1e7 m^3/mol/s at 400°C"
+      # R2: electron + Cl• recombination
+      - name: "e_s- + Cl• -> Cl-"
+        reactants: {"e_s-": 1, "Cl•": 1}
+        products:  {"Cl-": 1}
+        params: { k_ref: 1.0e7, T_ref: 673.15, Ea_J_mol: 2.5e4 }
+        notes: "Approximate near diffusion-limited"
+      # R3: Cl• self recombination to Cl2
+      - name: "Cl• + Cl• -> Cl2_diss"
+        reactants: {"Cl•": 2}
+        products:  {"Cl2_diss": 1}
+        params: { k_ref: 5.0e6, T_ref: 673.15, Ea_J_mol: 2.0e4 }
+        notes: "Placeholder; adjust with data"
+      # R4: Cl2•- disproportionation
+      - name: "2 Cl2•- -> Cl3- + Cl-"
+        reactants: {"Cl2•-": 2}
+        products:  {"Cl3-": 1, "Cl-": 1}
+        params: { k_ref: 2.2e6, T_ref: 673.15, Ea_J_mol: 2.6e4 }
+        notes: "From pulse-radiolysis trend: ~2.2e9 L/mol/s at 400°C -> 2.2e6 SI"
+      # R5: Cl3- <-> Cl2 + Cl-   (lumped as forward only unless K is provided)
+      - name: "Cl3- -> Cl2_diss + Cl-"
+        reactants: {"Cl3-": 1}
+        products:  {"Cl2_diss": 1, "Cl-": 1}
+        params: { k_ref: 1.0e0, T_ref: 673.15, Ea_J_mol: 1.0e4 }
+        notes: "Placeholder first-order breakup for polyhalide equilibrium; tune per chlorobasicity"
+
+  fluoride:
+    species: ["e_s-", "F-", "F•", "F2_diss"]
+    phases:
+      e_s-: liq
+      F-: liq
+      F•: liq
+      F2_diss: liq
+    reactions:
+      # R1F: electron + F• -> F-
+      - name: "e_s- + F• -> F-"
+        reactants: {"e_s-": 1, "F•": 1}
+        products:  {"F-": 1}
+        params: { k_ref: 1.0e7, T_ref: 673.15, Ea_J_mol: 2.5e4 }
+        notes: "Approximate near diffusion-limited"
+      # R2F: F• + F• -> F2
+      - name: "F• + F• -> F2_diss"
+        reactants: {"F•": 2}
+        products:  {"F2_diss": 1}
+        params: { k_ref: 5.0e6, T_ref: 673.15, Ea_J_mol: 2.0e4 }
+        notes: "Placeholder; adjust to match F2 yields"
+
+# Metals with templated reactions
+metals:
+  Zn:
+    species: ["Zn2+", "Zn+"]
+    chloride_templated_reactions:
+      - name: "e_s- + Zn2+ -> Zn+"
+        reactants: {"e_s-": 1, "Zn2+": 1}
+        products:  {"Zn+": 1}
+        params: { k_ref: 1.0e7, T_ref: 673.15, Ea_J_mol: 3.031e4 }
+        notes: "Pulse-radiolysis: (4.2–16.1)×10^10 M^-1 s^-1 @400°C; use 1e10 as baseline -> 1e7 SI"
+      - name: "Cl2•- + Zn+ -> 2Cl- + Zn2+"
+        reactants: {"Cl2•-": 1, "Zn+": 1}
+        products:  {"Cl-": 2, "Zn2+": 1}
+        params: { k_ref: 2.0e7, T_ref: 673.15, Ea_J_mol: 2.5e4 }
+        notes: "~2e10 M^-1 s^-1 @400°C -> 2e7 SI"
+    fluoride_templated_reactions:
+      - name: "e_s- + Zn2+ -> Zn+"
+        reactants: {"e_s-": 1, "Zn2+": 1}
+        products:  {"Zn+": 1}
+        params: { k_ref: 1.0e7, T_ref: 873.15, Ea_J_mol: 3.031e4 }
+        notes: "Placeholder carryover to fluoride"
+      - name: "F2_diss + 2 Zn+ -> 2 Zn2+ + 2 F-"
+        reactants: {"F2_diss": 1, "Zn+": 2}
+        products:  {"Zn2+": 2, "F-": 2}
+        params: { k_ref: 1.0e4, T_ref: 873.15, Ea_J_mol: 3.0e4 }
+        notes: "Lumped oxidation by F2 (kinetic placeholder)"
+
+  U:
+    species: ["U4+", "U3+"]
+    fluoride_templated_reactions:
+      - name: "e_s- + U4+ -> U3+"
+        reactants: {"e_s-": 1, "U4+": 1}
+        products:  {"U3+": 1}
+        params: { k_ref: 1.0e7, T_ref: 873.15, Ea_J_mol: 3.0e4 }
+        notes: "Assume near diffusion-limited in fluoride melts (placeholder)"
+      - name: "F2_diss + 2 U3+ -> 2 U4+ + 2 F-"
+        reactants: {"F2_diss": 1, "U3+": 2}
+        products:  {"U4+": 2, "F-": 2}
+        params: { k_ref: 5.0e4, T_ref: 873.15, Ea_J_mol: 3.0e4 }
+        notes: "Redox by F2; placeholder to tune to facility data"
+
+# Default G-values (you can override in config)
+G_values:
+  gamma:
+    chloride:
+      # Primary pair generation (example placeholders — calibrate!)
+      e_s-: 0.30
+      Cl•: 0.30
+      Cl2_diss: 0.00
+    fluoride:
+      e_s-: 0.20
+      F•:  0.20
+      # Product yield alternative/convenience (e.g., SAGA-like low-T values)
+      F2_diss: 0.005

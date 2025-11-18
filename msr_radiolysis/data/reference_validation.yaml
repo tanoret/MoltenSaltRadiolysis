@@ -1,0 +1,43 @@
+
+# Reference targets to validate selected parts of the model.
+# These are intentionally simple and focus on unit consistency and known trends.
+targets:
+  g_value_conversion:
+    Edot_J_m3_s: 1.0e6
+    G_molecules_per_100eV: 0.005
+    expected_S_mol_m3_s: 0.005 * 1.0e6 / (100.0 * 1.602176634e-19) / 6.02214076e23
+    rtol: 1e-12
+
+  electron_capture_pseudo_first_order:
+    # k(e + Zn2+) ~ 1e10 L/mol/s at 400°C -> 1e7 SI
+    k_SI: 1.0e7
+    Zn2_molm3: 100.0
+    expected_half_life_s: 0.6931471805599453 / (1.0e7 * 100.0)
+    rtol: 5e-2
+
+  second_order_disproportionation:
+    # 2 Cl2•- -> products, k ~ 2.2e9 L/mol/s -> 2.2e6 SI
+    k_SI: 2.2e6
+    C0_molm3: 1.0
+    # For 2A -> products with rate v = k C^2, half-life t1/2 = 1 / (k*C0)
+    expected_half_life_s: 1.0 / (2.2e6 * 1.0)
+    rtol: 5e-2
+
+  gas_partition_equilibrium:
+    # If kLa is large and no chemistry, C_liq ~ kH * p; p = nRT/Vg
+    T_K: 673.15
+    V_liq_m3: 1.0e-3
+    V_gas_m3: 1.0e-3
+    kLa_s: 10.0
+    kH_mol_m3_Pa: 1.0e-5
+    n_gas_mol: 1.0e-3
+    expected_C_liq_molm3: 1.0e-5 * ( (1.0e-3 * 8.314462618 * 673.15) / 1.0e-3 )
+    rtol: 1e-2
+
+  F2_yield_linear_accumulation:
+    # With only source S(F2) and no losses or gas transfer, [F2] grows linearly
+    Edot_J_m3_s: 1.0e6
+    G_F2: 0.005
+    t_final_s: 10.0
+    expected_C_molm3: (0.005 * 1.0e6 / (100.0 * 1.602176634e-19) / 6.02214076e23) * 10.0
+    rtol: 1e-12

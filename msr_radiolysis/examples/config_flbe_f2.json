@@ -1,0 +1,24 @@
+{
+  "kernel": "fluoride",
+  "temperature_K": 873.15,
+  "liquid_volume_m3": 0.001,
+  "headspace_volume_m3": 0.001,
+  "kLa_s^-1": 0.5,
+  "dose_rate_J_m3_s": 2000000.0,
+  "radiation": "gamma",
+  "G_values_override": {
+    "F2_diss": 0.005
+  },
+  "metals": {
+    "U": {
+      "U4+": 0.1,
+      "U3+": 0.0
+    }
+  },
+  "initial_concentrations": {
+    "F-": 5000.0
+  },
+  "gas_species": [
+    "F2"
+  ]
+}

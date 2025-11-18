@@ -1,0 +1,23 @@
+{
+  "kernel": "chloride",
+  "temperature_K": 673.15,
+  "liquid_volume_m3": 0.001,
+  "headspace_volume_m3": 0.0,
+  "kLa_s^-1": 0.0,
+  "dose_rate_J_m3_s": 1000000.0,
+  "radiation": "gamma",
+  "G_values_override": {
+    "e_s-": 0.2,
+    "Cl\u2022": 0.2
+  },
+  "metals": {
+    "Zn": {
+      "Zn2+": 100.0,
+      "Zn+": 0.0
+    }
+  },
+  "initial_concentrations": {
+    "Cl-": 5000.0
+  },
+  "gas_species": []
+}
