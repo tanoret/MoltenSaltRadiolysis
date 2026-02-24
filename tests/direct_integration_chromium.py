@@ -446,20 +446,17 @@ def quick_plot(t: np.ndarray, C: np.ndarray, system: System, species_to_plot: Op
     ax1.set_ylabel("Concentration [mol/L]")
     ax1.legend(loc="upper left")
 
-    # Add absorbance on the right y-axis if a CSV file is provided
+    # Add absorbance on the right y-axis from CSV
     if absorbance_csv is not None:
-        # Load data from CSV
         try:
             absorbance_data = pd.read_csv(absorbance_csv)
 
-            # Convert time from milliseconds to seconds
             absorbance_data['time'] = absorbance_data['time'] * 1e-9
 
             # Extract time and absorbance columns
             absorbance_time = absorbance_data['time'].to_numpy()  # Time in seconds
             absorbance_values = absorbance_data['absorbance'].to_numpy()  # Absorbance values
 
-            # Plot absorbance data on the right y-axis
             ax2 = ax1.twinx()  # Create a secondary y-axis
             ax2.plot(absorbance_time, absorbance_values, color='red', label="Absorbance Data for 0.99 mM Cr2+")
             ax2.set_ylabel("Absorbance")
