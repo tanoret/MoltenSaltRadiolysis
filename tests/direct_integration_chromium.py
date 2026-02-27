@@ -110,8 +110,6 @@ MINI_DB = {
             "species": ["Cl-", "Cl2•-", "Cl2_diss", "e_s-", "Cl•", "Cl3-"],   # add/adjust as needed
             "phases":  {"Cl-": "liq", "Cl2•-": "liq", "Cl2_diss": "liq", "e_s-": "liq", "Cl•": "liq", "Cl3-": "liq"},
             "reactions": [
-                # EXAMPLE DUMMIES (replace with your calibrated set)
-                # e- + Cl2_diss -> Cl2•-     (pseudo-first-order if you like)
                 {"name": "e + Cl2_diss -> Cl2•-",
                  "reactants": {"e_s-": 1.0, "Cl2_diss": 1.0},
                  "products":  {"Cl2•-": 1.0},
