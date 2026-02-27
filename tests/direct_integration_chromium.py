@@ -167,14 +167,6 @@ MINI_DB = {
             "species": ["Cr2+", "Cr3+", "Cr+", "e_s-"],   # add/adjust as needed
             "phases":  {"Cr2+": "liq", "Cr+": "liq", "Cr+": "liq", "e_s-": "liq"},
             "chloride_templated_reactions": [
-                # EXAMPLE DUMMIES (replace with your calibrated set)
-                # e- + Cl2_diss -> Cl2•-     (pseudo-first-order if you like)
-                # {"name": "e + Cr2+ -> Cr+",
-                #  "reactants": {"e_s-": 1.0, "Cr2+": 1.0},
-                #  "products":  {"Cr+": 1.0},
-                #  "reversible": False,
-                #  "params": {"k_ref": 4.1e10}},   # L/(mol*s)
-                #Commented out since Cr+ is extremely short lived
                  {"name": "e + Cr3+ -> Cr2+",
                  "reactants": {"e_s-": 1.0, "Cr3+": 1.0},
                  "products":  {"Cr2+": 1.0},
@@ -184,7 +176,7 @@ MINI_DB = {
                  "reactants": {"e_s-": 1.0, "Cr2+": 1.0},
                  "products":  {"Cr+": 1.0},
                  "reversible": False,
-                 "params": {"k_ref": 41.e10}},   # L/(mol*s)
+                 "params": {"k_ref": 4.1e10}},   # L/(mol*s)
                  {"name": "Cr2+ + Cl2•- -> Cr3+ + 2Cl-",
                  "reactants": {"Cr2+": 1.0, "Cl2•-": 1.0},
                  "products":  {"Cr3+": 1.0, "Cl-": 2.0},
@@ -441,24 +433,27 @@ def quick_plot(t: np.ndarray, C: np.ndarray, system: System, species_to_plot: Op
         i = sp_idx[s]
         y = C[:, i]
         label = f"{s} ({'mol/L' if system.species[i].phase=='liq' else 'mol'})"
-        ax1.plot(t, y, label=label)
+        ax1.semilogy(t, y, label=label)
     ax1.set_xlabel("Time [s]")
     ax1.set_ylabel("Concentration [mol/L]")
     ax1.legend(loc="upper left")
 
     # Add absorbance on the right y-axis from CSV
     if absorbance_csv is not None:
+        # Load data from CSV
         try:
             absorbance_data = pd.read_csv(absorbance_csv)
 
+            # Convert time from milliseconds to seconds
             absorbance_data['time'] = absorbance_data['time'] * 1e-9
 
             # Extract time and absorbance columns
             absorbance_time = absorbance_data['time'].to_numpy()  # Time in seconds
             absorbance_values = absorbance_data['absorbance'].to_numpy()  # Absorbance values
 
+            # Plot absorbance data on the right y-axis
             ax2 = ax1.twinx()  # Create a secondary y-axis
-            ax2.plot(absorbance_time, absorbance_values, color='red', label="Absorbance Data for 0.99 mM Cr2+")
+            ax2.semilogy(absorbance_time, absorbance_values, color='red', label="Absorbance Data for 1.05 mM Cr3+")
             ax2.set_ylabel("Absorbance")
             ax2.legend(loc="upper right")
         except Exception as e:
@@ -483,8 +478,8 @@ def main(argv=None):
             "kernel": "chloride",
             "metals": {
                     "chromium": {  # Add chromium species with initial concentrations
-                        "Cr2+": 0.99e-3,
-                        "Cr3+": 0,
+                        "Cr2+": 0,
+                        "Cr3+": 1.05e-3,
                         "Cr+": 0
                         }
                     },
@@ -499,7 +494,7 @@ def main(argv=None):
                 "Cl-": 20.0, #Very large concentration, essentially constant
                 "Cl2•-": 0,
                 "Cl2_diss": 0,
-                "e_s-": 1e-3, #Small initial concentration modeling pulse
+                "e_s-": 1e-6, #Small initial concentration modeling pulse
             },
             "gas_species": ["Cl2"]
         }
@@ -507,7 +502,7 @@ def main(argv=None):
         t, C, extra = integrate_system(system, t_final=80e-9, n_steps=10000)
         print("Species:", extra["species"])
         print("Final state:", C[-1])
-        quick_plot(t, C, system, species_to_plot=["e_s-"], absorbance_csv="absorbance.csv")
+        quick_plot(t, C, system, species_to_plot=["e_s-"], absorbance_csv="absorbance4mMCr2.csv")
         return
 
     cfg = _load_config(argv[0])
