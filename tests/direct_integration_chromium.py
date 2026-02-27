@@ -191,7 +191,7 @@ MINI_DB = {
                  "reactants": {"Cr3+": 1.0, "Cr+": 1.0},
                  "products":  {"Cr2+": 2.0},
                  "reversible": False,
-                 "params": {"k_ref": 1.7e10}},   # L/(mol*s). This is second dorder
+                 "params": {"k_ref": 1.7e10}},   # L/(mol*s)
             ],
         },
     },
