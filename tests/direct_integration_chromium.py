@@ -451,7 +451,7 @@ def quick_plot(t: np.ndarray, C: np.ndarray, system: System, species_to_plot: Op
 
             # Plot absorbance data on the right y-axis
             ax2 = ax1.twinx()  # Create a secondary y-axis
-            ax2.semilogy(absorbance_time, absorbance_values, color='red', label="Absorbance Data for 1.05 mM Cr3+")
+            ax2.semilogy(absorbance_time, absorbance_values, color='red', label="Absorbance Data for 3.03 mM Cr2+")
             ax2.set_ylabel("Absorbance")
             ax2.legend(loc="upper right")
         except Exception as e:
@@ -476,8 +476,8 @@ def main(argv=None):
             "kernel": "chloride",
             "metals": {
                     "chromium": {  # Add chromium species with initial concentrations
-                        "Cr2+": 0,
-                        "Cr3+": 1.05e-3,
+                        "Cr2+": 3.03e-3,
+                        "Cr3+": 0,
                         "Cr+": 0
                         }
                     },
@@ -492,19 +492,19 @@ def main(argv=None):
                 "Cl-": 20.0, #Very large concentration, essentially constant
                 "Cl2•-": 0,
                 "Cl2_diss": 0,
-                "e_s-": 1e-6, #Small initial concentration modeling pulse
+                "e_s-": 1e-3, #Small initial concentration modeling pulse
             },
             "gas_species": ["Cl2"]
         }
         system = build_system(demo)
-        t, C, extra = integrate_system(system, t_final=80e-9, n_steps=10000)
+        t, C, extra = integrate_system(system, t_final=20e-9, n_steps=10000)
         print("Species:", extra["species"])
         print("Final state:", C[-1])
-        quick_plot(t, C, system, species_to_plot=["e_s-"], absorbance_csv="absorbance4mMCr2.csv")
+        quick_plot(t, C, system, species_to_plot=["e_s-"], absorbance_csv="absorbance3mMCr2.csv")
         return
 
     cfg = _load_config(argv[0])
-    t_final = float(argv[1]) if len(argv) > 1 else 80e-9
+    t_final = float(argv[1]) if len(argv) > 1 else 20e-9
     n_steps = int(argv[2]) if len(argv) > 2 else 10000
     system = build_system(cfg)
     t, C, extra = integrate_system(system, t_final=t_final, n_steps=n_steps)
