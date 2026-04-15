@@ -500,7 +500,7 @@ def main(argv=None):
         t, C, extra = integrate_system(system, t_final=20e-9, n_steps=10000)
         print("Species:", extra["species"])
         print("Final state:", C[-1])
-        quick_plot(t, C, system, species_to_plot=["e_s-"], absorbance_csv="absorbance0mMCr2.csv")
+        quick_plot(t, C, system, species_to_plot=["e_s-"], absorbance_csv="AbsorbanceCSVs/absorbance0mMCr2.csv")
         return
 
     cfg = _load_config(argv[0])
