@@ -451,7 +451,7 @@ def quick_plot(t: np.ndarray, C: np.ndarray, system: System, species_to_plot: Op
 
             # Plot absorbance data on the right y-axis
             ax2 = ax1.twinx()  # Create a secondary y-axis
-            ax2.semilogy(absorbance_time, absorbance_values, color='red', label="Absorbance Data for 0 mM Cr2+")
+            ax2.semilogy(absorbance_time, absorbance_values, color='red', label="Absorbance Data for 0.99 mM Cr2+")
             ax2.set_ylabel("Absorbance")
             ax2.legend(loc="upper right")
         except Exception as e:
@@ -476,7 +476,7 @@ def main(argv=None):
             "kernel": "chloride",
             "metals": {
                     "chromium": {  # Add chromium species with initial concentrations
-                        "Cr2+": 0,
+                        "Cr2+": 0.99e-3,
                         "Cr3+": 0,
                         "Cr+": 0
                         }
@@ -500,7 +500,7 @@ def main(argv=None):
         t, C, extra = integrate_system(system, t_final=20e-9, n_steps=10000)
         print("Species:", extra["species"])
         print("Final state:", C[-1])
-        quick_plot(t, C, system, species_to_plot=["e_s-"], absorbance_csv="AbsorbanceCSVs/absorbance0mMCr2.csv")
+        quick_plot(t, C, system, species_to_plot=["e_s-"], absorbance_csv="AbsorbanceCSVs/absorbance1mMCr2.csv")
         return
 
     cfg = _load_config(argv[0])
