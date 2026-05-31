@@ -1,0 +1,10 @@
+# Iwamatsu et al. (Castro Baldivieso first author) 2026 Inorganic Chemistry, Table 1.
+# Reaction: Nd(III) + e_s- -> Nd(II) in molten LiCl-KCl eutectic.
+# Source: validation/papers/Influence of Nd(II) and Nd(III)...pdf, Table 1.
+# k units: M^-1 s^-1; sigma is reported 1-sigma.
+T_K,k_M_inv_s,sigma_k_M_inv_s
+673,4.54e10,0.07e10
+723,7.21e10,0.66e10
+773,9.63e10,0.85e10
+823,13.80e10,0.85e10
+873,17.53e10,0.68e10

@@ -38,8 +38,10 @@ class TestRadiolysisFramework(unittest.TestCase):
         t, C, extra = integrate_system(system, t_final=2.0e-10, n_steps=5)
         e0 = 1.0
         e_end = C[-1, system.species_index["e_s-"]]
-        # analytic with k=1e7 SI and [Zn2+]=100 mol/m^3
-        k = 1.0e7
+        # analytic with k derived from current database.yaml Arrhenius:
+        #   e_s- + Zn2+ -> Zn+ uses A and Ea, so k(T) = A * exp(-Ea / R T).
+        rxn = [r for r in system.reactions if "e_s- + Zn2+ -> Zn+" in r.name][0]
+        k = rxn.k_forward(system.T)
         Zn = 100.0
         ttot = t[-1]
         expected = e0*np.exp(-k*Zn*ttot)

@@ -1,0 +1,263 @@
+Radlat. Phys. Chem. Vol. 30, No. 2, pp. 141-144, 1987                                                0146-5724/87 $3.00+ 0.00
+Int. J. Rad~at. Appl. lmtnun. Part C                                                                    Pergamon Journals Ltd
+Printed in Great BritJJn
+
+
+
+
+                      PULSE RADIOLYSIS STUDY OF T R A N S I E N T
+                             SPECIES IN LiC1-KCI MELT
+           I-ImoYurJ I-IAotwAr~,, S ~ U   SAW~,         Txr..,,sm SumYosm and Memu~ KAT^YAMA
+                  Department of Atomic Science and Nuclear ~             Faculty of Engineering,
+                                     Hokkaido University, Sapporo 060, Japan
+
+                                                 (Receioed 29 September 1985)
+
+         ~---Pulae         radiolylis study on LiCI-KCI melt was carried out. Results showed that two kinds of
+         transient species were formed in this system. From the analysis of their nature, one was attributed m the
+         solvatsd electron ¢,-, and the other was attributed to the molecular radical ion CI~'. The propert~ of
+         the reactions resulting from these sp~__'~ were discussed.
+
+
+
+
+                       INTIIODUCTION                              melt at 400°C. In the spectrmn obtained for 50 ns
+                                                                  after the pulse, two absorption bands appeared in
+ The radiolytic study of tome alkali halide melts was             u.v. and in the visible region. But at 1 #s after the
+ reported by Pikaev et al, °) They observed transient             pulse, the visible band had diminished and only the
+ species in an irradiated systela ~     the n~rosw.ond            u.v. band was observed. The difference spectrum in
+ pulse radiolym tedmique, and d i m m e d their nature.           Fig. I is au/gned to the visible band. These results
+    In the present study, we attempted to observe the             revealed that the two kinds of transient species
+ transient s p e c ~ in LiC~-KCI melt by the nanosecond           having different life ~m~_ existed in the irradiated
+ pul~ radiolysis technique. As the LiCI-KC! melt is               system. Furthermore, it was found that the hands
+ comidered to he a highly useful material, for exam-              were distinguishable ~ y .
+ ple, as a coolant for the molten salt reactor, it is
+ important to discuss the stability of this m t e r i a l for         2. Kinetic analysis
+ irradiation.                                                            The kinetic trace obtained at 700 nm is shown in
+                                                                      Fig. 2. AJ~ording to this trace, it was fmmd that the
+                       EXIqgglMlgNTAL                                 species around 700nm were produced during the
+                                                                      pulse and the life time was about 250 ns. The decay
+    For the pulse radiolysis experiments, the electron                was well fitted to the first order kinetic, and the
+ pulse from the linac imtalled at Hokkaido University                 reaction rate constant was estimated to he
+ (producing II ns pulse of 45 M e V electrons) was                    kt "= 4.5 x I06 s-l.
+ used. The dose per pulse was 50-85Gy, which was                         In Fig. 3, the kinetic trace obtained at 340 n m is
+ measured by the K E N S method. Samples were put                     shown as curve (a). The initial part of this trace
+ into a quartz ghum ampoule and sealed after evacu-                   includes a certain amount of the contribution of the
+ ating them for a long time at high temperature up to                 species responsible for the visible band. Curve (b)
+ their melting points, b" Experiments were carried out                shows the trace, which is devoid of the contribution
+ by placing the ampoule in an electric heater, which                  found in trace (a). From curve (b), it was found that
+ was pl~___,3~_at the exit o f the linac. Temperature of the          the species responsible for the u.v. band was formed
+ samples was measured by chromel--alumel thermo-                      after the pulse. Curve (c) is the simulated trace,
+ couple.                                                              assuming that this species was produced during the
+                                                                      pulse and decayed by the second order kinetic. Curve
+                 11~50LTS AND DISO.,'SSION                            (c) was observed to fit curve Co) well in the decaying
+                                                                      part. Therefore, it was judged that the species de-
+ 1. Absorption apectra                                                cayed by the second order kinetic, and the reaction
+   Figure I shows the absorption spectra obtained for                 rate constant was estimated to be k 2 / c . l =
+ 50ns and I/~s after the pulse for LiCI-KCI eutectic                  3.0 × 106s -I.
+                                                                         Further, the first order plots corresponding to the
+                                                                      rising part in curve (b) were arranged well on the
+   This paper was presented at the 2nd Japan-~hina                    straight line. This result suggested that the species
+ Bilatm~l S3nmpmium on Radiation Chemistry, O~t~,,                    was formed by the first order kinetic, and the reaction
+ Japan (September 198b').                                             rate constant was estimated to he kt - 2 . 5 × 10Ss -I.
+                                                                141
+142                                                                        l-lntoYula HAOWCAP.Aet al.
+
+          03                                                                                               ,
+
+
+
+
+ i                                    -                                                                           o,i/                                \t
+
+                    m                   - -'--.'"-'-~"'-" - ' - ~ , ....                                   0
+          0 300         /,00         SO0 600 190                 800 900                                         #,00           SiX) 600 ?00 800       900
+                                      J e l l        Inm                                                                          l e l h  Inm
+                                                                                              Fig. 4. The visible bands in LiCI--KCI eutectic melts at
+Fill. 1. Abmrption spectra in LiCI-KCI euteztk: (42 tool%                                                      different temperatures.
+KCl) melt at 400~. O, 50m aftex the pube; A, 1 #s after
+the pul~; O, ~          gmmma betwem 50 a d 500 m.
+                                                                                                  0.6
+                                                                                                           . o
+                                                                                                  0.5          o%
+          0.4
+                                                                                                                  °o
+
+          0.3
+                                                                                                t 0.4               o
+                                                                                                  0.3                  o
+                                                                                                                           oo
+          0.2                                                                                     0.2                       o
+     .O                                                                                                                         %
+                                                                                                  0.1
+          0.1
+
+
+                0
+                          t Ips
+                                 1
+                                      L          2
+                                                               .   .   _   _
+
+
+
+
+                                                                               3
+                                                                                     .
+                                                                                                  0
+                                                                                                          300       400             ~00  gO0 700
+                                                                                                                                     Wm~length Inm
+                                                                                              Fig. 5. Abmrption q~ectrum obtained for 50 m after the
+                                                                                                                                                     SIX)    ~0
+
+
+                                                                                              pulse in LiCI--KCl eulectio melt doped with 0.05 M CklCI=
+Fig. 2. Kinetic trace obtained at 700rim in ~ K C I                                                                   at 600°C.
+                 eutectk melt at 400°C.
+                                                                                                 Increasing temperature led to a decrease in density,
+3. Temperature dependence on the spectra                                                      or in other words, to an increase in q~eeific volume.
+   Figure 4 shows the temperature dependence on the                                           This result indicated that the ~       responsible for
+visible band observed for 50 m after the ~                                                    the visible band was affected by the c l u m p in the
+the LiCI--KCl eutectic mixture. At 400°C the peak                                             ~scific volume, but the species responsible for the
+pmition of the band appeared at 680ran, and it                                                u.v. band was not.
+shifted toward the red m the temperamce increased.
+                                                                                              4. Effect on the spectra by doping with Cd 2+                       .
+On the other hand, no temperature dependence on
+the u.v. bancl was o l ~ v ~ in th~ Umtpemture mulle.
+The peak position o f the u.v. band was always
+oinerved at 340 nm.
+                                                                                                           pulse
+                                                                                                 Figure 5 shows the spectrum obtained for 50 m
+                                                                                              after the      in LiCI-KC! eutectic m e R which was
+                                                                                              doped with 0.05 M CdCI2 at 600°C. In this case, the
+
+
+                                     0.20
+                                                         (c)
+                                                                                    (a)
+                                     0.15
+                               II
+                               (.I
+                               C
+                               0
+                               J:l
+                                                 ,bL
+                               3 0.10
+                               II
+
+                                     G~
+
+
+                                                 ~J-~                          I          I           I                I              I
+                                          0          1                         5)         3           4                5              6      7
+
+                                                                     tlFs
+                Fig. 3. (a) Kinetic trace obtaiaed at 340am in LiCI-KCI eutectk melt at 400°C. (b) K i n e / t r a c e which
+                is devoid of the contnl~tion m found in era're (a). (c) Simulated trace muming the second ord~ _a,~__y.
+                                               Pulse radiolyds study                                               143
+
+
+
+
+   ~0.8
+     0.6
+
+     0.~,                                                              15.8                   ~\~~
+     0.2
+                                                                    "~15.6
+     0                                                                 lS.,.i
+                                                 .oo
+                       WavelengthInto                                  1S.2
+Fig. 6. The vimble bands for wmml compmitiom of
+              LiCI-KCI melt at 600°C.                                  1S.¢                             ~,
+                                                                                1:1 1:2          1:,,
+visible band was not observed at all, and only the                                     T"1110-3K"1
+u.v. band, which was slightly blue, shifted, and was       Fig. 8. Arrhenius plots for the obtm'vedrate ¢ontlants of e~-
+observed around 330 nm. Cd 2+ is well known as a                                       decay.
+typical electron seavenger,o) Therefore, it is reason-
+able to consider that the species respomible for the       by the first order kinetic. In addition, the band was
+visible band is a kind of reducing species.                affected by the change in the specific volume and
+                                                           composition. Further, the band was diminished in the
+5. Composition dependence on tke spectra
+                                                           presence of Cd 2+, which is an electron scavenger.
+   In Fig. 6, the visible band obtained for several        These facts and the experimental results obtained by
+compmitions of LiCI-KCI melts at 600°C are shown.          Piknev et al. using other alka5 hafide meltsO) sug-
+In pure LiCI melt, the peak position of the visible        gested that the species responsible for the visible band
+band was observed aronm4 520 nm. But it shifted to         was the solvated electron e~'. The e~" is com/dered to
+a longer wavelength in the LiCI-KCi mixture, and in        be an electron trapped by ~       catlom.
+the mixture whose compodtion of KCI was equal to             On the other hand, the species responmble for the
+50 mol%, it appeared around 780 rim. Figure 7 shows        u.v. band was formed by the first order kinetic after
+the relation between the mmpmition and the peak            the pulse, and decayed by the second order kinetic.
+position of the vimble band. The figure shows that the     Also the effect of temperature and compomtion on
+peak position shiPted linearly toward the red corre-       the band ddft was not ob~rved. These facts and the
+sponding to the mole fraction of KCI. However, as          experimental results in NaC! aqneous m l n t i o n (4) indi-
+compared with the vimble band, no dd~ of the u.v.          cated that the species respomible for the u.v. bend
+band was observed in these experiments.                    was considered to be the molecular radical ion Cli'.
+6. Attribution o f the spectra                             7. Reaction mechanism
+  As mentioned above, the R~cies r e g x ~ b l e for the       Figure 8 shows the Arrhenim plots for the ob-
+visible band was formed during the pulse and decayed        served rate comtants of the solvated electron decay
+                                                            in LiCI-KCI eutectic melt. At temperatures below
+                                                            500°C, the plots gave a maight line, and the activa-
+                                                            tion energy of the reaction was estimated to be
+                                                           £^ = 43 k J/tool. But above 500°C, the plots showed
+                                                           a curve. This means that the activation energy appar-
+                                                           ently decreased above 500°C. This fact is explained
+                                                           by the existence of the reverse reaction, which occurs
+
+
+                         t/t/                              more easily as the temperature increases.
+                                                               Figure 9 shows the Arrhenius plots for the decay-
+                                                           ing rate constants of CI~. In the pure melt, a straight
+                                                           line appears in the temperature range of this experi-
+                                                           ment. Here the activation energy was estimated to be
+                                                           E^ = 24 kJ/mol. But in the nadt containing Cd =+, the
+                                                           plots did not show a straight line below 500°C. These
+                                                           facts indicate that the CI=- __@~_yedcorresponding to
+                                                           the different reaction in the doped melt from the one
+            0           z0       30,                       in the pure melt.
+                       Mot%      KCI                          The reaction schemes in radiolysis of alkali halide
+Fig. 7, The mlatioa between the compomtion and the peak    melts were proposed by Pikacv et al. o) as follows:
+              pmition of the vimblebands.                                       CI- ~-.CI" + e-                (1)
+144                                             HlxoYuIu HAOnWtJtA et aL
+
+                                                                            CA + + CI~ - , CA2+ + 2C1                (8)
+             15.6
+                                                               Reaction (7) indicates the electron scavenging reac-
+             15.4                                              tion by Cd 2+ and the formation o f CA+. It has been
+                                                               reported that CA + has an absorption band around
+        ... 15.2                                               300 nm in water at room temperature. ¢~ The spectra
+        tO                                                     obtained in the entectic melt doped with Cd 2+ shows
+        .~ 16.o
+                                                               the absorption band around 330nm (see Fig. 5).
+                                                               From these facts, the 330 nm band appexrs to be
+                                                               contributed by Cd + as well as by CI~', which is
+             14.6                                              around 340 rim.
+                                                                  Finally, the possibility o f chlorine gas generation
+             14.Z                                              was considered as follows:
+                                                                                   2C1~- --* Cl 2 -t- 2C!-          (9)
+                        1.1
+                         1.2 1.3 1.4 1.5
+                         T "t I 10.-3 K"1                      A n experiment in which the LiCI-KCI eutectic melt
+Fig. 9. Axrbeaim ldota for the olmm, ed rote c o m u m ~ o f   at 400°C was continuously irradiated by about 10,000
+Cli" decay. O, in pure LiC1-KC! cure-'tic melt; @, in          pulses was carried out. It was found that a certain
+    LiCI-KCI eutectic melt doped with 0.05 M CdCI2.            amount o f gas was generated in the system, but the
+                                                               yield o f the gag not measured quantitatively. This
+                              e - --, e,-                (2)   problem will have to be solved in the near future.
+                    c r + O - --, c l i                  (3)
+                                                               Acknowledgeraems--The authors wish to thank Dr Tnkenki
+                e;- + Me + --, Me"                       (4)   Enoto and Masts Hiroaki Tank/a, Koichi Sato and Mas-
+                                                               atmhi Kimichi for their help in operating the linac.
+              Me" + Me + --, Me~                         (5)
+               Me2+ + CI~" --, 2Me + + 2C!-              (6)
+where, Me is the alkali metal cation in the s~jstem.                                 IUgFEglgNCES
+Aomrding to our results, the e~- was formed during              1. A. K. Pikaev, I. E. Makamv and T. N. Zhnkova,
+the pulse and reduced by the first order kinetic. A n d            Radial. Phys. Chem. 1982, 19, 377.
+the CI~- was formed by the first order kinetic and              2. E. Ekhardm and P. Laflitte, Bull. Soc. Chim. F r ~
+red,__,,~_ by the semnd order kinetic. Therefore, these            1932, 51, 1572.
+                                                                3. R. K. Wolff, M. J. Bmmkill and J. W. Hunt, J. Chem.
+schemes were com~rmed by our results.                              Phys. 1970, $3, 4211.
+   Then in the melt doped with CA:+, the following              4. L. I. Grossweiner and M. S. Matheson, J. Phys. Chem.
+schemes were suggested:0)                                          1957, 61, 1089.
+                                                                5. R. K. Wolff, J. E. Aidrich, T. Penner and J. W. Hunt,
+                e;- + Cd 2+ --, CA+                      (7)       J. Phys. Chem. 1975, ?9, 210.
+

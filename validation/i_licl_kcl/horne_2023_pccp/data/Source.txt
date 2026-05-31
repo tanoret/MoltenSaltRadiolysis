@@ -1,0 +1,30 @@
+Conrad, J. K.; Cook, A. R.; ... (et al.)
+"Impact of iodide ions on the speciation of radiolytic transients in molten LiCl-KCl eutectic salt mixtures."
+Phys. Chem. Chem. Phys. 2023. DOI: 10.1039/D3CP01477K
+OSTI preprint: BNL-224523-2023-JAAM (https://www.osti.gov/servlets/purl/1985791)
+
+Data extracted from the OSTI preprint PDF (pdftotext + manual review).
+
+Experimental setup: BNL LEAF facility, 8.7 MeV electron pulses, dosimetry via standard solution
+at 6-9 Gy water-equivalent per pulse. KI in LiCl-KCl eutectic + 2 wt% ZnCl2 secondary samples.
+
+Transient species identified:
+- e_s- in neat LiCl-KCl: visible to near-IR absorption (eutectic salt)
+- Cl2•- (340 nm): expected, observed
+- ICl•- (400 nm, decay studied at 671 nm): mixed-halide radical anion, NEW species observed at 1-10 wt% KI
+- I2•-: not significantly observed
+- Cl3- product band ~220 nm: present in deconvolution
+
+Key finding: I- ions do NOT directly scavenge e_s- significantly relative to inherent base-salt
+impurities. The new ICl•- species forms from Cl2•- + I- and decays via 2nd-order kinetics with
+Ea = 23.4 ± 5.7 kJ/mol (similar to Cl2•- disproportionation Ea = 24-26 kJ/mol in LiCl-KCl).
+
+Figures of interest for digitization:
+- Fig. 1: Transient absorption spectra at 400 °C, neat LiCl-KCl vs 10 wt% KI in LiCl-KCl
+- Fig. 2: SK-Ana deconvoluted spectra and kinetics
+- Fig. 3: Theoretical TD-DFT spectra for Cl2•-, ICl•-, I2•- radical anions
+- Fig. 4: 5 ns post-pulse spectra of 10 wt% KI in LiCl-KCl with/without 2 wt% ZnCl2 at 400 °C
+- Fig. 5: ICl•- decay at 671 nm, 10 wt% KI / LiCl-KCl, T = 400, 500, 600, 700 °C
+- SI Table S1: pseudo-first-order eS- decay rate vs [KI] and T (NOT in preprint - need full paper)
+- SI Fig. S5: ln(decay rate) vs 1/T plots
+- SI Figs. S7-S10: Arrhenius plots, dose dependence

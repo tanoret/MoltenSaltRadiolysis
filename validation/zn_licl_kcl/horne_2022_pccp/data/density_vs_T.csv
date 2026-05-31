@@ -1,0 +1,26 @@
+# Iwamatsu, Horne et al. 2022, Phys. Chem. Chem. Phys. 24, 25088-25098.
+# DOI: 10.1039/D2CP01194H
+# Source: validation/papers/d2cp01194h.pdf
+#
+# IMPORTANT: The 2022 paper does NOT report or use molten-salt densities anywhere in the analysis.
+# Concentrations are given exclusively in mol/L (mM). Rate coefficients are reported in M^-1 s^-1 only.
+# No rho(T) values, no density correction, no mol/m^3 conversion is performed.
+# This file documents that absence so downstream consumers don't need to re-check.
+#
+# The density correction (rho(T)) is performed in the 2026 PCCP Cr-validation paper (Iwamatsu 2026),
+# using LiCl-KCl density data from Janz et al. NSRDS-NBS61 Part II (ref 46 in 2022 paper) and
+# from the IAEA / SaltMP database. See validation/cr_licl_kcl/iwamatsu_2026/data/.
+#
+# The only physical-property reference cited in the 2022 paper for LiCl-KCl/ZnCl2 is:
+#   G. J. Janz, F. W. Dampier, G. R. Lakshminarayanan, P. K. Lorenz and R. P.-T. Tomkins,
+#   "Molten Salts: Volume 1, Electrical Conductance, Density, and Viscosity Data",
+#   NSRDS-NBS61, Part II, 1979.  (= ref 46)
+# but the 2022 paper only cites it for VISCOSITY, not density.
+#
+# Viscosity values explicitly cited (from ref 46 + ref 45):
+#   eta(LiCl-KCl, 400 C) ~ 4.0 cP
+#   eta(neat ZnCl2, 400 C) ~ 360 cP
+#
+T_C,T_K,rho_kg_m3,rho_sigma,medium,source,notes
+,,,,LiCl-KCl,,not reported in 2022 paper
+,,,,neat ZnCl2,,not reported in 2022 paper

@@ -1,0 +1,16 @@
+# Rotermund et al. 2024, J. Phys. Chem. A 128, 590-598.
+# DOI: 10.1021/acs.jpca.3c07404
+# Transient absorption monitoring wavelengths used in this work.
+# No molar absorptivities (epsilon) are reported in the main text of this paper.
+# Cf3+ ground-state absorption bands taken from Conway et al. (ref 75) used for quantification.
+# Cf4+ "minimal absorption at 450 nm" qualitative statement only - no epsilon given.
+# Peroxyl adduct (S2O8.O2)- referenced with peak at 430 nm and ~3-4x intensity vs SO4- (qualitative, from ref 84).
+species,lambda_max_nm,epsilon_M^-1_cm^-1,source_paper,notes
+Cl2-,350,,this work (monitoring wavelength),decay monitored at 350 nm in 1 M NaCl / 0.1 M K2S2O8 / 3 mM HClO4
+SO4-,450,,this work (monitoring wavelength),decay monitored at 450 nm in 0.1 M K2S2O8 / 3.0 mM HClO4
+eaq- (dosimetry),650,,this work,dosimetry standard: Ar-sparged 1.0 M NaOH / 20 vol% ethanol / Millipore DI water (~9.8 Gy/pulse)
+Cf3+,442,,Conway et al. 1966 (ref 75); SI Figure S1,one of three absorption bands used for quantification by Cary 6000i UV-vis-NIR (2 M HCl)
+Cf3+,602,,Conway et al. 1966 (ref 75); SI Figure S1,absorption band used for quantification (2 M HCl)
+Cf3+,673,,Conway et al. 1966 (ref 75); SI Figure S1,absorption band used for quantification (2 M HCl)
+Cf4+,~450,minimal,page 594 prose,qualitative; minimal absorption at 450 nm in this medium; no epsilon
+(S2O8.O2)-,430,,ref 84 (Clarke 2008),"~3-4x intensity vs SO4-; half-life ~1 ms; cited not measured here"

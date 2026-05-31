@@ -1,0 +1,24 @@
+# Vision-extracted pseudo-first-order rate observations from Fig. 3B of Iwamatsu et al. PCCP 2026.
+# Reaction: e_s- + Cr3+ -> Cr2+ (Eq. 6).
+# Extraction notes identical to vision_fig2B_Cr2_pseudo1st_order.csv. For higher-fidelity
+# inference, use k_vs_T_from_arrhenius.csv.
+#
+# Units: T in C, [Cr3+] in mM (mol/L), k_obs in 10^8 s^-1.
+T_C,Cr3_mM,k_obs_1e8_per_s,extraction_method
+400,1.0,0.68,vision-fig3B
+400,2.0,1.36,vision-fig3B
+400,3.0,2.04,vision-fig3B
+400,4.0,2.73,vision-fig3B
+450,1.0,1.01,vision-fig3B
+450,2.0,2.02,vision-fig3B
+450,3.0,3.03,vision-fig3B
+450,4.0,4.04,vision-fig3B
+500,1.0,1.42,vision-fig3B
+500,2.0,2.84,vision-fig3B
+500,3.0,4.26,vision-fig3B
+500,4.0,5.68,vision-fig3B
+550,1.0,1.92,vision-fig3B
+550,2.0,3.84,vision-fig3B
+550,3.0,5.76,vision-fig3B
+600,1.0,2.50,vision-fig3B
+600,2.0,5.01,vision-fig3B

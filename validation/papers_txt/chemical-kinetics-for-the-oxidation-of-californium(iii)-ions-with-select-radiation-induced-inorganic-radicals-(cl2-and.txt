@@ -1,0 +1,583 @@
+                                                                                                          pubs.acs.org/JPCA                                                                                                                              Article
+
+
+
+                                                                                                          Chemical Kinetics for the Oxidation of Californium(III) Ions with
+                                                                                                          Select Radiation-Induced Inorganic Radicals (Cl2•− and SO4•−)
+                                                                                                          Brian M. Rotermund, Stephen P. Mezyk, Joseph M. Sperling, Nicholas B. Beck, Hannah Wineinger,
+                                                                                                          Andrew R. Cook, Thomas E. Albrecht-Schönzart, and Gregory P. Horne*
+                                                                                                                Cite This: J. Phys. Chem. A 2024, 128, 590−598                                Read Online
+
+
+                                                                                                          ACCESS                        Metrics & More                            Article Recommendations              * Supporting Information
+                                                                                                                                                                                                                        sı
+
+
+
+
+       Downloaded via IDAHO NATL LABORATORY on May 28, 2026 at 13:31:33 (UTC).
+                                                                                                          ABSTRACT: Despite the availability of transuranic elements increasing in recent years, our
+                                                                                                          understanding of their most basic and inherent radiation chemistry is limited and yet essential for
+                                                                                                          the accurate interpretation of their physical and chemical properties. Here, we explore the transient
+                                                                                                          interactions between trivalent californium ions (Cf 3+) and select inorganic radicals arising from
+                                                                                                          the radiolytic decomposition of common anions and functional group constituents, specifically the
+                                                                                                          dichlorine (Cl2•−) and sulfate (SO4•−) radical anions. Chemical kinetics, as measured using
+                                                                                                          integrated electron pulse radiolysis and transient absorption spectroscopy techniques, are
+                                                                                                          presented for the reactions of these two oxidizing radicals with Cf 3+ ions. The derived and ionic
+                                                                                                          strength-corrected second-order rate coefficients (k) for these radiation-induced processes are k(
+                                                                                                          Cf 3+ + Cl2•−) = (8.28 ± 0.61) × 105 M−1 s−1 and k(Cf 3+ + SO4•−) = (9.50 ± 0.43) × 108 M−1 s−1
+                                                                                                          under ambient temperature conditions (22 ± 1 °C).
+
+
+                                                                                                          ■    INTRODUCTION                                                              such, the chloride anion (Cl−) is often present in either the
+                                                                                                                                                                                         inner or outer coordination sphere of many reported actinide
+
+
+
+
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+                                                                                                          The 5f elements, known as the actinides, boast many unique
+                                                                                                          physical and chemical properties,1 including all of their                      crystal structures,21−26 including californium.25 Furthermore,
+                                                                                                          isotopes being inherently unstable with respect to radioactive                 hydrochloric acid (HCl) and chlorinated hydrocarbons such as
+                                                                                                          decay. Despite this, our understanding of their radiation-                     dichloromethane (DCM) are widely used for the purification
+                                                                                                          induced chemistry in the condensed phase is limited.2−4                        and recycling of transuranic elements and as solvents in
+                                                                                                          Studies in this area have predominantly focused on the                         subsequent studies.27−29 Consequently, there are many
+                                                                                                          radiation-induced behavior of the early (thorium and uranium)                  scenarios in which Cl− ions and chlorinated compounds may
+                                                                                                          to mid (neptunium to curium) actinides, owing to their                         be exposed to ionizing radiation fields arising from the
+                                                                                                          availability and role in nuclear energy and weapon                             radioactive decay of the actinides and their radioactive
+                                                                                                          technologies.4 As such, much of our actinide radiation                         daughter nuclides. The radiation emitted induces ionization
+                                                                                                          chemistry knowledge is constrained to those applied                            and excitation of the surrounding medium, with the
+                                                                                                          conditions. For example, the behavior of actinide ions in                      subsequent formation of reactive radiolysis products. These
+                                                                                                          irradiated aqueous nitric acid solutions has been well studied                 primary radiolysis products have the capacity to interact with
+                                                                                                          due to this solvent’s role in separation technologies.4−9                      any remaining actinide ions to drive changes in their redox
+                                                                                                          However, this applied focus has created a large radiation                      distribution and the potential formation of transient non-
+                                                                                                          chemistry knowledge gap, as fundamental actinide studies
+                                                                                                                                                                                         equilibrium actinide oxidation states. For example, trivalent
+                                                                                                          utilize many different solutes and solvents as compared to the
+                                                                                                          nuclear industry, to elucidate the nature and role of the 5f                   californium ions (Cf 3+) can be transiently reduced and
+                                                                                                          electrons in chemical bonding. As such, the radiation-induced                  oxidized to the corresponding di- (Cf 2+) and tetravalent
+                                                                                                          chemistry of these fundamental systems and their interactions                  states (Cf 4+) by reaction with the hydrated electron (eaq−) and
+                                                                                                          with the actinides must be explored to provide a                               hydroxyl radical (•OH) arising from the direct radiolysis (⇝)
+                                                                                                          comprehensive understanding of actinide chemistry, and to                      of water12
+                                                                                                          ensure accurate interpretation of their physical and chemical
+                                                                                                          properties, as radiolytic processes can lead to unanticipated
+                                                                                                          phenomena. This endeavor is especially important for the less-                 Received: November 8, 2023
+                                                                                                          studied late actinides (berkelium onward), for which only a                    Revised: November 22, 2023
+                                                                                                          handful of radiation studies exist,10−12 despite them becoming                 Accepted: December 11, 2023
+                                                                                                          more readily available to research communities.                                Published: January 12, 2024
+                                                                                                             Actinide chlorides are one of the most common starting
+                                                                                                          materials used in fundamental actinide studies,13−20 and as
+
+                                                                                                                                               © 2024 American Chemical Society                                              https://doi.org/10.1021/acs.jpca.3c07404
+                                                                                                                                                                                   590                                           J. Phys. Chem. A 2024, 128, 590−598
+The Journal of Physical Chemistry A                                           pubs.acs.org/JPCA                                           Article
+
+   H 2O       H 2O , eaq , H•, •OH, H 2O2 , H 2 , Haq +     (1)            With that being said, the influence of radiolysis on these
+                                                                         actinide sulfate systems has not been well studied. Irradiation
+   Cf 3 + + eaq          Cf 2 +                                          of sulfur-containing ions and molecules can lead to the
+                                                                         formation of various sulfur radicals.62 For example, the reaction
+        k = (3.63 ± 0.14) × 1010 M 1 s 1                    (2)          of the •OH radical with hydrogen sulfate (HSO4−) can yield
+                                                                         the oxidizing sulfate radical anion (SO4•−, E° = +2.5−3.1
+   Cf 3 + + •OH           Cf 4 + + OH                                    V)63−66
+        k = (2.07 ± 0.12) × 108 M 1 s 1.                    (3)              HSO4 + •OH           SO4• + H 2O
+Both of these nonequilibrium californium oxidation states were                 k = 0.7    1.7 × 106 M 1 s 1                                    (12)
+found to exhibit lifetimes on the order of tens of microseconds,
+which is more than sufficient time to promote currently                  As with the Cl2•− radical anion, the decay of the SO4•− radical
+unexplored actinide redox chemistry.                                     anion is characterized by its rate of disproportionation and
+  With regard to Cl− ions, their direct and indirect radiolysis          reaction with other solutes, including several actinide
+can promote the formation of chlorine radicals (Cl•) and the             ions2−4,65−74
+subsequent generation of the dichlorine radical anion
+(Cl2•−)30−34                                                                 SO4• + SO4•          S2O82
+   Cl       eaq + Cl•                                       (4)
+                                                                               k = 0.2    1.8 × 109 M 1 s 1                                    (13)
+
+   Cl + •OH F ClOH•                                         (5)              solute + SO4•        solute•+ + SO4 2                             (14)
+
+   ClOH• + Haq + F Cl• + H 2O,                                           These solute reactions can take the form of electron transfer,
+                                                            (6)
+                                                                         hydrogen atom abstraction, and addition to unsaturated
+   Cl• + Cl F Cl 2•                                         (7)          chemical bonds, again providing the opportunity for currently
+                                                                         unanticipated, nonequilibrium actinide chemistry.
+the fate of which is mediated by its disproportionation (eq                 With the capacity of these two radical anions to promote
+8)35−50 and electron transfer reactions with other solutes (eq           redox reactions with the early-to-mid actinides,4 combined
+9)2−4                                                                    with the prevalence of their precursors in actinide studies, it is
+                                                                         important to understand their interactions with the late
+   Cl 2• + Cl 2•           Cl3 + Cl                                      actinides in support of a comprehensive understanding of
+        k = 0.7        9.0 × 109 M 1 s 1                    (8)          radiation-induced actinide redox chemistry. As such, we report
+                                                                         the kinetics for the reaction of these two oxidizing (Cl2•− and
+                   •                 •+
+   solute + Cl 2            solute        + 2Cl             (9)          SO4•−) radicals with Cf 3+ ions in aqueous solution, as
+  A similar pathway is proposed for the radiolysis of                    measured using integrated electron pulse radiolysis and
+chlorinated organic media, exemplified here with DCM                     transient absorption spectroscopy techniques.
+(CH2Cl2), where solvated electrons (es−) excite DCM
+(CH2Cl2*−) and then liberate Cl− ions (eqs 10 and 11)27                  ■    METHODOLOGY
+                                                                         Caution! The californium-249 solutions employed in this work
+   CH 2Cl 2 + es           CH 2Cl 2                        (10)          were highly radioactive. Handling was performed in dedicated
+   CH 2Cl 2                   •
+                       CH 2Cl + Cl                                       radiological and nuclear facilities using well-established radio-
+                                                           (11)
+                                                                         logical safety protocols.
+which may then go on to react via eqs 4−7 to yield additional               Chemicals. Californium-249 (249Cf, τ1/2 = 351 years, Eα =
+Cl2•− radical anions. Irrespective of the source, the Cl2•−              6.30 MeV) was initially sourced as its chloride salt (CfCl3)
+radical anion is a strongly oxidizing species (E° = +2.13                from the Isotope Development and Production for Research
+V),51 which has been shown to react with a number of actinide            and Applications Program through the Radiochemical
+ions4 and thus has the capacity to influence actinide studies            Engineering and Development Center at Oak Ridge National
+that employ chloride-containing chemicals. For example, the              Laboratory. Ammonium hydroxide (NH4OH, ≥99.999% trace
+current renaissance in molten salt technologies has catalyzed            metal basis, 28% NH3 in water), deionized water (DI H2O,
+extensive applied and fundamental studies into the behavior of           ultrapure HPLC grade), ethanol (≥99.5%), formic acid
+actinide ions in high-temperature halide salt mixtures,                  (≥98%), hydrochloric acid (HCl, 37 wt %), hydrogen peroxide
+including chlorides.52                                                   (H2O2, 30 wt %), oxalic acid (98%), perchloric acid (HClO4,
+   In addition to chloride systems, some of the earliest                 ≥99.999% trace metal basis), potassium persulfate (K2S2O8,
+fundamental actinide crystallography studies were performed              99.99% trace metal basis), sodium chloride (NaCl, 99.999%
+with simple sulfate salts (SO42−).53−57 These experiments were           trace metal basis), and sodium hydroxide (NaOH, 99.99%
+some of the first steps toward providing a deep understanding            trace metal basis) were purchased from MilliporeSigma
+of the unique chemistry exhibited by transuranic elements.               (Burlington, Massachusetts). Compressed argon (Ar) and
+More recently, crystallographic studies have demonstrated the            nitrous oxide (N2O) with purities of ≥99.5% were purchased
+formation of direct actinide−sulfate coordination structures in          from Airgas (Radnor, Pennsylvania). Unless otherwise stated,
+the form of 3D actinide sulfate networks58 and bridging                  all chemicals were used without further purification.
+neptunyl centers.59 Overall, actinide sulfates have provided                Californium Purification. The californium used in this
+invaluable information on the unusual bonding modes and                  study was recovered from previous experiments. To avoid
+coordination environments available to the transuranic                   kinetic interference from accumulated decay products and
+elements.60,61                                                           potential contaminants, the californium was first repurified at
+                                                                   591                                        https://doi.org/10.1021/acs.jpca.3c07404
+                                                                                                                  J. Phys. Chem. A 2024, 128, 590−598
+The Journal of Physical Chemistry A                                              pubs.acs.org/JPCA                                           Article
+
+Florida State University. This involved the dissolution of                   The final Cf 3+ ion sample concentrations were 0, 0.2, 0.4,
+californium-containing solids in 6 M HCl. The resulting acidic            0.6, 0.8, and 1.0 mM in each radical stock solution. These
+solution was then passed through an Eichrom (Eichrom, Lisle,              samples were sealed in 1.0 cm optical path length, screwcap-
+Illinois) prefilter resin (100−150 μm mesh) to remove any                 sealed, spectrosil quartz, semimicro, Starna Scientific Ltd.
+residual organic material. The resin was preconditioned with              (Ilford, United Kingdom) cuvettes for electron pulse
+three bed volumes of DI H2O and three bed volumes of 6 M                  irradiation.
+HCl. Once >99% of the Cf 3+ was eluted with 6 M HCl, as                      The isolation of these two radicals was based on the reaction
+determined by dosimetry using a 451P radiation detector                   of the eaq− reaction with S2O82− in aqueous solution64
+(Fluke Biomedical, Everett, Washington), the resulting Cf 3+
+eluent was dried to a residue using a 250 W heat lamp and a                  eaq + S2O82             SO4 2 + SO4•
+slow stream of nitrogen gas. To remove cationic impurities, the
+                                                                                  k = 1.2 × 1010 M 1 s 1                                          (15)
+Cf 3+ residue was dissolved in 0.1 M HCl and then loaded onto
+a cation exchange resin (AG50W-X8, 100−150 μm mesh, Bio-                  which quantitatively produces the SO4•− radical anion that
+Rad Laboratories, Hercules, California) that had been                     then reacts with added Cl− ions77
+preconditioned sequentially with three bed volumes of DI
+H2O, three bed volumes of 6 M HCl, and three bed volumes of                  SO4• + Cl           Cl• + SO4 2
+0.1 M HCl. Once fixed on the column, the Cf 3+ was rinsed                         k = 2.8 × 108 M 1 s 1                                           (16)
+with excess 0.1 M HCl and then 2 M HCl, before eluting the
+Cf 3+ with excess 6 M HCl. As mentioned before, once >99%                 to give Cl• radicals that ultimately result in the Cl2•− radical
+of the Cf 3+ had been recovered, the resulting eluent was dried           anion (eq 7). Formation of the potentially competing
+to a residue. To remove anionic impurities, an anion exchange             hypochlorite radical anion (ClOH•−) was minimized through
+resin (AG MP-1M, 50−100 μm mesh, Bio-Rad Laboratories,                    the scavenging of the initially formed •OH radicals by the
+Hercules, California) was employed and preconditioned with                S2O82− ions78
+three bed volumes of DI H2O and three bed volumes of 6 M                     •
+                                                                              OH + S2 O82            OH + S2 O8•
+HCl. The californium residue was again dissolved, this time in
+minimal 6 M HCl, and then loaded onto the preconditioned                          k = 1.2 × 107 M 1 s 1                                           (17)
+anion column. The column was then washed with 6 M HCl
+                                                                             Time-Resolved Picosecond Electron Pulse Irradia-
+until >99% of the Cf 3+ was eluted, leaving any remaining
+potential contaminants bound to the column. This final eluent             tions. Kinetic measurements for the reaction of Cf 3+ ion with
+was again dried to a residue, redissolved in 2 M HCl, and                 Cl2•− and SO4•− radical anions under ambient temperature
+subsequently recrystallized as the corresponding oxalate by the           conditions were performed by integrated electron pulse
+excess addition of a saturated oxalic acid/2 M HCl solution.              radiolysis and transient absorption detection using the
+The californium oxalate was then decomposed by dissolution                Brookhaven National Laboratory (BNL) Laser Electron
+in HNO3 at 120 °C in a KSL-1100X-S-UL box furnace (MTI                    Accelerator Facility (LEAF) system.79 As discussed above,
+Corporation, Richmond, California) over 12 h. The resulting               sample solutions were designed to facilitate the direct
+residue was then redissolved in 2 M HCl for quantification by             production of a given radical and its measured decay at a
+absorption spectroscopy using a Cary 6000i UV−vis−NIR                     specific wavelength accessible to the LEAF system, 300−1000
+instrument (Agilent, Santa Clara, California). A final recovery           nm, as selected by 10 nm bandpass interference filters (hard
+yield of 5.99 mg californium was calculated from averages                 coated, Edmund Optics). Time-resolved changes in radical
+derived from the element’s 442, 602, and 673 nm absorption                absorption decay as a function of Cf 3+ ion concentration were
+bands17,75 for 1 mL of solution with a 0.4 cm optical path                followed using a pulsed xenon arc lamp, Photon Technology
+length in a dual-path length, GL15 Spectrosil Far UV quartz               International (London, Ontario, California) lamp housing,
+cell (Starna Scientific Ltd., Ilford, UK). The resulting spectrum         Ushio (Tokyo, Japan) bulb, a custom-made pulser circuit, and
+is shown in SI Figure S1 alongside that previously reported by            a FND-100 silicon diode detector. The resulting signals were
+Conway et al. for comparison.75                                           subsequently digitized using a Teledyne LeCroy (Chestnut
+   From this 5.99 mg of Cf 3+/2 M HCl stock solution, 2 mg                Ridge, New York City) WaveRunner 640Zi 4 GHz 8-bit
+                                                                          oscilloscope. Chemical dosimetry was performed using argon-
+worth of Cf 3+ content (333.4 μL) was isolated, dried to
+                                                                          sparged standard solution, 1.0 M NaOH, and 20 vol % ethanol
+residue, and redissolved in 3 mM HClO4 solution. This Cf/
+                                                                          in Millipore DI water, by measuring the decay of the es− at 650
+HClO4 stock solution was then used in the preparation of all
+                                                                          nm.80 This approach afforded an average dose per pulse of
+sample solutions to be irradiated. Samples were prepared by
+                                                                          ∼9.8 Gy.
+the serial dilution of 410 μL of Cf/HClO4 stock solution into
+                                                                             As both Cl2•− and SO4•− radicals are negatively charged and
+one of two aqueous solutions designed for the isolation of the
+Cl2•− and SO4•− radical anions and the direct measurement of              the target Cf 3+ ion is positively charged, the derived second-
+                                                                          order rate coefficients (k) were corrected for the ionic strength
+their associated reaction kinetics with the Cf 3+ ion:78
+                                                                          of each sample solution to account for the effects of coulombic
+     • Dichlorine radical anion: 1 M NaCl dissolved in aerated,           attraction81
+       aqueous 0.1 M K2S2O8/3 mM HClO4 solution. Direct
+       decay kinetics of the Cl2•− radical anion monitored at                log(k 0) = log(k)        2Z Z [A 1/2 /(1 +       1/2
+                                                                                                                                    )]            (18)
+       350 nm.
+     • Sulfate radical anion: 0.1 M K2S2O8 dissolved in aerated,          where k0 is the rate coefficient (M−1 s−1) at zero ionic strength,
+       aqueous 3.0 mM HClO4 solution. Direct decay kinetics               k is the rate coefficient measured here at a total ionic strength
+       of the SO4•− radical anion monitored at 450 nm.                    μ (mol L−1), Zα and Zβ are the respective charges of the radical
+                                                                    592                                          https://doi.org/10.1021/acs.jpca.3c07404
+                                                                                                                     J. Phys. Chem. A 2024, 128, 590−598
+The Journal of Physical Chemistry A                                                pubs.acs.org/JPCA                                              Article
+
+
+
+
+Figure 1. (A) Offset dose- and absorption-normalized Cl2•− radical anion decays at 350 nm for zero (black), 0.48 (blue), 0.73 (green), 0.97
+(purple), and 1.21 (gold) mM Cf 3+ in electron pulse-irradiated aqueous solutions containing 1 M NaCl and 0.1 M K2S2O8 in 3 mM HClO4 at 22
+± 1 °C. Solid red lines are mixed-order fits to data. (B) Second-order rate coefficient determination by plotting derived first-order component
+values against Cf 3+concentration with (blue ■) and without (red ●) ionic strength corrections. This afforded an ionic strength-corrected value of
+k(Cf 3+ + Cl2•−) = (8.28 ± 0.61) × 105 M−1 s−1, R2 = 0.98.
+
+
+
+
+Figure 2. Reaction rates for the Cl2•− (A) and SO4•− (B) radical anions with trivalent actinide ions from this work (Cf 3+) and previously published
+values4 vs the standard reduction potentials for the corresponding IV/III couples.76
+
+anions (Zα = −1) and Cf 3+ (Zβ = +3), respectively, and A is
+the temperature-dependent Debye−Hückel constant82
+                                                                              ■   RESULTS AND DISCUSSION
+                                                                              Chemical kinetics for the reaction of the Cf 3+ ion with the
+                                                                              Cl2•− radical anion are shown in Figure 1. It is evident from the
+            e 3(2000 × NA )1/2                                                small changes in the decay rate of the Cl2•− radical anion with
+   A=
+         2.303(8 )( 0 kBT )3/2                                   (19)         increasing Cf 3+ concentration (Figure 1A) that this reaction is
+                                                                              slow and energetically unfavorable. This was to be expected
+where e is the charge of an electron (1.602 × 10−19 C), NA is                 given the ∼1 V difference in their respective oxidation
+Avogadro’s number (6.022 × 1023 mol−1), ε0 is the vacuum                      potentials in acidic aqueous solution: E°(Cf 3+) = +3.2 V vs
+permittivity (8.854 × 10−12 F m−1), ε is the dielectric constant              E°(Cl2•−) = +2.13 V.51,76 Despite this energetic difference,
+                                                                              pseudo-first-order rate coefficients (k′) were derived from the
+for water (78.84), kB is the Boltzmann constant (1.380 × 10−23                mixed pseudo-first and second-order fits to the kinetic decay
+J K−1), and T is the temperature (K).                                         data shown in Figure 1A based on the equation83
+   Quoted rate coefficient errors are the standard deviation of
+                                                                                                   Abs kX
+each decay trace, which are the average of three separate decay                                                              + B,
+                                                                                         (kXt )
+traces composed of eight measured pulses per sample.                              kX e            2 Abs k Y (1    e(kXt ))                             (20)
+
+                                                                        593                                           https://doi.org/10.1021/acs.jpca.3c07404
+                                                                                                                          J. Phys. Chem. A 2024, 128, 590−598
+The Journal of Physical Chemistry A                                              pubs.acs.org/JPCA                                             Article
+
+
+
+
+Figure 3. (A) Dose- and absorption-normalized SO4•− radical anion decays at 450 nm for zero (black), 0.24 (blue), 0.48 (green), 0.73 (purple),
+and 1.21 (gold) mM Cf(III) in electron pulse-irradiated aqueous solutions containing 0.1 M K2S2O8 in 3.0 mM HClO4 at 22 ± 1 °C. Solid red
+lines are mixed-order fits to data. (B) Second-order rate coefficient determination plotting derived first-order component values against solute
+concentration with (blue ■) and without (red ●) ionic strength corrections. This afforded an ionic strength-corrected value of k(Cf 3+ + SO4•−) =
+(9.50 ± 0.43) × 108 M−1 s−1, R2 = 0.994. Note that error bars are smaller than the presented data points.
+
+where Abs is the initial Cl2•− radical anion absorption, B is the            at 450 nm.12 A potential candidate for this species is the
+limiting product absorption (baseline shift), kX is the pseudo-              oxygen adduct of the persulfate peroxyl radical anion,
+first-order component (s−1) corresponding to the reaction of                 (S2O8•O2)•−
+the Cf 3+ ion with the Cl2•− radical anion (eq 9), and kY is the                S2O8• + O2        (S2 O8•O2 )•                                      (22)
+second-order component (M−1 s−1) for the corresponding
+disproportionation reaction shown in eq 8. These pseudo-first-               formed as a subsequent product of the oxidation of S2O82− by
+                                                                                 •                   84
+order values were then used to calculate an overall second-                  the OH radical (eq 17). Although, no rate coefficient has
+order rate coefficient of k = (8.28 ± 0.61) × 105 M−1 s−1 (R2 =              been reported for eq 22, kinetic measurements at 450 nm in
+0.98) for the reaction of the Cf 3+ ion with the Cl2•− radical               air-saturated solution have demonstrated that adduct for-
+anion                                                                        mation is complete within ∼500 ns.84 This growth corresponds
+                                                                             to a fast formation rate coefficient of k ∼ 109−1010 M−1 s−1.
+   Cf 3 + + Cl 2•      Cf 4 + + 2Cl                             (21)         This magnitude is consistent with the kinetics typically
+                                                                             observed for carbon-centered radical peroxyl formation,
+as shown in Figure 1B. This value is significantly slower than               which exhibit rate coefficients of around 3 × 109 M−1 s−1.64
+those previously measured for the reaction of the Cf 3+ ion                  The transient spectrum reported for the (S2O8•O2)•− adduct
+with the •OH and NO3• radicals: k = (2.07 ± 0.43) × 108 and                  shows a peak at 430 nm, with a relative intensity of about 3−
+(1.78 ± 0.19) × 108 M−1 s−1, respectively.12 Consequently,                   4× that of the SO4•− radical anion and a half-life of ∼1 ms.84
+oxidation by the Cl2•− radical anion is not expected to play a                  Regardless of the identity of the additional species, its
+significant role in the radiation chemistry of californium                   contribution to the decay of the SO4•− radical anion was
+chloride studies.                                                            accounted for by the fitted kY value in eq 20. After fitting the
+   Further support for this finding can be found by comparing                data in Figure 3A for 0 mM Cf 3+ using eq 20, the resulting kY
+this newly measured rate coefficient with those previously                   value (2ky = (2.70 ± 0.18) × 108 M−1 s−1) was then held
+reported for the reaction of the Cl2•− radical anion with other              constant when fitting the decays for 0.24−1.21 mM Cf 3+. As
+trivalent actinides, as shown in Figure 2A. Our rate value for               such, the growth kinetics and limiting baseline absorption
+Cf 3+ oxidation agrees well with the expected free energy                    afforded by the additional species had a negligible effect upon
+relationship prediction, i.e., single electron transfer to the Cl2•−         our derived second-order rate coefficient (Figure 3B) for the
+radical anion becomes slower and less energetically favorable                reaction of Cf 3+ with the SO4•− radical anion, k = (9.50 ±
+with increasing reduction potential.                                         0.43) × 108 M−1 s−1. The resulting value is significantly faster
+   Chemical kinetics for the reaction of the Cf 3+ ion with the              than those previously measured for the only other three
+SO4•− radical anion are shown in Figure 3. Note that for the                 oxidizing radical reactions with the Cf 3+ ion, i.e., •OH, NO3•,
+highest concentration of Cf 3+ used in this study, the decay of              and Cl2•−, and is to be expected given their respective
+the SO4•− radical anion’s absorption clearly does not return to              reduction potentials: E°(SO4•−) = +2.5−3.1 V ≳ E°(•OH) =
+the original baseline (Figure 3A). This is indicative of the                 +2.7 V > E°(•NO3) = +2.3−2.6 V > E°(Cl2•−) = +2.13
+presence of another, longer-lived, radiolysis product, the                   V.51,63,64,85
+ingrowth of which occurs within the time frame of our                           Our new SO4•− radical anion rate coefficient is also
+experiments. This additional species was not evident in the                  consistent with the trend exhibited by the limited values
+absence of Cf 3+ ions, nor can it be attributed to the Cf 4+                 available for other trivalent actinides, as summarized in Figure
+oxidation product, as this species has only minimal absorption               2B as a function of their respective redox potentials.
+                                                                       594                                         https://doi.org/10.1021/acs.jpca.3c07404
+                                                                                                                       J. Phys. Chem. A 2024, 128, 590−598
+The Journal of Physical Chemistry A                                             pubs.acs.org/JPCA                                              Article
+
+Interestingly, the free energy relationship for the SO4•− radical          Authors
+anion reaction shows a slight increase in the rate with                       Brian M. Rotermund − Department of Chemistry, Colorado
+increasing redox potential (Figure 2B). By comparison with                      School of Mines, Golden, Colorado 80401, United States;
+the Cl2•− radical anion (Figure 2A) and the available trivalent                 Department of Chemistry and Biochemistry, Florida State
+actinide ion values for reaction with •OH and NO3• radicals                     University, Tallahassee, Florida 32306, United States;
+(SI, Figure S2),4,12,86 this difference in free energy behavior                   orcid.org/0000-0002-2379-0119
+implies that actinide oxidation by the SO4•− radical anion does               Stephen P. Mezyk − Department of Chemistry and
+not proceed via a simple one electron transfer mechanism. An                    Biochemistry, California State University Long Beach, Long
+alternative reaction mechanism could be via initial adduct                      Beach, California 90840-9507, United States
+formation, which would exploit the increasing covalency of the                Joseph M. Sperling − Department of Chemistry, Colorado
+actinide ions as the series is traversed. With that being said, we              School of Mines, Golden, Colorado 80401, United States;
+are presently pursuing follow-up electronic structure calcu-                    Department of Chemistry and Biochemistry, Florida State
+lations to resolve this mechanistic discrepancy, in addition to                 University, Tallahassee, Florida 32306, United States;
+determining the missing values for trivalent uranium,                             orcid.org/0000-0003-1916-5633
+americium, and curium.                                                        Nicholas B. Beck − Department of Chemistry, Colorado
+   Due to the slowness of the Cl2•− radical anion decay (Figure                 School of Mines, Golden, Colorado 80401, United States;
+1A) and both the Cl2•− and SO4•− radical anions’ inherent                       Department of Chemistry and Biochemistry, Florida State
+broad absorption bands in the UV region,87 we were unable to                    University, Tallahassee, Florida 32306, United States;
+record any spectral information for the Cf 4+ ion product in                      orcid.org/0000-0001-5687-192X
+these solutions using the current detection system.12                         Hannah Wineinger − Department of Chemistry, Colorado
+                                                                                School of Mines, Golden, Colorado 80401, United States;
+■    CONCLUSIONS
+In summary, we report new, ambient temperature (22 ± 1 °C),
+                                                                                Department of Chemistry and Biochemistry, Florida State
+                                                                                University, Tallahassee, Florida 32306, United States;
+                                                                                  orcid.org/0000-0003-4070-999X
+second-order rate coefficients for the reaction of the Cf 3+ ion
+                                                                              Andrew R. Cook − Department of Chemistry, Brookhaven
+with Cl2•− and SO4•− radical anions, as measured by integrated
+                                                                                National Laboratory, Upton, New York 11973, United
+electron pulse radiolysis and transient absorption spectroscopy.
+                                                                                States; orcid.org/0000-0001-6633-3447
+Our measurements indicate that the Cl2•− radical anion
+                                                                              Thomas E. Albrecht-Schönzart − Department of Chemistry,
+reaction is slow (k = (8.28 ± 0.61) × 105 M−1 s−1) and
+                                                                                Colorado School of Mines, Golden, Colorado 80401, United
+energetically unfavorable and thus unlikely to impact the
+                                                                                States; Department of Chemistry and Biochemistry, Florida
+outcome and interpretation of fundamental californium studies
+                                                                                State University, Tallahassee, Florida 32306, United States;
+in the presence of Cl− ions and chlorinated compounds. On
+                                                                                  orcid.org/0000-0002-2989-3311
+the other hand, Cf 3+ ion oxidation by reaction with the SO4•−
+radical anion is significantly faster (k = (9.50 ± 0.43) × 108             Complete contact information is available at:
+M−1 s−1) than with other common oxidizing radicals (•OH and                https://pubs.acs.org/10.1021/acs.jpca.3c07404
+NO3•) and surprisingly faster than for other trivalent actinide
+ions. Consequently, SO4•− radical anion-driven oxidation is                Author Contributions
+expected to play a significant role in californium studies that            All the authors have accepted responsibility for the entire
+utilize sulfur compounds. Additionally, this finding opens                 content of this submitted article and approved submission.
+avenues for the potential use of the SO4•− radical anion as a              Notes
+high-efficiency oxidizing agent in the exploration of non-                 The authors declare no competing financial interest.
+equilibrium actinide oxidation states, such as the Cf 4+ ion.
+
+■   ASSOCIATED CONTENT                                                     ■   ACKNOWLEDGMENTS
+                                                                           This work was supported by the U.S. Department of Energy,
+*
+sı Supporting Information
+                                                                           Office of Science, Office of Basic Energy Sciences, Solar
+The Supporting Information is available free of charge at                  Photochemistry Program, under award DE-SC0024191. Cook
+https://pubs.acs.org/doi/10.1021/acs.jpca.3c07404.                         and electron pulse irradiation experiments at the Laser-
+      Absorption spectra of Cf 3+ in 2 M HCl (blue, this work)             Electron Accelerator Facility of the Brookhaven National
+      and in 2 M DClO4 (red, modified from reference 1)                    Laboratory Accelerator Center for Energy Research were
+      (Figure S1); second-order rate coefficients for the                  supported by the U.S. Department of Energy, Office of Basic
+      reaction of •OH (A) and NO3• (B) radicals with                       Energy Sciences, Division of Chemical Sciences, Geosciences,
+      trivalent actinide ions from this work (Cf 3+) and                   and Biosciences, under contract DE-SC0012704.
+      previously published values2−4 versus the standard
+      reduction potentials for the corresponding IV/III
+      couples (Figure S2) (PDF)
+                                                                           ■   REFERENCES
+                                                                            (1) Morss, L. R.; Edelstein, N. M.; Fuger, J. The Chemistry of the
+                                                                           Actinide and Transactinide Elements, 4th ed.; Springer: Dordrecht, The
+■   AUTHOR INFORMATION
+Corresponding Author
+                                                                           Netherlands, 2010; Vol. 1−6, pp 1−6.
+                                                                            (2) Gordon, S.; Sullivan, J. C.; Ross, A. B. Rate Constants for
+                                                                           Reactions of Radiation-Produced Transients in Aqueous Solutions of
+  Gregory P. Horne − Center for Radiation Chemistry Research,              Actinides. J. Phys. Chem. Ref. Data 1986, 15 (4), 1357−1367,
+   Idaho National Laboratory, Idaho Falls, Idaho 83415,                    DOI: 10.1063/1.555768.
+   United States; orcid.org/0000-0003-0596-0660;                            (3) Pikaev, A. K.; Gogolev, A. V.; Shilov, V. P.; Fedoseev, A. M.
+   Email: gregory.holmbeck@inl.gov                                         Reactivity of Ions of Actinides Towards Inorganic Free Radicals in
+
+                                                                     595                                           https://doi.org/10.1021/acs.jpca.3c07404
+                                                                                                                       J. Phys. Chem. A 2024, 128, 590−598
+The Journal of Physical Chemistry A                                                    pubs.acs.org/JPCA                                               Article
+
+Irradiated Aqueous Solutions. Isotopenpraxis Isot. Environ. Health Stud.          Anhydrous Americium Halides. Organometallics 2019, 38 (3), 606−
+1990, 26 (10), 465−469.                                                           609.
+  (4) Mincher, B. J.; Mezyk, S. P. Radiation chemical effects on                   (23) Arteaga, A.; Nicholas, A. D.; Ducati, L. C.; Autschbach, J.;
+radiochemistry: A review of examples important to nuclear power.                  Surbella, R. G., III Americium Oxalate: An Experimental and
+Radiochim. Acta 2009, 97, 519−534.                                                Computational Investigation of Metal-Ligand Bonding. Inorg. Chem.
+  (5) Horne, G. P.; Grimes, T. S.; Mincher, B. J.; Mezyk, S. P. Re-               2023, 62 (12), 4814−4822.
+evaluation of Neptunium-Nitric Acid Chemistry by Multi-Scale                       (24) Cary, S. K.; Silver, M. A.; Liu, G.; Wang, J. C.; Bogart, J. A.;
+Modelling. J. Phys. Chem. B 2016, 120 (49), 12643−12649.                          Stritzinger, J. T.; Arico, A. A.; Hanson, K.; Schelter, E. J.; Albrecht-
+  (6) Horne, G. P.; Gregson, C. R.; Sims, H. E.; Orr, R. M.; Taylor, R.           Schmitt, T. E. Spontaneous Partitioning of Californium from Curium:
+J.; Pimblott, S. M. Plutonium and Americium Alpha Radiolysis of                   Curious Cases from the Crystallization of Curium Coordination
+Nitric Acid Solutions. J. Phys. Chem. B 2017, 121 (4), 883−889.                   Complexes. Inorg. Chem. 2015, 54 (23), 11399−11404.
+  (7) Grimes, T. S.; Horne, G. P.; Dares, C. J.; Pimblott, S. M.; Mezyk,           (25) Burns, J. H.; Pererson, J. R.; Baybarz, R. D. Hexagonal and
+S. P.; Mincher, B. J. Kinetics of the Autoreduction of Hexavalent                 Orthorhombic Crystal Structures of Californium Trichloride. J. Inorg.
+Americium in Aqueous Nitric Acid. Inorg. Chem. 2017, 56 (14),                     Nucl. Chem. 1973, 35 (4), 1171−1177.
+8295−8301.                                                                         (26) Goodwin, C. A. P.; Su, J.; Stevens, L. M.; et al. Isolation and
+  (8) Horne, G. P.; Grimes, T. S.; Bauer, W. F.; Dares, C. J.; Pimblott,
+                                                                                  Characterization of a Californium Metallocene. Nature 2021, 599,
+S. M.; Mezyk, S. P.; Mincher, B. J. Effect of Ionizing Radiation on the
+                                                                                  421−424.
+Redox Chemistry of Penta- and Hexavalent Americium. Inorg. Chem.
+                                                                                   (27) Tuan, N. Q.; Gäumann, T. Radiolysis of Hydrocarbons:
+2019, 58, 8551−8559.
+  (9) Perrin, B.; Venault, L.; Broussard, E.; Vandenborre, J.; Blain, G.;         Dichloromethane in Liquid Hexane. Radiat. Phys. Chem. 1978, 11 (4),
+Fattahi, M.; Nikitenko, S. Influence of plutonium oxidation state on              193−197.
+the formation of molecular hydrogen, nitrous acid and nitrous oxide                (28) Burns, J. D.; Van Cleve, S. M.; Smith, E. H.; Boll, R. A.
+from alpha radiolysis of nitric acid solution. Radiochim. Acta 2022,              Californium Purification and Electrodeposition. J. Radioanal. Nucl.
+110 (5), 301−310.                                                                 Chem. 2015, 305, 109−116.
+  (10) Sullivan, J. C.; Morss, L. R.; Schmidt, K. H.; Mulac, W. A.;                (29) Cary, S. K.; Su, J.; Galley, S.; et al. A Series of
+Gordon, S. Pulse radiolysis studies of californium(III) in aqueous                Diothiocarbamates for Americium, Curium, and Californium. Dalton
+perchlorate solution. Evidence for the preparation of californium(II).            Trans. 2018, 47 (41), 14452−14461.
+Inorg. Chem. 1983, 22, 2338−2339.                                                  (30) Grigor’ev, A. E.; Makarov, I. E.; Pikaev, A. K. Formation of
+  (11) Sullivan, J. C.; Schmidt, K. H.; Morss, L. R.; Pippin, C. G.;              Cl2− in the Bulk Solution During the Radiolysis of Concentrated
+Williams, C. Pulse radiolysis studies of berkelium(III): preparation              Aqueous Solutions of Chlorides. Khimiya Vysokikh Ehnergij 1987, 21,
+and identification of berkelium(II) in aqueous perchlorate media.                 123−126.
+Inorg. Chem. 1988, 27, 597−598.                                                    (31) Knipping, E. M.; Dabdub, D. Modeling Cl2 Formation from
+  (12) Horne, G. P.; Rotermund, B. M.; Grimes, T. S.; et al. Transient            Aqueous NaCl Particles: Evidence for Interfacial Reactions and
+Radiation-Induced Berkelium(III) and Californium(III) Redox                       Importance of Cl2 Decomposition in Alkaline Solutions. J. Geophys.
+Chemistry in Aqueous Solution. Inorg. Chem. 2022, 61 (28),                        Res.: Atmos. 2002, 107 (D18), ACH 8-1−ACH 8-30, DOI: 10.1029/
+10822−10832.                                                                      2001JD000867. ACH
+  (13) Malý, J. The Amalgamation Behavior of Heavy Elements 1.                    (32) Jayson, G. G.; Parsons, B. J.; Swallow, A. J. Some Simple,
+Observation of Anomalous Preference in Formation of Amalgams of                   Highly Reactive, Inorganic Chlorine Derivatives in Aqueous Solution.
+Californium, Einsteinium, and Fermium. Inorg. Nucl. Chem. Lett.                   Their Formation Using Pulses of Radiation and their Role in the
+1967, 3 (9), 373−381.                                                             Mechanism of the Fricke Dosimeter. J. Chem. Soc., Faraday Trans. 1
+  (14) Mikheev, N. B.; Spitsyn, V. I.; Kamenskaya, A. N.; Gvozdev, B.             1973, 69, 1597−1607, DOI: 10.1039/f19736901597.
+A.; Druin, V. A.; Rumer, I. A.; Ryachkova, R. A.; Rozenkevitch, N. A.;             (33) Nagarajan, V.; Fessenden, R. W. Flash Photolysis of Transient
+Auerman, L. N. Reduction of Fermium to Divalent State in Chloride                 Radicals. 1. X2− with X = Cl, Br, I, and SCN. J. Phys. Chem. A 1985,
+Aqueous Ethanolic Solutions. Inorg. Nucl. Chem. Lett. 1972, 8 (11),               89, 2330−2335, DOI: 10.1021/j100257a037.
+929−936.                                                                           (34) Klaning, U. K.; Wolff, T. Laser Flash Photolysis of HClO,
+  (15) Hulet, E. K.; Lougheed, R. W.; Baisden, P. A.; Landrum, J. H.;             ClO−, HBrO, and BrO− in Aqueous Solution. Reactions of Cl− and
+Wild, J. F.; Lundqvist, R. F. D. Non-Observance of Monovalent Md. J.              Br− Atoms. Ben. Bunsenges. Phys. Chem. 1985, 89, 243−245,
+Inorg. Nucl. Chem. 1979, 41 (12), 1743−1747.
+                                                                                  DOI: 10.1002/bbpc.19850890309.
+  (16) Fujita, D. K. Some Magnetic, Spectroscopic, and Crystallographic            (35) Ferraudi, G. Magnetic field effects on the rates of Cl2− and Br2−
+Properties of Berkelium, Californium, and Einsteinium; University of
+                                                                                  reactions: The dependence of the rates of radical disproportionation
+California Berkeley, Lawrence Radiation Laboratory: Berkeley, CA,
+                                                                                  and oxidation of Mn(II) complexes on field intensity. J. Phys. Chem. A
+UCRL-19507, 1969.
+  (17) Carnall, W. T.; Fried, S.; Wagner, F., Jr. Absorption Spectrum             1993, 97, 2793−2797.
+of CfCl3. J. Chem. Phys. 1973, 58 (5), 1938−1949.                                  (36) McElroy, W. J. A laser photolysis study of the reaction of SO4−
+  (18) Carnall, W. T. Crystal Field Analysis of a LaCl3:Am3+ and                  with Cl− and the subsequent decay of Cl2− in aqueous solution. J.
+AmCl3 and its relationship to the spectra of frozen solutions of Am3+             Phys. Chem. A 1990, 94, 2435−2441.
+(aquo). J. Less-Common Met. 1989, 156 (1−2), 221−235,                              (37) Huie, R. E.; Clifton, C. L. Temperature dependence of the rate
+DOI: 10.1016/0022-5088(89)90421-9.                                                constants for reactions of the sulfate radical, SO4−, with anions. J.
+  (19) Carnall, W. T.; Fields, P. R. A study of the Complexes of                  Phys. Chem. A 1990, 94, 8561−8567.
+Curium(III) by Absorption Spectrometry. J. Am. Chem. Soc. 1959, 81                 (38) Hynes, A. J.; Wine, P. H. Time-resolved resonance Raman
+(17), 4445−4449.                                                                  study of the spectroscopy and kinetics of the Cl2− radical anion in
+  (20) Gruen, D. M.; DeKock, C. W. Electronic Absorption Spectra of               aqueous solution. J. Chem. Phys. 1988, 89, 3565−3572.
+Gaseous PuCl3, PuBr3, and PuCl4: The Thermodynamics of PuCl4. J.                   (39) Lierse, C.; Sullivan, J. C.; Schmidt, K. H. Rates of oxidation of
+Inorg. Nucl. Chem. 1967, 29 (10), 2569−2575.                                      selected actinides by Cl2−. Inorg. Chem. 1987, 26, 1408−1410.
+  (21) Cross, J. N.; Su, J.; Batista, E. R.; et al. Covalency in                   (40) Gogolev, A. V.; Makarov, I. E.; Pikaev, A. K. Pulsed radiolysis of
+Americium(III) Hexachloride. J. Am. Chem. Soc. 2017, 139 (25),                    concentrated hydrochloric acid. High Energy Chem. 1984, 18, 390−
+8667−8677.                                                                        395.
+  (22) Galley, S. S.; Sperling, J. M.; Windorff, C. J.; Zeller, M.;                (41) Navaratnam, S.; Parsons, B. J.; Swallow, A. J. Some reactions of
+Albrecht-Schmitt, T. E.; Bart, S. C. Conversion of Americia to                    the dichloride anion radical. Radiat. Phys. Chem. 1980, 15, 159−161.
+
+                                                                            596                                            https://doi.org/10.1021/acs.jpca.3c07404
+                                                                                                                               J. Phys. Chem. A 2024, 128, 590−598
+The Journal of Physical Chemistry A                                                       pubs.acs.org/JPCA                                                Article
+
+  (42) Zansokhova, A. A.; Kabakchi, S. A.; Pikaev, A. K. Mechanism of                Formation of Sulfate Complexes in NaCl/Na2SO4 Solutions.
+Cl2− formation in the pulse radiolysis of neutral aqueous solutions of               Radiochim. Acta 1996, 74, 99−103.
+alkali metal chlorides. High Energy Chem. 1977, 11, 50−54.                             (62) Asmus, K.-D. Sulfur-centered free radicals. Methods Enzymol.
+  (43) Broszkiewicz, R. K. On the effect of Br− on formation of Cl2− in              1990, 186, 168−180.
+the pulse radiolysis of the aqueous chloride solutions. Bull. Acad. Pol.               (63) Eberson, L. Electron-Transfer Reactions in Organic Chemistry.
+Sci., Ser. Sci., Chim. 1976, 24, 123−131.                                            Adv. Phys. Org. Chem. 1982, 18, 79−185.
+  (44) Woods, R. J.; Lesigne, B.; Gilles, L.; Ferradini, C.; Pucheault, J.             (64) Buxton, G. V.; Greenstock, C. L.; Helman, W. P.; Ross, A. B.
+Pulse radiolysis of aqueous lithium chloride solutions. J. Phys. Chem. A             Critical review of rate constants for reactions of hydrated electrons,
+1975, 79, 2700−2704.                                                                 hydrogen atoms and hydroxyl radicals (•OH/•O−) in aqueous
+  (45) Zhestkova, T. P.; Pikaev, A. K. Destruction rate of Cl2− anion-               solution. J. Phys. Chem. Ref. Data 1988, 17, 513−886.
+radicals during pulse radiolysis of concentrated aqueous lithium                       (65) Jiang, P. Y.; Katsumura, Y.; Nagaishi, R.; Domae, M.; Ishikawa,
+chloride solutions. Bull. Acad. Sci. USSR, Div. Chem. Sci. 1974, 23,                 K.; Ishigure, K.; Yoshida, Y. Pulse Radiolysis Study of Concentrated
+877−878, DOI: 10.1007/BF00923527.                                                    Sulfuric Acid Solutions. Formation Mechanisms, Yield and Reactivity
+  (46) Broszkiewicz, R. K. Pulse radiolysis studies on chloro-                       of Sulfate Radicals. J. Chem. Soc., Faraday Trans. 1992, 88 (12),
+complexes of palladium. Int. J. Radiat. Phys. Chem. 1974, 6, 249−258.                1653−1658.
+  (47) Thornton, A. T.; Laurence, G. S. Kinetics of oxidation of                       (66) Tang, Y.; Thorn, R. P.; Mauldin, R. L., III; Wine, P. H. Kinetics
+transition-metal ions by halogen radical anions. I. The oxidation of                 and Spectroscopy of the SO4− Radical in Aqueous Solution. J.
+iron(II) by dibromide and dichloride ions generated by flash                         Photochem. Photobiol. A:Chem. 1988, 44 (3), 243−258.
+photolysis. J. Chem. Soc., Dalton Trans. 1973, 804−813,                                (67) Herrmann, H.; Reese, A.; Zellner, R. Time-resolved UV/VIS
+DOI: 10.1039/dt9730000804.                                                           Diode Array Absorption Spectroscopy of SOx− (X = 3, 4, 5) Radical
+  (48) Patterson, L. K.; Bansal, K. M.; Bogan, G.; Infante, G. A.;                   Anions in Aqueous Solution. J. Mol. Struct. 1995, 348, 183−186.
+Fendler, E. J.; Fendler, J. H. Micellar effects on Cl2•− reactivity.                   (68) Huie, R. E.; Clifton, C. L. Kinetics of the Self-Reaction of
+Reactions with surfactants and pyrimidines. J. Am. Chem. Soc. 1972,                  Hydroxymethylperoxyl Radicals. Chem. Phys. Lett. 1993, 205 (2−3),
+94, 9028−9032.                                                                       163−167.
+  (49) Ward, J. F.; Kuo, I. Steady state and pulse radiolysis of aqueous               (69) McElroy, W. J.; Waygood, S. J. Kinetics of the Reactions of the
+chloride solutions of nucleic acid components. Radiat. Chem. 1968,                   SO4− Radical with S2O82−, H2O, and Fe2+. J. Chem. Soc., Faraday
+81, 368−373, DOI: 10.1021/ba-1968-0081.ch025.                                        Trans. 1990, 86 (14), 2557−2564, DOI: 10.1039/ft9908602557.
+  (50) Langmuir, M. E.; Hayon, E. Flash photolysis study of                            (70) Huie, R. E.; Clifton, C. L.; Altstein, N. A Pulse Radiolysis and
+mercury(II) halide complexes in aqueous solution. Rates of reaction                  Flash Photolysis Study of the Radicals SO2−, SO3−, SO4−, and SO5−.
+of X2− radical anions. J. Phys. Chem. A 1967, 71, 3808−3814.
+                                                                                     Int. J. Radiat. Appl. Instrum. Part C. Radiat. Chem. Phys. 1989, 33 (4),
+  (51) Lei, Y.; Lei, X.; Westerhoff, P.; Zhang, X.; Yang, X. Reactivity of
+                                                                                     361−370, DOI: 10.1016/1359-0197(89)90034-9.
+Chlorine Radicals (Cl• and Cl2•−) with Dissolved Organic Matter and
+                                                                                       (71) Sadiq, S.; Kauser, Z. Flash Photolysis Decomposition of
+the Formation of Chlorinated Byproducts. Environ. Sci. Technol. 2021,
+                                                                                     Sulphate and Sulphite Anions in Aqueous Solutions. Rev. Roum. Chim.
+55 (1), 689−699, DOI: 10.1021/acs.est.0c05596.
+                                                                                     1978, 23, 1129−1137.
+  (52) Abou-Jaoude, A.; Walker, S.; Bhaskar, S.; Ji, W. Feasibility
+                                                                                       (72) Lesigne, B.; Ferradini, C.; Pucheault, J. Pulse Radiolysis Study
+assessment of a natural-circulation salt irradiation loop in the
+                                                                                     of the Direct Effect on Sulfuric Acid. J. Phys. Chem. A 1973, 77 (17),
+advanced test reactor. Nucl. Technol. 2021, 207 (12), 1821−1841.
+  (53) Wester, D. W.; Mulak, J.; Banks, R.; Carnall, W. T. The                       2156−2158.
+                                                                                       (73) Hayon, E.; McGarvey, J. J. Flash Photolysis in the Vacuum
+Synthesis and Characterization of Neptunium Hydroxysulfate,
+Np(OH)2SO4. J. Solid State Chem. 1982, 45 (2), 235−240.                              Ultraviolet Region of Sulfate, Carbonate, Hydroxyl Ions in Aqueous
+  (54) Fedosseev, A. M.; Budantseva, N. A.; Grigoriev, M. S.;                        Solutions. J. Phys. Chem. A 1967, 71 (5), 1472−1477.
+Bessonov, A. A.; Astafurova, L. N.; Lapitskaya, T. S.; Krupa, J. C.                    (74) Dogliotti, L.; Hayon, E. Flash Photolysis of Persulfate Ions in
+Sulfate Compounds of Hexavalent Neptunium and Plutonium.                             Aqueous Solutions. Study of the Sulfate and Ozonide Radical Anions.
+Radiochim. Acta 1999, 86, 17−22.                                                     J. Phys. Chem. A 1967, 71 (8), 2511−2516.
+  (55) Wester, D. W. Synthesis and characterization of bis (. mu.-                     (75) Conway, J. G.; Fried, S.; Latimer, R. M.; McLaughlin, R.;
+hydroxo) tetraaquadiplutonium (IV) sulfate,                                          Gutmacher, R. G.; Carnall, W. T.; Fields, P. The Solution Absorption
+Pu2(OH)2(SO4)3•4H2O, a novel compound containing hydrolyzed                          Spectrum of Cf3+. J. Inorg. Nucl. Chem. 1966, 28, 3064−3066.
+plutonium (IV). Inorg. Chem. 1982, 21 (9), 3382−3385,                                  (76) Bard, A. J.; Parsons, R.; Jordan, J. Standard Potentials in Aqueous
+DOI: 10.1021/ic00139a022.                                                            Solution; Marcel Dekker Inc: New York, 1985.
+  (56) Uneo, K.; Hoshi, M. The Precipitation of some Actinide                          (77) Padmaja, S.; Neta, P.; Huie, R. E. Rate constants for some
+Element Complex Ions by using Hexammine Cobalt(III) Cation − III                     reactions of inorganic radicals with inorganic ions. Temperature and
+J. Inorg. Nucl. Chem. 1971; Vol. 33, pp 2631−2633.                                   solvent dependence. Int. J. Chem. Kinet. 1993, 25, 445−455.
+  (57) Burns, J. H.; Baybarz, R. D. Crystal Structure of Americium                     (78) Buxton, G. V.; Salmon, G. A.; Wood, N. D. A pulse radiolysis
+Sulfate Octahydrate. Inorg. Chem. 1972, 11 (9), 2233−2237.                           study of the chemistry of oxysulfur radicals in aqueous solution. In
+  (58) Cross, J. N.; Villa, E. M.; Darling, V. R.; Polinski, M. J.; Lin, J.;         Proc. 5th Eur. Symp. Phys.-Chem. Behav. Atmos. Pollut.; Restelli, G.;
+Tan, X.; Kikugawa, N.; Shatruk, M.; Baumbach, R.; Albrecht-Schmitt,                  Angeletti, G., Eds.; Kluwer: Dordrecht, The Netherlands, 1989; pp
+T. E. Straightforward Reduction Routes to Air-Stable Uranium(III)                    245−250.
+and Neptunium(III) Materials. Inorg. Chem. 2014, 53 (14), 7455−                        (79) Wishart, J. F.; Cook, A. R.; Miller, J. R. The LEAF Picosecond
+7466.                                                                                Pulse Radiolysis Facility at Brookhaven National Laboratory. Rev. Sci.
+  (59) Rastsvetaeva, R. K.; Barinova, A. V.; Budantseva, N. A.;                      Instrum. 2004, 75 (11), 4359−4366.
+Fedoseev, A. M. Model of the Crystal Structure of Np(IV) Sulfate                       (80) Cook, A. R.; Bird, M. J.; Asaoka, S.; Miller, J. R. Rapid “Step
+with Dimethyl Sulfoxide, NpO2SO4•2SO(CH3)2•H2O. Crystallogr.                         Capture” of Holes in Chloroform during Pulse Radiolysis. J. Phys.
+Rep. 2000, 45 (3), 395−397.                                                          Chem. A 2013, 117 (33), 7712−7720.
+  (60) Hennig, C.; Ikeda-Ohno, A.; Tsushima, S.; Scheinost, A. C. The                  (81) Espenson, J. H. Chemical Kinetics and Reaction Mechanisms;
+Sulfate Coordination of Np(IV), Np(V), and Np(VI) in Aqueous                         McGraw-Hill: New York, 1981.
+Solution. Inorg. Chem. 2009, 48 (12), 5350−5360.                                       (82) Manov, G. G.; Bates, R. G.; Hamer, W. J.; Acree, S. F. Values in
+  (61) Paviet, P.; Fanghänel, T.; Klenze, R.; Kim, J. I. Thermody-                   the Constants in the Debye-Hückel Equation for Activity Coefficients.
+namics of Curium(III) in Concentrated Electrolyte Solutions:                         J. Am. Chem. Soc. 1943, 65, 1765−1767.
+
+                                                                               597                                             https://doi.org/10.1021/acs.jpca.3c07404
+                                                                                                                                   J. Phys. Chem. A 2024, 128, 590−598
+The Journal of Physical Chemistry A                                            pubs.acs.org/JPCA                               Article
+
+ (83) Capellos, C.; Bielski, B. H. J. Kinetic Systems: Mathematical
+Description of Chemical Kinetics in Solution; Wiley-Interscience: New
+York, 1972.
+ (84) Clarke, K.; Edge, R.; Land, E. J.; Navaratnam, S.; Truscott, T.
+G. The sulfate radical is not involved in aqueous radiation oxidation
+processes. Radiat. Phys. Chem. 2008, 77, 49−52.
+ (85) Jiang, P. Y.; Katsumura, Y.; Ishigure, K.; Yoshida, Y. Reduction
+Potential of the Nitrate Radical in Aqueous Solution. Inorg. Chem.
+1992, 31, 5135−5136.
+ (86) Horne, G. P.; Grimes, T. S.; Zalupski, P. R.; Meeker, D. S.;
+Albrecht-Schönzart, T. E.; Cook, A. R.; Mezyk, S. P. Curium(III)
+radiation-induced reaction kinetics in aqueous media. Dalton Trans.
+2021, 50 (31), 10853−10859.
+ (87) Hug, G. L. Optical Spectra of Nonmetallic Inorganic Transient
+Species in Aqueous Solution. U.S. Department of Commerce/National
+Bureau of Standards, NSRDS-NBS 69 1981.
+
+
+
+
+                                                                         598                       https://doi.org/10.1021/acs.jpca.3c07404
+                                                                                                       J. Phys. Chem. A 2024, 128, 590−598
+

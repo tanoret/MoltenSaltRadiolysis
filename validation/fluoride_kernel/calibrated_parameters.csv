@@ -1,0 +1,8 @@
+parameter,value,units,source
+A_rec,252.85926019197512,1/h,calibrated from Toth/Felker balance
+Ea_rec_J_mol,39000.0,J/mol,Toth/Felker 1990
+Ea_rec_kJ_mol,39.0,kJ/mol,Toth/Felker 1990
+T_balance_K,423.15,K,Toth/Felker 1990
+T_balance_C,150.0,C,Toth/Felker 1990
+balance_rate_at_40C_Pa_per_h,3.8,Pa/h,Toth/Felker 1990
+reference_pressure_Pa,1000.0,Pa,anchor

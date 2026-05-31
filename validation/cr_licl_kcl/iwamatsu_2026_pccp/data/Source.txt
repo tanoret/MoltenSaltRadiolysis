@@ -1,0 +1,8 @@
+Absorbance data was taken from 
+
+Iwamatsu, Kazuhiro and Horne, Gregory P. and Ramos-Ballesteros, Alejandro and Castro Baldivieso, Stephanie and Conrad, Jacy K. and Woods, Michael E. and Phillips, William C. and LaVerne, Jay A. and Pimblott, Simon M. and Wishart, James F., 
+Kinetics of radiation-induced Cr(ii) and Cr(iii) redox chemistry in molten LiCl–KCl eutectic,
+Phys. Chem. Chem. Phys., 2026, 28, 3, 2061-2071, The Royal Society of Chemistry, 10.1039/D4CP04190A,
+http://dx.doi.org/10.1039/D4CP04190A
+
+Figures 2 and 3 utilizing WebPlotDigitizer

@@ -1,0 +1,14 @@
+# Hagiwara, Sawai, Sumiyoshi, Katayama 1987, Radiat. Phys. Chem. 30(2), 141-144.
+# No DOI; reference: ISSN 0146-5724/87, Pergamon Journals Ltd.
+# Source: validation/papers/1-s2.0-135901978790097X-main.pdf
+# Lifetimes of transient species in LiCl-KCl eutectic.
+# Only one explicit lifetime is given in the text:
+#   Section 2: "the life time was about 250 ns" for the species around 700 nm (e_s-)
+#   in the eutectic at 400 C. Fig. 1 confirms that the visible band has effectively
+#   decayed by 1 microsecond after the pulse while the u.v. band persists.
+# No quantitative Cl2- lifetime is given; the second-order decay extends to ~7 microseconds
+# in Fig. 3 trace (b) at 400 C. The "lifetime" listed for Cl2- below is therefore the
+# qualitative observation window for the trace, not a measured 1/e or half-life.
+species,T_K,T_C,tau_seconds,tau_units,medium,source,notes
+e_s-,673.15,400,2.5e-7,s,LiCl-KCl eutectic (42 mol% KCl),Section 2 + Fig. 2,"about 250 ns" stated in text; consistent with first-order k1=4.5e6 s^-1 giving 1/k = 222 ns
+Cl2-,673.15,400,,s,LiCl-KCl eutectic (42 mol% KCl),Section 2 + Fig. 3,no explicit lifetime; second-order decay observed over ~1-7 microseconds in Fig. 3; only 2k/(eps*l) reported

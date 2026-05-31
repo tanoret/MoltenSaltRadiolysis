@@ -1,0 +1,33 @@
+# Pikaev, Makarov, Zhukova 1982, Radiat. Phys. Chem. 19(5), 377-387.
+# DOI: 10.1016/0146-5724(82)90005-X
+# Source: validation/papers/1-s2.0-014657248290005X-main.pdf, Table 3 (p. 384).
+# Parameters of optical absorption spectra of X2- (Cl2-, Br2-, I2-) in
+# melts of alkaline halides; aqueous-solution values included for comparison.
+# Conventions (Table 3 footnotes):
+#   * Mixture compositions are in mole percent.
+#   * eps_I and eps_II are molar extinction coefficients at the maxima of
+#     the main (short-wavelength) and second (long-wavelength) bands.
+#   * W_1/2 for Br2- and I2- is reported for the MAIN band.
+#   * W_1/2 cannot be calculated for I2- in melts due to band overlap (footnote e).
+# Lambda for Br2- and I2-: "lambda_main_nm" = main (short-wave) band;
+#                        "lambda_second_nm" = second (long-wave) band.
+# For Cl2- only one band is observed (short-wave); lambda_second_nm is empty.
+# All concentrations of the parent halide additive: 1e-3 mol dm^-3 X-.
+# T converted from degC to K (T_K = T_degC + 273.15).
+X2_minus_species,system,T_degC,T_K,lambda_main_nm,lambda_second_nm,W_halfwidth_eV,eps_ratio_II_over_I,source_table,notes
+Cl2-,H2O,25,298.15,340,,0.93,,Table 3,aqueous reference (Refs. 15-16)
+Cl2-,LiCl,700,973.15,360,,1.1,,Table 3,
+Cl2-,NaCl,850,1123.15,365,,1.2,,Table 3,
+Cl2-,KCl,800,1073.15,360,,1.25,,Table 3,
+Cl2-,RbCl,750,1023.15,370,,1.3,,Table 3,
+Cl2-,CsCl,700,973.15,370,,1.4,,Table 3,
+Cl2-,66% CsCl + 34% NaCl,800,1073.15,360,,1.3,,Table 3,mole percent mixture
+Br2-,H2O,25,298.15,360,700,0.93,0.041,Table 3,aqueous reference; W_1/2 for main band (footnote d)
+Br2-,LiBr,600,873.15,400,725,1.15,0.2,Table 3,
+Br2-,NaBr,760,1033.15,420,725,1.15,0.2,Table 3,
+Br2-,KBr,800,1073.15,420,750,1.3,0.2,Table 3,
+Br2-,40% KBr + 60% LiBr,700,973.15,400,725,1.2,0.2,Table 3,mole percent mixture
+Br2-,40% KBr + 60% LiBr,850,1123.15,420,750,1.2,0.2,Table 3,mole percent mixture
+Br2-,CsBr,680,953.15,410,750,1.2,0.2,Table 3,
+I2-,H2O,25,298.15,375,725,0.8,0.27,Table 3,aqueous reference
+I2-,KI,700,973.15,450,750,,0.5,Table 3,W_1/2 not calculable (footnote e); two-band overlap

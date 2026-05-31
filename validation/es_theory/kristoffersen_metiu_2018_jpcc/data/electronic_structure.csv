@@ -1,0 +1,20 @@
+# Kristoffersen, H. H.; Metiu, H. J. Phys. Chem. C 2018, 122, 19603-19612.
+# DOI: 10.1021/acs.jpcc.8b05716
+# Electronic-structure quantities for the bipolaron (two-electron species)
+# in three molten salt films.
+# IE = ionization energy = energy to remove one electron from the melt to infinity,
+#      averaged over ~16 configurations spaced 1 ps apart along the AIMD trajectory.
+#      For each snapshot the lower of the two vacuum-side work functions is used.
+# Source: Table 2 of the paper; Figure 2a (HOMO orbital fluctuations).
+# Bipolaron isosurface drawn at |psi_HOMO(+)|^2 + |psi_HOMO(-)|^2 = 0.02 Ang^-3 in Figs 2b, 3b.
+# No quantitative localization radius or IPR is reported in the paper; the only quantitative
+# spatial descriptor is the qualitative statement that the bipolaron occupies 'a single cavity'
+# surrounded by ~6-8 alkali cations.
+# Comparison: IE of Li metal = 2.9 eV (ref 48, Michaelson 1977).
+composition,T_K,IE_eV,IE_stdev_eV,HOMO_stdev_eV,HOMO_total_range_eV,bipolaron_isosurface_Ang_minus3,localization_radius_ang,IPR,bandgap_eV,notes
+45LiCl,900,3.03,0.54,0.36,~1.0,0.02,,,,Highest IE of three melts; correlates with smaller Li+ radius
+29LiCl-16NaCl,900,2.77,0.40,,,0.02,,,,Lowest IE (surprising); bipolaron lies near melt surface
+45NaCl,1100,2.89,0.44,,,0.02,,,,Bipolaron occasionally splits into two solvated electrons (Fig S3c)
+# Notes: DFT band gap of pure molten alkali chloride is reported only qualitatively
+# ('the band gap provided by DFT is too small') with no numerical value.
+# Localization radius / IPR are not tabulated numerically in the main text or Table 2.

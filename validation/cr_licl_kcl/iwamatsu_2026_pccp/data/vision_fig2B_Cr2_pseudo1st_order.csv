@@ -1,0 +1,29 @@
+# Vision-extracted pseudo-first-order rate observations from Fig. 2B of Iwamatsu et al. PCCP 2026.
+# Reaction: e_s- + Cr2+ -> Cr+ (Eq. 5).
+# Extracted by visual inspection of the rendered 400 dpi PDF page; estimated precision ~5-10%
+# vs. the underlying experimental uncertainty (paper states "errors smaller than the symbols",
+# i.e. ~few percent). For Bayesian inference where measurement uncertainty matters, prefer
+# k_vs_T_from_arrhenius.csv (computed from the published density-corrected A and Ea).
+#
+# Units: T in C, [Cr2+] in mM (mol/L), k_obs in 10^8 s^-1.
+T_C,Cr2_mM,k_obs_1e8_per_s,extraction_method
+400,1.0,0.43,vision-fig2B
+400,2.0,0.86,vision-fig2B
+400,3.0,1.29,vision-fig2B
+400,4.0,1.71,vision-fig2B
+450,1.0,0.65,vision-fig2B
+450,2.0,1.29,vision-fig2B
+450,3.0,1.94,vision-fig2B
+450,4.0,2.59,vision-fig2B
+500,1.0,0.93,vision-fig2B
+500,2.0,1.85,vision-fig2B
+500,3.0,2.78,vision-fig2B
+500,4.0,3.71,vision-fig2B
+550,1.0,1.27,vision-fig2B
+550,2.0,2.55,vision-fig2B
+550,3.0,3.82,vision-fig2B
+550,4.0,5.09,vision-fig2B
+600,1.0,1.68,vision-fig2B
+600,2.0,3.37,vision-fig2B
+600,3.0,5.05,vision-fig2B
+600,4.0,6.73,vision-fig2B

@@ -1,0 +1,569 @@
+      Radiation Eﬀects and Defects in Solids
+
+
+
+
+      ISSN: 1042-0150 (Print) 1029-4953 (Online) Journal homepage: www.tandfonline.com/journals/grad20
+
+
+
+
+Fluorine generation by gamma radiolysis of a
+ﬂuoride salt mixture
+
+L. M. Toth & L. K. Felker
+
+To cite this article: L. M. Toth & L. K. Felker (1990) Fluorine generation by gamma radiolysis
+of a ﬂuoride salt mixture, Radiation Eﬀects and Defects in Solids, 112:4, 201-210, DOI:
+10.1080/10420159008213046
+
+To link to this article: https://doi.org/10.1080/10420159008213046
+
+
+
+
+       Published online: 13 Sep 2006.
+
+
+
+       Submit your article to this journal
+
+
+
+       Article views: 148
+
+
+
+       View related articles
+
+
+
+       Citing articles: 2 View citing articles
+
+
+
+
+                      Full Terms & Conditions of access and use can be found at
+             https://www.tandfonline.com/action/journalInformation?journalCode=grad20
+Kudiution EfJPcaond1)efects inSoiids, l990,Vol. 112, pp. 2(11-210         0 1990 Gordon and Breach, Science Puhlishers, Inc.
+Reprints available directly from the publisher                                                     Printed in Great Britain
+Photocopying permitted by license only
+
+
+
+
+       FLUORINE GENERATION BY GAMMA
+    RADIOLYSIS OF A FLUORIDE SALT MIXTURE
+                                       L. M. TOTH and L. K. FELKER
+  Chemical Technology Division, Oak Ridge National Laboratory, I? 0. Box 2008,
+                      Oak Ridge, Tennessee 3783I-6268
+
+                                 (Received July 3, 1989; in final form August 11, 1989)
+
+Fluoride salt mixtures of composition, LiF-BeF,-ZrF,-UF, (64.5,30.3,5.0,0.13 mol%) were irradiated
+using 1O7-1OX R/h gamma radiation to achieve high doses. Under these conditions, F2 is released from the
+salt and accumulates as an F, overpressure until a 2 mol% damage limit in the crystal is reached. At this
+point, the rate of F, generation is equivalent to the rate of recombination with active metal sites
+accompanying the radiolytic damage in the salt. The activation energy for the rate of recombination has
+been found to he 39 kJ/mol; and for the conditions of irradiation used here, no F2 should he released
+above 150°C.
+
+
+1 INTRODUCTION
+
+Much interest has been directed in the past to the radiolysis of halide salts, but
+most of this attention has been focused on the nature of the defect sites produced
+in the crystal           The radiolysis has been extended to the point where micro
+bubbles of the halogen gas were observed within the lattice under some conditions
+of radiation exposure:.3 and the concern again centered on the nature of the
+crystalline material as a result of the radiolysis. These generation reactions can be
+simply expressed as:
+
+LiF+ hv- Li' + F',                                                                                                      (1)
+
+F' + F'- F,,                                                                                                            (2)
+where hv is the gamma photon in this case, Li' is a metal site accompanying the
+generation of F' atoms. Although recombination of Li' and F' to form LiF is
+possible, some F' atoms can diffuse and combine via Eq. (2) to form the diatomic
+halogen gas [other metal fluorides present in the salt mixture are expected to
+behave similarly to LiF as in Eq. (l)].As the halogen gas either accumulates within
+the lattice or escapes to the confinement of a containment vessel, active metal sites
+accumulate to the point that the back reaction? of F' or F2 with the metal site is
+equivalent to that of the generation steps of Eqs. (1)and (2). At this point, no
+further radiation damage (as noted by chemical products) is apparent.
+  In spite of all this interest in the behavior of the solid state materials during
+radiolysis, there is little information regarding the extent of the radiolytic damage
+under extreme conditions: namely, the amount of gaseous products produced and
+the extent to which any limits of crystal damage are reached for given amounts of
+radiation.
+
+   tThese hack reaction mechanisms shall he referred to, collectively, as the fluorine recombination
+reaction with the salt.
+
+                                                                    201
+202                        L. M. TOTH AND L. K. FELKER
+
+   More recently, some concern has been expressedh regarding the long-term
+storage of fluoride salts contaminated with radioactivity, since these materials
+might, through radiolysis, generate enough gas pressure to compromise the
+containment system. Of particular interest, is the frozen fuel salt from the Molten
+Salt Reactor Experiment (MSRE). The composition7 of this salt was originally
+LiF-BeF,-ZrF,-UF,        (64.5, 30.3, 5.0, 0.13 mol%); but after being used as the
+MSRE fuel, it now has considerable amounts of other actinides and fission
+products which can cause radiolysis of the salt and accompanying release of F, gas.
+   Previous investigators' sought to determine the amount of F2 released upon
+radiolysis in the MSRE fuel salt. It was shown that F2 is generated below 150°C;
+but, at that temperature, the rate of F2 recombination with the active metal sites left
+in the crystal lattice became equivalent to its rate of generation so that no release of
+F2from the salt mixture was observed. (Net radiolysis of the fuel salt during reactor
+operations never occurred because the temperature of operation was 2 5 50°C and
+the recombination rate vastly exceeded the F, generation rate.) However, these
+investigations never explored the question of a limit to the amount of fluorine that
+would be released under extended conditions since concerns for the long-term
+storage of the fuel salts had not yet developed.
+   The current study attempted to address the questions related to long-term
+storage and sought to determine, at least in a qualitative manner, if there was a limit
+to the amount of radiation damage that would be sustained for a given dose.
+Admittedly, the practical concern in a long-term storage facility is the effect of a
+large dose extended over a very long period of time, i.e., at a relatively low dose
+rate. Nevertheless, to achieve any information in a practical period of time, it was
+necessary to compress the time scale and increase the dose rate. For this reason, we
+sought a very high dose source in order to answer the question of limiting pressures
+of F, generated. Before this work could be completed, the sourcey was shut down
+for an indefinite period of time leaving the data at a state where more experiments
+were clearly desirable. Because these data are unique, we believe their presentation
+at this stage is warranted.
+
+
+
+2 EXPERIMENTAL PROCEDURE
+
+2.1 Materials
+The lithium fluoride used in this series of experiments was obtained from Harshaw
+Chemical Company as single crystal fragments. The zirconium fluoride and
+uranium fluoride were from Oak Ridge National Laboratory (ORNL) stock
+material remaining from the MSRE program. The beryllium fluoride, hydrogen
+fluoride, and fluorine were obtained from Alfa Products, Linde Specialty Gases,
+and Air Products, respectively. The graphite used in this work was POCO EDM-3.
+   All materials of construction were resistant to attack by both hydrogen fluoride
+and fluorine. Nickel vessels and tubing and monel valves, fittings, and gauges were
+used where possible. A gas manifold was constructed of resistant materials for use
+in handling corrosive and toxic gases during sample preparation.
+   A controlled atmosphere glove box was used for storage and handling of salt
+mixtures. A helium atmosphere was circulated through molecular sieves (13X
+Linde) to maintain a moisture content of < 10 ppm in the glove box.
+                   GAMMA RADIOLYSIS OF A F, SALT MIXTURE                         203
+
+2.2 Methods
+2.2.1 Fluoride salt preparation Two fluoride salt mixtures (200g each) were
+prepared for irradiation. Their composition was identical to that of the MSRE fuel
+salt mixture7 either with or without the uranium fluoride component. The first
+mixture contained lithium fluoride, beryllium fluoride, and zirconium fluoride
+(64.6, 30.4, 5.0 mol%); the second contained lithium fluoride, beryllium fluoride,
+zirconium fluoride, and uranium fluoride (64.5, 30.3, 5.0, 0.13 molo/o). Each
+mixture was weighed into a graphite tube (4.5 cm diam X 15 cm) and loaded into a
+flanged nickel vessel in a vertical tube furnace.
+   A Ti-sponge-purified (at 600°C) helium purge was used to sweep the vessel and
+associated lines while the furnace temperature was increased to 550”C, thus
+melting the mixture. This is approximately 100°C above the liquidus point of the
+salt mixture.’ A graphite dip leg was inserted into the melt and hydrogen fluoride
+was added to the helium carrier and bubbled (or “sparged”)through the molten salt
+mixture.
+   This hydrofluorination process removed traces of moisture and converted any
+oxide to fluoride. The graphite components were used in contact with the fluoride
+melt to prevent corrosion and dissolution of the metal pot into the fluoride salt
+melt. The hydrogen fluoride flow rate was determined by titration of the exit gas
+with standardized NaOH solution. The first salt mixture was hydrofluorinated for
+8 h with an average flow rate of 32 mVmin hydrogen fluoride. The second salt
+                                   -
+mixture was hydrofluorinated for 20 h with an average hydrogen fluoride rate of
+30 mL‘min. Since the appearance of the first sample indicated that some oxide may
+still be present after hydrofluorination, the time of hydrofluorination was increased
+for the second sample. (Previous experience has established that this amount of
+sparging is ordinarily effective in reducing the oxide content of the salt to
+ <1 PP4.
+   After hydrofluorination, both salt mixtures were sparged with helium (while still
+molten) to free the salt of dissolved €-IFand were then allowed to solidify. The
+entire vessel assembly was put into the controlled atmosphere glove box where the
+solidified salt plugs were removed, scraped of surface graphite film that migrates to
+the salt interface and stored for irradiation. It is important to remove all graphite
+from the salt in order to be certain that no graphite/fluorine reactions occur unless
+intended.
+2.2.2 Fluoride salt irradiations The pulverized fluoride salts were irradiated at
+the High Flux Isotope Reactor (€€FIR) at ORNL. The spent fuel elements which
+are stored in the reactor pool contain a sufficient gamma flux for irradiation of the
+salt samples in a reasonable time period. The gamma flux of the elements varies in
+the range of 1.0 x lo8 to < 1.0 X lo7R/h (depending on the age of the element) and
+has a reasonably uniform intensity profile within the middle 50cm of the fuel
+element length.’O The storage racks for the elements contain a lOcm cadmium
+sleeve through the center hole of each element to act as a neutron absorber. One
+concern with using the spent fuel elements was that the heat generated by
+absorption of radiation from the gamma source might produce too high a
+temperature in the sample. Prior to the irradiation experiments, a lead weight with
+two thermocouples embedded was used to measure the temperature of a spent fuel
+element over a 15 day period beginning with a 3-day-old spent fuel element. The
+temperature due to gamma heating dropped from 58 to 41°C over this period but
+appeared to level somewhat after 15 days in the range 41 to 38°C. The spent fuel
+204                          L. M. TOTH AND L. K. FELKER
+
+elements were generally used within this 45-day period after being removed from
+the reactor, and the temperatures in this range were judged to be acceptable.
+   A nickel vessel with a conflat flange top and soft-copper gasket seal was
+fabricated for use as an irradiation vessel (Figure 1). The vessel, associated tubing,
+and gauge were passivated with fluorine prior to loading with a fluoride salt
+mixture to prevent reaction of the fluorine liberated during the actual irradiation
+experiments with these components. The loaded vessel was lowered into the center
+of a HFR spent fuel element for irradiation. A 3.2 mm nickel tube and
+                                                                  -
+thermocouple wire extended to the top of the pool ( 6 m) to an appropriate
+pressure gauge and temperature indicator. The reactor pool water which circulated
+around the vessel provided sufficient cooling during the course of the irradiation.
+Pressure and temperature readings were recorded on a daily basis over the period
+of the irradiation.
+
+
+
+
+FIGURE 1 HFIR irradiation vessel with pressure gauge for irradiation of MSR salts. The connecting
+1/8 inch nickel tube was replaced with one which was actually 20 A long.
+
+
+
+   No direct analysis of the gas space was performed due to the limited nature of
+t h s work. However, previous workRhas already established the identity of the gas
+evolved from the fluoride salt and our observations, upon venting the overpressure
+(cloudy, hydrolyzing gas emanating with the sharp, pungent odor of F2), were
+consistent with what the previous researchers have reported.
+   The volume of the empty vessel was 40.0 cm3 and was loaded with 30 g salt
+(12.3 cm3, since the salt density is 2.43 g/cm3) which yielded a net gas volume of
+27.7 cm3 in the vessel. This gas volume, coupled to that of the connecting tube and
+gauge (47.7 cm3), gave a total gas volume of 75.4 cm3. The gas/salt volume ratio
+was therefore: 75.4h2.3 = 6.1.
+   In order to examine the effect of temperature on the salt irradiation, a “dry tube”
+                                      -
+was used which consisted of an 10 cm diam stainless steel tube which extended
+from the top of the reactor pool to the center of a spent fuel element. The
+temperature in this tube was typically at 70°C (due to the absence of the cooling
+influence of the HFIR pool water). With this arrangement the nickel vessel
+containing the salt was lowered into the tube and center of a spent fuel element.
+                     GAMMA RADIOLYSIS OF A F, SALT MIXTURE                                   205
+
+  A second (and more satisfactory approach) was later developed in order to
+permit controlled heating of the nickel vessel. A nickel can was fabricated to
+enclose the sample vessel in a water-tight environment and thus permit the latter to
+be resistively heated in a dry atmosphere. This was accomplished by sealing the
+sample vessel inside the nickel can by soft soldering the lid and tubing lead-
+throughs (Figure 2). The electrical connections for the heating tape extended
+through a 6.4-mm tube to the top of the pool where a variac was used as a
+controller.
+
+                                      120v
+                                      AC
+
+
+
+
+                            . -
+                           TUBE                               TOP SOFT-SOLDERED
+                                                              TO CONTAINER AND
+
+
+
+
+                                                               in.
+                INNER VESSEL
+                WRAPPED WITH
+                HEATING TAPE      -
+                vom SPACE
+                FILLED WITH
+                FIBERFRAX --.-
+
+
+
+
+FIGURE 2 Schematic of nickel irradiation vessel in sealed, insulating container which was used for
+maintaining vessel at elevated temperatures.
+
+
+3 RESULTS AND DISCUSSION
+3.1 Fluorine Generation
+As stated previously, in order to reach a steady-state condition with respect to
+radiolytic fluorine generation (i.e., one in which the generation rate was equivalent
+to the recombination with active sites in the salt), it would be necessary to have a
+very intense source of radiation. The previous study* using h°Co gamma radiation
+206                        L. M. TOTH AND L. K. FELKER
+
+at a dose rate of 0.45 x lo2"eV/h/g in a 35 g salt sample was achieved with a
+gamma flux rate of 0.72 MWh. However, the experiments never reached a limiting
+fluorine pressure. Therefore, the HFIR' spent fuel elements, with a gamma flux of
+ 10 to 100 times the above intensity, were considered essential in order to achieve
+the desired limits. Nevertheless, during the early stages of this work, an experiment
+on the local 6oCoirradiator" was performed-mainly to insure that calculated rates
+were correct and controlled experiments were possible in both the irradiator and,
+especially, in the HFW spent fuel element. The experiment in the "CO irradiator
+showed little, if any, fluorine pressure increase over a one week period when
+                                    -
+exposed to a gamma flux rate of 0.6 M U . Therefore, the much higher fluxes
+expected in the HFIR fuel element would not produce disastrous effects.
+   Several irradiation experiments in HFIR fuel elements were performed at
+approximately 40°C. The first of these involved 30 g of MSR composition salt in
+the nickel irradiation vessel. An induction period of about 6 days was observed
+where there was a slight decrease in the total pressure in the vessel followed by a
+slow increase in the pressure [0.65 Wa/d (0.09 psig/d) to a limit of 12.4 kPa
+(1.8 psig)] that continued for 18 days following the induction period. Because a
+higher rate of fluorine generation was expected (by extrapolating that previously
+reported8 for the fluxes in the 6oCoirradiator to values as found in the HFIR spent
+fuel elements), the experiment was terminated to examine the contents for any
+problems. None were found.
+   A second experiment was begun to repeat the first one with more thorough
+fluorine passivation of the container, since it was suspected that the slight drop in
+pressure during the induction period might be due to further passivation of the
+container in the radiation field. The results of this experiment are shown in two
+figures (Figures 3 and 4)which present the data in terms of fluorine pressure as a
+function of days in the spent fuel element. The first of these figures, Figure 3, shows
+the fluorine pressure as it was actually measured with a 205 kPa (15 psig) pressure
+gauge. When the fluorine pressure reached the 205 kPa limit, it was bled off to
+-  136 kPa ( 5 psig) and allowed to accumulate again. In this manner, the sawtooth
+appearance of the pressure/time plot was produced. The pressure continued to
+                                                                 -
+build up at a steady rate of 0.19 kPa/h (0.028 psi/h) until after 100 day, it leveled
+off.
+   The same data are presented in Figure 4, but this time the net pressure as a
+function of time was plotted. In this figure, it is more obvious how the fluorine
+generation progressed without the necessary bleed-off operation. A rather constant
+rate of generation up to 446 kPa (50 psig) limiting pressure was observed. It is
+apparent that the bleed-off procedure had little effect on the rate of generation or
+the limiting value of 446 kPa, since the rate did not measurably change as a result
+of bleed-off. Furthermore, it has been suggested5 that these factors are more
+controlled by the concentration of defects within the salt lattice itself than by
+conditions external to the crystal lattice. Therefore, it is not expected that the
+changes in the F2 pressure over the crystal should have any measurable effect on
+the rate of fluorine generation. Instead, the F2 generation and recombination rate
+should be controlled by the concentration of defect sites in the crystal lattice with
+which the halogen can combine.
+   The gamma flux for the particular fuel element is given in Figure 4 to
+demonstrate the effect of flux on the rate of fluorine generation. As shown by the
+discontinuities in this flux curve, several fuel elements were used for the irradiation
+in an effort to maintain the maximum possible flux. The gamma flux of the spent
+fuel elements was recently reported.1° Even though there was a noticeable change
+                           GAMMA RADIOLYSIS OF A F, SALT MIXTURE                                              207
+
+                                 FLUORIDE SALT IRRADIATION
+
+
+
+
+         3-                          HFIR Spent Fuel Gamma Source                            - 120
+                                               MSR2- 1
+
+                   I         1       1          1       I     I       I         I       I    7    100
+
+
+
+
+FIGURE 3 Fluorine pressure rise over irradiated MSR salt as a function of exposure time in the HFIR
+fuel element.
+
+
+
+                           IRRADIATION OF FLUORIDE SALT
+
+        500                      1       I          I   I                                        300
+                       I                                      I       I     I       I
+                                                                                                 275
+        450
+                                                                                                 250
+
+        400                                                                                      225
+                                                                                                        n
+                                                                                                        c
+                                                                                                 200    2
+                                                                                                        -
+   n
+
+   p"   350                                                                                             I
+   Y
+   Y
+                                                                                                 175
+                                                                                                        X
+   5    300                                                                                      150    2U
+   v)
+   v)                                                                                            125    2
+        250                                                                                             H
+   a                                                                                              100 <
+                                                                                                        c!l
+        200                                                                                       75
+
+                                                                                                  50
+        150
+                                                                                                  25
+
+        100                                                                                       0
+              0              20                 40           60            80               100
+                                             IRRADIATION TIME ( d )
+
+
+
+FIGURE 4 Net fluorine pressure accumulated over the irradiated MSR fuel salt and gamma flux rate
+as a function of time in the fuel elements. The latter shows the effect of four different fuel elements used
+during the irradiation period.
+208                       L. M. TOTH AND L. K. FELKER
+
+in the generation rate when the more intense source was used (cf., 70 days' time in
+Figure 3), it is not a linear relationship, thus confirming the earlier observations
+that the rate was not 10 to 100 times greater in the HFIR fuel element than in the
+6oCosource even though the fluxes varied by that amount. Furthermore, the rate of
+pressure buildup at 100 days had decreased relative to the rates just prior to the
+other fuel element changes (cf., growth rates at 20 and 43 days with that at 100
+days),thus demonstrating that a limiting pressure had been reached.
+   The damage to the crystal lattice was computed by dividing the total moles of
+fluorine appearing in the sample gas space, 75 cm3, by the total moles of fluorine
+available from the 30 g of salt. The limiting value of approximately 2% damage is
+consistent with that which has been reported' for other halide salts using high doses
+of neutron irradiation; but it is 100 times greater than the point defect saturation
+level using gamma rays of lower intensity or 400 keV electrons.* This steady-state
+limit represents the point where the number of defect centers (containing active
+metals such as Li or Be) are so great that the rate of molecular or atomic fluorine
+recombination with them is equal to the rate of fluorine atom generation from
+gamma radiolysis of the fluoride salt. Therefore, in the higher radiation field, such
+as the HFIR spent fuel elements where the rate of F2 generation is much faster, the
+total amount of radiation damage at steady state should be correspondingly greater.
+   The 446 kPa pressure limit is also dependent on the volume of the gas space
+above the irradiated salt because of simple equilibrium expressions. If the volume
+over the salt had been larger, then the limiting pressure would have been smaller.
+Conversely, fluorine pressures as high as 50 atmospheres (5.05 m a ) have been
+reported* when the gas/salt volume ratio was extremely small. In addition to these
+volume ratio effects, the determining factor on the limiting fluorine pressure
+appears to be most dependent on the concentration of defect sites produced. When
+the defect sites reach approximately 2% of the salt content for the radiation flux
+used here, no more generation and release of fluorine should occur.
+   Attempts to reproduce these data were only partially successful. It was
+impossible to leave the irradiation vessel undisturbed during the long 100 day term
+of an experiment because necessary changes in the spent fuel elements must be
+made. As a consequence of the handling, leaks frequently appeared in the system
+and compromised the validity of the results. The final attempt to measure the
+limiting fluorine pressure was interrupted (because of a reactor shutdown and
+resulting disruption in the supply of spent fuel elements) after the fluorine pressure
+had reached 8 psig (156 kPa).
+   Similar irradiations of fluoride salt samples at higher temperatures-namely in
+the 70 to 100°Crange were conducted. No accumulation of F2 over the salt at these
+temperatures was ever observed. Even though the F2 recombination rate is
+expected to equal that of the generation at 150"C,*these results indicate that the
+recombination rate had approached that of generation at the lower temperatures.
+Nevertheless, these experiments at higher temperatures should be repeated before
+a definite statement regarding temperature effect can be made.
+
+3.2 Recombination Studies
+After the fluorine pressure reached the limiting value in the above experiment, the
+recombination characteristics of the fluorine with the salt were studied. The sample
+pot and associated tubing and gauge was removed from the fuel element radiation
+source and heated for a period of time at increasing temperatures while monitoring
+the fluorine pressure. These results are shown in Figure 5 for data taken at 100,
+                        GAMMA RADIOLYSIS OF A F, SALT MIXTURE                                 200
+
+150 and 200°C. An activation energy of 39 kJ/mol for recombination was
+computed from the slope of the line, which is slightly less than half the value
+calculated from Haubenreich's report.12 However, the significant difference
+between our experiment and those discussed by Haubenreich was in the form of
+the salt from which fluorine evolution and recombination were measured. Our
+experiment used a pulverized salt sample (to minimize fluorine diffusion within the
+salt) whereas Haubenreich reports on the fluorine evolution from a single piece of
+solidified salt (of comparable size to our sample). Consequently, the difference in
+the activation energies most probably reflects the diffusion characteristics of
+fluorine within the salt lattice; and then, in a practical sense, these two extremes in
+the activation energy reflect the range that would be expected for fluorine
+recombination, depending upon the physical conditions of the salt. Even though a
+finite rate of recombination at 40°C should exist, a value of only 3.8 P a h was
+calculated from the least squares fit of the data. These data further predict that the
+temperature at which generation would equal recombination is 150°C-a value
+which was suggested in the earlier MSR experiments?
+
+
+                                   FLUORINE-SALT RECOMBINATION
+             -1.0        I
+                               I      1
+                                               I        1        I
+                                          Heating of MSRP-1 Sample
+                                                                     -
+             -2.0
+        -.
+        c
+        'aD -3.0
+        Y
+
+        W
+         a
+
+        I-
+                                   \                 In RATE = -4693(1IT) t 7.4858
+
+
+
+        2 -4.0
+        -C
+
+
+
+
+             - 5.0
+
+
+
+             -6.0  :
+               0.0020
+                        ,      ,
+                             0.0022         0.0024             0.0026   0.0028       0.0030
+                                                     1IT (K)
+
+
+FIGURE 5 Rate of fluorine recombination with fuel salt as a function of temperature during the
+recombination tests.
+
+
+
+4 CONCLUSIONS
+
+It has been shown that when fluoride salts are exposed to large doses of gamma
+radiation fluorine gas is liberated from the crystalline lattice and appears as a gas
+overpressure. The maximum limit of damage to the crystalline material is 2 mol%,
+as determined by the amount of fluorine gas released. At that point, the rate of F2
+recombination with active metal centers is equal to the rate of F2 generation. The F,
+overpressure will react with the active sites in the crystalline salt if the temperature
+of the system is elevated to temperatures of 100 to 300°C. But measuring the
+activation energy of the recombination reaction, it is evident that the rate of
+210                            L. M. TOTH AND L. K. FELKER
+
+recombination should equal the rate of generation at 150°Cunder these conditions
+of irradiation. If the dose rate were lower, as in earlier work, this temperature
+would be expected to be much lower.
+
+
+ACKNOWLEDGEMENT
+
+Research sponsored by the Office of Remedial Action and Waste Technology, U.S. Department of
+Energy under contract DE-AC05-840R21400 with Martin Marietta Energy Systems,Inc.
+
+
+REFERENCES
+
+ 1. C. D. Knutson, H. 0.Hooper, and P. J. Bray, J. Phys. Chem. Solids, 27,147 (1966).
+ 2. L. W. Hobbs, A. E. Hughes, and D. holey, Proc. R. SOC.Lond A. 332,167 (1973).
+ 3. N. A. Tsal‘, Yu. V. Karavan, R. I. Didyk, and 0.P. Dragan, Sov. Phys, Dokl, 19 (1 I), 793 (1975).
+ 4. N. Itoh, Journalde Physique, 37, C7 (1976).
+ 5. K. K. Shvarts and Y. A. Ekmanis, “Radiation and Photostimulated Processes in Inorganic
+    Materials”, in “Defects in Insulating Crystals,” Proc. of the International Conf, V. M. ’kchkevich
+    and K. K. Shvarts (Riga,May 18-23,1981), pp. 363-391.
+ 6. K. J. Notz, Extended Storage-in-Place of MSRE Fuel Salt and Flush Salt, ORNYTM-9756, Oak
+    Ridge National Laboratory, Sept., 1985.
+ 7. W. R. Grimes, Chemical Research and Developmentfor Molten Salt Breeder Reactors, ORNWTM-
+    1853, Oak Ridge National Laboratory, June 1967.
+ 8. H. C. Savage, E. L. Compere, and J. M. Baker, Fluorine Evolution from Solid Fluorides Under
+    Irradiation, in Reactor Chemktry Division Annual Progress Report, ORNL-3591, Oak Ridge
+    National Laboratory, p. 27.
+ 9. The High Flux Isotope Reactor at the Oak Ridge National Laboratory, Oak Ridge, TN 37831.
+10. M. W. Kohring, Gamma Flux Measurements an Spent High Flux Isotope Reactor (HFIR) Fuel
+    Assemblies,ORNYCF-86/256, Oak Ridge National Laboratory, Aug., 1986.
+11. J . L. Shepherd and Associates,“Co Irradiator, Model 109,740 Salem Street, Glendale, CA 91203.
+12. P. N. Haubenreich, Fluorine Production and Recombination in Frozen MSR Salts after Reactor
+    Operation, ORNVTM-3144, OakRidge National Laboratory, Sept., 1970.
+

@@ -1,0 +1,39 @@
+# Vision-extracted pseudo-first-order rate observations from Fig. 4B of Iwamatsu/Horne et al. PCCP 2022.
+# Reaction: e_s- + Zn2+ -> Zn+ (Eq. 5).
+# Source: validation/papers/d2cp01194h.pdf, Fig 4B.
+# Extracted by visual inspection of the rendered 400 dpi PDF page. Estimated precision ~5-10%
+# vs experimental uncertainty (paper: errors smaller than symbols, ~few percent).
+# Concentrations match those reported in paper text: 1.88, 3.76, 7.30, 9.41 mM ZnCl2 in LiCl-KCl.
+# (Paper Fig. 4A also includes 142 mM and neat ZnCl2, but Fig. 4B is the rate-vs-[Zn] summary at low [Zn].)
+#
+# NOTE (re-verification 2026-05-28): the printed y-axis label on Fig 4B reads
+#   "Pseudo First-Order Rate Coefficient / 10^9 s^-1"
+# but the slopes implied by this label (e.g., k_5(400 C) ~ 4.3e11 M^-1 s^-1) disagree
+# by exactly 10x with the rate coefficients quoted everywhere in the text and the
+# Arrhenius inset (k_5 = (4.2-16.1)e10 M^-1 s^-1).  The values below assume the
+# y-axis label is a typo for "/ 10^8 s^-1", which makes the figure self-consistent
+# with the paper text, with the Arrhenius inset (Ea=30.31+/-0.09 kJ/mol), and with
+# the linear slopes: k_obs(1.88 mM, 400 C) = 0.81e8 s^-1 -> k = 4.31e10 M^-1 s^-1 (matches paper).
+#
+# Units: T in C, [Zn2+] in mM (mol/L), k_obs in 10^8 s^-1.
+T_C,Zn2_mM,k_obs_1e8_per_s,extraction_method
+400,1.88,0.81,vision-fig4B
+400,3.76,1.62,vision-fig4B
+400,7.30,3.14,vision-fig4B
+400,9.41,4.05,vision-fig4B
+450,1.88,1.21,vision-fig4B
+450,3.76,2.42,vision-fig4B
+450,7.30,4.70,vision-fig4B
+450,9.41,6.06,vision-fig4B
+500,1.88,1.77,vision-fig4B
+500,3.76,3.55,vision-fig4B
+500,7.30,6.89,vision-fig4B
+500,9.41,8.88,vision-fig4B
+550,1.88,2.48,vision-fig4B
+550,3.76,4.97,vision-fig4B
+550,7.30,9.65,vision-fig4B
+550,9.41,12.44,vision-fig4B
+600,1.88,3.01,vision-fig4B
+600,3.76,6.02,vision-fig4B
+600,7.30,11.68,vision-fig4B
+600,9.41,15.06,vision-fig4B

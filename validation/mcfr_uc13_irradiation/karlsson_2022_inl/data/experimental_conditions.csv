@@ -1,0 +1,15 @@
+# Experimental conditions for INL/RPT-22-66727 gamma irradiation of NaCl-UCl3.
+# Authors: Phillips, W. C.; Cao, G.; Warmann, S. A.; Mohr, B. C.; Lovel, E. R.; Core, G. M.
+# Source: OSTI 1874817 (https://www.osti.gov/biblio/1874817).
+# Salt composition: 67 NaCl - 33 UCl3 (mol%) eutectic, m.p. ~565 °C.
+# Irradiation: ATR gamma tube (Advanced Test Reactor spent fuel pool), 2638 hours,
+#              28 April 2021 to 18 August 2021. Dose rate increased ~20% after fuel
+#              re-positioning on 11 May 2021.
+# Total absorbed dose: ~31 MGy (integrated over 2638 hours).
+# Max dose rate observed: ~13,000 Gy/hr (~3.6 Gy/s) → SI: ~3.6e3 J/(m^3 s) with salt density 2.6 g/cm^3.
+# Detection limit for Cl2 in GASR analysis: ~1000 ppm with custom UV spectrometer (system reactive).
+capsule_id,T_C,phase,salt_composition,duration_hr,total_dose_MGy,Cl2_detected,note
+P1,75,solid,67NaCl-33UCl3,2638,31,no,Below detection limit. Heater limited - max T was 131 C during early portion.
+P2,150,solid,67NaCl-33UCl3,2638,31,no,Below detection limit (~1000 ppm).
+P3,300,solid,67NaCl-33UCl3,2638,31,no,Below detection limit.
+P4,600,liquid,67NaCl-33UCl3,2638,31,no,Liquid salt; below detection limit. Demonstrates negligible Cl2 generation under operationally-relevant T.

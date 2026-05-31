@@ -1,0 +1,11 @@
+# Pikaev, Makarov, Zhukova 1982, Radiat. Phys. Chem. 19(5), 377-387.
+# DOI: 10.1016/0146-5724(82)90005-X
+# Source: validation/papers/1-s2.0-014657248290005X-main.pdf, text p. 385.
+# G-values reported in the paper. The paper does NOT tabulate G(e_s-) or
+# G(X2-) numerically; the only numerical radiation-chemical yield reported
+# is an upper-bound G for molecular Cl2 from gamma-radiolysis of chloride
+# melts. The value is cited as evidence of the high radiation stability
+# of pure alkali-halide melts (initial compounds are reformed via
+# reactions 5, 9, 10).
+species,radiation_type,melt,T_degC,T_K,G_value_molec_per_100eV,G_sigma,bound,source,notes
+Cl2,gamma,alkali-halide chloride melts,,,0.001,,upper,text p.385,"reported as < 0.001 molec/100 eV; melt and temperature not specified explicitly in the cited sentence"

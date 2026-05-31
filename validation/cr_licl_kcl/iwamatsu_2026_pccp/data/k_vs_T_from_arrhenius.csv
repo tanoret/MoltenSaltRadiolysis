@@ -1,0 +1,18 @@
+# Per-T 2nd-order rate constants computed from published Arrhenius parameters
+# k(T) = A * exp(-Ea/RT). Units: k in M^-1 s^-1; sigma_k propagated assuming independent A and Ea.
+reaction_id,reaction,T_C,T_K,k_M_inv_s,sigma_k_M_inv_s
+eq5,e_s- + Cr2+ -> Cr+,400,673.15,4.276e+10,6.805e+09
+eq5,e_s- + Cr2+ -> Cr+,450,723.15,6.467e+10,9.977e+09
+eq5,e_s- + Cr2+ -> Cr+,500,773.15,9.273e+10,1.393e+10
+eq5,e_s- + Cr2+ -> Cr+,550,823.15,1.273e+11,1.867e+10
+eq5,e_s- + Cr2+ -> Cr+,600,873.15,1.684e+11,2.422e+10
+eq6,e_s- + Cr3+ -> Cr2+,400,673.15,6.815e+10,1.809e+10
+eq6,e_s- + Cr3+ -> Cr2+,450,723.15,1.009e+11,2.660e+10
+eq6,e_s- + Cr3+ -> Cr2+,500,773.15,1.421e+11,3.721e+10
+eq6,e_s- + Cr3+ -> Cr2+,550,823.15,1.919e+11,4.999e+10
+eq6,e_s- + Cr3+ -> Cr2+,600,873.15,2.504e+11,6.494e+10
+eq3_2026refit,e_s- + Zn2+ -> Zn+ (refit),400,673.15,4.148e+10,1.240e+10
+eq3_2026refit,e_s- + Zn2+ -> Zn+ (refit),450,723.15,6.439e+10,1.858e+10
+eq3_2026refit,e_s- + Zn2+ -> Zn+ (refit),500,773.15,9.443e+10,2.641e+10
+eq3_2026refit,e_s- + Zn2+ -> Zn+ (refit),550,823.15,1.322e+11,3.599e+10
+eq3_2026refit,e_s- + Zn2+ -> Zn+ (refit),600,873.15,1.781e+11,4.735e+10

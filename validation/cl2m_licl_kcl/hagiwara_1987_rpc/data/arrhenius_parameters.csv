@@ -1,0 +1,18 @@
+# Hagiwara, Sawai, Sumiyoshi, Katayama 1987, Radiat. Phys. Chem. 30(2), 141-144.
+# No DOI; reference: ISSN 0146-5724/87, Pergamon Journals Ltd.
+# Source: validation/papers/1-s2.0-135901978790097X-main.pdf
+# Activation energies for transients in LiCl-KCl eutectic (Section 7 + Figs. 8, 9).
+# The paper does NOT report Arrhenius pre-exponential factors A. Only Ea is given.
+# Temperature ranges in K are converted from the Celsius ranges spanned by Figs. 8/9
+# (T^-1 axis goes from 1.10e-3 to 1.50e-3 K^-1, i.e. ~394 to 636 C, i.e. 667 to 909 K).
+# For the e_s- decay, Ea is the slope of the straight-line portion below 500 C
+# (i.e. T <= 773 K; T^-1 >= 1.29e-3 K^-1). Above 500 C the Arrhenius plot curves
+# (apparent decrease attributed to reverse reaction). No Ea is given for T > 500 C.
+# For Cl2- decay in pure melt, Ea is the slope over the full experimental T range.
+# For Cl2- decay in the Cd2+-doped melt, the plot is non-linear below 500 C and no Ea
+# is reported.
+species,reaction,T_range_K,T_range_C,Ea_kJ_per_mol,A_value,A_units,medium,source,notes
+e_s-,first_order_decay,667-773,394-500,43,,,LiCl-KCl eutectic (42 mol% KCl) pure,Section 7 + Fig. 8,linear portion below 500 C; pre-exponential A not reported
+e_s-,first_order_decay,773-909,500-636,,,,LiCl-KCl eutectic (42 mol% KCl) pure,Section 7 + Fig. 8,Arrhenius plot curves above 500 C; apparent Ea decreases; not quantified
+Cl2-,second_order_decay,667-909,394-636,24,,,LiCl-KCl eutectic (42 mol% KCl) pure,Section 7 + Fig. 9 open circles,linear over full T range in pure melt; pre-exponential A not reported
+Cl2-,second_order_decay,667-909,394-636,,,,LiCl-KCl eutectic (42 mol% KCl) + 0.05 M CdCl2,Section 7 + Fig. 9 filled circles,non-linear below 500 C in doped melt; no Ea reported

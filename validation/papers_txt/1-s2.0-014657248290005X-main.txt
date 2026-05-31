@@ -1,0 +1,646 @@
+Radiat. Phys. Chem. Vol. 19, No. 5, pp. 377-387. 1982                                                  0146-5724/82/050377-11 $03.00/0
+Printed in Great Britain.                                                                                         Pergamon Press Ltd.
+
+
+
+
+                        SOLVATED ELECTRON IN IRRADIATED MELTS
+                                 OF A L K A L I N E HALIDES
+
+                                   A. K. PIKAEV, I. E. MAKAROV and T. N. ZHUKOVA
+                 Institute of Physical Chemistry of Academy of Sciences of the U.S.S.R, Moscow, U.S.S.R.
+
+                                                        (Received 3 August 1981)
+            Abstract--This paper is a review of experimental results obtained by the authors while studying the
+            formation and the properties of solvated electrons (e~) in the melts of alkaline halides (NaCI, KCI,
+            NaBr, KI, etc.) and their mixtures by pulse radiolysis method. The data on the optical absorption
+            spectra of these species at different temperatures and their reactivity are considered. The con-
+            clusions on their nature are made. The review contains the data on molecular radical-ions Xi
+            forming simultaneously with eL The possible mechanism of radiolysis of the systems under
+            consideration is discussed.
+
+
+                        INTRODUCTION                                   heated under vacuum at 3 ~ C         during 3 days. Then
+THE MELTS of alkaline hal/des are considered as                        they were sealed and put into a cylindrical heater for
+                                                                       melting and irradiation. The heater had windows for light
+perspective     materials   for   nuclear    reactor                   and electron beams. The temperatures were measured by
+engineeringY) Therefore the information on the                         thermocouple and maintained within -+5°C.After melting
+mechanism of their radiolysis is of practical im-                      the sample was irradiated by electron pulse.
+portance. Besides, the solvated electrons are for-
+med during the action of ionizing radiation on the                           R E S U L T S AND T H E I R DISCUSSION
+systems. (2"3) Obviously, the knowledge of the                            It was found that in all the melts studied the
+peculiarities of the behaviour of these species in                     primary short-lived species of two types were
+ionic liquids at high temperatures (such systems                       formed as a result of the action of electron
+are the melts of alkaline halides) is of great                         pulse. °) The species of the first type absorb the
+significance for physical chemistry of the electron                    light as a rule in red and IR parts of the spectrum.
+in condensed phase. These circumstances stimu-                         Their lifetime is about several microseconds. The
+lated us to carry out the systematic study of the                      species of the second type absorb the light in violet
+properties of solvated electrons in irradiated melts                   and UV regions of the spectrum. Their lifetime
+of alkaline halides and their mixtures by pulse                        is considerably higher than the lifetime of the first
+radiolysis method with optical registration. The                       type species. All the data obtained testify that the
+results obtained during the study are summarized                       species of the first type are solvated electrons and
+in the present paper. Some of these results were                       the species of the second type are molecular radi-
+published in communications.°.*)                                       cal-ions X~ (i.e. CIi in the melts of chlorides, Bri
+                                                                       in the melts of bromides and I ~ in the melts of
+                    EXPERIMENTAL                                       iodides). Let us begin the discussion from eL
+    The linear electron accelerator U-12 (electron energy
+ is 5 MeV, pulse duration is 2.3 ~.s, maximum dose per                 Optical absorption spectra of e~
+ pulse is 12 krad) was used as a source of pulse-ionizing                The optical absorption spectra of e~- in the melts
+ radiation. Fast spectrophotometric apparatus for the
+ detection of transient species had the time resolution of             of NaCI, KCI and their mixtures at 800°C are
+ 0.2~s. °) For the transformation of optical signal at                 shown as an example in Fig. 1.(s) The parameters
+ wave-lengths less than 900 nm photomultiplier FEU-109                 of e~- spectra in all the melts studied are listed in
+ was applied; at longer wave-lengths (up to 1500-1600nm)               Table 1. It is seen that optical absorption band is
+ germanium photodiode was used. The spectral resolution
+ was from 5 nm (in the region of 300--400nm) to 15 nm (in              comparatively wide. Its half-width is equal to 0.9-
+ the region of 800-1200 nm). The low limit of spectral                 1.7 eV (depending on the nature of the melt). The
+ measurements was 300 nm (for chloride melts), 350 nm                  peak of the band is shifted to longer wave-lengths
+ (for bromide melts) and 400 nm (for iodide melts). It was             with the increase of the sizes of both cations and
+ due to the own absorption of the melts.
+                                                                       anions, i.e. at the transition from Li + to Cs + and
+    All salts used were "chemical pure" grade. They were
+ purified in addition by recrystallization from bidistilled            from CI- to I-.
+ water. To remove the traces of oxygen and water the                     In the case of LiBr melt the bands of e~- and B r i
+ samples in quartz cells with plane-parallel walls were                were overlapped. The individual bands were
+                                                                 377
+378                                                                                                     A. K. PIKAEVet al.
+
+           Table 1. Parameters of optical absorption spectra of es in melts of alkaline halides and their
+                                                     mixtures a
+
+                                            Melt b                                                I= Tempera- =
+                                                                                                     ture, °C = ~ a x '
+                                                                                                                                 :             :
+                                                                                                                              nm = E~max , eV : W1/2, eV
+                                                                                                                $
+
+                     L:I.B¢,                                                                           600              500           2.48           1.50
+                     NaT                                                                               720              990           1.25           1.30
+                     NaBr                                                                             800               945           1.31           1 • 49
+                     60% NaBz' + 40% NaC1                                                             800               880           1,41           1.69
+                     NaCl                                                                             800               730           I. 69          1.67
+                     80% NaOl + 20% K01                                                               800               790           1.57           1.61
+                     60% NaOl + 40% KOl                                                               800               820           1.51           1.50
+                     50% NaCI + 50% KOI                                                               800               870           1.43           1.45
+                     40% NaCI + 60% KOI                                                               800               900           1.38           1.32
+                     20% NaC1 + 80% KC1                                                               800               975           I. 27          1.20
+                 KCI                                                                                  800              1060           I • 17         O. 92
+                     50% KCI + 50% KBr                                                                800              1100           1.13           0.96
+                 ]EBr                                                                                 800              1110           1.12           1.00
+                 KI                                                                                   700              1130           1 • 10         1.60
+                 RbCI                                                                                 700              1120           I. 11          I. 10
+                 66% CsC1 + 34% NaOI                                                                  850             1000            1.24           1.00
+                 66% 0e01 + 34% NaOl                                                                  700               95O           1.31           1.15
+                 66% CeOl + 34% NaOl                                                                  550               900           1.38           1.15
+
+                         BAmax and Wl/2 are t h e energy c o r r e s p o n d i n g to the m-~mum o f
+                         t h e band and t h e h a l f - w i d t h o f the band, r e s p e c t i v e l y .
+                         The c o m p o s i t i o n o f t h e m i x t u r e s i s g i v e n i n mole per c e n t s .
+
+separated on the basis of different lifetimes of the                                                                   The following facts testify that the spectra un-
+species. The absorption disappeared during 3/~s                                                                     der consideration belong to e L Firstly, the band
+after the pulse was mainly due to e : and the rest                                                                  intensity is considerably decreased (or it is not
+due to Brl.                                                                                                         observed at all) when the melt contains the com-
+                                                                                                                    pounds which are electron scavengers. This is
+                                                ~,       nM
+           50e         tM                 ?00            m           J        ~       ¢/tm'~tl
+                                                                                                                    illustrated by Fig. 2, where the spectra in the melt
+                 •       ,       •         ,         •       ,   .       ,   . , •,   • ,*H',',
+                                                                                                                    of KBr (1) and in the melt of KBr containing
+         4.0
+                                                                                                                    10-2 mole dm -3 Ca 2+ (2) or 10-2 mole dm -3 Cd 2÷ (3)
+                                                                                                                    at 800°C immediately after the pulse are shown. As
+       i                                                                                                            it is seen, the absorption in IR region in the
+      e. 0.s                                                                                                        presence of this amount of Cd 2+ is practically not
+                                                                                                                    appearing. The same situation takes place in the
+                             5                                                                                      cases when tile melt contains the sufficient
+                                                                                                                    amounts of oxygen, ions Zn 2+, T1+, Ag + etc. On the
+          0                          i                                         i                                    basis of these results it is possible to conclude that
+                                     tS                                       K,
+                     ~vetlumber, ¢m "~ • |0 "$                                                                      the species under discussion is a reducing product
+F'~O. I. Optical absorption spectra of e~ in melts of NaCI                                                          of radiolysis.
+(1), KCI (5) and melts of their mixtures of composition                                                                Secondly, the experiments with the melts of the
+(mole%): 80 + 20 (2), 50 + 50 (3) and 20 + 80 (4) at 800°C.                                                         mixtures of alkaline halides show (~) that in these
+                                        Solvated electron in irradiated melts of alkaline halides                                379
+
+                                                                         dependence for the mixtures of NaC1 and KCI at
+           0t0
+                                                            /i.    4     800°C was obtained in Ref. 5. From the linear
+                                                      //                 dependence it is possible to conclude that the
+                                                / /
+                                          / /              tt-           composition of the nearest environment of the
+           Q.O5
+                  ~<.~.         ..1 /      t.~ ''t                       electron is proportional to the total composition of
+                                                                         the melt.
+                                                                           Let us note that similar peculiarities of the e ;
+                                                                         spectra in the melts of alkaline halides were also
+                 400      5OO             80Q                     1000   observed in the cases when this species is
+                                                                         produced by dissolving the alkaline metal in the
+                                                                         melt (t:) or by electrochemical method. "2)
+
+"FIG. 2. Optical absorption spectra of melt of KBr (1) and               Nature of e; in the melts.
+ melt of KBr, containing 10-Zmoledm-3 Ca2+ (2) or                           Some conclusions on the nature of e ; can be
+ 10-z mole dm -J Cd2÷ (3) at 800°C immediately after pulse.
+                                                                         made on the basis of comparative study of the
+                                                                         radiolysis of alkaline halides in solid and liquid
+systems the absorption band is uniform and it is                         phases. (6) It is well-known that F - c e n t e r s are for-
+monotonically changed during the variation of the                        med under the action of ionizing radiation on the
+melt composition. Besides, the half-width of the                         crystals. These centers are the electrons in anionic
+band is not more than the half-width of the band in                      vacancies. Since the short range order in ionic
+any individual component of the mixture. It in-                          liquid is remained it is possible to suppose e~- to be
+dicates that the band in the mixture is not the                          the species similar to F-centers. However, the
+superposition of two unresolved bands. In this                           transition of ionic crystals into melted state is
+case if the absorbing species was atomic metal                           accompanied "3) by the appearance of translation
+Me ° the bands of each component of the mixture                          mobility of ions, the disappearance of the long
+would be observed.                                                       range order and the sharp increase of specific
+  Thirdly, there is a peculiarity of optical ab-                         volume of substance. Obviously, these factors
+sorption of e~- in the mixtures of the compounds                         should have an influence on the nature of electron
+which have similar nature (see, for example, Ref.                        centers in the melts. The consideration of these
+10), consisting of linear (or close to linear) depen-                    three factors shows that the most important factor
+dence of the energy in the absorption peak on                            respective to the electron centers during the tran-
+mole fraction of any component of the mixture. It                        sition from solid state to liquid one is the increase
+was found (~) that it takes place also for the melts                     of specific volume. This process is connected par-
+of the mixtures of alkaline halides. The linear                          ticularly with the increase of the vacancies sizes.
+
+
+
+
+                                            ° ° ~ o . . . .
+
+
+
+
+                                                                                             i
+                                                                                             \,
+                                    1.0                                                           o~
+                                                                                                   • °~o.,
+
+                                                                          "r, K
+
+         FIG. 3. Temperature dependence of E~.m~for electron centers in monocrystals and melts of NaCI
+                             (1), KCl (2) and KBr (3). Arrows indicate melting points.
+380                                                           A. K. PIKAEVet al.
+
+It should lead to the considerable shift of the peak                   it is seen, the half-width is considerably increased
+of the optical absorption band of electron centers                     at this process.
+to longer wave-length in the melt as compared                             Hence, on the basis of the study it is possible to
+with the solid phase. Besides, because of the dis-                     conclude that solvated electrons in the melts are
+ordered melt structure the expanded vacancies                          the electrons Iocalised in expanded and nonuni-
+should have nonuniform sizes. It should cause the                      form (in the size) anionic vacancies. From this it
+considerable broadening of optical absorption                          follows that the observed optical absorption spec-
+band in the melt. The study (6) confirmed these                        trum of e ; may be considered as a sum of optical
+conclusions.                                                           absorption bands of electron centers which are
+   The values of Eam~ for electron centers in the                      differed by the energy of the main optical tran-
+monocrystals and the melts of NaCi (1), KC1 (2)                        sition, In this relation it may be proposed that the
+and KBr (3) at different temperatures are com-                         most high energetic absorption bands should
+pared in Fig. 3. It is seen that the peak of optical                   belong to the electrons in vacancies corresponding
+absorption band of electron centers in the mono-                       to regular crystal lattice. Experimentally this point
+crystals is smoothly shifted to longer wave-length;                    of view is confirmed by the absence of sharp
+however, near by melting point this shift is sharp.                    change of short wavelength part of the spectra of
+   The temperature dependence of W~/2 for elec-                        electron centers at the transition from solid phase
+tron centers in NaCI (1), KBr (2) and KCi (3) is                       to liquid one. It is illustrated by Fig. 5, in which
+shown in Fig. 4, The dotted lines show the change                      the normalised optical absorption spectra of elec-
+of the half-width at the transiton to liquid state. As                 tron centers in the monocrystals of NaCI (1) and
+                                                                       KBr (2) at 700°C and their melts (3, 4) at 800°C are
+                                                                       shown. As it is also seen from the figure, the sharp
+                                                                       shift of the peak and the increase of the half-width
+      1.5                                                              at the transition through the melting point are
+                                                                       mainly caused by the shift of the long wavelength
+                                                                       boundary of the spectrum.
+                                                                          The microstructure of the electron trap in the
+      t.0                                                              melt seems to be differed from the structure in the
+ >.                                                                    crystal. It may be connected with the change of
+ /                                                                     coordination numbers in the first (Me+-X -) and
+                                                                       second (Me+-Me +, X - - X - ) coordination spheres at
+                                                                       the transition from solid to liquid phase. For
+                                                                       example, coordination numbers in the first coor-
+                                                                       dination sphere of the melts of NaCI and KCI are
+                                                                       equal to 4.7 and 3.7, respectively, whereas in the
+                          i
+       o                                                               crystals they are equal to 6. ~13~
+                                  T y2 , K~                               In addition, the conclusions made on the nature
+FIG. 4. Temperature dependence of W~/2 for electron                    of e ; in the melts of alkaline halides are confirmed
+centers in monocrystals of NaCI (1), KBr (2) and KCI (3).              by the results of theoretical calculations perfor-
+Dotted lines indicate the variation of W~rzafter transiton             med in recent work. <t4) In cited work the model in
+                     into liquid state.                                which electron localised in vacancy is considered
+                                                                       to be surrounded by 4 cations interacting with
+                1.0
+                                                                       anion-partners is used. In the model the anions are
+                                                                       taken to describe the influence of the rest of the
+                                                                       medium on energetics of the electron. Although
+            E
+                                                                       the results of the calculation coincide with
+                                                                       experiment uncompletely, they describe the
+                                                                       general tendencies of the change of optical
+                                                                       characteristics of the electrons at the transition
+                0     i       i     |      |      i   |   i
+                                                                       from one melt to another.
+
+                                        ),1 n m                         Reactivity of e ; in melts
+                                                                          The decay of e ; even in the absence of the
+FIG. 5. Normalized optical absorption spectra of electron
+centers in NaC1 (1, 3) and KBr (2, 4): 1, 2 are monocrys-               addition occurs very quickly (during 2-3 tts after
+          tals at 700"C; 3, 4 are melts at 800"C.                       the pulse). Because of it the quantitative
+                                                Solvated electron in irradiated melts of alkaline halides                                       381
+
+measurements of e ; reactivity was carried out (4.n                                tration. It is observed in the experiment. Some
+from the dependence of the limit concentration of                                  dependencies of D°/D on scavenger concentration
+e ; during the pulse on the concentration of                                       is shown in Fig. 6. From the slopes of straight lines
+scavenger. The e ; concentration at the end of the                                 the ratios kA/kl are determined. Since k~ is
+pulse is close to the steady-state concentration                                   obtained experimentally from the curve of e ;
+even in the absence of scavenger. Hence                                            decay after the pulse in the absence of scavenger,
+                                                                                   then it is easy to find kA from ratio kA/K~. The rate
+(1)       d[e;]/dt = G ( I / 1 0 0 N ) - V ( e ; ) - ka[e~][A] = 0,                constants of reactions between e ; and different
+                                                                                   scavengers obtained by such a method are listed in
+where G is yield of e~-, I is dose rate, N is                                      Table 2.
+Avogadro's number, V(e;) is rate of reaction of e ;                                   The consideration of data given in Table 2 show
+with matrix, A is scavenger and kA is rate constant                                that there are following peculiarities of e ; reac-
+of reaction between e ; and A.                                                     tivity in the melts of alkaline halides. Firstly, the
+  If we suppose that                                                               rate of e ; reactions depends on the nature of
+                                                                                   matrix. Among three investigated melts the highest
+(2)                               V(e;) = k1(e;],                                  reactivity of e ; is observed in KBr melt and the
+                                                                                   lowest o n e - - i n NaCI melt; KCi melt occupies the
+where k~ is rate constant of pseudomonomolecular                                   middle position. In this relation it is necessary to
+decay of e ; , then                                                                note that among investigated melts the most strong
+                                                                                   bond of the electron with medium is in the case of
+(3)                     [ e , ] d [ e , ] , = 1 + kA[A]/kl.
+                          -   0     --
+                                                                                   NaCI melt and the most weak one is in the case of
+
+where [e;] ° and [e;], are concentrations of e ; at
+the end of the pulse in the absence of scavenger                                                                       [A], H
+and in its presence.                                                                                             O:t            O2     0.3
+                                                                                                      E
+  Using the optical densities D ° (in the absence of
+A) and D (in the presence of A) we obtain
+
+(4)                        D°/D = 1 + kA[A]/kL
+
+  The decay of e ; in pure matrix via pseu-
+domonomolecular process can be explained by the
+occurrence of the reaction between e ; and cation
+of alkaline metal Me +
+
+(5)                               e ; + Me+-~ Me                                                                  [A], M.~O*
+                                                                                   FIG. 6. Dependence of D°/D on concentration of
+  As it is seen from equation (4), the ratio D°/D                                  scavenger A in KBr melt at 800°C: 1, CaZ+; 2, CdZ+; 3,
+should be a linear function of scavenger concen-                                                                 Zn 2+.
+
+                              Table 2. Apparentrate constants ofreactions of e ; i n melts of alkaline halidesa
+                                         z
+                                         s                                       k, dm3mole'Is "I
+                Melt                     :.
+                                         s     la +      K+      Ba2+       St2+         Ca2+         Cd2+      Zn2+            TI +    Ag+
+                                         I
+                                         |
+
+    S a C l (850"0)                           5x10 4     -         .        _         lx10 7      7x10 9       1.7x10 9    1.5x10 9    7x10 8
+                                         I
+                                         I
+    KCl (80o°c)                          I      -      7X10 4     -         -         9~10 7       1.3x1010 2.8z10 9       2.3x10 9    lx10 9
+                                         l
+
+    ~r        (800oC)                    :      .      ~10 4    l z 1 0 7 2 . 2 z 1 0 7 5 . 2 z 1 0 ? 3x1010   1.5x1010 3.1x10 9       2x10 9
+                                         I
+
+
+
+a        Be    error is • 30~ ( such a value is due to k Z to be determined from very fast decay of e s
+         in pure melt )
+382                                                     A. K. PIKAEVet al.
+
+ KBr melt. It seems to be one of the main reasons                within the sufficiently wide temperature interval.
+ of the dependence under discussion.                             There were investigated the reactions of e~- with
+    Secondly, e~- in the melts have comparatively                cations of matrix, ions Ca 2+ and Cd ~÷ in NaCI-
+ high reactivity towards cations of alkali-earth                 CsCI melt and with cations of matrix and ions
+ elements. For example, the ratio of rate constants              Cd 2+ in LiBr-KBr melt. The data obtained are
+of reactions of e~- with ions Cd 2+ and Ca 2+ is equal           shown in Figs. 7 and 8, respectively.
+to ~600 in KBr melt and ~700 in NaCI melt,                          From the figures it is seen that the apparent rate
+whereas in water at room temperature these con-                  constants ka,p of e~- decay in pure matrices, i.e. the
+ stants are differed by more than 5 orders of mag-               apparent rate constants of reactions between e~
+nitude. It is very possible that higher reactivity of            and cations of alkaline metals, are increased with
+e~ towards cations of alkali-earth elements in the               the increase of temperature up to 600-700°C. It is
+melts investigated is caused by insignificant effect             explained by normal activation nature of the
+of "solvation" of cations in the melts as compared               process. However, at the further increase of tem-
+with aqueous solutions,                                          perature the decrease of kaop is observed. This
+   Thirdly, although the melts are at very high                  decrease is more noticeable in the case of reac-
+temperatures, in all three melts the rate constant               tions with higher values of kapp. For example, in
+of e7 even with such an effective electron                       the case of Cd 2÷ ions the negative temperature
+scavenger as ion Cd 2+ is lower than the rate con-               coefficient of k,pp takes place already at tem-
+stant of this reaction in water at room temperatue.              peratures 400-500°C.
+In 1975 the hypothesis that the effect under con-                   Such a dependence is explained by the occur-
+sideration is due to the reversibility of the reac-              rence of processes
+tions between e~- and scavengers in the melts at so
+high temperatures was spoken. ~4~ Recently this                   (6)               e~- + Me "+ --, MC " - ' +
+hypothesis was confirmed, r~
+   The temperature dependence of the apparent rate               (7)                Me ~"-'+ --* Me "+ + e~-
+constants of e~- reactions in the melts of the mix-
+tures of NaCI (34mole%)+ CsCI (66mole%) and                      and the total rate of e~ decay is determined by
+LiBr (60 mole%)+ KBr (40 mole%) was studied.                     both reactions (6) and (7). In this case the apparent
+These eutectic mixtures are melted at com-                       rate constant measured by usual way is expressed
+paratively low temperatures (at 493 and 348°C).                  by equation
+Because of it the experiments can be carried out
+                                                                                           .          [Me~"-'+].
+                                                                 (8)            k.pp = k6 - k,[Me,,+][e~.] .
+
+
+
+
+                                                                             11,0
+
+
+
+
+       ,o.o                    l\---               "°                        10.5
+
+
+                                        \t
+                                                                             5.~
+
+
+
+           4.51    ,    ,           ,         ,    Z0
+             800       900      m0           '~0                                     7OO       800       900       ~00   11oo
+
+                             T, K                                                                    T,Y,,
+
+FIG. 7. Temperature dependence of apparent rate con-             FZG. 8. Temperature dependence of apparent rate con-
+stants (k~,p) for reactions of e~ with matrix (1), Ca2+ (2)      stants (k=pp)for reactions of e: with matrix (I) and Cdz÷
+and Cdz+ (3) in melt of mixture of composition 66 mole%          (2) in melt of mixture of composition 60 mole% LiBr+
+                   CsCI + 34 mole% NaCI.                                              40 mole% KBr.
+                            Solvated electron in irradiated melts of alkaline halides                                    383
+
+If the activation energy of reaction (7) is close to               t.0
+the energy of thermal dissociation of reduced
+metal ion Me t--~÷, i.e. it is considerably higher
+than the activation energy of reaction (6), then at
+comparatively low temperatures the second term                   d o5                  \.~._.i .... ~.~.
+in the right part of equation (8) is negligible and
+the temperature dependence of k,pp is mainly
+determined by the temperature dependence of k6.
+At sufficiently high temperatures the more fast                     0      I      |      I        *        t    I    I
+
+temperature increase of k7 in comparison with k6                           400           60O              80O       t008
+leads to the decrease of k~p with the increase of                                               ), ~ nm
+
+temperature; it is manifested in apparent negative        FIG 9. Optical absorption spectra of CI~ (1), Br2 (2) and
+activation energy of the process.                         I2 (3) in melts of potassium halides: 1 is KCI (800°C); 2 is
+   Hence, it is possible to speak on the high tem-                     KBr (800"C) and 3 is KI (700"C).
+perature limit of apparent rate constant at least for
+the reactions of reduction of metal ions. This            second and the main bands of Br~- and I g in the
+maximum value is always lower than the diffusion          melts is considerably higher than in aqueous solu-
+limit of the actual rate constant of the respective
+                                                          tions, i.e. the relative intensity of the second band
+reaction. It is caused by the reversibility of the        in the melts is increased in the comparison with
+reaction because of thermal dissociation of
+                                                          aqueous solutions. The same phenomenon was
+reduced metal ion.
+                                                          found earlier "v) for the spectrum of Br~- in the melt
+   The establishment of actual steady state via
+                                                          of tetrabutyl ammonium bromide where the ratio
+reactions (6) and (7) during the generation of e~- as
+                                                          under consideration was equal to 0.2. Besides, the
+a result of the action of ionizing radiation seems to
+                                                          maxima of the bands in the melts of alkaline
+be impossible because of the further reactions of
+                                                          halides are shifted to longer wave-lengths in the
+Me ~ - ' + . For example, in the case of alkaline
+                                                          comparison with aqueous solutions; the bands in
+metal cations such reactions are the following ( s e e
+                                                          the melts are more wide than in aqueous solutions.
+also forthcoming discussions)
+                                                          Obviously, the reason of these differences is that
+                                                          the melts are at high temperatures.
+(9)              Me + + M e ~ Me~-,
+                                                             Therefore, the following primary processes take
+                                                          place during the radiolysis of the melts of alkaline
+(I0)          M e l + X2 ~ 2Me ÷ + 2X-.
+                                                          halides
+However, in the absence of oxidising species the          (11)                   X-,,~ X + e-,
+equilibrium can be established as it takes place, for
+instance, in the solutions of alkaline metals in the      (12)                        e-~e~-,
+melts of alkaline halides "~ where solvated elec-
+trons are comparatively stable.                           (13)                   X+X-~X~.
+
+Optical absorption spectra of X                           Kinetics of decay of X-~~8~
+  The molecular radical-ions X~ are formed                    The molecular radical-ions X~ decay indepen-
+simultaneously with e~- under the radiolysis of the       dently of e]-, and the lifetimes of X~ are con-
+melts of alkaline halides. °'8> The spectra of these      siderably longer than the lifetimes of e~-. The
+species in the melts of KCI, KBr and KI are               lifetimes of e~- in pure melts are equal to 2-3/~s,
+shown as an example in Fig. 9. The parameters of          whereas the lifetime of CI~- in the melts of
+optical absorption spectra of X i in the melts stu-       chlorides under the same conditions is equal to
+died are presented in Table 3. tS) In the table the       - 1 0 p , s, the lifetime of Br~- in the melts of
+parameters of spectra of Xg in aqueous solutions          b r o m i d e s - - t o several tens of microseconds and
+at room temperature are also given for the com-           the lifetime of I~- in the melts of i o d i d e s - - t o
+parison. "s'l° It is seen that B r i and I i in the       several hundreds of microseconds.
+melts, similar to aqueous solutions, have two                 The decay of X2 is not accompanied by any
+bands: the main (at short wave-lengths) and the           change of its spectrum. It testifies to the absence
+second (at long wave-lengths); CII has only one           of the superposition of the spectra of reaction
+band (at short wave-lengths). However, the ratio          products and gives a possibility to study the
+of molar extinction coefficients in maxima of the         kinetics of Xg decay.
+384                                              A. K. PIKAEVet al.
+
+        Table 3. Parameters of optical absorption spectra of X~ in melts of alkaline halidesj
+
+             =                                    ,==~empera=                       =            '
+        X~   :            System      b                               ~        ~,. :     Wl/2' , EIIIET~ c
+                                                  :ture, °C:         ~ '            :     eV   :
+
+
+      C1;        10 -3 mole dm -3 CI-
+
+                 in H20                                  25            340              0.93           -
+                 LiC1                                700               360              1.1            -
+                 NaCI                                850               365              1.2            -
+                 KCI                                 800               360              1.25           -
+                 RbC1                                750               370              1.3            -
+
+              CsCl                                   700               370              1.4            -
+                 66% CsCI + 34% NaOl                 800               360              1.3            -
+
+                 10 -3 mole dm -3 Br-
+
+                 in H20                                  25        360; 700             0.93 d        0.041
+                 LiBr                                600           400; 725             1.15          0.2
+                 NaBr                                760           420; 725             1.15          0.2
+              KBr                                    S00           420; 750             1.3           0.2
+                 40% KBr + 60% LiBr                  700           400; 725             1.2           0.2
+                 40% KBr + 60% LiBr                  850           420; 750             1.2           0.2
+              CsBr                                   680           410; 750             1.2           0.2
+
+      i;         10 -3 mole dm -3 I-
+
+                 in H20                                  25        375; 725             0.8           0.27
+              KI                                     700           450; 750              _ e          0.5
+
+
+
+      a I n the t a b l e the p a r a m e t e r s o f o p t i c a l a b s o r p t i o n s p e c t r a o f X~
+
+         in aqUeous solutions are included for the comparison (15' 1 6 )
+
+         Theeomposi~ion o f t h e m i x t u r e s i s g i v e n i n mole p e r c e n t s .
+
+             and ~TZ a r e molar e x t i n c t i o n c o e f f i c i e n t s i n maxima o f the
+        main ( a t s h o r t w a v e - l e n g t h ~ and the second ( a t l o n g ~ v e - l e n g t h ~
+         bands, r e s p e c t i v e l y .
+
+         The v a l u e s o f Wl/2 f o r s p e c t r a o f Br; and x ; a r e g i v e n f o r the
+         main bands.
+
+         The c a l c u l a t i o n o f I 1 / 2 i n the case of I ; i n the m e l t s i s d i f f i -
+         c u l t b e c a u s e o f the n o t i ~ b l e     s u p e r p o s i t l o n o f two bands.
+                                     Solvated electron in irradiated melts of alkaline halides                           385
+
+   It was found that the decay of X~- in the depen-                       On the basis of linear anamorphoses of X~-
+dence of the conditions occurs via three simplified                    decay curves (as plots of I/D vs t) the rate con-
+mechanisms. The first mechanism takes place in                         stants of reaction (10) shown in Table 4 were
+the case of the melts not containing any additions.                    obtained. In the calculations of k,o the values of
+Taking into account the much longer duration of                        ~m~ for X ; in aqueous solutions ('~''6) were used;
+X2 decay in the comparison with the duration of                        the corrections, taking into account the broadening
+e ; decay and the reversibility of the reaction be-                    of the bands in the melts and the redistribution of
+tween e~- and Me +, it is reasonable to propose that                   oscillator strength because of the increase of rela-
+X~- decays via reaction (10). Since the decays of                      tive intensity of long wave-length band, were
+X~- and e ; are separated in the time, it is possible                  made.
+to suggest that kg[Me÷],>k,o[X~-]. From this it                           From Table 4 it follows that the rate of reaction
+follows that initial concentrations of X~- and Me~                     (10) is decreased during transition from CI~- to Bri-
+should be equal. Hence, the decay of X2 should be                      and then to I2, and the rate does not depend on
+expressed by equation                                                  temperature. The possible reason of the absence
+                                                                       of temperature dependence is tunnel mechanism
+(14)    -d[X;]/dt = -d[Me~']/dt                                        of electron transfer from Me~ to X~.
+                    = k,o[Me~][X2] = k,o[X2] 2.                           Let us emphasize that in the system under con-
+
+
+                           Table 4. Rate constants of reaction (10) in melts of alkaline halides
+                   -"            |                                 $            l
+                                                                   =Tempera- =                             b
+              X 2 ":     Me      =:          Melt a                =ture, °C= k10' din3 mole-1 e-1
+                                 •                                 I            $
+
+
+
+             CI;          Na                 NaC1                       850         2.0 x 1011
+                          K                  KC1                        800         1.0 x 1011
+                          Rb                 RbC1                        750        6.7 x 1010
+                        Na(Cs)        34% NaC1 + 66% CsCI                550        3.6 x 1011
+                                                                         600        4.0 x 1011
+                                                                         700        3.7 x 1011
+                                                                         750        4.0 x 1011
+                                                                         800        4.4 x 1011
+                                                                         850        4.8 x 1011
+
+             Br~          K                  KBr                         800        4.0 x 1010
+                          Cs                 CeBr                        600        4.2 x 1010
+                        LI(K)         60% LIBr + 40% KBr                 400        2.4 x 1010
+                                                                         500        2.3 x 1010
+                                                                         600        2.9 x 1010
+                                                                         700        2.2 z 1010
+                                                                         800        2.2 x 1010
+                                                                         850        2.3 x 1010
+
+             12           K                  KI                          700        3.8 x 109
+
+
+               a The c o m p o s i t i o n    of mixtures     is       given   in mole per oents.
+
+               b The p r e c i s i o n i s ~ 20%.
+386                                                   A. K. PIKAEVet aL
+
+sideration the initial ions Me + and X- are reformed           proportionate (reaction (17)). Obviously, the role
+via reactions (5), (9) and (10). In other words, the           of reaction (17) is important when k17 ~ k16; in this
+pure melts of alkaline halides because of this                 case the slow reaction (18) can proceed to
+reformation should have the high radiation stabil-             significant extent. Approximate values of rate
+ity. In fact, the radiation chemical yield of CI2 at           constants of reactions (16)-(18) were determined
+7-radiolysis of the melts of chlorides is very low             for KBr melt containing Ca 2÷ (at 800°C). They are
+(<0.001 molec./100 eV).                                        following: k~6~ kl7 --~7 × 10'°dm 3 mole -1 s - ' and
+   The second mechanism is realized when the                   kts< 109 dm 3 mole -~ s-~.
+melt of alkaline halide contains cations of alkali-              Hence, in the presence of ions of alkali-earth
+earth metals (for example, ions Ca2+). In this case            elements the increase of lifetime of X~- is obser-
+the curves of X i decay consist of two parts: fast             ved. Let us note that, since ion X~- formed in
+and slow decrease of the concentration. The                    reaction (18) then react with atomic metal ap-
+analysis of these curves by means of analog com-               peared in reaction (17), the initial compound is also
+puter shows that they are satisfactorily described             reformed in this system. However, because of the
+by the reactions (below the example with Ca 2+ is              increase of lifetime of X~-, the further appearance
+considered; Ca + in complex form is believed to                of X~- and the partial evolution of halogen in
+react with X~-)                                                gaseous phase the corrosion action of these sys-
+                                                               tems towards the construction materials with
+(15)             e~- + Ca 2+~ Ca +                             which they can contact should be more effective.
+                                                                 The third mechanism is observed in the case
+(16)          Ca + + X~-~ Ca 2+ + 2X-                          when the melt contains the effective electron
+                                                               scavenger of type of Cd 2~ or Zn 2+. In such systems
+(17)          Ca + + Ca + ~ Ca ° + Ca 2+                       X2 interacts with the product of the reaction be-
+                                                               tween e ; and scavenger (for example, with ion
+(18)           X i + X / - ~ X~- + X-.                         Cd ÷ if Cd 2+ is added into the melt), i.e. it decays
+                                                               via reaction (as in the preceding cases reduced
+In reaction (15) the monovalent ions Ca + are for-             cation Cd ÷ reacts with X I being in complex form)
+med; after transformation into complex form these
+ions interact with X~" (reaction (16)) and dis-                (19)              Cd + + X~-~ Cd 2÷ + 2X-,
+
+
+        Table 5. Rate constants of reactions between Xi and reduced cation of transiton metal in melts of
+                                                 alkaline halides~
+
+                     =Reduoed==                                  =Tempera-
+                  X; t o a t i o n ',          Melt              ,,=ture, °Ct,     k, ~.,=3 mole -1 , - 1
+
+
+                 C1;      Od+                  NaC1                   850               2.6 x 1011
+                 Br~      Od+                  Ir~r                   800               7.0 x 1010
+                 B~       Zn+                  KBr                    800               7.0 x 1010
+                 Br~      Cd+           6 0 ~ L t B r + 40~KBr        400               3.6 x 1010
+                                                                      500               4°6 x 1010
+                                                                      600               6.4 x 1010
+                                                                      700               9.0 z 1010
+                                                                      800               1,0 x 1011
+                                                                      850               9.0 x 1010
+
+
+
+                 a     The compom£t£on o f m~xture £e ~ v e n               in mole per o e n t e
+
+                 b     The preo£e£on £e .+20%
+                                    Solvated electron in irradiated melts of alkaline halides                          387
+
+the disproportionation of Cd ÷ being slow enough                                         REFERENCES
+as c o m p a r e d with this reaction. The rate constants             1. V. L. BL1NKIN and V. M. NOVIKOV, Zhidkosolevye
+of some such reactions are listed in Table 5. It is                      yadernye reaktory, Atomizdat, Moscow, 1978.
+seen that the rate of reaction (19) in the melt of                    2. S. J. Black and D. M. J. Compton, J. Phys. Chem.
+                                                                         1965, 69, 4421.
+mixture L i B r - K B r depends on temperature. F r o m               3. I. E. MAKAROV, T. N. ZHUKOVAand A. K. PIKAEV
+Arrhenius plot is was found that the activation                          Radiat. Eft. 1974, 22, 71.
+energy of this reaction is about 25 kJ mole -I. It is                 4. I. E. MAKAROV,T. N. ZHUKOVAand A. K. PIKAEV
+close to the activation energy of ions diffusion. Let                    Dokl. A N SSSR 1975, 225, 1103.
+                                                                         T. N. ZHUKOVA,I. E. MAKAROVand A. K. PIKAEV
+us stress that in these melts, similar to other                       5.
+                                                                         Izv. A N SSSR. Set. khim. 1977, 342.
+systems discussed, the initial c o m p o u n d is                     6. I. E. MAKAROV,T. N. ZHUKOVAand A. K. PIKAEV
+reformed.                                                                Dokl. A N SSSR 1978,/,39, 1144.
+                                                                      7. T. N. ZHUKOVA,I. E. MAKAROVand A. K. PIKAEV
+                                                                         Dokl. A N SSSR 1981, 2,61,409.
+                        CONCLUSION                                    8. I. E. MAKAROV,T. N. ZHUKOVAand A. K. PIKAEV
+                                                                         IZV. A N SSSR. Ser. khim. 1982. To be published.
+   The p e r f o r m e d study of a p p e a r a n c e and pro-        9. A. K. Pikaev, G. K. Sibirskaya, E. M. Shirshov, P.
+perties of short-lived e~- and X~ during irradiation                     Ya Glazunov and V. I. Spitsyn, Dok. A N SSSR
+of the melts of akaline halides by pulse radiolysis                      1971, 200, 383.
+                                                                     10. B. G. ERSHOV, I. E. MAKAROV and A. K. PmAEV,
+m e t h o d gives possibility to explain the com-                        Khim. vys. energy. 1967, 1, 404.
+paratively high radiation stability of these systems                 11. J. F. ROUNSAVILLE and J. J. LAGOWSKI, J. Phys.
+by the r e f o r m a t i o n of the initial c o m p o u n d s . At       Chem. 1968, 72, 1111.
+the same time this study shows that during                           12. W. SCHMITT and U. SCHINDEWOLF, Bet. Bunsenges.
+radiolysis of the melts the various radiation chem-                      Phys. Chem. 1977, 81, 584.
+                                                                     13. E. A. UKSHE, Usp. khim. 1965, 34, 322.
+icai p r o c e s s e s occur. It is especially characteristic        14. C. W. FINLEY, N. R. KES'TNER and B. K. RAO,
+for the melts containing the c o m p o u n d s which can                 Radiat. Phys. Chem. 1980, 15, 337.
+be oxidized or reduced (for example, ions of tran-                   15. L. I. GROSSWEINERand M. S. MATHESON, J. Phys.
+siton metals). This circumstance should be taken                          Chem. 1957, 61, 1089.
+                                                                         J. H. BAXENDALE, P. SHA~PE and M. D. WARD,
+into consideration during the application of a melts                 16.
+                                                                         Radiat. Phys. Chem. 1975, 7, 587.
+of alkaline halides in all the fields of science and                 17. I. E. MAKA~OV, T. N. ZHUKOVAand A. K. PIKAEV,
+engineering in which ionizing radiation is used.                         Khim. vys. energy. 1981, 15, 402.
+
+
+
+
+RPC Vol. 19, No. 5--D
+

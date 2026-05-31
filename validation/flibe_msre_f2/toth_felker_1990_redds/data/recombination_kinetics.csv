@@ -1,0 +1,13 @@
+# Toth & Felker 1990, Radiation Effects and Defects in Solids 112:4, 201-210.
+# F2 generation by gamma radiolysis of LiF-BeF2-ZrF4-UF4 (MSRE composition).
+# Salt composition: 64.5 LiF - 30.3 BeF2 - 5.0 ZrF4 - 0.13 UF4 (mol%).
+# Source: validation/papers/Fluorine generation by gamma radiolysis...pdf
+# Authors: L. M. Toth, L. K. Felker (ORNL Chemical Technology Division)
+parameter,value,units,notes
+Ea_recombination,39,kJ/mol,activation energy of F recombination at metal sites (range 150-200 C)
+T_balance_C,150,C,steady-state crossover: at this T the F2 generation rate equals recombination rate
+balance_pressure_Pa_h,3.8,Pa/h,reported finite recombination rate at 40 C
+salt_composition_LiF,64.5,mol%,MSRE-like composition
+salt_composition_BeF2,30.3,mol%,
+salt_composition_ZrF4,5.0,mol%,
+salt_composition_UF4,0.13,mol%,

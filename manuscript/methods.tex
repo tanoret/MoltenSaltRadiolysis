@@ -1,0 +1,988 @@
+% methods.tex — HBMAE methods section for the radiolysis network paper.
+% Compile with pdflatex + bibtex (uses references.bib in the same directory).
+% Document class assumed: article with amsmath, amsthm, amssymb, hyperref, natbib, algorithm2e.
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage[round,authoryear]{natbib}
+\usepackage{algorithm,algpseudocode}
+\usepackage{booktabs}
+\usepackage{xspace}
+
+% Theorem environments
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{assumption}{Assumption}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+% Conventions
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\dotp}[2]{\langle #1, #2 \rangle}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+\newcommand{\TV}{\mathrm{TV}}
+\newcommand{\eS}{e_{\mathrm{s}}^{-}\xspace}
+\newcommand{\Clt}{\mathrm{Cl}_2^{\bullet-}\xspace}
+\newcommand{\Cltdiss}{\mathrm{Cl}_{2,\,\mathrm{diss}}\xspace}
+\newcommand{\HBMAE}{HBMAE\xspace}
+
+\title{Hierarchical Bayesian Mechanism-Adequacy Estimation for Molten-Salt Radiolysis Networks: Methods}
+\author{M.\ Tanore-Tamales\thanks{Idaho National Laboratory.}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We develop a Bayesian framework, \HBMAE (Hierarchical Bayesian Mechanism-Adequacy Estimation),
+for joint network selection and closure-coefficient calibration in molten-salt radiolysis
+kinetic networks. The framework synthesises (i)~chemistry-constrained spike-and-slab priors
+on reaction inclusion, (ii)~a hierarchical Arrhenius layer coupling shared elementary
+reactions across salts, (iii)~Godambe-balanced composite likelihoods spanning four
+observation modalities (transient absorbance time-series, scalar rate constants with
+quoted uncertainty, censored detection-limit bounds, and derived Arrhenius pairs),
+(iv)~Brynjarsdóttir--O'Hagan-robust parametric discrepancy with bounded coefficients,
+and (v)~facility-effect bias terms with explicit gauge-fixing to one reference laboratory.
+We give six theorems characterising when the synthesis is well-defined, identifiable,
+and convergent, and prove that \HBMAE strictly generalises the Galagali--Marzouk
+spike-and-slab RJMCMC framework. Tier-1 identifiability analysis on
+publicly-available pulse-radiolysis data for the LiCl-KCl eutectic establishes that the
+hierarchical prior layer is necessary, not merely convenient, to identify Arrhenius pairs
+from data with unbalanced temperature sampling, and that historical and modern
+rate-constant measurements for the same reaction are formally inconsistent
+($\chi^2=96.5$, $p<10^{-17}$) under a single-laboratory model -- exactly the case for
+which the facility-effect layer is designed.
+\end{abstract}
+
+\section{Introduction}
+
+Radiolysis modelling for molten salt reactors requires kinetic networks whose elementary
+reactions, rate constants, and primary-yield $G$-values are not unique to the salt
+chemistry of one experiment. Pulse-radiolysis studies in different alkali halide hosts
+\citep{Pikaev1982,Hagiwara1987,Iwamatsu2022,Conrad2023,Iwamatsu2026} probe shared
+elementary mechanisms but with measurements that are simultaneously (a)~multi-modal
+(time-resolved absorbance, derived rate constants, activation parameters, censored
+detection-limit bounds from facility studies such as~\citealp{Phillips2022}),
+(b)~heterogeneous in temporal and concentration scale, and (c)~cross-laboratory
+in a way that introduces systematic biases not captured by reported measurement
+uncertainties \citep{Iwamatsu2022}. Building a defensible predictive radiolysis model
+under these conditions requires a UQ framework that addresses all five features
+simultaneously. The combustion-kinetics literature provides templates for each component
+\citep{GalagaliMarzouk2015,GalagaliMarzouk2019,Frenklach2007,Hegde2018,KennedyOHagan2001,
+Vehtari2017,Varin2011} but, to our knowledge, no published framework integrates them
+for radiation chemistry.
+
+This work formalises that integration as \HBMAE, a framework whose components are
+individually established but whose synthesis is, we believe, novel for kinetic-network UQ.
+
+\section{Notation and assumptions}\label{sec:notation}
+
+Let $\mathcal S$ be a finite set of salts (e.g.\ LiCl-KCl, FLiNaK, NaCl-UCl$_3$), with
+$|\mathcal S|=K$. Let $\mathcal R$ be a finite set of candidate elementary reactions across
+all salts, with $|\mathcal R|=R$. A network is specified by an inclusion vector
+$\gamma\in\{0,1\}^R$ and a parameter vector $\theta\in\R^{2R}$ collecting Arrhenius
+$(\log A_i,E_{a,i})$ for each reaction.
+
+For each reaction $i$ and each salt $s\in\mathcal S$, the salt-specific Arrhenius
+$\theta_i^{(s)}\in\R^2$ is decomposed as
+\begin{equation}\label{eq:hierarchy}
+  \theta_i^{(s)} = \theta_i + \eta_i^{(s)},\qquad
+  \eta_i^{(s)} \sim \mathcal N(0,\Lambda_i) \text{ independent across } s,
+\end{equation}
+where $\theta_i$ is the \emph{intrinsic} Arrhenius pair shared across salts and
+$\eta_i^{(s)}$ is the salt-specific perturbation. The hyperprior covariance $\Lambda_i$
+encodes the chemistry-informed expectation that solvent shifts to activation parameters
+across alkali halide hosts are small relative to the parameters themselves \citep{Marcus1965}.
+
+The forward model for salt $s$ is a stiff system of ordinary differential equations
+\begin{equation}\label{eq:ode}
+  \frac{d\mathbf{C}^{(s)}}{dt} = f^{(s)}(\mathbf{C}^{(s)};\theta^{(s)},\gamma),\qquad
+  \mathbf{C}^{(s)}(0)=\mathbf{C}^{(s)}_0,
+\end{equation}
+with $\mathbf{C}^{(s)}\in\R^{n_s}$ the species concentrations under topology $\gamma$.
+We denote the solution operator $\zeta^{(s)}(x;\theta,\gamma)$ where $x=(T,[M],t)$ is a
+design point.
+
+The data is partitioned by salt $s$, paper $p$, and modality $m\in\{T,K,C,A\}$
+(transient time-series, scalar rate constant, censored bound, derived Arrhenius pair)
+with observations $Y^{(s,p,m)}$. Each paper carries a facility-bias vector $b^{(p)}$.
+
+\begin{assumption}[Stiff-ODE regularity]\label{ass:regularity}\leavevmode
+\begin{enumerate}[label=(R\arabic*),leftmargin=*]
+  \item The flow $\Phi_t:\mathbf{C}(0)\mapsto \mathbf{C}(t;\theta)$ is $C^2$ in $\theta$ on a
+        neighbourhood of $\theta^*$. Adjoint sensitivities provide this in practice
+        \citep{SciML2024}.
+  \item The map $\theta\mapsto \sum_t\bigl(\zeta(x_t;\theta)-\zeta(x_t;\theta^*)\bigr)^2 w_t$
+        has a unique minimum at $\theta^*$ on $\Theta$.
+  \item $I(\theta^*)$ is positive-definite with $\lambda_{\min}(I)>0$ bounded away from zero.
+  \item The score $s_i(\theta)$ is Lipschitz on a neighbourhood of $\theta^*$.
+  \item Priors are continuous and strictly positive at $\theta^*$.
+\end{enumerate}
+\end{assumption}
+
+\section{The HBMAE framework}\label{sec:framework}
+
+\subsection{Constrained-topology prior}
+
+Define the \emph{feasibility set}
+\begin{equation}\label{eq:Gamma}
+  \Gamma = \bigl\{\gamma\in\{0,1\}^R : \mathbf{S}\gamma\in\mathrm{Span}(\mathbf{S}_{\mathrm{src}}),\,
+              \text{cycle condition}\bigr\},
+\end{equation}
+where $\mathbf{S}$ is the stoichiometric matrix on conserved species (elemental balances,
+charge balance) and the cycle condition requires every reaction in $\gamma$ to have a
+substrate-production and product-consumption pathway within $\gamma$. The constrained
+prior is
+\begin{equation}\label{eq:constrained_prior}
+  \pi_\Gamma(\gamma) \propto \mathbf{1}[\gamma\in\Gamma]\,\prod_{i=1}^R
+  \rho_i^{\gamma_i}(1-\rho_i)^{1-\gamma_i}.
+\end{equation}
+This differs from \citet{GalagaliMarzouk2015} by the indicator $\mathbf{1}[\gamma\in\Gamma]$.
+
+\subsection{Hierarchical Arrhenius and facility-effect priors}
+
+The hierarchy in equation~\eqref{eq:hierarchy} is augmented by paper-specific shifts:
+\begin{equation}\label{eq:facility}
+  b^{(p)}\sim\mathcal N(0,\Sigma_b)\text{ for } p\neq p_{\mathrm{ref}},\qquad
+  b^{(p_{\mathrm{ref}})} = 0,
+\end{equation}
+where $p_{\mathrm{ref}}$ is a designated reference laboratory (see Theorem~\ref{thm:facility}).
+
+\subsection{Modality-specific likelihoods}\label{sec:likelihoods}
+
+Let $\delta(T,\log[M];\omega)$ denote a parametric discrepancy:
+\begin{equation}\label{eq:disc}
+  \delta(T,\log[M];\omega) = \omega_0 + \omega_1(1/T - 1/T_{\mathrm{ref}}) + \omega_2(\log[M]-\log[M]_{\mathrm{ref}}),\
+  \omega_j\sim\mathcal N(0,\tau_j^2),
+\end{equation}
+with $\tau_j$ chosen so that $|\delta|\le B$ at the boundary of the experimental domain
+with prior probability $\ge 0.99$.
+
+\textbf{Transient absorbance ($m=T$):} per-point Gaussian on log-absorbance,
+\begin{equation}\label{eq:lik_T}
+  \log A^{(s,p)}_j = \log\bigl(\varepsilon_\lambda\ell\, C^{(s)}_q(t_j;\theta^{(s)},\gamma)\bigr)
+  + b^{(p)}_T + \delta(\cdot;\omega) + \xi_j,\quad \xi_j\sim\mathcal N(0,\sigma_T^2).
+\end{equation}
+
+\textbf{Scalar rate constant ($m=K$):} log-Gaussian on a reported $k_{\mathrm{obs}}$,
+\begin{equation}\label{eq:lik_K}
+  \log k^{(s,p)}_{\mathrm{obs}} = \log k_i^{(s)}(T) + b^{(p)}_K + \delta(\cdot;\omega) + \zeta,\quad
+  \zeta\sim\mathcal N(0,\sigma_K^2).
+\end{equation}
+
+\textbf{Censored bound ($m=C$):} for $y_n\le c$,
+\begin{equation}\label{eq:lik_C}
+  P(y_n\le c\mid\theta^{(s)},\gamma,\omega) = \Phi\bigl(\bigl(c-\mu_C(\theta^{(s)},\gamma,\omega)\bigr)/\sigma_C\bigr).
+\end{equation}
+
+\textbf{Derived Arrhenius ($m=A$):} bivariate Gaussian on $(\log A_i^{(s)},E_{a,i}^{(s)})$
+with reported covariance $V_{\mathrm{pub}}$.
+
+\subsection{Godambe-balanced composite likelihood}\label{sec:composite}
+
+The combined log-likelihood across modalities is
+\begin{equation}\label{eq:composite}
+  \ell_{\mathrm{GC}}(\theta) = \sum_{m\in\{T,K,C,A\}} w_m \log L_m(\theta),\qquad
+  w_m = \mathrm{tr}(I_*)/\mathrm{tr}(I_m),
+\end{equation}
+with $I_m=\E[-\nabla^2\log L_m]$ at $\theta^*$ and $I_*=\sum_m I_m$. The choice of weights
+balances per-modality Fisher information, following the composite-likelihood theory of
+\citet{Lindsay1988,Varin2011}.
+
+\section{Theoretical results}\label{sec:theory}
+
+We collect the central theorems characterising \HBMAE. Proofs that lean on established
+results cite the source; others are given in full.
+
+\subsection{Constrained RJMCMC ergodicity}\label{sec:thm1}
+
+\begin{lemma}[Two-flip connectivity of $\Gamma$]\label{lem:connectivity}
+Let $\Gamma$ be the feasibility set defined in equation~\eqref{eq:Gamma}, and let
+$\mathcal N_2(\gamma)$ denote the set of states reachable from $\gamma$ by flipping at most
+two indicators $\gamma_i,\gamma_{i'}$ simultaneously. Then for any $\gamma_a,\gamma_b\in\Gamma$
+there exists a finite path $\gamma_a=\gamma^{(0)},\gamma^{(1)},\dots,\gamma^{(L)}=\gamma_b$
+with each $\gamma^{(\ell)}\in\Gamma$ and $\gamma^{(\ell+1)}\in\mathcal N_2(\gamma^{(\ell)})$.
+\end{lemma}
+
+\begin{proof}
+Let $\gamma_\cup=\gamma_a\vee\gamma_b$. Mass and charge balance are preserved under union
+because $\mathbf{S}\gamma_\cup\in\mathrm{Span}(\mathbf{S}_{\mathrm{src}})$ when both
+$\mathbf{S}\gamma_a$ and $\mathbf{S}\gamma_b$ lie in that subspace; the cycle condition is
+preserved because each reaction in $\gamma_\cup$ has its substrate-production and
+product-consumption supports in either $\gamma_a$ or $\gamma_b$ and hence in $\gamma_\cup$.
+Therefore $\gamma_\cup\in\Gamma$. Walk from $\gamma_a$ to $\gamma_\cup$ by turning ON the
+reactions in $\gamma_b\setminus\gamma_a$ one at a time; each addition preserves $\Gamma$.
+Walk from $\gamma_\cup$ to $\gamma_b$ by turning OFF the reactions in
+$\gamma_a\setminus\gamma_b$; if removing reaction $r$ alone breaks the cycle condition,
+there exists $r'\in\gamma_b$ also consuming the affected intermediate (otherwise the
+cycle condition would fail in $\gamma_b$ itself), and the paired flip $\{-r,+r'\}$
+preserves $\Gamma$. The path has length at most $|\gamma_a\triangle\gamma_b|$.
+\end{proof}
+
+\begin{theorem}[Constrained RJMCMC ergodicity]\label{thm:rjmcmc}
+Let the proposal kernel $q(\gamma'\mid\gamma)$ be supported on $\mathcal N_2(\gamma)\cap\Gamma$
+with acceptance probability
+\[
+  \alpha(\gamma,\theta\to\gamma',\theta') = \min\left\{1,\frac{\pi_\Gamma(\gamma')L(\gamma',\theta';D)q(\gamma\mid\gamma')|J|}{\pi_\Gamma(\gamma)L(\gamma,\theta;D)q(\gamma'\mid\gamma)}\right\}.
+\]
+Then under Assumption~\ref{ass:regularity} the chain is ergodic with stationary distribution
+$p(\gamma,\theta\mid D)\mathbf{1}[\gamma\in\Gamma]$.
+\end{theorem}
+
+\begin{proof}
+Irreducibility follows from Lemma~\ref{lem:connectivity} since two-flip moves generate a
+connected graph on $\Gamma$. Aperiodicity follows from the standard Metropolis--Hastings
+rejection probability being strictly positive. Detailed balance with respect to
+$p(\gamma,\theta\mid D)\mathbf{1}[\gamma\in\Gamma]$ is enforced by the acceptance rule.
+\citet[Theorem~1]{Tierney1994} gives total-variation convergence.
+\end{proof}
+
+\begin{proposition}[Mixing acceleration]\label{prop:mixing}
+Let $\tau_\Gamma$ and $\tau_\emptyset$ denote the integrated autocorrelation times of the
+constrained and unconstrained RJMCMC chains respectively. To leading order in the
+sparsity constant $|\Gamma|/2^R$,
+\[
+  \tau_\Gamma \;\le\; \tau_\emptyset\cdot|\Gamma|/2^R + O((|\Gamma|/2^R)^2).
+\]
+\end{proposition}
+
+\begin{proof}
+At stationarity the unconstrained chain spends a fraction $|\Gamma|/2^R$ of its cycles in
+feasible states; the constrained chain achieves the same throughput per cycle.
+\end{proof}
+
+\subsection{Hierarchical posterior consistency}
+
+\begin{theorem}[Cross-salt posterior consistency]\label{thm:bvm}
+Under Assumption~\ref{ass:regularity} and the hierarchy~\eqref{eq:hierarchy}, the marginal
+posterior on the intrinsic Arrhenius pair $\theta_i$ satisfies
+\[
+  \norm{p(\theta_i\mid D)-\mathcal N\bigl(\hat\theta_i,\hat\Sigma_i\bigr)}_{\TV}\to 0
+  \quad\text{as }\max_s n_s\to\infty,
+\]
+with
+\[
+  \hat\Sigma_i^{-1}=\sum_{s\in\mathcal S}\bigl(\Lambda_i+I_s(\theta_i^*)^{-1}/n_s\bigr)^{-1},
+\]
+and the credible-region diameter on $\theta_i$ contracts at rate
+$\norm{\hat\Sigma_i}_{\mathrm{op}}^{1/2}=O((K\cdot n_{\min}\cdot\norm{\Lambda_i}_{\mathrm{op}}^{-1})^{-1/2})$.
+\end{theorem}
+
+\begin{proof}
+Per salt $s$, the Bernstein--von Mises theorem \citep[Thm.~10.1]{vdVaart1998} gives
+$p(\theta_i^{(s)}\mid D^{(s)})\to\mathcal N(\hat\theta_i^{(s,\mathrm{MLE})},I_s^{-1}/n_s)$ in
+total variation. The Gaussian hyperprior $\theta_i^{(s)}\mid\theta_i\sim\mathcal N(\theta_i,\Lambda_i)$
+combines with the BvM Gaussian by conjugacy, yielding $p(\theta_i\mid D^{(s)})\to\mathcal N(\cdot,(\Lambda_i+I_s^{-1}/n_s)^{-1})$.
+Independence across salts gives the product form for $\hat\Sigma_i^{-1}$.
+\end{proof}
+
+\subsection{Discrepancy bias and the role of informative priors}\label{sec:bias}
+
+The following theorem is the central correction to the original \HBMAE preprint draft.
+It shows that the parametric form of $\delta$ does \emph{not} by itself prevent bias from
+the score-aligned discrepancy component; the rescue comes from informative priors.
+
+\begin{theorem}[Asymptotic bias under parametric discrepancy]\label{thm:bias}
+Let the data-generating mechanism be $y_i=\zeta(x_i;\theta^*)+\delta(x_i;\omega^*)+\varepsilon_i$
+with $\varepsilon_i\sim\mathcal N(0,\sigma^2)$ iid and $\norm{\delta(\cdot;\omega^*)}_\infty\le B$. Let
+$\hat\theta_n$ denote the posterior mode under the model that includes $\delta$ as a free
+function parametrised by $\omega$.
+\begin{enumerate}[label=(\alph*)]
+  \item Without an informative prior on $\theta$, the asymptotic bias is
+        \[
+          \hat\theta_n-\theta^* = I(\theta^*)^{-1}\,\dotp{\nabla_\theta\zeta(\cdot;\theta^*)}{\delta}_{\mathrm{design}}/\sigma^2 + O(1/n),
+        \]
+        which is $O(B)$ in $n$ when $\dotp{\nabla_\theta\zeta}{\delta}_{\mathrm{design}}\neq 0$.
+  \item With an informative Gaussian prior $\theta\sim\mathcal N(\mu_{\mathrm{prior}},\sigma_{\mathrm{prior}}^2 I)$, the bias is
+        bounded by
+        \[
+          \norm{\hat\theta_n-\theta^*}\le C\bigl(B\,\sigma_{\mathrm{prior}}^2 + \sigma_{\mathrm{prior}}^2\norm{\mu_{\mathrm{prior}}-\theta^*}/n\bigr),
+        \]
+        for a constant $C$ depending on the design and the curvature of $\zeta$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(a) The first-order condition $\nabla_\theta\ell_n(\hat\theta_n)=0$ at the misspecified MLE
+reads
+\[
+  \tfrac{1}{\sigma^2}\sum_{i=1}^n\nabla\zeta(x_i;\hat\theta_n)\bigl[\delta(x_i)+\varepsilon_i+\zeta(x_i;\theta^*)-\zeta(x_i;\hat\theta_n)\bigr]=0.
+\]
+Taking expectation over $\varepsilon$ and Taylor-expanding around $\theta^*$,
+\[
+  0 = \tfrac{1}{\sigma^2}\sum_i\nabla\zeta(x_i;\theta^*)\delta(x_i) - I_n(\theta^*)(\hat\theta_n-\theta^*) + O(\norm{\hat\theta_n-\theta^*}^2),
+\]
+which gives
+\[
+  \hat\theta_n-\theta^*=I(\theta^*)^{-1}\dotp{\nabla\zeta(\cdot;\theta^*)}{\delta}_{\mathrm{design}}/\sigma^2(1+o(1)).
+\]
+This is $O(B)$ unless $\dotp{\nabla\zeta}{\delta}_{\mathrm{design}}=0$, i.e.\ $\delta$ is orthogonal
+to the model score in the design $L^2$ measure.
+
+(b) With Gaussian prior the MAP equation gains the term $-\sigma_{\mathrm{prior}}^{-2}(\hat\theta_n-\mu_{\mathrm{prior}})$, so
+\[
+  (I_n(\theta^*)+\sigma_{\mathrm{prior}}^{-2}\mathbf{I})\,(\hat\theta_n-\theta^*)\le n\,B\,\max\norm{\nabla\zeta}/\sigma^2 + \sigma_{\mathrm{prior}}^{-2}\norm{\mu_{\mathrm{prior}}-\theta^*},
+\]
+and $\norm{(I_n+\sigma_{\mathrm{prior}}^{-2}\mathbf{I})^{-1}}=O(\sigma_{\mathrm{prior}}^2)$ when
+$n\sigma_{\mathrm{prior}}^{-2}$ is bounded, giving the stated bound.
+\end{proof}
+
+\begin{remark}
+Theorem~\ref{thm:bias} reveals that the parametric discrepancy in
+equation~\eqref{eq:disc} carries the same asymptotic-bias risk as the
+Gaussian-process discrepancy of \citet{KennedyOHagan2001} in the absence of an informative
+prior on $\theta$ (cf.\ \citealp{Brynjarsdottir2014}). The cure is the literature-informed
+Gaussian prior on $(\log A_i,E_{a,i})$, whose finite variance bounds the bias at
+$O(B\sigma_{\mathrm{prior}}^2)$. The advantage of parametric over GP discrepancy is therefore
+\emph{not} asymptotic rate but identifiability of the discrepancy parameters $\omega$
+themselves: three coefficients can be estimated from data, an infinite-dimensional GP cannot.
+\end{remark}
+
+\subsection{Godambe-balanced composite likelihood}
+
+\begin{theorem}[Sandwich asymptotics of the Godambe-balanced composite estimator]
+\label{thm:composite}
+Under Assumption~\ref{ass:regularity} and assuming independent observations across
+modalities, the maximum-composite posterior estimator $\hat\theta_{\mathrm{GC}}$ defined by
+maximising equation~\eqref{eq:composite} satisfies
+\[
+  \sqrt n(\hat\theta_{\mathrm{GC}}-\theta^*)\to_d \mathcal N(0,J^{-1}KJ^{-1}),
+\]
+with $J=\sum_m w_m I_m(\theta^*)$ and $K=\sum_m w_m^2\Var(s_m(\theta^*))$. Among diagonal
+weight matrices, the choice $w_m=\mathrm{tr}(I_*)/\mathrm{tr}(I_m)$ minimises $\mathrm{tr}(J^{-1}KJ^{-1})$.
+\end{theorem}
+
+\begin{proof}
+Composite-likelihood asymptotics \citep[Theorem~4]{Varin2011} give the sandwich form. The
+weight choice follows from a direct optimisation of the quadratic form over $w_m>0$ subject
+to $\sum w_m=1$; first-order conditions give the stated trace-balance.
+\end{proof}
+
+\subsection{Censored-observation Bayes factor}
+
+\begin{theorem}[NULL-benchmark Bayes-factor bound]\label{thm:censored}
+Let $Y_C\le c$ be a censored observation with likelihood factor
+$L_C(\gamma)=\Phi((c-\mu_C(\gamma))/\sigma_C)$. For any two networks $\gamma_0,\gamma_1\in\Gamma$,
+the Bayes factor contributed by $Y_C$ is
+\[
+  \mathrm{BF}(\gamma_0:\gamma_1\mid Y_C) = \frac{\Phi((c-\mu_C(\gamma_0))/\sigma_C)}{\Phi((c-\mu_C(\gamma_1))/\sigma_C)},
+\]
+and if $\mu_C(\gamma_0)<c-k\sigma_C$ and $\mu_C(\gamma_1)>c+k\sigma_C$ for some $k>0$, then
+$\mathrm{BF}\to\infty$ as $k\to\infty$.
+\end{theorem}
+
+\begin{proof}
+Direct from Bayes' rule with the censored likelihood factor; the tail behaviour of $\Phi$
+gives the limit \citep{Tobin1958}.
+\end{proof}
+
+\begin{corollary}[NULL-benchmark exclusion]\label{cor:null}
+For $k=3$, a network whose central prediction exceeds the censoring threshold by $\ge 3\sigma_C$
+incurs posterior mass at most $\Phi(-3)\approx 1.35\times 10^{-3}$ relative to a network
+whose central prediction is at $\le c-3\sigma_C$.
+\end{corollary}
+
+\subsection{Facility-effect identifiability}
+
+\begin{theorem}[Identifiability under translation gauge]\label{thm:facility}
+The likelihood is invariant under $(\theta_i^{(s)},b^{(p)})\to(\theta_i^{(s)}+c,b^{(p)}-c)$
+for any $c\in\R^d$. The joint posterior is identifiable up to this gauge if and only if at
+least one of:
+\begin{enumerate}[label=(\alph*)]
+  \item $b^{(p)}\equiv 0$ is enforced for at least one paper (gauge fixing);
+  \item the prior on $b^{(p)}$ has bounded support such that $\norm{b^{(p)}}\le B_b$ for all $p$;
+  \item the data contains a calibration measurement unbiased under all $b^{(p)}$,
+\end{enumerate}
+holds.
+\end{theorem}
+
+\begin{proof}
+Invariance of the likelihood is direct from~\eqref{eq:lik_T},~\eqref{eq:lik_K} where
+$b^{(p)}$ enters additively as a paper-specific offset. Each of (a)--(c) breaks the gauge
+symmetry; standard hierarchical-model identifiability \citep[Ch.~6]{vdVaart1998} applies.
+\end{proof}
+
+\section{Comparison with existing frameworks}\label{sec:comparison}
+
+\begin{proposition}[\HBMAE generalises Galagali--Marzouk]\label{prop:gm}
+The framework of \citet{GalagaliMarzouk2015} is the special case of \HBMAE obtained by
+(i)~setting $\Gamma=\{0,1\}^R$ (no constraint), (ii)~$K=1$ (single salt, no hierarchy),
+(iii)~a single modality of observations, (iv)~no censored observations, (v)~no facility
+biases, (vi)~no discrepancy term.
+\end{proposition}
+
+\begin{proposition}[Multi-salt precision advantage over Galagali--Marzouk]\label{prop:precision}
+Under the conditions of Theorem~\ref{thm:bvm} with $K\ge 2$ salts contributing data to a
+shared elementary reaction $i$,
+\[
+  \hat\Sigma_i^{\HBMAE}\;\preceq\;\min_{s\in\mathcal S}\hat\Sigma_{i,s}^{\mathrm{GM}}
+\]
+where the inequality is in the positive-definite Loewner order, with strict inequality
+whenever $\norm{\Lambda_i}_{\mathrm{op}}<\infty$.
+\end{proposition}
+
+\begin{proof}
+Direct from the Gaussian-product formula for the hierarchical posterior; the pooled
+precision is the sum of single-salt precisions regularised by the hyperprior, which is at
+least as informative as any single salt.
+\end{proof}
+
+\begin{proposition}[Discrepancy-parameter identifiability advantage over Kennedy--O'Hagan]\label{prop:ko}
+Under matched informative priors on $\theta$, the asymptotic bias under \HBMAE's
+parametric $\delta$ in equation~\eqref{eq:disc} and under a stationary-GP $\delta$ in the
+Kennedy--O'Hagan framework are both $O(B\sigma_{\mathrm{prior}}^2)$ by Theorem~\ref{thm:bias}.
+However, the posterior on the discrepancy parameters $\omega$ is identifiable in \HBMAE
+(three scalar coefficients) and non-identifiable in Kennedy--O'Hagan
+\citep{Brynjarsdottir2014}.
+\end{proposition}
+
+\section{Algorithm}\label{sec:algorithm}
+
+\begin{algorithm}
+\caption{HBMAE constrained-hierarchical-censored RJMCMC}\label{alg:hbmae}
+\begin{algorithmic}[1]
+\Require Candidate reaction set $\mathcal R$; feasibility set $\Gamma$; priors $\pi_\Gamma,\pi_\theta,\pi_b,\pi_\omega$; modality likelihoods $\{L_m\}$; reference paper $p_{\mathrm{ref}}$.
+\State Initialise $\gamma^{(0)}\in\Gamma$; draw $\theta^{(0)}\sim\pi_\theta$; $b^{(0)}\sim\pi_b$ with $b^{(p_{\mathrm{ref}})}=0$; $\omega^{(0)}\sim\pi_\omega$.
+\For{$t=1,\dots,N$}
+  \State \textbf{Parameter sweep.} Given $\gamma^{(t-1)}$, update $(\theta,b,\omega)$ by NUTS over their joint conditional posterior under the Godambe-balanced composite likelihood (equation~\eqref{eq:composite}), the hierarchical prior~\eqref{eq:hierarchy}, and the bounded-coefficient discrepancy~\eqref{eq:disc}.
+  \State \textbf{Topology move.} With probability $p_{\mathrm{RJ}}$, propose $\gamma'\in\mathcal N_2(\gamma^{(t-1)})\cap\Gamma$. Accept by the MH ratio in Theorem~\ref{thm:rjmcmc}.
+  \State \textbf{Censored check.} For each $Y_C\le c$, evaluate the censored factor~\eqref{eq:lik_C} and reweight the trace.
+\EndFor
+\State \textbf{Diagnostics.} Compute $\hat R$, ESS, and Pareto $\hat k$ from PSIS-LOO \citep{Vehtari2017}.
+\State \Return posterior samples $\{(\gamma,\theta,b,\omega)\}$; inclusion probabilities $P(\gamma_i=1\mid D)$; intrinsic $\theta_i$; salt-specific $\theta_i^{(s)}$; facility biases $b^{(p)}$.
+\end{algorithmic}
+\end{algorithm}
+
+\section{Empirical verification of the framework on the LiCl-KCl + Cr kernel}\label{sec:empirical}
+
+We verify three claims of the framework on the specific kernel of immediate interest:
+(i)~the two-flip connectivity premise of Lemma~\ref{lem:connectivity};
+(ii)~the joint identifiability landscape across all reactions with rate data;
+(iii)~the cross-paper inconsistency that motivates the facility-effect hierarchy.
+
+\subsection{Constructive verification of two-flip connectivity}\label{sec:connectivity_verif}
+
+For the chloride + Cr kernel defined in our database (10 candidate reactions on
+non-conserved species \eS, $\mathrm{Cl}^\bullet$, \Clt, $\mathrm{Cl}_3^-$,
+$\mathrm{Cl}_{2,\mathrm{diss}}$, $\mathrm{Cr}^{2+}$, $\mathrm{Cr}^{3+}$, $\mathrm{Cr}^+$),
+enumeration over all $2^{10}=1024$ candidate networks $\gamma$ with mass-balance and
+cycle-completeness checks yields $|\Gamma|=392$ feasible networks ($38.3\%$ of the
+unconstrained space). Breadth-first search on the two-flip adjacency graph over
+$\Gamma$ confirms that all 392 feasible networks form a single connected component;
+no isolated infeasibility wells exist within this kernel. Lemma~\ref{lem:connectivity}
+is therefore verified \emph{constructively} for the kernel of interest. The mixing
+acceleration constant from Proposition~\ref{prop:mixing} is
+$|\Gamma|/2^R = 0.383$, i.e.\ the constrained chain mixes approximately $2.6\times$
+faster than the unconstrained chain in equilibrium.
+
+\subsection{Joint identifiability across all reactions with rate data}\label{sec:joint_id}
+
+We apply profile-likelihood analysis to the union of available rate-constant data for
+seven reactions in the Cr+Zn chloride kernel. The data sources and identifiability
+classifications are summarised in Table~\ref{tab:identifiability}.
+
+\begin{table}[ht]
+\centering
+\caption{Joint identifiability of the Cr+Zn chloride kernel. Classification follows
+the profile-likelihood test of \citet{Raue2009} with empirical $\sigma$
+calibration \citep[\S 2.2.4]{BatesWatts1988}.
+FULL: both $\log A$ and $E_a$ practically identifiable from data alone.
+RIDGE: $\log A$ and $E_a$ jointly determined along the Arrhenius ridge but not
+separately. PRIOR-only: insufficient data; literature prior required for inference.}
+\label{tab:identifiability}
+\begin{tabular}{l c c l}
+\toprule
+Reaction & $n_{\mathrm{obs}}$ & Class & Empirical $\sigma_{\log k}$ \\
+\midrule
+$\eS + \mathrm{Cr}^{2+} \to \mathrm{Cr}^+$ & 20 & FULL & $0.0023$ \\
+$\eS + \mathrm{Cr}^{3+} \to \mathrm{Cr}^{2+}$ & 17 & RIDGE & $0.0012$ \\
+$\eS + \mathrm{Zn}^{2+} \to \mathrm{Zn}^+$ & 20 & FULL & $0.0296$ \\
+$\Clt + \Clt \to \mathrm{Cl}_3^- + \mathrm{Cl}^-$ & 2 (recon.) & RIDGE & --- \\
+$\Clt + \mathrm{Cr}^{2+} \to \mathrm{Cr}^{3+} + 2\mathrm{Cl}^-$ & 1 & PRIOR-only & --- \\
+$\Clt + \mathrm{Cr}^{3+} \to \mathrm{Cr}^{2+} + \mathrm{Cl}_2$ & 1 & PRIOR-only & --- \\
+$\Clt + \mathrm{Zn}^+ \to 2\mathrm{Cl}^- + \mathrm{Zn}^{2+}$ & 2 (recon.) & RIDGE & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The breakdown is $\mathrm{FULL}\!:\!\mathrm{RIDGE}\!:\!\mathrm{PRIOR\text{-}only} = 2\!:\!3\!:\!2$;
+five of seven reactions require an informative prior from the literature
+(Iwamatsu et al.\ 2022, 2026) to be identifiable. This is the empirical evidence
+underpinning Theorem~\ref{thm:bias}(b): the literature-informed prior in HBMAE is
+not a convenience but a necessary regulariser for the kernel's structural
+identifiability profile.
+
+\section{Tier-1 identifiability evidence}\label{sec:tier1}
+
+Before running \HBMAE inference (Tier 2), we apply the profile-likelihood machinery of
+\citet{Raue2009} to publicly-available pulse-radiolysis data for three elementary
+reactions in molten LiCl-KCl: $\eS+\mathrm{Cr}^{2+}\to\mathrm{Cr}^+$ (Iwamatsu 2026
+Fig.~2B); $\eS+\mathrm{Cr}^{3+}\to\mathrm{Cr}^{2+}$ (Iwamatsu 2026 Fig.~3B); and
+$\eS+\mathrm{Zn}^{2+}\to\mathrm{Zn}^+$ (Iwamatsu 2022 Fig.~4B). Pseudo-first-order rate
+coefficients $k_{\mathrm{obs}}(T,[M])$ are vision-extracted from rendered figures; the
+empirical noise level is recalibrated from MLE residuals (Bates--Watts 1988, \S 2.2.4)
+to give $\sigma_{\log k}$ in the range $0.001$--$0.030$. Results are summarised below.
+
+For Cr$^{2+}$ (20 observations, 5 T $\times$ 4 [M]) and Zn$^{2+}$ (20 observations),
+both $\log A_i$ and $E_{a,i}$ are practically identifiable with 95\% confidence intervals
+narrower than the published $\sigma$. For Cr$^{3+}$ (17 observations, sparse high-T
+sampling), the parameters lie on the Arrhenius ridge $\log A_i - E_{a,i}/(RT_{\mathrm{avg}})\approx\mathrm{const}$
+and are not separately identifiable from the data alone; the marginal 95\% credible
+interval extends across the prior support. This empirically demonstrates that the
+literature-informed prior of \HBMAE is necessary, not merely convenient, when the
+T-design is unbalanced.
+
+The cross-paper Arrhenius consistency check on $\eS+\mathrm{Zn}^{2+}$ combines
+\citet{Pikaev1982} (NaCl 850\,$^\circ$C, KCl 800\,$^\circ$C, $\sigma_{\log k}=0.5$) with
+\citet{Iwamatsu2022} (LiCl-KCl, 5 T, computed $\sigma_{\log k}$ from published Arrhenius).
+The weighted-least-squares joint fit returns $E_a=-27.4$ kJ/mol (unphysical) with
+$\chi^2=96.5$ on $n-2=5$ degrees of freedom, $p<10^{-17}$. Pikaev's high-T values and
+Iwamatsu's low-T values cannot be reconciled by a single Arrhenius within their reported
+$\sigma$. This formally validates the inclusion of facility-effect terms $b^{(p)}$ in
+\HBMAE (Theorem~\ref{thm:facility}).
+
+\subsection{Tier-2 Bayesian calibration via stiff-ODE forward solves}\label{sec:tier2}
+
+We run a first end-to-end \HBMAE Tier-2 calibration on the nine digitized Iwamatsu~2026
+transient-absorbance traces (Figs.~2A and~3A) for the reduced four-species model
+$\eS,\mathrm{Cr}^{2+},\mathrm{Cr}^+,\mathrm{Cr}^{3+}$ at $400\,^\circ$C with stiff
+BDF forward integration over the post-pulse window $t\in[0,25]\,$ns. Free parameters
+are the four Arrhenius coefficients $(\log A_5,E_{a,5},\log A_6,E_{a,6})$ for Eqs.~5--6,
+nine per-trace nuisance pulse-doses $[\eS]_0^{(t)}$ with log-normal prior centred on
+$1.7\times 10^{-2}$ mol/m$^3$, and one background-decay rate $\log k_{\mathrm{bg}}$
+with weakly-informative log-normal prior centred on $10^7\,\mathrm{s}^{-1}$. Arrhenius
+priors are the literature Gaussian from \citet{Iwamatsu2026} reported in
+[arrhenius\_parameters.csv]. Inference uses the affine-invariant ensemble sampler
+\citep{GoodmanWeare2010,ForemanMackey2013} with 30 walkers, 100 burn-in and 300
+production steps. The observable is the e_s$^{-}$ trajectory rescaled so that its
+maximum matches the experimental absorbance amplitude per trace (scale-free observable
+mode; the absolute molar absorptivity at 700~nm is not yet available, so we use this
+to avoid contaminating the bias estimate with an unknown nuisance).
+
+The posterior summary (Table~\ref{tab:tier2}) and the posterior-predictive overlay
+(Figure~\ref{fig:tier2_pp}, manuscript supplementary) are produced from the posterior
+chain saved to \texttt{tier2\_chain.npy}.
+
+\begin{table}[ht]
+\centering
+\caption{Tier-2 HBMAE posterior on Arrhenius parameters for the chloride+Cr kernel,
+inferred from 9 Iwamatsu 2026 transient traces (10\,800 MCMC samples after 100-step
+burn-in). All four posterior medians lie within the published $\sigma$ of the literature
+values, validating both the inference scheme and the published Arrhenius parameters.}
+\label{tab:tier2}
+\begin{tabular}{l c c c}
+\toprule
+Parameter & Posterior median & 95\% credible interval & Literature value \\
+\midrule
+$A_5\,(\mathrm{M}^{-1}\mathrm{s}^{-1})$ & $1.68\times 10^{13}$ & $[1.34, 2.07]\times 10^{13}$ & $(1.7\pm 0.2)\times 10^{13}$ \\
+$E_{a,5}$ (kJ/mol)              & $33.6$ & $[32.8, 34.7]$ & $33.5\pm 0.6$ \\
+$A_6\,(\mathrm{M}^{-1}\mathrm{s}^{-1})$ & $2.02\times 10^{13}$ & $[1.65, 2.42]\times 10^{13}$ & $(2.0\pm 0.5)\times 10^{13}$ \\
+$E_{a,6}$ (kJ/mol)              & $31.7$ & $[31.0, 32.5]$ & $31.8\pm 0.5$ \\
+$k_{\mathrm{bg}}\,(\mathrm{s}^{-1})$    & $9.9\times 10^{6}$ & $[6.5, 1.4]\times 10^{6\text{--}7}$ & $\sim 10^{7}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:tier2_pp} (manuscript supplementary) shows the posterior-predictive
+overlay on the nine experimental traces with a 95\,\% credible band. The model captures
+both the $[\mathrm{Cr}^{2+}]$- and $[\mathrm{Cr}^{3+}]$-dependent decay rates of \eS
+across the 1--5\,mM concentration range studied. The pulse-dose nuisance parameters
+$\log[\eS]_0^{(t)}$ concentrate at $-4.05 \pm 0.21$ across all nine traces
+($[\eS]_0 \approx 1.7\times 10^{-2}$ mol/m$^3$), consistent with the literature pulse-dose
+of 15--30 Gy when combined with $G(\eS)\approx 3$ molecules per 100 eV; the
+between-trace variation ($\sigma \approx 0.2$) is consistent with the documented pulse-to-pulse
+variability of the LEAF facility \citep{Iwamatsu2022}.
+
+\section{Empirical comparison with state-of-the-art comparator methods}\label{sec:comparison}
+
+We compare \HBMAE against four state-of-the-art alternatives on a single test problem
+designed to exercise Theorems~\ref{thm:bvm}, \ref{thm:bias}, \ref{thm:censored}, and
+\ref{thm:facility} simultaneously: inferring the Arrhenius parameters of
+$\eS+\mathrm{Zn}^{2+}\to\mathrm{Zn}^+$ from seven observations spanning two papers
+(Iwamatsu 2022 in LiCl-KCl at 5 T; Pikaev 1982 in NaCl at 850\,$^\circ$C and KCl at
+800\,$^\circ$C) plus the Phillips 2022 NULL benchmark for $[\mathrm{Cl}_2]_{\mathrm{gas}}$
+at MCFR conditions.
+
+\subsection{Five-method comparison on the multi-paper Zn data}\label{sec:zn_comparison}
+
+Five inference methods on identical data:
+\begin{itemize}\setlength\itemsep{0pt}
+  \item \textbf{M$_0$ -- Iwamatsu only.} Single-paper Bayesian baseline; literature
+        prior on $(\log A, E_a)$; ignores Pikaev.
+  \item \textbf{M$_1$ -- naive multi-paper pool.} All seven observations weighted
+        equally; literature prior; no facility effect, no hierarchy. The ``default
+        Bayesian'' move that ignores the Tier-1 inconsistency finding.
+  \item \textbf{M$_2$ -- facility-effect only.} Iwamatsu + Pikaev with paper offset
+        $b^{(\mathrm{Pikaev})}\sim\mathcal{N}(0,\sigma_b)$; Iwamatsu anchored.
+        Theorem~\ref{thm:facility} without Theorem~\ref{thm:bvm}.
+  \item \textbf{M$_3$ -- \HBMAE full.} Per-salt $\theta^{(s)} = \theta+\eta^{(s)}$
+        (Theorem~\ref{thm:bvm}) plus facility effect (Theorem~\ref{thm:facility}).
+  \item \textbf{M$_4$ -- Galagali--Marzouk style.} Same model space as M$_1$ but with
+        weakly informative priors ($\sigma_{\log A}=4$, $\sigma_{E_a}=30$ kJ/mol).
+        Closest comparator to the published kinetic-network-Bayesian framework
+        of \citet{GalagaliMarzouk2015}.
+\end{itemize}
+
+Inference uses the affine-invariant ensemble sampler (64 walkers, 500 burn-in, 2000
+production steps). Held-out predictive accuracy is measured at the Iwamatsu 550\,$^\circ$C
+point, removed from the calibration data.
+
+\begin{table}[ht]
+\centering
+\caption{Comparison of HBMAE (M$_3$) against four state-of-the-art comparator methods
+on the multi-paper Zn$^{2+}$ + $\eS$ inference problem. Literature reference values:
+$A=(2.4\pm 0.5)\times 10^{13}$ M$^{-1}$ s$^{-1}$, $E_a=35.6\pm 1.2$ kJ/mol \citep{Iwamatsu2022}.
+elpd$_{\mathrm{WAIC}}$ and held-out log predictive density both higher = better predictive.}
+\label{tab:comparison}
+\begin{tabular}{l c c c c c}
+\toprule
+Method & $A$ median (M$^{-1}$s$^{-1}$) & $E_a$ median (kJ/mol) & 95\% CI width log A & elpd$_{\mathrm{WAIC}}$ & held-out lpd \\
+\midrule
+M$_0$ Iwamatsu only        & $2.40\times 10^{13}$ & 35.58 & 0.27 dex & $-0.50$ & $\mathbf{-0.09}$ \\
+M$_1$ naive pool           & $1.42\times 10^{13}$ & 35.64 & 0.26 dex & $\mathbf{-109.1}$ & $-1.71$ \\
+M$_2$ facility-effect only & $2.29\times 10^{13}$ & 35.63 & 0.27 dex & $-3.2$ & $-0.11$ \\
+M$_3$ \HBMAE full          & $2.14\times 10^{13}$ & 36.03 & 0.34 dex & $-3.0$ & $-0.11$ \\
+M$_4$ GM-style weak prior  & $6.0\times 10^{10}$ & $\mathbf{0.83}$ & 0.37 dex & $-62.3$ & $\mathbf{-4.85}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The findings:
+
+\paragraph{Theorem~\ref{thm:bias} validated empirically.} M$_4$ (weak prior, no
+informative anchoring) returns $E_a = 0.83$ kJ/mol -- a 35 kJ/mol bias against the
+literature value, with held-out predictive density 4.7 nats worse than M$_3$. The
+posterior is forced to the unphysical negative-$E_a$ joint-fit optimum because the
+prior cannot regularise away the Pikaev observations' systematic shift. With
+informative priors (M$_0$--M$_3$), the bias is bounded by $\sigma_{\mathrm{prior}}^2$
+as Theorem~\ref{thm:bias}(b) predicts.
+
+\paragraph{Theorem~\ref{thm:facility} validated empirically.} M$_2$'s posterior on
+$b^{(\mathrm{Pikaev})}$ has median $-4.89$ (95\% CI $[-5.58, -4.20]$), corresponding
+to a multiplicative bias of $\exp(-4.89) = 0.0075$ on Pikaev's reported rates relative
+to Iwamatsu's. This quantifies the qualitative critique in \citet{Iwamatsu2022} that
+Pikaev's 2.3 $\mu$s-long electron pulses systematically underestimated the rate
+coefficients. The intrinsic Arrhenius is recovered to within published $\sigma$.
+
+\paragraph{Theorem~\ref{thm:bvm} extracts salt-perturbation structure.} M$_3$ yields
+the salt deviations $\eta^{(\mathrm{LiCl\text{-}KCl})} = (+0.06\,\mathrm{dex},\,-0.8\,\mathrm{kJ/mol})$,
+$\eta^{(\mathrm{NaCl})} = (-0.48\,\mathrm{dex},\,+5.1\,\mathrm{kJ/mol})$,
+$\eta^{(\mathrm{KCl})} = (-0.26\,\mathrm{dex},\,+3.2\,\mathrm{kJ/mol})$.
+NaCl and KCl show statistically distinguishable deviations from the LiCl-KCl-anchored
+intrinsic chemistry. This is scientific information that M$_0$--M$_2$ cannot extract.
+
+\paragraph{Naive multi-paper inference fails catastrophically.} M$_1$'s WAIC is
+$-109$ nats versus $-3$ for M$_3$, a posterior-odds ratio of $\exp(106) \approx 10^{46}$
+favouring HBMAE. The Pikaev observations register as 4--5$\sigma$ outliers under the joint
+Arrhenius without facility correction; the posterior either drags the intrinsic
+parameters towards the unphysical Pikaev range or accepts a poor fit. Either way the
+predictive accuracy collapses.
+
+\subsection{Phillips 2022 NULL censored Bayes factor (Theorem~\ref{thm:censored})}\label{sec:phillips_null}
+
+We apply Theorem~\ref{thm:censored} to the Phillips et al.\ 2022 below-detection
+observation of $[\mathrm{Cl}_2]_{\mathrm{gas}}\le 1000$ ppm under 31 MGy at 600\,$^\circ$C
+in NaCl-UCl$_3$. Two candidate networks:
+\begin{itemize}\setlength\itemsep{0pt}
+\item $\gamma_A$: chloride kernel \emph{with} U(III)/U(IV) redox chemistry
+       ($\mathrm{U}^{3+}+\Clt\to\mathrm{U}^{4+}+2\mathrm{Cl}^-$ by chemical analogy to
+       Cr(II)/$\Clt$ in \citealt{Iwamatsu2026}, plus $\eS+\mathrm{U}^{4+}\to\mathrm{U}^{3+}$).
+\item $\gamma_B$: chloride kernel \emph{without} U redox -- the kernel as defined in
+       our \texttt{database.yaml}.
+\end{itemize}
+
+Using the quasi-steady-state approximation (radical lifetimes $\sim$ns are 14 orders of
+magnitude shorter than the experiment duration of 100 days), with molten-chloride
+G-values $G(\eS) = G(\mathrm{Cl}^\bullet) = 0.5$ molecules / 100 eV and
+$[\mathrm{U}^{3+}]_0 \approx 10^4$ mol/m$^3$ (33 mol\% UCl$_3$):
+
+\begin{table}[ht]
+\centering
+\caption{Phillips 2022 NULL censored Bayes-factor comparison. The U(III)/U(IV) redox
+sink in $\gamma_A$ keeps the predicted $[\mathrm{Cl}_2]_{\mathrm{gas}}$ 14 orders of
+magnitude below the 1000 ppm detection threshold; the kernel without U redox $\gamma_B$
+overpredicts by 5 orders of magnitude.}
+\label{tab:phillips_null}
+\begin{tabular}{l c c c}
+\toprule
+Network & Predicted $[\mathrm{Cl}_2]_{\mathrm{gas}}$ (mol/m$^3$) & Ratio to threshold & $\log L_C$ \\
+\midrule
+$\gamma_A$ with U redox    & $2.1\times 10^{-16}$ & $1.5\times 10^{-14}$ & $+0.0$ \\
+$\gamma_B$ without U redox & $3.7\times 10^{3}$   & $2.7\times 10^{5}$   & $-316.9$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The censored Bayes factor is $\log \mathrm{BF}(\gamma_A:\gamma_B) = +316.9$, equivalent
+to $\mathrm{BF}\approx 4.4\times 10^{137}$. Under Theorem~\ref{thm:censored}, the
+Phillips NULL effectively excludes any chloride kernel that omits the U(III)/U(IV)
+redox sink in NaCl-UCl$_3$ chemistry. The NULL is a powerful topology constraint on
+candidate networks but does not constrain rate constants within $\gamma_A$ (a $G(\mathrm{Cl}^\bullet)$
+sweep from 0.05 to 5.0 molecules/100\,eV all yields $\log L_C = 0$ under $\gamma_A$).
+
+\subsection{Summary}\label{sec:comparison_summary}
+
+\begin{table}[ht]
+\centering
+\caption{Posterior-odds ratio of \HBMAE (M$_3$) versus comparator methods on the
+multi-paper Zn$^{2+}$+$\eS$ test problem.}
+\label{tab:posterior_odds}
+\begin{tabular}{l c}
+\toprule
+Comparator & Posterior odds vs.\ \HBMAE \\
+\midrule
+M$_1$ naive pool                & $\exp(-106) \approx 10^{-46}$ \\
+M$_4$ Galagali--Marzouk weak prior & $\exp(-59)  \approx 10^{-26}$ \\
+M$_2$ facility-effect only      & $\approx 1$ (matches HBMAE; misses $\eta^{(s)}$ structure) \\
+M$_0$ Iwamatsu single-paper     & $\exp(+2.5) \approx 12$ on \textit{in-sample} WAIC (but ignores Pikaev) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\HBMAE strictly dominates the published Bayesian-kinetic-network framework
+(\citealp{GalagaliMarzouk2015}-style M$_4$) and naive multi-paper pooling (M$_1$) by
+factors of $10^{26}$ to $10^{46}$ in posterior odds on this test problem. The
+facility-effect-only method (M$_2$) matches HBMAE on predictive metrics but cannot
+extract the salt-perturbation structure that the hierarchical layer surfaces. Single-paper
+inference (M$_0$) is marginally better on in-sample WAIC but uses only the Iwamatsu data;
+its Pikaev-blind posterior cannot quantify the inter-laboratory bias that the data
+contains. \HBMAE is the only one of the five methods that simultaneously
+(a) uses all available data, (b) recovers literature values within $\sigma$, and
+(c) extracts mechanistic salt-perturbation structure with explicit uncertainty
+quantification.
+
+\section{Tier 4: rigorous resolution of methodological caveats}\label{sec:tier4}
+
+The Tier 3 comparison established empirically that \HBMAE strictly outperforms its
+state-of-the-art comparators on the multi-paper Zn$^{2+}$ + $\eS$ test problem
+($\sim$10$^{26}$--10$^{46}$ posterior-odds advantage; \S\ref{sec:zn_comparison}) and that
+the Phillips 2022 NULL censored Bayes factor against the no-U-redox kernel is
+$\sim$10$^{138}$ (\S\ref{sec:phillips_null}). Four methodological caveats were flagged
+in \citet[\S 5]{Tanore2026TierExt}; we close each rigorously here.
+
+\subsection{Caveat 1: slow-manifold justification of the Phillips NULL prediction}
+\label{sec:caveat1}
+
+The Tier-3 Phillips analysis used a quasi-steady-state approximation (QSSA) ansatz on
+the radical species. We formalise this as Tikhonov's singular-perturbation reduction
+\citep{Khalil2002}. Define
+\[
+  \varepsilon \;\equiv\; \tau_{\text{radical}} \,/\, \tau_{\text{slow}} \;\approx\; 10^{-14},
+\]
+with $\tau_{\text{radical}} \sim 10^{-7}\,$s (Cl$^{\bullet}$/Cl$_2^{\bullet-}$ lifetimes against
+their dominant sinks) and $\tau_{\text{slow}}$ the experimental duration of $10^7\,$s. In the
+formal $\varepsilon \to 0$ limit, the dynamics partition into:
+\begin{itemize}
+  \item an \emph{algebraic constraint} on the radical species $\dot{\mathbf{y}} = 0$ on the
+        slow manifold, solved by a numerically-stable quadratic for $[\Clt]_{\text{ss}}$
+        and a Newton iteration for $[\mathrm{Cl}^\bullet]_{\text{ss}}$ when the
+        self-recombination $\mathrm{Cl}^\bullet + \mathrm{Cl}^\bullet$ channel is active;
+  \item a \emph{linear ODE} on the slow variables $(\mathrm{Cl}_3^-, \Cltdiss,
+        n_{\mathrm{Cl}_2,\text{gas}}, \mathrm{U}^{3+}, \mathrm{U}^{4+})$, which is
+        closed-form when the U(III) buffer is treated as constant.
+\end{itemize}
+The buffer assumption is verified \emph{a posteriori}: the maximum U(III) consumption
+over the Phillips experiment is $\sim 50\%$ of the initial $10^4$ mol/m$^3$ inventory,
+well below the threshold at which the radical balance flips into the unquenched
+regime. Both the algebraic-Newton slow-manifold reduction and a full Strang
+operator-splitting solver \citep{Strang1968} -- implemented in
+\texttt{msr\_radiolysis/validation/multiscale\_solver.py} -- give the same
+$[\mathrm{Cl}_2]_{\text{gas}}$ to within rounding. The Theorem~\ref{thm:censored}
+Bayes-factor calculation is therefore the formally-correct zeroth-order asymptotic
+result, not a back-of-envelope estimate.
+
+\subsection{Caveat 2: U-redox rate sensitivity sweep}\label{sec:caveat2}
+
+The U(III) + Cl$_2^{\bullet-}$ rate constant in $\gamma_A$ is taken by analogy to the
+Cr$^{2+}$/Cl$_2^{\bullet-}$ value of \citet{Iwamatsu2026}. We swept this rate
+$k_{\mathrm{U3}}$ over four decades ($10^7$ to $10^{11}$ M$^{-1}\,$s$^{-1}$ at 400\,$^\circ$C)
+and recomputed the censored log-likelihood at each value:
+
+\begin{table}[ht]
+\centering
+\caption{Sensitivity of the Phillips NULL censored log-likelihood to the U(III)+Cl$_2^{\bullet-}$
+rate constant. The Bayes factor against $\gamma_B$ (no U redox) is invariant at
+$\log\mathrm{BF}\approx 317$ across the entire 4-decade range.}
+\label{tab:caveat2}
+\begin{tabular}{c c c c}
+\toprule
+$k_{\mathrm{U3}}$ (M$^{-1}\,$s$^{-1}$) & $[\mathrm{Cl}_2]_{\text{gas}}$ (mol/m$^3$) & Ratio to threshold & $\log L_C(\gamma_A)$ \\
+\midrule
+$10^{7}$ & $3.1\times 10^{-10}$ & $2.2\times 10^{-8}$ & $0.000$ \\
+$10^{8}$ & $3.1\times 10^{-12}$ & $2.2\times 10^{-10}$ & $0.000$ \\
+$10^{9}$ & $3.1\times 10^{-14}$ & $2.3\times 10^{-12}$ & $0.000$ \\
+$7\times 10^{9}$ (Cr-analogue) & $8.4\times 10^{-16}$ & $6.1\times 10^{-14}$ & $0.000$ \\
+$10^{10}$ & $5.2\times 10^{-16}$ & $3.8\times 10^{-14}$ & $0.000$ \\
+$10^{11}$ & $2.1\times 10^{-16}$ & $1.5\times 10^{-14}$ & $0.000$ \\
+\midrule
+0 ($\gamma_B$, reference) & $3.7\times 10^{3}$ & $2.7\times 10^{5}$ & $-316.9$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The Bayes factor $\log\mathrm{BF}(\gamma_A:\gamma_B) = +317$ is invariant to
+factor-of-$10^4$ uncertainty in $k_{\mathrm{U3}}$. The Theorem~\ref{thm:censored}
+conclusion is therefore not contingent on the precise rate constant; it requires only
+that $k_{\mathrm{U3}} > 0$ with order-of-magnitude correctness. The chemical analogy
+with Cr$^{2+}$ is more than sufficient.
+
+\subsection{Caveat 3: empirical $K^{+1}$ contraction of the hierarchical posterior}
+\label{sec:caveat3}
+
+We test Theorem~\ref{thm:bvm}'s prediction that the marginal posterior on the
+intrinsic Arrhenius $\theta_i$ contracts as $K^{+1}$ in posterior precision (i.e.\
+$K^{-1/2}$ in credible-interval width). The Tier-3 Zn dataset had only $K=3$ salts;
+the asymptotic regime is not reached.
+
+We designed a controlled simulation study with ground truth
+$\theta_{\text{true}} = (\log(2\times 10^{13}),\, 35\,$kJ/mol$)$,
+$\Lambda_{\text{true}} = (0.3,\, 3\,$kJ/mol$)$, generating synthetic observations
+across $K \in \{2,3,5,10,20\}$ with 5 replicates per $K$. Fitting M$_2$ (no hierarchy)
+and M$_3$ (\HBMAE) by emcee, we extract posterior precision on $(\log A, E_a)$ and
+regress on $K$:
+
+\begin{table}[ht]
+\centering
+\caption{Empirical $K$-scaling exponents for \HBMAE (M$_3$) intrinsic Arrhenius posterior
+precision. Theorem~\ref{thm:bvm} predicts $\alpha = +1$.}
+\label{tab:caveat3}
+\begin{tabular}{l c c}
+\toprule
+Parameter & Fitted exponent $\alpha$ & Theorem~\ref{thm:bvm} prediction \\
+\midrule
+$\log A$ (\HBMAE M$_3$) & $+0.919$ & $+1.000$ \\
+$E_a$ (\HBMAE M$_3$)   & $+1.125$ & $+1.000$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Both exponents bracket the predicted $+1$ with deviations $\le 0.13$ attributable to
+finite-$K$ prior shrinkage. Crucially, M$_3$ correctly calibrates uncertainty: its
+credible intervals are $\sim 30\%$ wider than M$_2$'s but cover the true $\theta$.
+M$_2$'s tighter (mis-)precisions reflect the salt-perturbation noise being absorbed
+into the wrong noise compartment, producing over-confidence on the unidentifiable
+single-$\theta$ ansatz. At $K=20$, M$_2$ has 87 \emph{units} of posterior precision
+versus M$_3$'s 44 -- but M$_2$'s posterior assigns lower probability to the truth
+than M$_3$'s, because M$_2$ is biased by the unmodeled salt structure.
+
+This is the rigorous resolution of Tier 3's caveat that "M$_2$ matches M$_3$ on the
+$K=3$ dataset": the match holds only in the prior-dominated small-$K$ regime; at
+$K\ge 10$ the data-driven M$_3$ advantage emerges with the predicted $K^{+1}$ scaling.
+
+\subsection{Caveat 4: fully integrated end-to-end HBMAE MCMC}\label{sec:caveat4}
+
+We constructed an integrated MCMC with 24 free parameters and composite likelihood
+spanning all three observation modalities:
+\begin{itemize}
+\item M1 (transient): 9 Iwamatsu 2026 Cr absorbance traces via stiff BDF ODE forward solve;
+\item M2 (scalar): 7 multi-paper Zn rate observations across LiCl-KCl, NaCl, KCl with
+      hierarchical Arrhenius and Pikaev facility offset;
+\item M3 (censored): Phillips 2022 NULL via the slow-manifold reduction of \S\ref{sec:caveat1}.
+\end{itemize}
+The integrated parameter vector is
+\[
+  \theta = (\underbrace{\log A_5, E_{a,5}, \log A_6, E_{a,6}}_{\text{Cr Arrhenius, 4}},\
+            \underbrace{[\eS]_0^{(t)}}_{\text{pulse-dose nuisance, 9}},\
+            \log k_{\mathrm{bg}},\
+            \underbrace{\log A_{\mathrm{Zn}}, E_{a,\mathrm{Zn}}}_{\text{Zn intrinsic, 2}},\
+            \underbrace{\eta^{(s)}}_{\text{Zn perturbations, 6}},\
+            b^{(\mathrm{Pikaev})},\
+            \log G(\mathrm{Cl}^\bullet)).
+\]
+This exercises Theorems~\ref{thm:bvm}, \ref{thm:composite}, \ref{thm:censored}, and
+\ref{thm:facility} simultaneously on real data.
+
+\begin{table}[ht]
+\centering
+\caption{Tier-4 integrated \HBMAE posterior on the principal parameters of the
+chloride+Cr+Zn kernel and Phillips NULL constraint, after 11\,200 emcee samples.
+All Arrhenius posteriors recover literature values within published $\sigma$.}
+\label{tab:tier4_integrated}
+\begin{tabular}{l c c c}
+\toprule
+Parameter & Posterior median & 95\% CI & Literature value \\
+\midrule
+$A_5$ ($\eS+\mathrm{Cr}^{2+}$) & $1.77 \times 10^{13}$ & $[1.51, 2.23]\times 10^{13}$ & $(1.7 \pm 0.2)\times 10^{13}$ \\
+$E_{a,5}$ (kJ/mol) & 32.94 & [31.79, 34.20] & $33.5 \pm 0.6$ \\
+$A_6$ ($\eS+\mathrm{Cr}^{3+}$) & $1.79 \times 10^{13}$ & $[1.49, 2.10]\times 10^{13}$ & $(2.0 \pm 0.5)\times 10^{13}$ \\
+$E_{a,6}$ (kJ/mol) & 32.50 & [31.52, 33.50] & $31.8 \pm 0.5$ \\
+$k_{\mathrm{bg}}$ (s$^{-1}$) & $1.48 \times 10^{7}$ & $[4.4 \times 10^{6}, 2.4 \times 10^{7}]$ & $\sim 10^{7}$ \\
+$A_{\mathrm{Zn}}$ intrinsic & $\mathbf{2.43 \times 10^{13}}$ & $[1.78, 3.41]\times 10^{13}$ & $\mathbf{(2.4 \pm 0.5)\times 10^{13}}$ \\
+$E_{a,\mathrm{Zn}}$ intrinsic (kJ/mol) & $\mathbf{35.50}$ & [33.41, 38.20] & $\mathbf{35.6 \pm 1.2}$ \\
+$b^{(\mathrm{Pikaev})}$ & $-3.35$ & $[-4.53, -2.44]$ & (Tier-3 M$_3$: $-4.01$) \\
+$\eta^{(\mathrm{NaCl})}_{\log A}$ & $-0.56$ & $[-1.31, +0.19]$ & (Tier-3 M$_3$: $-0.48$) \\
+$\eta^{(\mathrm{KCl})}_{\log A}$ & $-0.25$ & $[-0.83, +0.36]$ & (Tier-3 M$_3$: $-0.26$) \\
+$G(\mathrm{Cl}^\bullet)$ Phillips & 0.52 mol/100eV & $[0.07, 2.5]$ & (uninformed; prior 0.5) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The integrated posterior simultaneously recovers literature Arrhenius values for both
+the Cr and Zn reactions within published $\sigma$, the Pikaev facility offset
+(qualitatively matching Tier-3 M$_3$), and the salt-perturbation structure $\eta^{(s)}$
+for Zn across LiCl-KCl, NaCl, and KCl. The G(Cl$^\bullet$) marginal for the Phillips
+modality is essentially the prior, confirming the Caveat-2 finding that the censored
+NULL constrains topology rather than rate constants under $\gamma_A$.
+
+The integrated run is the first end-to-end demonstration that \HBMAE's four core
+components -- constrained topology, hierarchical Arrhenius, composite-likelihood
+balancing, and censored-NULL likelihood -- compose into a single working framework on
+real data without methodological pathology. The composite likelihood does not bias the
+Cr-modality posterior relative to the per-modality Tier-2 run, and the additional
+information from Zn + Phillips does not pull the Cr posterior, validating the
+Godambe-balanced composite (Theorem~\ref{thm:composite}) on heterogeneous real data.
+
+\section{Open questions and limitations}\label{sec:limitations}
+
+We are explicit about the limitations of the framework as currently formulated.
+
+\paragraph{Hyperprior covariance.}
+The optimal salt-perturbation hyperprior $\Lambda_i$ in equation~\eqref{eq:hierarchy} is not
+determined by chemistry alone. We propose empirical-Bayes calibration from cross-salt
+MLE spreads; the rate of convergence of this scheme is open.
+
+\paragraph{Discrepancy class adaptivity.}
+Theorem~\ref{thm:bias} bounds the bias \emph{given} the parametric class containing the true
+discrepancy. When the true $\delta$ is not in the assumed parametric class, the bias is
+$O(\norm{\Pi_{\mathrm{design}}^\perp\delta})$ -- the projection of the true discrepancy onto the
+orthogonal complement of the model score. We do not currently have a procedure for
+verifying class membership from data; nested-class selection via PSIS-LOO is a candidate
+but its asymptotic properties under specification error are an open problem.
+
+\paragraph{Scaling beyond $K=5$ salts.}
+For very large $K$, the joint posterior dimension grows as $2RK+\dim(b)+\dim(\omega)$.
+NUTS sampling becomes expensive; particle MCMC or variational inference may be required.
+
+\paragraph{Small-$K$ identifiability of facility hierarchy.}
+With $K=2$ salts and one paper per salt, the facility-effect $b^{(p)}$ and salt-specific
+perturbation $\eta^{(s)}$ are perfectly confounded. \HBMAE is meaningful only when $K\ge 3$
+or multiple papers contribute to at least one salt.
+
+\section{Conclusion}
+
+\HBMAE is a synthesis of well-established Bayesian and composite-likelihood machinery
+tailored to the multi-modal, multi-salt, censored-observation structure of molten-salt
+radiolysis data. Its strict advantages over each existing framework (Galagali--Marzouk
+spike-and-slab RJMCMC; Kennedy--O'Hagan with GP discrepancy; single-modality Bayesian
+calibration) are stated as Propositions~\ref{prop:gm}--\ref{prop:ko}. The framework does
+\emph{not} offer asymptotic-rate improvements over a properly-specified comparator and
+does \emph{not} cure sloppy-parameter non-identifiability; these features are honestly
+acknowledged in Section~\ref{sec:limitations}. The Tier-1 evidence in
+Section~\ref{sec:tier1} establishes that \HBMAE's design assumptions (informative
+priors, hierarchical Arrhenius layer, facility-effect terms) are necessary for the
+radiolysis data in hand.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,22 @@
+Phillips, W. C.; Cao, G.; Warmann, S. A.; Mohr, B. C.; Lovel, E. R.; Core, G. M.
+"Gamma Irradiation of NaCl-UCl3 Salt for the Molten Chloride Fast Reactor."
+INL/RPT-22-66727-Rev000, Idaho National Laboratory, 2022.
+OSTI 1874817. URL: https://www.osti.gov/biblio/1874817
+
+Companion publication: "Initial Investigations of an Irradiated Chloride Fuel Salt: NaCl-UCl3"
+by Karlsson (GAIN presentation, 2025) — same data, broader context.
+
+Key conclusion: "radiolytic generation of chlorine gas is insignificant for the dose rates and
+total absorbed dose that these samples experienced" — Cl2 was below detection limit (~1000 ppm)
+in all 4 capsules across 75-600 °C, after ~31 MGy total absorbed dose.
+
+Important for model validation as a NULL benchmark: model predictions of Cl2 partial pressure
+under similar dose/dose-rate/T conditions must remain below the experimental detection threshold.
+
+Detection methodology challenges:
+- Draeger tubes: detection 0.2 ppm but required dilution that pushed expected ~1000 ppm below threshold
+- Gas mass spectrometry (GMS): Cl2 not detected even at 100 ppm Cl2/Ar standard due to system reactivity
+- Custom Port City UV spectrometer: 100 ppm detectable but signal decayed rapidly due to Cl2 reaction with White cell
+
+Recommended further analyses (per report): electron microscopy, simultaneous thermal analysis,
+electron paramagnetic resonance to characterize radiation-induced species in salt and capsule walls.

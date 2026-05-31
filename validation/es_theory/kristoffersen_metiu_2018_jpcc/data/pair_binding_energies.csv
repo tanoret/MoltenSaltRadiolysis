@@ -1,0 +1,13 @@
+# Kristoffersen, H. H.; Metiu, H. J. Phys. Chem. C 2018, 122, 19603-19612.
+# DOI: 10.1021/acs.jpcc.8b05716
+# Bipolaron (two-electron species) pair-binding energy:
+# dE_pair = dE(2 atoms dissolved) - 2 * dE(1 atom dissolved)
+# i.e. stabilization of the bipolaron relative to two noninteracting solvated electrons.
+# Source: Section 3.1 (LiCl) and section 3.4 / eqs (5)-(6) (NaCl).
+# For the LiCl-NaCl mixture, the paper does not report a single-electron reference,
+# so the pair-binding energy is not directly available; it is left blank.
+# 1 eV = 96.485 kJ/mol.
+salt_composition,T_K,dE_1e_eV,dE_2e_eV,dE_pair_eV,dE_pair_kJ_mol,source,notes
+45LiCl,900,-0.5,-2.0,-1.0,-96.5,section 3.1; eqs 2-3,2e_s- -> (e_s-)_2 binding energy = -2.0 - 2*(-0.5)
+45NaCl,1100,-0.9,-1.9,-0.1,-9.6,section 3.4; eqs 5-6,Paper states explicitly: bipolaron formation energy -0.1 eV (within MD error)
+29LiCl-16NaCl,900,,-2.4,,,section 3.3; eq 4,qualitative_only=true: no single-Li reference reported for mixture

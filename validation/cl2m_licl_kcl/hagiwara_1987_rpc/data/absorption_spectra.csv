@@ -1,0 +1,25 @@
+# Hagiwara, Sawai, Sumiyoshi, Katayama 1987, Radiat. Phys. Chem. 30(2), 141-144.
+# No DOI; reference: ISSN 0146-5724/87, Pergamon Journals Ltd.
+# Source: validation/papers/1-s2.0-135901978790097X-main.pdf
+# Absorption maxima for the two transients observed in LiCl-KCl eutectic (42 mol% KCl):
+#   visible band -> solvated electron e_s-
+#   u.v. band    -> molecular radical ion Cl2-
+# Temperature conversion: T_K = T_C + 273.15.
+# Fig. 1: spectrum at 400 C in the eutectic (text: visible band at 680 nm).
+# Fig. 4: visible bands at 400, 500, 600 C in the eutectic (lambda_max read from figure).
+# Section 3: u.v. band always at 340 nm, no temperature dependence.
+# Section 5 + Fig. 6/7: composition dependence at 600 C (extra entries flagged in notes).
+species,T_K,T_C,lambda_max_nm,medium,source,notes
+e_s-,673.15,400,680,LiCl-KCl eutectic (42 mol% KCl),Section 3 + Fig. 1 + Fig. 4,reported in text as 680 nm
+e_s-,773.15,500,725,LiCl-KCl eutectic (42 mol% KCl),Fig. 4,read from Fig. 4; text only states red-shift with T
+e_s-,873.15,600,765,LiCl-KCl eutectic (42 mol% KCl),Fig. 4,read from Fig. 4; text only states red-shift with T
+Cl2-,673.15,400,340,LiCl-KCl eutectic (42 mol% KCl),Section 1 + Section 3,u.v. band; text states 340 nm at all temperatures studied
+Cl2-,773.15,500,340,LiCl-KCl eutectic (42 mol% KCl),Section 3,text: no temperature dependence on u.v. band
+Cl2-,873.15,600,340,LiCl-KCl eutectic (42 mol% KCl),Section 3,text: no temperature dependence on u.v. band
+e_s-,873.15,600,520,pure LiCl melt (0 mol% KCl),Section 5 + Fig. 6 + Fig. 7,composition study; reported in text as ~520 nm
+e_s-,873.15,600,540,LiCl-KCl (~7 mol% KCl),Fig. 7,read from Fig. 7 (composition dependence)
+e_s-,873.15,600,625,LiCl-KCl (20 mol% KCl),Fig. 6 + Fig. 7,read from Fig. 7 (composition dependence)
+e_s-,873.15,600,695,LiCl-KCl (30 mol% KCl),Fig. 6 + Fig. 7,read from Fig. 7 (composition dependence)
+e_s-,873.15,600,765,LiCl-KCl eutectic (42 mol% KCl),Fig. 4,42 mol% KCl point consistent with Fig. 4 600 C trace
+e_s-,873.15,600,780,LiCl-KCl (50 mol% KCl),Section 5 + Fig. 6 + Fig. 7,text reports ~780 nm at 50 mol% KCl
+Cd+/Cl2-,873.15,600,330,LiCl-KCl eutectic + 0.05 M CdCl2,Section 4 + Fig. 5,doped melt; band slightly blue-shifted; attributed to Cd+ contribution overlapping Cl2-

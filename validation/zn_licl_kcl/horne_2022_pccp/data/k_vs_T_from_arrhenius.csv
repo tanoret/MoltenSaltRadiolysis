@@ -1,0 +1,15 @@
+# Per-T 2nd-order rate constants for e_s- + Zn2+ -> Zn+, computed from Arrhenius parameters.
+# Original Iwamatsu 2022 paper reports Ea = 30.31 +/- 0.09 kJ/mol; refit in Iwamatsu 2026
+# (density-corrected) gives A = (2.4 +/- 0.5)e13 M^-1 s^-1, Ea = 35.6 +/- 1.2 kJ/mol.
+# Both fits used here for comparison. Units: k in M^-1 s^-1.
+reaction_id,reaction,T_C,T_K,k_M_inv_s,sigma_k_M_inv_s,arrhenius_source
+eq5_refit_2026,e_s- + Zn2+ -> Zn+,400,673.15,4.148e+10,1.240e+10,Iwamatsu 2026 density-corrected refit
+eq5_refit_2026,e_s- + Zn2+ -> Zn+,450,723.15,6.439e+10,1.858e+10,Iwamatsu 2026 density-corrected refit
+eq5_refit_2026,e_s- + Zn2+ -> Zn+,500,773.15,9.443e+10,2.641e+10,Iwamatsu 2026 density-corrected refit
+eq5_refit_2026,e_s- + Zn2+ -> Zn+,550,823.15,1.322e+11,3.599e+10,Iwamatsu 2026 density-corrected refit
+eq5_refit_2026,e_s- + Zn2+ -> Zn+,600,873.15,1.781e+11,4.735e+10,Iwamatsu 2026 density-corrected refit
+eq5_published_2022,e_s- + Zn2+ -> Zn+,400,673.15,4.200e+10,,Iwamatsu 2022 published Ea (A back-derived from 400 C rate)
+eq5_published_2022,e_s- + Zn2+ -> Zn+,450,723.15,6.108e+10,,Iwamatsu 2022 published Ea (A back-derived from 400 C rate)
+eq5_published_2022,e_s- + Zn2+ -> Zn+,500,773.15,8.462e+10,,Iwamatsu 2022 published Ea (A back-derived from 400 C rate)
+eq5_published_2022,e_s- + Zn2+ -> Zn+,550,823.15,1.127e+11,,Iwamatsu 2022 published Ea (A back-derived from 400 C rate)
+eq5_published_2022,e_s- + Zn2+ -> Zn+,600,873.15,1.452e+11,,Iwamatsu 2022 published Ea (A back-derived from 400 C rate)

@@ -1,0 +1,12 @@
+# Makarov, Zhukova, Pikaev, Spitsyn 1982, Bull. Acad. Sci. USSR Div. Chem. Sci. 31(4), 662-665.
+# Original Russian: Izv. Akad. Nauk SSSR Ser. Khim. 1982, No. 4, pp. 750-755.
+# DOI: 10.1007/BF00949993
+# Source: validation/papers/BF00949993.pdf
+#
+# Rate constants for X- + X. -> X2-. (reaction 3 in the paper) are NOT tabulated here.
+# The paper writes the formation reaction as Eq. (3): X. + X- -> X2-, but no numerical k3 values are reported.
+# All rate constants reported in Table 2 are for the X2- DISAPPEARANCE reactions with reduced metal species
+# (Eq. 6: X2- + M2(2n-1)+ -> 2 X- + 2 Mn+); those are captured in x2m_metal_rate_constants.csv.
+# The X2- + X2- disproportionation (Eq. 9) constant is captured in x2m_disproportionation_rate_constants.csv.
+# CSV intentionally left header-only -- no X2- formation rate constants are reported in this paper.
+reaction,melt,T_C,T_K,k_M_inv_s_inv,sigma_k,source_in_paper,notes

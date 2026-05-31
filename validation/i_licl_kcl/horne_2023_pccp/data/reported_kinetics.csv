@@ -1,0 +1,8 @@
+# Kinetic data reported in the text of Conrad et al. PCCP 2023 (DOI:10.1039/D3CP01477K)
+# for KI in LiCl-KCl eutectic.
+# Probe wavelengths: e_s- @ 671 nm; Cl2•- @ 340 nm; ICl•- @ 400 nm (decay studied @ 671 nm at t > 1 µs).
+# Pulse dose: 6-9 Gy water-equivalent.
+quantity,value,uncertainty,units,note
+Ea_ICl_decay,23.4,5.7,kJ/mol,activation energy for second-order ICl•- decay at 671 nm in 10 wt% KI / LiCl-KCl
+A_over_eps_ICl,1.6e9,1.3e9,cm/s,pre-exponential of k/eps for ICl•- 2nd-order decay (eps unknown so reported as ratio)
+Ea_Cl2_LiCl_KCl,25,1,kJ/mol,reference value for Cl2•- disproportionation in neat LiCl-KCl (24-26 kJ/mol range)

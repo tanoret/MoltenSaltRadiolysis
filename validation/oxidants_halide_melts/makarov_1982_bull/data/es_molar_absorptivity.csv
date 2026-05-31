@@ -1,0 +1,20 @@
+# Makarov, Zhukova, Pikaev, Spitsyn 1982, Bull. Acad. Sci. USSR Div. Chem. Sci. 31(4), 662-665.
+# Original Russian: Izv. Akad. Nauk SSSR Ser. Khim. 1982, No. 4, pp. 750-755.
+# DOI: 10.1007/BF00949993
+# Source: validation/papers/BF00949993.pdf
+#
+# IMPORTANT FINDING: This paper does NOT report a numerical molar absorptivity for the solvated electron e_s-.
+# The paper mentions e_s- qualitatively (Eqs. 1-2 and 4) but only tabulates parameters for the halogen X2- anion-radicals
+# (see x2m_molar_absorptivity.csv). The paper states that e_s- has an F-center-type structure and disappears mainly via
+# reduction of metal cations (Eq. 4), with a lifetime tau(e_s-) <= 2 us in the melts studied, but no lambda_max or
+# epsilon for e_s- is tabulated or stated numerically.
+#
+# Iwamatsu et al. 2022 PCCP cite this paper for epsilon(e_s-) approximately 8000 M-1 cm-1 in molten alkali chlorides.
+# Most plausibly this value originates from the companion/earlier papers by the same group cited inside this paper as
+# refs [1] Makarov Zhukova Pikaev 1974 Radiat. Eff. 22 71 and [2] Makarov Zhukova Pikaev 1975 Dokl. Akad. Nauk SSSR 225 1103,
+# and/or [3] Zhukova Makarov Pikaev 1981 Dokl. Akad. Nauk SSSR 261 409.
+# Iwamatsu may have cited the 1982 Bull. Acad. Sci. paper as a convenient English-language entry point even though the
+# numerical value originates in the earlier Russian-language work.
+#
+# No e_s- absorptivity data is extracted from THIS paper. CSV is intentionally left header-only.
+melt,T_C,T_K,lambda_max_nm,eps_max_M_inv_cm_inv,sigma_eps,source_in_paper,notes

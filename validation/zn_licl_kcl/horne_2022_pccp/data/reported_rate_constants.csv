@@ -1,0 +1,21 @@
+# Rate constants reported in the text of Iwamatsu/Horne et al. PCCP 2022 (DOI:10.1039/D2CP01194H).
+# Source: validation/papers/d2cp01194h.pdf
+# k_units: M^-1 s^-1 (2nd-order) or s^-1 (1st-order).  SI = k * 1e-3 for 2nd order.
+# Re-verified against the PDF on 2026-05-28: the prior "eq15a" label is corrected to "eq13" — the cross-reaction
+# Cl2- + Zn+ -> 2Cl- + Zn2+ is eqn (13) in the paper, not (15a) (eqn 15a is S + e_s- -> S-, an impurity reaction).
+# Note: the e_s- + Zn2+ Ea was refit in Iwamatsu PCCP 2026 with density correction; both values reported.
+reaction_id,reaction,T_C,T_K,k_M_inv_s,k_sigma,source_in_paper,note
+eq5_low,e_s- + Zn2+ -> Zn+,400,673.15,4.2e10,0.1e10,p.25092 right col + Conclusions p.25096,low end of (4.2-16.1)e10 range at 400 C
+eq5_high,e_s- + Zn2+ -> Zn+,600,873.15,1.61e11,0.06e11,p.25092 right col + Conclusions p.25096,high end of range at 600 C
+eq4_LiCl_KCl_400C,Cl2- + Cl2- -> Cl3- + Cl- in LiCl-KCl,400,673.15,2.2e9,2.0e9,p.25095 right col,disproportionation; uncertainty is essentially 100% due to dose-dependence
+eq13_LiCl_KCl_400C,Cl2- + Zn+ -> 2Cl- + Zn2+ in 9.41 mM ZnCl2/LiCl-KCl,400,673.15,2.0e10,0.2e10,p.25095 right col + p.25096,cross-reaction; nine times faster than disproportionation
+eq13_ZnCl2_400C,Cl2- + Zn+ -> 2Cl- + Zn2+ in neat ZnCl2,400,673.15,8.8e9,0.2e9,p.25096 right col,cross-reaction in neat ZnCl2; ratio to LiCl-KCl value is 2.27
+eq6_aqueous_reference,Zn2+ + e_aq- -> Zn+ (water reference),25,298.15,1.5e9,,p.25092 right col (eqn 6),reference value for context; refs 30-35 in paper
+pikaev_NaCl,e_s- + Zn2+ -> Zn+ in NaCl melt,850,1123.15,1.7e9,,p.25092 right col,Pikaev et al. ref 11 in paper; long-pulse "best-guess estimate"
+pikaev_KCl,e_s- + Zn2+ -> Zn+ in KCl melt,800,1073.15,2.8e9,,p.25092 right col,Pikaev et al. ref 11; "best-guess estimates" per Iwamatsu 2022
+pikaev_Zn_Br2,Zn+ + Br2- -> 2Br- + Zn2+ in molten bromide,800,1073.15,7.0e10,,p.25095 left col,Pikaev et al. ref 11 (used to argue Zn+ + Cl2- is fast)
+neat_eS_background,e_s- impurity decay neat LiCl-KCl,400,673.15,7.0e6,,p.25091 left col + Fig 2A,first-order; reported as background lifetime 145 ns; 1/(145 ns) = 6.9e6 s^-1
+hagiwara_eS,e_s- impurity decay neat LiCl-KCl,400,673.15,4.0e6,,p.25091 left col,Hagiwara 1987 lifetime ~250 ns; 1/(250 ns) = 4.0e6 s^-1
+neat_Cl2_ZnCl2_apparent,Cl2- decay in neat ZnCl2 (apparent slope, k/eps*l),400,673.15,,,p.25095 right col,plateau slope ~2.0e6 s^-1 (NOT a 2nd-order k); need eps and l to convert
+neat_Cl2_LiCl_KCl_apparent,Cl2- decay in neat LiCl-KCl (apparent slope, 2k/eps*l),400,673.15,,,p.25095 right col,plateau slope ~1.5e6 s^-1; consistent with Hagiwara's reported k/eps*l = 3.0e6 s^-1
+ZnCl2_in_LiCl_KCl_Cl2_apparent,Cl2- decay in 3.76-9.41 mM ZnCl2/LiCl-KCl (k/eps*l),400,673.15,,,p.25095 right col,plateau slope ~4.5e6 s^-1; with eps=8000 and l=0.5 cm gives k=(2.0+/-0.2)e10 (eqn 13)

@@ -1,0 +1,33 @@
+# Hagiwara, Sawai, Sumiyoshi, Katayama 1987, Radiat. Phys. Chem. 30(2), 141-144.
+# No DOI; reference: ISSN 0146-5724/87, Pergamon Journals Ltd.
+# Source: validation/papers/1-s2.0-135901978790097X-main.pdf
+# Experimental conditions: pulse radiolysis of LiCl-KCl melts.
+# Composition: eutectic = 42 mol% KCl / 58 mol% LiCl (stated explicitly in Fig. 1 caption).
+# Additional compositions used for the composition-dependence study (Section 5, Fig. 6/7):
+#   0, 20, 30, 42 (eutectic), 50 mol% KCl, all at 600 C.
+# Doping experiment: 0.05 M CdCl2 in the eutectic at 600 C.
+# Linac: Hokkaido University, 11 ns FWHM pulse, 45 MeV electrons.
+# Dose per pulse: 50-85 Gy, measured by the KENS dosimetry method.
+# Sample cell: quartz glass ampoule, evacuated at elevated T and sealed.
+# Temperature measurement: chromel-alumel thermocouple.
+# Temperature range probed: roughly 394 C - 636 C (from Arrhenius plots) = 667-909 K.
+# G-values: NOT reported in this paper. Continuous-irradiation experiment with ~10,000
+# pulses produced detectable gas (presumed Cl2 from 2 Cl2- -> Cl2 + 2 Cl-) but the
+# yield was not measured quantitatively.
+parameter,value,units,notes
+solvent,LiCl-KCl,,binary alkali chloride melt
+eutectic_composition_KCl_mol_pct,42,mol%,stated in Fig. 1 caption (42 mol% KCl / 58 mol% LiCl)
+composition_range_KCl_mol_pct,0;20;30;42;50,mol%,compositions used in Fig. 6/7 study at 600 C
+dopant,0.05 M CdCl2,M,used in eutectic at 600 C (Section 4 + Fig. 5) and as filled-circle Arrhenius set in Fig. 9
+linac_facility,Hokkaido University linac,,
+beam_energy,45,MeV,electrons
+pulse_duration,11,ns,FWHM (text says "II ns" - clearly OCR for 11 ns)
+dose_per_pulse_min,50,Gy,low end of stated 50-85 Gy range
+dose_per_pulse_max,85,Gy,high end of stated 50-85 Gy range
+dosimetry_method,KENS,,polymer / film dosimetry method as stated in text
+sample_cell,quartz glass ampoule,,evacuated at high T near melting point then sealed
+thermocouple,chromel-alumel,,
+temperature_range_K,667-909,K,inferred from Arrhenius plots (T^-1 axis spans 1.10e-3 to 1.50e-3 K^-1)
+temperature_range_C,394-636,C,inferred from Arrhenius plots
+G_values,not reported,,paper does not report G(e_s-) or G(Cl2-)
+chlorine_gas_yield,detected,,Section 7: ~10000 pulses at 400 C produced gas; not quantified

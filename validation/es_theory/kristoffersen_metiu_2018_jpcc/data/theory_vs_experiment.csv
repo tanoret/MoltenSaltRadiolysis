@@ -1,0 +1,19 @@
+# Kristoffersen, H. H.; Metiu, H. J. Phys. Chem. C 2018, 122, 19603-19612.
+# DOI: 10.1021/acs.jpcc.8b05716
+# Direct theory-vs-experiment comparison values mentioned in the paper text.
+# The paper makes only TWO quantitative comparisons against experiment:
+#  (1) Ionization energy of the bipolaron-containing 2Li+ + 2e- + 45LiCl melt
+#      compared with the work function of metallic Li.
+#  (2) Computed exoergic Li dissolution against the measured (low) Li solubility in LiCl.
+# It does NOT cite Pikaev 1982, Sotnikov, Schindewolf, or any pulse-radiolysis epsilon(lambda) data.
+# All numbers in eV (energies), mol % (solubilities), K (temperatures).
+quantity,theory_value,theory_units,experiment_value,experiment_units,T_K,salt_composition,experiment_ref,paper_section,notes
+IE_bipolaron_vs_work_function_Li,3.03 +/- 0.54,eV,2.9,eV,900,45LiCl,Michaelson 1977 (ref 48),section 3.2 / Table 2,Computed IE of 2Li+ + 2e- + 45LiCl vs metallic Li work function; roughly half the time IE_melt < IE_Li
+IE_bipolaron,2.77 +/- 0.40,eV,,,900,29LiCl-16NaCl,,section 3.2 / Table 2,No direct experimental analog
+IE_bipolaron,2.89 +/- 0.44,eV,,,1100,45NaCl,,section 3.2 / Table 2,No direct experimental analog
+Li_solubility_in_LiCl_qualitative,exoergic (-0.5 eV per Li),eV,0.45,mol_percent,881,45LiCl,Nakajima 1974 (ref 50),section 3.3,Theory predicts dissolution favorable; experiment finds dilute (low solubility)
+Li_solubility_in_LiCl_qualitative,exoergic (-0.5 eV per Li),eV,0.5 +/- 0.2,mol_percent,913,45LiCl,Dworkin 1962 (ref 5),section 3.3,Theory predicts dissolution favorable; experiment finds dilute (low solubility)
+melting_point_LiCl,,,883,K,,45LiCl,Sangster & Pelton 1987 (ref 40),section 2,Cited experimental Tm; MD run at 900 K (slightly above)
+melting_point_LiCl_NaCl_eutectic,,,845,K,,29LiCl-16NaCl,Sangster & Pelton 1987 (ref 40),section 2,Cited experimental Tm; MD run at 900 K
+melting_point_NaCl,,,1074,K,,45NaCl,Sangster & Pelton 1987 (ref 40),section 2,Cited experimental Tm; MD run at 1100 K
+Li8_cluster_existence,not stable (breaks into 4 bipolarons + 8 Li+),qualitative,reported present,mol-fraction (1 mol% Li in LiCl + 3 wt% Li2O),,45LiCl,Merwin 2016 (ref 46),section 3.1,Theory contradicts experimental observation of Li8 clusters; possibly stabilized by Li2O in experiment

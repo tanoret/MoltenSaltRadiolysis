@@ -1,0 +1,9 @@
+# Rate constants reported in the text of Iwamatsu et al. PCCP 2026 (DOI:10.1039/D4CP04190A).
+# Density-corrected fit over 400-600 °C. Concentrations corrected for thermal expansion of LiCl-KCl.
+# k_units: M^-1 s^-1 (literature units). Multiply by 1e-3 to get SI m^3/(mol s).
+# Uncertainties are one standard deviation as reported.
+reaction_id,reaction,T_C,k_M_inv_s,k_sigma,source_figure,note
+eq5,e_s- + Cr2+ -> Cr+,400,4.1e10,0.2e10,Fig 2B,density-corrected linear fit
+eq6,e_s- + Cr3+ -> Cr2+,400,6.1e10,0.3e10,Fig 3B,density-corrected linear fit
+eq9,Cl2•- + Cr2+ -> Cr3+ + 2 Cl-,400,7.2e9,0.3e9,Fig 4B,weighted linear fit intercept reported separately
+eq10,Cl2•- + Cr3+ -> ??? (Cr4+ or Cr2++Cl2),400,1.4e9,0.1e9,Fig 5B,mechanism ambiguous

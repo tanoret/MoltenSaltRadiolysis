@@ -1,0 +1,32 @@
+# Pikaev, Makarov, Zhukova 1982, Radiat. Phys. Chem. 19(5), 377-387.
+# DOI: 10.1016/0146-5724(82)90005-X
+# Source: validation/papers/1-s2.0-014657248290005X-main.pdf, Table 2 (p. 381).
+# Apparent rate constants k_A of reactions of e_s- with scavengers in melts
+# of alkaline halides. Reported error: +/-30% (footnote a, due to k_1 being
+# determined from very fast decay of e_s- in pure melt).
+# Units: k in dm^3 mol^-1 s^-1 (== M^-1 s^-1).
+# T converted from degC to K (T_K = T_degC + 273.15).
+# A "-" entry in the published table means no value was reported in that
+# cell; such cells are omitted (one row per reported (solute, melt, T) triple).
+# Sigma column left blank because the +/-30% bound is global (see notes col).
+solute,melt,T_degC,T_K,k_M1_s1,k_sigma_rel,source_table,notes
+Na+,NaCl,850,1123.15,5e4,0.30,Table 2,reaction of e_s- with cation of matrix
+Ca2+,NaCl,850,1123.15,1e7,0.30,Table 2,
+Cd2+,NaCl,850,1123.15,7e9,0.30,Table 2,
+Zn2+,NaCl,850,1123.15,1.7e9,0.30,Table 2,
+Tl+,NaCl,850,1123.15,1.5e9,0.30,Table 2,
+Ag+,NaCl,850,1123.15,7e8,0.30,Table 2,
+K+,KCl,800,1073.15,7e4,0.30,Table 2,reaction of e_s- with cation of matrix
+Ca2+,KCl,800,1073.15,2e7,0.30,Table 2,
+Cd2+,KCl,800,1073.15,1.3e10,0.30,Table 2,
+Zn2+,KCl,800,1073.15,2.8e9,0.30,Table 2,
+Tl+,KCl,800,1073.15,2.3e9,0.30,Table 2,
+Ag+,KCl,800,1073.15,1e9,0.30,Table 2,
+K+,KBr,800,1073.15,8e4,0.30,Table 2,reaction of e_s- with cation of matrix
+Ba2+,KBr,800,1073.15,1e7,0.30,Table 2,
+Sr2+,KBr,800,1073.15,2.2e7,0.30,Table 2,
+Ca2+,KBr,800,1073.15,5.2e7,0.30,Table 2,
+Cd2+,KBr,800,1073.15,3e10,0.30,Table 2,
+Zn2+,KBr,800,1073.15,1.5e10,0.30,Table 2,
+Tl+,KBr,800,1073.15,3.1e9,0.30,Table 2,
+Ag+,KBr,800,1073.15,2e9,0.30,Table 2,

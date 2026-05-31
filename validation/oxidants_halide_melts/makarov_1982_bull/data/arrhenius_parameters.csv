@@ -1,0 +1,14 @@
+# Makarov, Zhukova, Pikaev, Spitsyn 1982, Bull. Acad. Sci. USSR Div. Chem. Sci. 31(4), 662-665.
+# Original Russian: Izv. Akad. Nauk SSSR Ser. Khim. 1982, No. 4, pp. 750-755.
+# DOI: 10.1007/BF00949993
+# Source: validation/papers/BF00949993.pdf, p. 664 text
+#
+# Only one explicit activation energy is quoted in the paper text: for the reaction of Br2- with the
+# reduced cadmium form (Cd+) in LiBr-KBr (60/40 mol%) melt. The paper states the activation energy is
+# "approximately 5 kcal/mol", close to the activation energy of self-diffusion (ref [7] Bockris-Hooper).
+# No pre-exponential A factor is reported; only the Ea estimate is given.
+# The other rate constants tabulated in Table 2 (Cl2-, Br2-, I2- with alkali-metal partners) are stated
+# in the paper text to be "practically independent of temperature", i.e. Ea ~ 0.
+reaction,melt,mix_mole_percent,T_range_C,Ea_kcal_per_mol,Ea_kJ_per_mol,A_M_inv_s_inv,sigma_Ea,source_in_paper,notes
+Br2- + Cd+ -> 2Br- + 2Cd2+ (Eq. 6),LiBr-KBr,60/40,400-850,5,20.9,,,p. 664 text,Approximate; paper notes value is close to self-diffusion Ea (ref [7])
+X2- + M(n-1)+ alkali-metal cases,various,,various,~0,~0,,,p. 664 text,"Paper states: rate constants of X2- reactions with alkali metal are practically independent of temperature"

@@ -1,0 +1,13 @@
+# Rotermund et al. 2024, J. Phys. Chem. A 128, 590-598.
+# DOI: 10.1021/acs.jpca.3c07404
+# Source: validation/papers/chemical-kinetics-for-the-oxidation-of-californium(iii)-ions-with-select-radiation-induced-inorganic-radicals-(cl2-and.pdf
+# Cf3+ specific reaction rate constants in aqueous chloride / sulfate solutions.
+# Temperature: 22 +/- 1 C (ambient) = 295.15 +/- 1 K.
+# Errors quoted by paper are standard deviations of decay traces.
+# Ionic strength corrections via Brønsted-Bjerrum / Debye-Hückel form, Eq. 18.
+reactant,coreactant,product,k_value,k_units,sigma,T_C,T_K,ionic_strength_M,wavelength_nm,equation_number,source,notes
+Cf3+,Cl2-,Cf4+ + 2Cl-,8.28e5,M^-1 s^-1,0.61e5,22,295.15,~1.0 (1 M NaCl + 0.1 M K2S2O8 + 3 mM HClO4),350,Eq. 21,abstract+Figure 1B+Section 3,ionic-strength-corrected; this work; R^2 = 0.98; mixed pseudo-first/second-order fit (Eq. 20)
+Cf3+,SO4-,Cf4+ + SO4^2-,9.50e8,M^-1 s^-1,0.43e8,22,295.15,~0.3 (0.1 M K2S2O8 + 3 mM HClO4),450,Eq. 14 applied to Cf,abstract+Figure 3B+Section 3,ionic-strength-corrected; this work; R^2 = 0.994; mixed pseudo-first/second-order fit (Eq. 20); kY held at 2.70e8 fit on zero-Cf trace
+Cf3+,eaq-,Cf2+,3.63e10,M^-1 s^-1,0.14e10,22,295.15,,,Eq. 2,Eq. 2 citing ref 12 (Horne et al. 2022),reduction to Cf2+; previously reported value cited in introduction
+Cf3+,OH,Cf4+ + OH-,2.07e8,M^-1 s^-1,0.12e8,22,295.15,,,Eq. 3,Eq. 3 citing ref 12 (Horne et al. 2022),oxidation to Cf4+; previously reported value (note: page 594 text alternately quotes sigma = 0.43e8 - we keep Eq. 3 reported value)
+Cf3+,NO3,Cf4+ products,1.78e8,M^-1 s^-1,0.19e8,22,295.15,,,not numbered,page 594 prose citing ref 12 (Horne et al. 2022),nitrate radical oxidation; previously reported value cited for comparison

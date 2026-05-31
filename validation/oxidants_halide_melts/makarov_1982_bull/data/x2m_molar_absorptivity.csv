@@ -1,0 +1,33 @@
+# Makarov, Zhukova, Pikaev, Spitsyn 1982, Bull. Acad. Sci. USSR Div. Chem. Sci. 31(4), 662-665.
+# Original Russian: Izv. Akad. Nauk SSSR Ser. Khim. 1982, No. 4, pp. 750-755.
+# DOI: 10.1007/BF00949993
+# Source: validation/papers/BF00949993.pdf, Table 1
+# Optical-spectrum parameters of halogen anion-radicals X2- (Cl2-, Br2-, I2-) in molten alkali-metal halides.
+# Aqueous-solution reference values are included from refs [4,5] in the paper (Grossweiner & Matheson 1957; Baxendale, Sharpe, Ward 1975).
+# Column "band": I = principal (short-wave) band, II = long-wave band (only listed for Br2- and I2-).
+# epsilon values are molar extinction coefficients at lambda_max in L mol-1 cm-1 (paper writes "liters/(mole.cm)").
+# W12 = half-width of the absorption band in eV.
+# eps_ratio_II_over_I = ratio of long-wave (II) to principal (I) extinction-coefficient maxima.
+# NOTE: This paper does NOT tabulate epsilon for the solvated electron e_s-. Table 1 is exclusively X2- parameters.
+# Iwamatsu 2022 citation of "epsilon(e_s-) approximately 8000 M-1 cm-1" most plausibly traces to refs [1,2] in this paper
+# (Makarov, Zhukova, Pikaev 1974 Radiat. Eff. 22, 71; 1975 Dokl. Akad. Nauk SSSR 225, 1103), NOT to this Bull. Acad. Sci. paper.
+# The closest in-paper "8000-like" value is the aqueous-Cl2- reference epsilon = 8800 M-1 cm-1.
+species,system,medium_phase,T_C,T_K,band,lambda_max_nm,W12_eV,sigma_W12_eV,eps_M_inv_cm_inv,eps_ratio_II_over_I,sigma_eps_ratio,source_in_paper,notes
+Cl2-,1e-3 M Cl- in H2O,aqueous,25,298.15,I,340,0.93,,8800,,,Table 1,Reference value from refs [4 5] (Grossweiner-Matheson; Baxendale et al.)
+Cl2-,LiCl,melt,700,973.15,I,360,1.1,0.3,7400,,,Table 1,
+Cl2-,NaCl,melt,850,1123.15,I,365,1.2,0.3,6800,,,Table 1,
+Cl2-,KCl,melt,800,1073.15,I,360,1.25,0.2,6500,,,Table 1,OCR rendered lambda as 860 -- corrected to 360 by context (Cl2- band consistently 340-370 nm)
+Cl2-,RbCl,melt,750,1023.15,I,370,1.3,0.2,5800,,,Table 1,OCR rendered eps as ~S00 -- read as 5800 by context (decreasing trend Li>Na>K>Rb>Cs)
+Cl2-,CsCl,melt,700,973.15,I,370,1.4,0.3,5800,,,Table 1,
+Br2-,1e-3 M Br- in H2O,aqueous,25,298.15,I,360,0.93,,8300,0.041,,Table 1,Reference value from refs [4 5]
+Br2-,1e-3 M Br- in H2O,aqueous,25,298.15,II,700,,,,0.041,,Table 1,Long-wave band position; eps_II computed from ratio
+Br2-,NaBr,melt,760,1033.15,I,420,1.15,0.3,6700,0.2,0.1,Table 1,
+Br2-,NaBr,melt,760,1033.15,II,725,,,,0.2,0.1,Table 1,Long-wave band position
+Br2-,KBr,melt,800,1073.15,I,420,1.3,0.3,5900,0.2,0.1,Table 1,
+Br2-,KBr,melt,800,1073.15,II,750,,,,0.2,0.1,Table 1,Long-wave band position
+Br2-,CsBr,melt,680,953.15,I,410,1.2,0.3,6400,0.2,0.1,Table 1,
+Br2-,CsBr,melt,680,953.15,II,750,,,,0.2,0.1,Table 1,Long-wave band position
+I2-,1e-3 M I- in H2O,aqueous,25,298.15,I,375,,,11560,0.27,,Table 1,Reference value from refs [4 5]; half-width difficult to estimate
+I2-,1e-3 M I- in H2O,aqueous,25,298.15,II,725,,,,0.27,,Table 1,Long-wave band position (paper notes overlap with main band)
+I2-,KI,melt,700,973.15,I,450,,,10700,0.5,0.1,Table 1,Half-width difficult to estimate due to overlap with long-wave band
+I2-,KI,melt,700,973.15,II,750,,,,0.5,0.1,Table 1,Long-wave band position

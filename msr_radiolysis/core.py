@@ -31,7 +31,9 @@ class Reaction:
             return self.A * np.exp(-self.Ea_J_mol/(R_GAS*T))
         if self.k_ref is not None and self.T_ref is not None and self.Ea_J_mol is not None:
             return float(self.k_ref) * np.exp(self.Ea_J_mol/R_GAS * (1.0/self.T_ref - 1.0/T))
-        # default: 0 (disabled)
+        if self.k_ref is not None:
+            # T-independent fallback when only k_ref is given (e.g., paper reports k at one T only)
+            return float(self.k_ref)
         return 0.0
 
     def rate_of_progress(self, T: float, C: np.ndarray, species_index: Dict[str,int]) -> float:

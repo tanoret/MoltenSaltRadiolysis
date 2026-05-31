@@ -1,0 +1,13 @@
+# Makarov, Zhukova, Pikaev, Spitsyn 1982, Bull. Acad. Sci. USSR Div. Chem. Sci. 31(4), 662-665.
+# Original Russian: Izv. Akad. Nauk SSSR Ser. Khim. 1982, No. 4, pp. 750-755.
+# DOI: 10.1007/BF00949993
+# Source: validation/papers/BF00949993.pdf
+#
+# Despite the paper's title ("Oxidizing agents produced by radiolysis..."), this paper does NOT report
+# numerical G-values (radiolytic yields, molec/100 eV) for X2, X3-, X2-, or any other primary radiolysis
+# product. The paper focuses on optical-spectrum parameters of X2- (Table 1) and rate constants for
+# X2- disappearance reactions (Table 2). Yield-related qualitative remarks appear in the Conclusions
+# ("increase in the yield of molecular halogen" in the presence of alkaline-earth cations) but no
+# numerical G-value is given.
+# CSV intentionally left header-only.
+species,melt,T_C,T_K,G_molec_per_100eV,sigma_G,source_in_paper,notes

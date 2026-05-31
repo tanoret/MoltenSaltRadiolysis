@@ -1,0 +1,8 @@
+# Pikaev, Makarov, Zhukova 1982, Radiat. Phys. Chem. 19(5), 377-387.
+# DOI: 10.1016/0146-5724(82)90005-X
+# Source: validation/papers/1-s2.0-014657248290005X-main.pdf, text on p. 386-387.
+# Activation energies derived in the paper. Only one quantitative E_a is given.
+# Reported as an Arrhenius slope across the 400-850 degC data of reaction (19)
+# in LiBr-KBr (see x2m_rate_constants.csv, reaction_id=19, melt=60% LiBr + 40% KBr).
+reaction_id,reaction,system,T_range_degC,T_range_K,E_a_kJ_mol,E_a_sigma_kJ_mol,source,notes
+19,Cd+ + Br2- -> Cd2+ + 2 Br-,60% LiBr + 40% KBr,400-850,673.15-1123.15,25,,text p.386,"author states ~25 kJ/mol, close to activation energy of ion diffusion; precise uncertainty not reported"

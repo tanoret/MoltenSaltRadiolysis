@@ -1,0 +1,33 @@
+# Molar absorption coefficients (epsilon) for trivalent lanthanides in LiCl-KCl eutectic at 500 °C.
+# Source: Moon, J.; Chidambaram, D. "Near-Infrared Spectra and Molar Absorption Coefficients of
+#         Trivalent Lanthanides Dissolved in Molten LiCl-KCl Eutectic."
+#         Progress in Nuclear Energy 2022, 152, 104375.
+#         DOI: 10.1016/j.pnucene.2022.104375
+#         OSTI 2418345 (https://www.osti.gov/biblio/2418345)
+#
+# This is the foundational reference for converting absorbance to concentration in any
+# lanthanide-containing LiCl-KCl validation case (e.g., Iwamatsu 2026 Nd Inorg. Chem.).
+# eps_units: L mol^-1 cm^-1 (== M^-1 cm^-1). r2 is linear-fit coefficient of determination.
+# Uncertainties are 1-sigma.
+# Note: paper is at 500 °C; values at 673 K (400 °C) for pulse-rad work may differ slightly.
+ion,wavelength_nm,epsilon_M_inv_cm,sigma_epsilon,r2,literature_epsilon_kim_yun
+Sm3+,363,0.505,0.005,0.9993,0.59
+Sm3+,380,0.599,0.005,0.9995,0.73
+Sm3+,407,2.03,0.01,0.9981,2.48
+Sm3+,426,0.565,0.005,0.9997,0.66
+Sm3+,1245,0.795,0.006,0.9996,
+Sm3+,1397,0.882,0.007,0.9995,
+Sm3+,1550,1.094,0.008,0.9990,
+Sm3+,1628,0.764,0.006,0.9990,
+Sm3+,1861,0.213,0.003,0.9981,
+Nd3+,588,11.47,0.08,0.9995,11.9
+Nd3+,751,1.74,0.01,0.9992,1.89
+Nd3+,809,2.33,0.02,0.9990,2.51
+Dy3+,301,0.315,0.002,0.9989,0.25
+Dy3+,352,0.554,0.004,0.9995,0.53
+Dy3+,389,0.251,0.002,0.9993,0.25
+Dy3+,455,0.146,0.001,0.9999,0.17
+Dy3+,912,0.170,0.001,0.9980,
+Dy3+,1111,0.233,0.002,0.9980,
+Dy3+,1290,2.66,0.02,0.9992,
+Dy3+,1760,0.240,0.004,0.9997,
