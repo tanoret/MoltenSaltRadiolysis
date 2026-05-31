@@ -1,0 +1,28 @@
+# Pikaev, Makarov, Zhukova 1982, Radiat. Phys. Chem. 19(5), 377-387.
+# DOI: 10.1016/0146-5724(82)90005-X
+# Source: validation/papers/1-s2.0-014657248290005X-main.pdf, Table 1 (p. 378).
+# Parameters of optical absorption spectra of solvated electron (e_s-) in
+# melts of alkaline halides and their mixtures.
+# Original temperature units are degC; T_K = T_degC + 273.15.
+# E_max_eV = energy at the band maximum; W_halfwidth_eV = full half-width (W_1/2) of the band.
+# Mixture compositions are in mole percent (per Table 1 footnote b).
+# Significant figures preserved exactly as reported.
+melt,T_degC,T_K,lambda_max_nm,E_max_eV,W_halfwidth_eV,source_table,notes
+LiBr,600,873.15,500,2.48,1.50,Table 1,
+NaI,720,993.15,990,1.25,1.30,Table 1,
+NaBr,800,1073.15,945,1.31,1.49,Table 1,
+60% NaBr + 40% NaCl,800,1073.15,880,1.41,1.69,Table 1,mole percent mixture
+NaCl,800,1073.15,730,1.69,1.67,Table 1,
+80% NaCl + 20% KCl,800,1073.15,790,1.57,1.61,Table 1,mole percent mixture
+60% NaCl + 40% KCl,800,1073.15,820,1.51,1.50,Table 1,mole percent mixture
+50% NaCl + 50% KCl,800,1073.15,870,1.43,1.45,Table 1,mole percent mixture
+40% NaCl + 60% KCl,800,1073.15,900,1.38,1.32,Table 1,mole percent mixture
+20% NaCl + 80% KCl,800,1073.15,975,1.27,1.20,Table 1,mole percent mixture
+KCl,800,1073.15,1060,1.17,0.92,Table 1,
+50% KCl + 50% KBr,800,1073.15,1100,1.13,0.96,Table 1,mole percent mixture
+KBr,800,1073.15,1110,1.12,1.00,Table 1,
+KI,700,973.15,1130,1.10,1.60,Table 1,
+RbCl,700,973.15,1120,1.11,1.10,Table 1,
+66% CsCl + 34% NaCl,850,1123.15,1000,1.24,1.00,Table 1,mole percent mixture
+66% CsCl + 34% NaCl,700,973.15,950,1.31,1.15,Table 1,mole percent mixture
+66% CsCl + 34% NaCl,550,823.15,900,1.38,1.15,Table 1,mole percent mixture

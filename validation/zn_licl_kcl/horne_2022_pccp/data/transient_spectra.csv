@@ -1,0 +1,17 @@
+# Iwamatsu, Horne et al. 2022, Phys. Chem. Chem. Phys. 24, 25088-25098.
+# DOI: 10.1039/D2CP01194H
+# Source: validation/papers/d2cp01194h.pdf
+# Peak wavelengths (lambda_max) of transient absorption spectra for each species.
+# Values are extracted from paper text and from SK-Ana deconvoluted spectra (Fig. 3A).
+# Note: paper presents spectra only at 400 C in the main text; T-dependence of lambda_max is not tabulated.
+# Probe wavelengths used for kinetics may differ slightly from lambda_max (e.g., e_s- at 671 nm and 700 nm).
+species,lambda_max_nm,sigma_lambda_nm,T_C,T_K,medium,source_in_paper,notes
+e_s-,660,,400,673.15,LiCl-KCl,p.25091 left col + Fig 1A,"text: ""absorption maximum (lambda_max) at 660 nm"" in neat LiCl-KCl at 400 C; broad band in visible-near-IR"
+e_s-,671,,400,673.15,LiCl-KCl,Fig 2 caption,probe wavelength used for kinetic decay measurement
+e_s-,700,,400,673.15,LiCl-KCl,p.25092 right col + Fig 4B caption,"probe wavelength for pseudo-first-order kinetics in Fig 4B; ""eS decay at 700 nm as a function of Zn2+ concentration"""
+Cl2-,340,,400,673.15,LiCl-KCl,p.25091 left col + Fig 3A + Fig 1A,"text: ""a band peaking at 340 nm"" once eS has fully decayed; probe wavelength for kinetics in Figs 2,6"
+Cl3-,240,,400,673.15,LiCl-KCl,p.25093 right col + Fig 5A,"text: ""observed absorption at 240 nm in the absence of Zn2+ in Fig 5(A) is attributed to Cl3-"""
+Cl3-(aq),220,,25,298.15,water,p.25091 right col,reference value from Wang et al. 1994 (ref 29) used to support Cl3- assignment
+Cl2-(aq),340,,25,298.15,water,p.25091 left col,"reference value from Hug 1981 (ref 28); ""molten salt and aqueous peak absorption wavelengths (lambda_max) are close, although ... the absorption profile of Cl2- in molten LiCl-KCl is broader, particularly on the red side"""
+Zn+(aq),300,,25,298.15,water,p.25093 right col,reference value from Buxton & Sellers 1975 (ref 42); only used to assign UV residual after Cl2- decay; no Zn+ spectrum in molten salt reported
+e_s-_Sawamura_range,500-800,,various,,LiCl-KCl/LiBr-KBr/LiF-KF/LiF-NaF-KF,"p.25089 left col, ref 12-14","Sawamura et al. range; ""peak absorbances between 500 and 800 nm depending on salt mixture composition and temperature"""

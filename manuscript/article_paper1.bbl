@@ -1,0 +1,389 @@
+\begin{thebibliography}{53}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abramowitz and Stegun(1972)]{Abramowitz1972}
+Milton Abramowitz and Irene~A. Stegun, editors.
+\newblock \emph{Handbook of Mathematical Functions with Formulas, Graphs, and
+  Mathematical Tables}.
+\newblock Dover Publications, 10th printing edition, 1972.
+
+\bibitem[Akiyama et~al.(1994)Akiyama, Kitaichi, Fujiwara, and
+  Sawamura]{Akiyama1994}
+R.~Akiyama, M.~Kitaichi, T.~Fujiwara, and S.~Sawamura.
+\newblock Short-lived species produced in pulse-irradiated melts of {LiF-KF}
+  and {LiF-NaF-KF} eutectic mixtures.
+\newblock \emph{J.\ Nucl.\ Sci.\ Technol.}, 31\penalty0 (3):\penalty0 250--252,
+  1994.
+
+\bibitem[Brynjarsd\'ottir and O'Hagan(2014)]{Brynjarsdottir2014}
+J.~Brynjarsd\'ottir and A.~O'Hagan.
+\newblock Learning about physical parameters: the importance of model
+  discrepancy.
+\newblock \emph{Inverse Problems}, 30\penalty0 (11):\penalty0 114007, 2014.
+\newblock \doi{10.1088/0266-5611/30/11/114007}.
+
+\bibitem[Castillo and Nickl(2014)]{CastilloNickl2014}
+Ismael Castillo and Richard Nickl.
+\newblock On the {B}ernstein--von {M}ises phenomenon for nonparametric {B}ayes
+  procedures.
+\newblock \emph{Annals of Statistics}, 42\penalty0 (5):\penalty0 1941--1969,
+  2014.
+\newblock \doi{10.1214/14-AOS1246}.
+
+\bibitem[Castro~Baldivieso et~al.(2026)Castro~Baldivieso, Iwamatsu, Cook, Sims,
+  and Horne]{CastroBaldivieso2026}
+F.~Castro~Baldivieso, K.~Iwamatsu, A.~R. Cook, H.~E. Sims, and G.~P. Horne.
+\newblock Influence of {Nd(II)} and {Nd(III)} ions on the speciation and
+  kinetic dynamics of radiolytic transients in molten {LiCl-KCl} eutectic salt
+  mixtures.
+\newblock \emph{Inorg.\ Chem.}, 65:\penalty0 1283--1293, 2026.
+\newblock \doi{10.1021/acs.inorgchem.5c04788}.
+
+\bibitem[Ching and Chen(2007)]{ChingChen2007}
+J.~Ching and Y.-C. Chen.
+\newblock Transitional {M}arkov chain {M}onte {C}arlo method for {B}ayesian
+  model updating, model class selection, and model averaging.
+\newblock \emph{Journal of Engineering Mechanics}, 133\penalty0 (7):\penalty0
+  816--832, 2007.
+\newblock \doi{10.1061/(ASCE)0733-9399(2007)133:7(816)}.
+
+\bibitem[Conrad et~al.(2023)Conrad, Cook, et~al.]{Conrad2023}
+J.~K. Conrad, A.~R. Cook, et~al.
+\newblock Impact of iodide ions on the speciation of radiolytic transients in
+  molten {LiCl-KCl} eutectic salt mixtures.
+\newblock \emph{Physical Chemistry Chemical Physics}, 2023.
+\newblock \doi{10.1039/D3CP01477K}.
+
+\bibitem[Conrad et~al.(2016)Conrad, Marzouk, Pillai, and
+  Smith]{ConradMarzouk2016}
+Patrick~R. Conrad, Youssef~M. Marzouk, Natesh~S. Pillai, and Aaron Smith.
+\newblock Accelerating asymptotically exact {MCMC} for computationally
+  intensive models via local approximations.
+\newblock \emph{Journal of the American Statistical Association}, 111\penalty0
+  (516):\penalty0 1591--1607, 2016.
+\newblock \doi{10.1080/01621459.2015.1096787}.
+
+\bibitem[Davis et~al.(2022)Davis, Hania, Boomstra, Rossouw, Charpin-Jacobs,
+  Uhl{\'i}{\v r}, Marecek, Beckers, and Riedel]{Davis2022}
+L.~Davis, R.~Hania, D.~Boomstra, D.~Rossouw, F.~Charpin-Jacobs, J.~Uhl{\'i}{\v
+  r}, M.~Marecek, H.~Beckers, and S.~Riedel.
+\newblock Radiolytic production of fluorine gas from {MSR}-relevant fluoride
+  salts.
+\newblock \emph{Nucl.\ Sci.\ Eng.}, 197:\penalty0 633--646, 2022.
+\newblock \doi{10.1080/00295639.2022.2129951}.
+
+\bibitem[Foreman-Mackey(2016)]{ForemanMackey2016}
+D.~Foreman-Mackey.
+\newblock corner.py: scatterplot matrices in {P}ython.
+\newblock \emph{J.\ Open Source Software}, 1\penalty0 (2):\penalty0 24, 2016.
+\newblock \doi{10.21105/joss.00024}.
+
+\bibitem[Foreman-Mackey et~al.(2013)Foreman-Mackey, Hogg, Lang, and
+  Goodman]{ForemanMackey2013}
+D.~Foreman-Mackey, D.~W. Hogg, D.~Lang, and J.~Goodman.
+\newblock emcee: The {MCMC} hammer.
+\newblock \emph{Publications of the Astronomical Society of the Pacific},
+  125\penalty0 (925):\penalty0 306--312, 2013.
+\newblock \doi{10.1086/670067}.
+
+\bibitem[Forsberg(2020)]{Forsberg2020}
+C.~W. Forsberg.
+\newblock Market basis for salt-cooled reactors: Dispatchable heat, hydrogen,
+  and electricity with assured peak-power capacity.
+\newblock \emph{Nuclear Technology}, 206:\penalty0 1659--1685, 2020.
+
+\bibitem[Foster et~al.(2021)Foster, Ivanova, Malik, and Rainforth]{Foster2021}
+A.~Foster, D.~R. Ivanova, I.~Malik, and T.~Rainforth.
+\newblock Deep adaptive design: amortizing sequential {Bayesian} experimental
+  design.
+\newblock \emph{PMLR}, 139:\penalty0 3384--3395, 2021.
+
+\bibitem[Frenklach(2007)]{Frenklach2007}
+M.~Frenklach.
+\newblock Transforming data into knowledge--{P}rocess {I}nformatics for
+  combustion chemistry.
+\newblock \emph{Proceedings of the Combustion Institute}, 31:\penalty0
+  125--140, 2007.
+
+\bibitem[Galagali and Marzouk(2015)]{GalagaliMarzouk2015}
+N.~Galagali and Y.~M. Marzouk.
+\newblock Bayesian inference of chemical kinetic models from proposed
+  reactions.
+\newblock \emph{Chemical Engineering Science}, 123:\penalty0 170--190, 2015.
+\newblock \doi{10.1016/j.ces.2014.11.030}.
+
+\bibitem[Galagali and Marzouk(2019)]{GalagaliMarzouk2019}
+N.~Galagali and Y.~M. Marzouk.
+\newblock Exploiting network topology for large-scale inference of nonlinear
+  reaction models.
+\newblock \emph{Journal of the Royal Society Interface}, 16\penalty0
+  (152):\penalty0 20180766, 2019.
+\newblock \doi{10.1098/rsif.2018.0766}.
+
+\bibitem[Gelman et~al.(2013)Gelman, Carlin, Stern, Dunson, Vehtari, and
+  Rubin]{GelmanBDA3}
+A.~Gelman, J.~B. Carlin, H.~S. Stern, D.~B. Dunson, A.~Vehtari, and D.~B.
+  Rubin.
+\newblock \emph{Bayesian Data Analysis}.
+\newblock Chapman \& Hall/CRC, 3rd edition, 2013.
+
+\bibitem[Ghosal and van~der Vaart(2017)]{Ghosal2017}
+Subhashis Ghosal and Aad van~der Vaart.
+\newblock \emph{Fundamentals of Nonparametric {B}ayesian Inference}.
+\newblock Cambridge Series in Statistical and Probabilistic Mathematics.
+  Cambridge University Press, 2017.
+
+\bibitem[Goodman and Weare(2010{\natexlab{a}})]{GoodmanWeare2010}
+J.~Goodman and J.~Weare.
+\newblock Ensemble samplers with affine invariance.
+\newblock \emph{Communications in Applied Mathematics and Computational
+  Science}, 5\penalty0 (1):\penalty0 65--80, 2010{\natexlab{a}}.
+\newblock \doi{10.2140/camcos.2010.5.65}.
+
+\bibitem[Goodman and Weare(2010{\natexlab{b}})]{Goodman2010}
+Jonathan Goodman and Jonathan Weare.
+\newblock Ensemble samplers with affine invariance.
+\newblock \emph{Communications in Applied Mathematics and Computational
+  Science}, 5\penalty0 (1):\penalty0 65--80, 2010{\natexlab{b}}.
+\newblock \doi{10.2140/camcos.2010.5.65}.
+
+\bibitem[Green(1995)]{Green1995}
+P.~J. Green.
+\newblock Reversible jump {M}arkov chain {M}onte {C}arlo computation and
+  {B}ayesian model determination.
+\newblock \emph{Biometrika}, 82\penalty0 (4):\penalty0 711--732, 1995.
+
+\bibitem[Hagiwara et~al.(1987)Hagiwara, Sawamura, Sumiyoshi, and
+  Katayama]{Hagiwara1987}
+H.~Hagiwara, S.~Sawamura, T.~Sumiyoshi, and M.~Katayama.
+\newblock Pulse radiolysis study of transient species in {LiCl-KCl} melt.
+\newblock \emph{Radiation Physics and Chemistry}, 30\penalty0 (2):\penalty0
+  143--148, 1987.
+
+\bibitem[Hegde et~al.(2018)Hegde, Li, Oreluk, Packard, and
+  Frenklach]{Hegde2018}
+A.~Hegde, W.~Li, J.~Oreluk, A.~Packard, and M.~Frenklach.
+\newblock Consistency analysis for massively inconsistent datasets in
+  bound-to-bound data collaboration.
+\newblock \emph{Combustion and Flame}, 196:\penalty0 509--517, 2018.
+
+\bibitem[Hindmarsh et~al.(2005)Hindmarsh, Brown, Grant, Lee, Serban, Shumaker,
+  and Woodward]{Hindmarsh2005}
+A.~C. Hindmarsh, P.~N. Brown, K.~E. Grant, S.~L. Lee, R.~Serban, D.~E.
+  Shumaker, and C.~S. Woodward.
+\newblock {SUNDIALS}: Suite of nonlinear and differential/algebraic equation
+  solvers.
+\newblock \emph{ACM Trans.\ Math.\ Software}, 31:\penalty0 363--396, 2005.
+\newblock \doi{10.1145/1089014.1089020}.
+
+\bibitem[Iwamatsu et~al.(2022)Iwamatsu, Horne, Ramos-Ballesteros, Conrad,
+  Sayed, Phillips, Cook, LaVerne, Pimblott, and Wishart]{Iwamatsu2022}
+K.~Iwamatsu, G.~P. Horne, A.~Ramos-Ballesteros, J.~K. Conrad, A.~K. Sayed,
+  W.~C. Phillips, A.~R. Cook, J.~A. LaVerne, S.~M. Pimblott, and J.~F. Wishart.
+\newblock Radiation-induced reaction kinetics of {Zn}$^{2+}$ with
+  $e_{\mathrm{s}}^{-}$ and {Cl}$_2^{\bullet-}$ in molten {LiCl-KCl} eutectic at
+  400--600\,$^\circ$c.
+\newblock \emph{Physical Chemistry Chemical Physics}, 24:\penalty0
+  25088--25098, 2022.
+\newblock \doi{10.1039/D2CP01194H}.
+
+\bibitem[Iwamatsu et~al.(2026)Iwamatsu, Horne, Ramos-Ballesteros,
+  Castro~Baldivieso, Conrad, Woods, Phillips, LaVerne, Pimblott, and
+  Wishart]{Iwamatsu2026}
+K.~Iwamatsu, G.~P. Horne, A.~Ramos-Ballesteros, S.~Castro~Baldivieso, J.~K.
+  Conrad, M.~E. Woods, W.~C. Phillips, J.~A. LaVerne, S.~M. Pimblott, and J.~F.
+  Wishart.
+\newblock Kinetics of radiation-induced {Cr(II)} and {Cr(III)} redox chemistry
+  in molten {LiCl-KCl} eutectic.
+\newblock \emph{Physical Chemistry Chemical Physics}, 28\penalty0 (3):\penalty0
+  2061--2071, 2026.
+\newblock \doi{10.1039/D4CP04190A}.
+
+\bibitem[Kass and Raftery(1995)]{Kass1995}
+Robert~E. Kass and Adrian~E. Raftery.
+\newblock Bayes factors.
+\newblock \emph{Journal of the American Statistical Association}, 90\penalty0
+  (430):\penalty0 773--795, 1995.
+
+\bibitem[Kennedy and O'Hagan(2001)]{KennedyOHagan2001}
+M.~C. Kennedy and A.~O'Hagan.
+\newblock Bayesian calibration of computer models.
+\newblock \emph{Journal of the Royal Statistical Society: Series B},
+  63\penalty0 (3):\penalty0 425--464, 2001.
+\newblock \doi{10.1111/1467-9868.00294}.
+
+\bibitem[Kleijn and van~der Vaart(2012)]{KleijnVdVaart2012}
+B.~J.~K. Kleijn and A.~W. van~der Vaart.
+\newblock The {B}ernstein--von-{M}ises theorem under misspecification.
+\newblock \emph{Electronic Journal of Statistics}, 6:\penalty0 354--381, 2012.
+\newblock \doi{10.1214/12-EJS675}.
+
+\bibitem[Kristoffersen and Metiu(2018)]{KristoffersenMetiu2018}
+H.~H. Kristoffersen and H.~Metiu.
+\newblock Chemistry of solvated electrons in molten alkali chloride salts.
+\newblock \emph{J.\ Phys.\ Chem.\ C}, 122:\penalty0 19603--19612, 2018.
+\newblock \doi{10.1021/acs.jpcc.8b05716}.
+
+\bibitem[Lindsay(1988)]{Lindsay1988}
+B.~G. Lindsay.
+\newblock Composite likelihood methods.
+\newblock \emph{Contemporary Mathematics}, 80:\penalty0 221--239, 1988.
+
+\bibitem[Makarov et~al.(1982)Makarov, Zhukova, Pikaev, and
+  Spitzyn]{Makarov1982}
+I.~E. Makarov, T.~N. Zhukova, A.~K. Pikaev, and V.~I. Spitzyn.
+\newblock Oxidizing agents produced by radiolysis of alkali-metal halide melts.
+\newblock \emph{Bull.\ Acad.\ Sci.\ USSR Div.\ Chem.\ Sci.}, 31:\penalty0
+  662--669, 1982.
+\newblock \doi{10.1007/BF00949993}.
+
+\bibitem[Marcus(1965)]{Marcus1965}
+R.~A. Marcus.
+\newblock On the theory of electron-transfer reactions. {VI}. unified treatment
+  of homogeneous and electrode reactions.
+\newblock \emph{The Journal of Chemical Physics}, 43:\penalty0 679, 1965.
+
+\bibitem[Newey and McFadden(1994)]{Newey1994}
+Whitney~K. Newey and Daniel McFadden.
+\newblock Large sample estimation and hypothesis testing.
+\newblock In Robert~F. Engle and Daniel~L. McFadden, editors, \emph{Handbook of
+  Econometrics, Volume IV}, pages 2111--2245. Elsevier, 1994.
+
+\bibitem[Oreluk et~al.(2021)Oreluk, Packard, and Frenklach]{Oreluk2021}
+J.~Oreluk, A.~Packard, and M.~Frenklach.
+\newblock Representing model discrepancy in {B}ound-to-{B}ound {D}ata
+  {C}ollaboration.
+\newblock \emph{SIAM/ASA J.\ Uncertainty Quantification}, 9\penalty0
+  (2):\penalty0 462--489, 2021.
+\newblock \doi{10.1137/19M1270185}.
+
+\bibitem[Phillips et~al.(2022)Phillips, Cao, Warmann, Mohr, Lovel, and
+  Core]{Phillips2022}
+W.~C. Phillips, G.~Cao, S.~A. Warmann, B.~C. Mohr, E.~R. Lovel, and G.~M. Core.
+\newblock Gamma irradiation of {NaCl-UCl$_3$} salt for the molten chloride fast
+  reactor.
+\newblock Technical Report INL/RPT-22-66727-Rev000, Idaho National Laboratory,
+  2022.
+\newblock URL \url{https://www.osti.gov/biblio/1874817}.
+
+\bibitem[Pikaev et~al.(1982)Pikaev, Makarov, and Zhukova]{Pikaev1982}
+A.~K. Pikaev, I.~E. Makarov, and T.~N. Zhukova.
+\newblock Solvated electron in irradiated melts of alkaline halides.
+\newblock \emph{Radiation Physics and Chemistry}, 19\penalty0 (5):\penalty0
+  377--389, 1982.
+\newblock \doi{10.1016/0146-5724(82)90005-X}.
+
+\bibitem[Plumlee(2017)]{Plumlee2017}
+Matthew Plumlee.
+\newblock Bayesian calibration of inexact computer models.
+\newblock \emph{Journal of the American Statistical Association}, 112\penalty0
+  (519):\penalty0 1274--1285, 2017.
+\newblock \doi{10.1080/01621459.2016.1211016}.
+
+\bibitem[Raue et~al.(2009)Raue, Kreutz, Maiwald, Bachmann, Schilling,
+  Klingm\"uller, and Timmer]{Raue2009}
+A.~Raue, C.~Kreutz, T.~Maiwald, J.~Bachmann, M.~Schilling, U.~Klingm\"uller,
+  and J.~Timmer.
+\newblock Structural and practical identifiability analysis of partially
+  observed dynamical models by exploiting the profile likelihood.
+\newblock \emph{Bioinformatics}, 25\penalty0 (15):\penalty0 1923--1929, 2009.
+\newblock \doi{10.1093/bioinformatics/btp358}.
+
+\bibitem[Rotermund et~al.(2024)Rotermund, Mezyk, Sperling, Beck, Wineinger,
+  Cook, Albrecht-Sch{\"o}nzart, and Horne]{Rotermund2024}
+B.~M. Rotermund, S.~P. Mezyk, J.~M. Sperling, N.~B. Beck, H.~Wineinger, A.~R.
+  Cook, T.~E. Albrecht-Sch{\"o}nzart, and G.~P. Horne.
+\newblock Chemical kinetics for the oxidation of californium({III}) ions with
+  select radiation-induced inorganic radicals ({Cl}$_2^{\bullet-}$ and
+  {SO}$_4^{\bullet-}$).
+\newblock \emph{J.\ Phys.\ Chem.\ A}, 128:\penalty0 590--598, 2024.
+\newblock \doi{10.1021/acs.jpca.3c07404}.
+
+\bibitem[{SciML Open Source Scientific Machine Learning}(2024)]{SciML2024}
+{SciML Open Source Scientific Machine Learning}.
+\newblock {SciMLSensitivity.jl}: Automatic differentiation and adjoints for
+  differential equation solvers.
+\newblock \url{https://docs.sciml.ai/SciMLSensitivity/dev/}, 2024.
+
+\bibitem[Tanore-Tamales(2026)]{Tanore2026PaperII}
+M.~Tanore-Tamales.
+\newblock A calibrated multi-salt radiolysis model for molten chloride and
+  fluoride reactor fuels.
+\newblock Companion application paper; in preparation, 2026.
+\newblock Manuscript at \url{manuscript/article_paper2.tex} in the project
+  repository.
+
+\bibitem[{TerraPower}(2021)]{TerraPower2021}
+{TerraPower}.
+\newblock Molten chloride fast reactor (mcfr) overview.
+\newblock Technical brief, TerraPower LLC, 2021.
+
+\bibitem[Tierney(1994)]{Tierney1994}
+L.~Tierney.
+\newblock Markov chains for exploring posterior distributions.
+\newblock \emph{The Annals of Statistics}, 22:\penalty0 1701--1762, 1994.
+
+\bibitem[Tobin(1958)]{Tobin1958}
+J.~Tobin.
+\newblock Estimation of relationships for limited dependent variables.
+\newblock \emph{Econometrica}, 26:\penalty0 24--36, 1958.
+
+\bibitem[Toth and Felker(1990)]{Toth1990}
+L.~M. Toth and L.~K. Felker.
+\newblock Fluorine generation by gamma radiolysis of a fluoride salt mixture.
+\newblock \emph{Radiat.\ Eff.\ Defects Solids}, 112\penalty0 (4):\penalty0
+  201--210, 1990.
+
+\bibitem[Tuo and Wu(2015)]{TuoWu2015}
+Rui Tuo and C.~F.~Jeff Wu.
+\newblock Efficient calibration for imperfect computer models.
+\newblock \emph{Annals of Statistics}, 43\penalty0 (6):\penalty0 2331--2352,
+  2015.
+\newblock \doi{10.1214/15-AOS1314}.
+
+\bibitem[Tuo and Wu(2016)]{TuoWu2016}
+Rui Tuo and C.~F.~Jeff Wu.
+\newblock A theoretical framework for calibration in computer models:
+  parametrization, estimation and convergence properties.
+\newblock \emph{SIAM/ASA Journal on Uncertainty Quantification}, 4\penalty0
+  (1):\penalty0 767--795, 2016.
+\newblock \doi{10.1137/151005841}.
+
+\bibitem[van~der Vaart(1998)]{vdVaart1998}
+A.~W. van~der Vaart.
+\newblock \emph{Asymptotic Statistics}.
+\newblock Cambridge University Press, 1998.
+
+\bibitem[Varin et~al.(2011)Varin, Reid, and Firth]{Varin2011}
+C.~Varin, N.~Reid, and D.~Firth.
+\newblock An overview of composite likelihood methods.
+\newblock \emph{Statistica Sinica}, 21:\penalty0 5--42, 2011.
+
+\bibitem[Vehtari et~al.(2017)Vehtari, Gelman, and Gabry]{Vehtari2017}
+A.~Vehtari, A.~Gelman, and J.~Gabry.
+\newblock Practical {B}ayesian model evaluation using leave-one-out
+  cross-validation and {WAIC}.
+\newblock \emph{Statistics and Computing}, 27\penalty0 (5):\penalty0
+  1413--1432, 2017.
+\newblock \doi{10.1007/s11222-016-9696-4}.
+
+\bibitem[Vehtari et~al.(2021)Vehtari, Gelman, Simpson, Carpenter, and
+  B{\"u}rkner]{Vehtari2021}
+Aki Vehtari, Andrew Gelman, Daniel Simpson, Bob Carpenter, and Paul-Christian
+  B{\"u}rkner.
+\newblock Rank-normalization, folding, and localization: an improved
+  {$\widehat{R}$} for assessing convergence of {MCMC}.
+\newblock \emph{Bayesian Analysis}, 16\penalty0 (2):\penalty0 667--718, 2021.
+\newblock \doi{10.1214/20-BA1221}.
+
+\bibitem[Vollmer(2009)]{Vollmer2009}
+Sebastian Vollmer.
+\newblock A modular {B}ayesian approach for computer model calibration.
+\newblock Technical report, University of Warwick, Department of Statistics,
+  2009.
+
+\end{thebibliography}

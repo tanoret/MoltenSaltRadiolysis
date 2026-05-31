@@ -1,0 +1,10 @@
+# Arrhenius and Eyring parameters from Iwamatsu et al. 2026 Inorg. Chem.
+# Reaction: Nd(III) + e_s- -> Nd(II)
+# Source: text after Table 1 in the paper.
+# Comparable values for Cr(III): Ea = 33.50 +/- 0.6 kJ/mol, A = (1.70 +/- 0.2)e13 M^-1 s^-1
+# Comparable values for Zn(I) reduction by Cl2•-: k = 2.2e10; Cr(II): k = 1.70e10 (both M^-1 s^-1 at 673K)
+parameter,value,sigma,units,notes
+Ea,33.20,0.42,kJ/mol,from Arrhenius fit over 673-873 K
+A,1.71e13,0.13e13,M^-1 s^-1,pre-exponential factor
+dH_double_dagger,26.51,1.06,kJ/mol,enthalpy of activation (Eyring)
+k_Nd2_Cl2m_rad,1.72e10,0.04e10,M^-1 s^-1,Nd(II) + Cl2•- -> Nd(III) + 2 Cl-; at 673 K

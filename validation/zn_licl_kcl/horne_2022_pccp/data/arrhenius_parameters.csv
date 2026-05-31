@@ -1,0 +1,20 @@
+# Arrhenius parameters reported in Iwamatsu/Horne et al. PCCP 2022 (DOI:10.1039/D2CP01194H).
+# Source: validation/papers/d2cp01194h.pdf
+# Ea_units: kJ/mol. dH_units: kJ/mol. dS_units: J/(mol K). A_units: M^-1 s^-1 (2nd-order) or s^-1 (1st-order viscous flow).
+# Re-verified against the PDF on 2026-05-28; the prior file had two mislabelled rows:
+#   - the row previously labelled "eq4_ZnCl2 = Cl2- + Cl2- -> products in neat ZnCl2, Ea=30+/-3"
+#     was actually for eqn (13) (Cl2- + Zn+) in neat ZnCl2 (p.25096 right col).
+#   - the row previously labelled "eq15a = Cl2- + Zn+ -> 2Cl- + Zn2+, Ea=25+/-3"
+#     was actually for eqn (13) in 9.41 mM ZnCl2 in LiCl-KCl (p.25096 left col).
+# Both corrected below.  Eqn (15a) in the paper is in fact the impurity reaction S + e_s- -> S-.
+# A-factors are not reported numerically in the 2022 paper (only Arrhenius slopes / Ea).
+# A column for eq5 has been back-derived (A = k(400C) * exp(Ea/RT)) and flagged as "derived".
+reaction_id,reaction,T_range_C,A_M_inv_s,A_sigma,Ea_kJ_mol,Ea_sigma,source_in_paper,note
+eq5_published,e_s- + Zn2+ -> Zn+,400-600,9.47e12,,30.31,0.09,p.25092 right col + Fig 4B inset,"published Ea; A back-derived from k(400 C)=4.2e10 and Ea=30.31; original paper does not tabulate A; no density correction"
+eq5_recalc,e_s- + Zn2+ -> Zn+ (density-corrected refit in Iwamatsu 2026),400-600,2.4e13,0.5e13,35.6,1.2,Iwamatsu 2026 PCCP Cr paper refit,not in 2022 paper; included here for cross-reference with Paper 2
+eq4_LiCl_KCl,Cl2- + Cl2- -> Cl- + Cl3- in LiCl-KCl,400-600,,,26,2,p.25096 left col + Fig 7A,disproportionation in LiCl-KCl
+eq4_hagiwara,Cl2- + Cl2- -> Cl- + Cl3- (Hagiwara 1987),400-600,,,24,,p.25096 left col,Hagiwara et al. 1987 ref 12; sigma not given in 2022 paper
+eq13_LiCl_KCl,Cl2- + Zn+ -> 2Cl- + Zn2+ in 9.41 mM ZnCl2/LiCl-KCl,400-600,,,25,3,p.25096 left col + Fig 7A,cross-reaction; k(400C)=(2.0+/-0.2)e10 M^-1 s^-1
+eq13_ZnCl2,Cl2- + Zn+ -> 2Cl- + Zn2+ in neat ZnCl2,400-600,,,30,3,p.25096 left col + Fig 7A,cross-reaction in glassy ZnCl2; k(400C)=(8.8+/-0.2)e9 M^-1 s^-1
+diffusion_LiCl_KCl,viscous flow / fluidity of LiCl-KCl,400-600,,,14,2,p.25096 right col + Fig 7B,Ea for fluidity (1/viscosity); from ref 45 + 46 viscosity data
+diffusion_ZnCl2,viscous flow / fluidity of neat ZnCl2,400-600,,,79,5,p.25096 right col + Fig 7B,Ea for fluidity of glassy ZnCl2 (~360 cP at 400 C)

@@ -1,0 +1,853 @@
+      Nuclear Science and Engineering
+
+
+
+
+      ISSN: 0029-5639 (Print) 1943-748X (Online) Journal homepage: www.tandfonline.com/journals/unse20
+
+
+
+
+Radiolytic Production of Fluorine Gas from MSR
+Relevant Fluoride Salts
+
+Lance Davis, Ralph Hania, Dennis Boomstra, Dillon Rossouw, Florence
+Charpin-Jacobs, Jan Uhlir, Martin Maracek, Helmut Beckers & Sebastian
+Riedel
+
+To cite this article: Lance Davis, Ralph Hania, Dennis Boomstra, Dillon Rossouw, Florence
+Charpin-Jacobs, Jan Uhlir, Martin Maracek, Helmut Beckers & Sebastian Riedel (2023) Radiolytic
+Production of Fluorine Gas from MSR Relevant Fluoride Salts, Nuclear Science and Engineering,
+197:4, 633-646, DOI: 10.1080/00295639.2022.2129951
+
+To link to this article: https://doi.org/10.1080/00295639.2022.2129951
+
+
+
+
+       View supplementary material
+
+
+
+       Published online: 04 Nov 2022.
+
+
+
+       Submit your article to this journal
+
+
+
+       Article views: 586
+
+
+
+       View related articles
+
+
+
+       View Crossmark data
+
+
+
+       Citing articles: 5 View citing articles
+
+
+
+
+                       Full Terms & Conditions of access and use can be found at
+             https://www.tandfonline.com/action/journalInformation?journalCode=unse20
+NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · 633–646 · APRIL 2023
+© 2022 Nuclear Research & Consultancy Group (NRG)
+DOI: https://doi.org/10.1080/00295639.2022.2129951
+
+
+
+
+Radiolytic Production of Fluorine Gas from MSR Relevant
+Fluoride Salts
+Lance Davis, a,b* Ralph Hania, a Dennis Boomstra,a Dillon Rossouw,a Florence Charpin-Jacobs,a Jan
+Uhlir,c Martin Maracek,c Helmut Beckers,d and Sebastian Riedeld
+a
+  Nuclear Research and Consultancy Group (NRG), Westerduinweg 3, NL-1755, LE Petten, The Netherlands
+b
+  Delft University of Technology, Faculty of Applied Sciences, Radiation Science & Technology Department,
+Mekelweg 15, 2629 JB Delft, The Netherlands
+c
+  Research Centre Rez, Hlavni 130, CZ-250 68, Husinec-Rez, Czech Republic
+d
+  Freie Universität Berlin, Kaiserswerther Str. 16-18, D-14195 Berlin, Germany
+
+Received June 30, 2022
+Accepted for Publication September 19, 2022
+
+
+
+         Abstract — Radiolytic fluorine gas production at temperatures of 40°C to 60°C was investigated for the
+         fluoride salts LiF, BeF2, UF4, ThF4, and 71.7LiF-16BeF2-12.3UF4 (FliBe-UF4) by gamma irradiation of
+         powdered samples using spent fuel elements from the High Flux Reactor (HFR) Petten as the irradiation
+         source; work of a similar nature was previously performed at Oak Ridge National Laboratory in the period
+         1965 to 1995. Gamma irradiation was conducted for just over 41 days, with total absorbed gamma dose
+         ranging from ~45 MGy for the lightest salts to ~170 MGy for ThF4 and UF4. By measuring the gas pressure
+         within salt-filled capsules during irradiation, it was possible to quantify radiolytic gas production for all
+         salt samples except UF4. Production rates are reported as the salt G-values, measured as number of
+         fluorine molecules produced per 100 eV of energy absorbed (molecules F2/100 eV). The G-values of the
+         salts were found to be G(LiF) ~0.004, G(BeF2) ~0.009, G(ThF4) ~0.021, and G(FLiBe-UF4) ~0.005.
+
+         Keywords — Gamma radiolysis, molten salt reactor, fluoride salt, nuclear reactor fuel, G-value.
+
+         Note — Some figures may be in color only in the electronic version.
+
+
+
+I. INTRODUCTION                                                       MSRs offer numerous advantages when compared to
+                                                                 traditional solid fuel reactor designs, with the specific
+     The molten salt reactor (MSR) is considered                 draws being their ability to operate at significantly higher
+a favorable alternative to current mainstay solid fuel           temperatures (representing increased efficiency and
+nuclear reactor designs (i.e., pressurized water reactors,       higher value heat) and lower operating pressures (repre­
+boiling water reactors) and has received increasing              senting a lower driving force behind the spreading of
+research and development (R&D) attention in the past             activity and reduced loads on containment structures),
+10 to 15 years (Refs. 1 through 4), driven by several            as well as passive safety features and the potential to
+initiatives to design and realize MSR concepts with vary­        strongly reduce both fuel consumption and waste
+ing goals. This recent growth in interest also stems from        production.5 However, significant challenges related to
+the recognition of MSRs by the nuclear Generation IV             qualification of MSR fuels and materials exist due to
+International Forum as one of six promising reactor tech­        the requirements of high operating temperatures, intense
+nologies for further R&D (Refs. 1 and 3).                        neutron radiation, and representative corrosive
+                                                                 environment.
+                                                                      Radiolysis, the phenomenon of relevance in this
+*E-mail: davis@nrg.eu                                            work, is the chemical bond cleaving effect induced by
+
+                                                                                                                         633
+634     DAVIS et al. · RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS
+
+
+ionizing radiation occurring in molecular materials and         (F2) gas from the fluoride salt was identified as both an
+salts, including the halide salts intended for use in MSRs.     operational and an experiment risk, based on the preced­
+The conventional description of radiation-induced               ing work20–22 on fluoride salt irradiation conducted by
+damage in halide salt crystals starts with a primary pro­       Oak Ridge National Laboratory (ORNL) during the
+cess that involves creation of interstitials (H-centers) and    1960s within the Molten Salt Reactor Experiment
+vacancies (F-centers) in the halide sublattice,2,6–8 referred   (MSRE) program.
+to as primary defects, with an insignificant effect on the           Follow-up experimental work23 on fuel salt radiolysis
+cation sublattice.9,10 Complex intermediate processes fol­      was conducted by ORNL in the mid-1990s with specific
+low (described in detail elsewhere11), leading to a late        focus on the now stored spent fuel salt, which was used in
+stage in which extended defects are created in the form of      the MSRE during its operation. These ORNL experi­
+metallic colloidal precipitates and atomic or molecular         ments had shown appreciable quantities of fluorine gas
+halogen (bubbles), by aggregation of F-centers and              produced from fluoride salts when subjected to gamma
+H-centers, respectively.6,7,10,12 The halogen bubbles are       and/or beta radiation fields below temperatures of 70°C
+able to coalesce and diffuse to the grain boundaries of the     to 150°C. Fluorine production was also shown23 to be
+salt through a similar mechanism as that of dislocation         dependent on the state/nature of the salt (composition,
+loop punching, observed for gases in irradiated                 granularity, and grain size) and the rate of energy deposi­
+metals,11,13,14 and escape from the crystal surface.            tion into the fluoride salt.
+Additionally, as the halide salt is subjected to progressive         In fuel irradiation experiments, low sample tempera­
+radiation damage, interactions between primary and              tures are realized during reactor downtime for routine
+extended defects lead to the formation and growth of            refueling unless the samples can be heated externally. In
+vacancy voids.7,8 In Ref. 15, a mechanism is proposed           MSRs the low salt temperatures may generally be
+in which the halogen bubbles/gas in irradiated halide salt      avoided, but understanding and quantifying the radiolytic
+are/is expected to grow to a stable size at relatively low      production of F2(g) is still of importance for future safety
+irradiation dose, whereas vacancy voids grow in                 and licensing aspects (i.e., spent fuel salt storage, hand­
+a progressive logarithmic manner with increasing irradia­       ling of fuel salt leaks, fuel salt behavior during postinci­
+tion dose.7,15 As the vacancy voids grow within the salt        dent and accident scenarios, etc.) associated with the use
+crystal, they collide with the finely dispersed halogen         of fluoride-based fuel salts in MSRs.
+bubbles, absorbing the halogen bubbles and filling the               Thus, in a collaboration with Research Center Rez
+void with halogen gas. When the dimensions of the gas-          (CVR) and Freie Universität Berlin (FUB), NRG has set
+filled vacancy voids exceed the mean distance between           out to reproduce and expand on past experimental mea­
+metallic colloids and halogen bubbles (gas) in the crystal      surements of F2(g) production under gamma irradiation
+lattice, the halogen gas and metallic colloids interact         within the SAlt GAmma (SAGA) experimental project.
+within the vacancy void resulting in a powerful recombi­        This contribution focuses on the description of the experi­
+nation reaction.8 It should be stated that this overview of     ment and the determination of radiolytic F2(g) production
+the halide salt radiolysis process is largely based on          efficiencies (G-values) at close to room temperature.
+studies of alkali halide salts, and although the overall
+process is expected to be similar for divalent (and higher
+valency) halide salts due to the lesser role of the cation      II. EXPERIMENTAL
+sublattice, there are notable deviations, particularly in the
+intermediate radiolysis stages. These deviations/differ­        II.A. Sample Preparation
+ences are discussed in other work.16–18
+     In 2019, the Nuclear Research & Consultancy Group               The five halide salt samples specified in Table I and
+(NRG) completed the 2-year irradiation campaign of              produced at CVR were inserted into the SAGA facility for
+SALIENT-01 (Ref. 19), a fluoride molten salt fuel irra­         gamma irradiation using the spent fuel from the HFR as the
+diation experiment in the High Flux Reactor (HFR). The          gamma source. The BeF2 and LiF samples were prepared
+SALIENT-01 experiment contained four 78LiF-22ThF4               from pure ( > 99.95% and 99.98% purity, respectively)
+salt samples in graphite crucibles; the main topics for         batches of BeF2 and LiF purchased from Shanghai
+investigation were fission product speciation and reloca­       Muhong Industrial Company, Ltd. The UF4 and ThF4 sam­
+tion, interaction of the fuel salt with moderator graphite,     ples were obtained from batches synthesized at CVR and
+and spent fuel salt processing. During the preparation of       found to be > 99.95% pure through X-ray diffraction ana­
+SALIENT-01, radiolytic production of corrosive fluorine         lysis; however, differential scanning calorimetry
+
+                                                                NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+                      RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS · DAVIS et al.                   635
+
+
+                                                              TABLE I
+                                      Samples Irradiated in the SAGA Experimental Facility
+
+            Capsule                           Sample                         Physical Form                    Mass (g)
+
+               1                   BeF2                              Fine powder                              6.0 ± 0.1
+               2                   LiF                               Fine powder                              8.5 ± 0.1
+               3                   He (empty reference)
+               4                   71.7LiF-16BeF2-12.3UF4            Fine powder                             13.9 ± 0.1
+               5                   UF4                               Fine powder                             14.1 ± 0.1
+               6                   ThF4                              Fine powder                             12.4 ± 0.1
+
+
+
+
+measurements indicated the presence of trace UF3 in the               box. The connection of the capsules to the calibrated pres­
+UF4 samples. The LiF-BeF2-UF4 sample, prepared from the               sure sensors was made through 50-cm-long minitubes. The
+aforementioned salt sample batches, was molten, solidified,           minitubes are required to distance and shield the pressure
+and ground to a fine powder, producing mixed crystals.                sensors from the strong gamma field at the salt sample
+     These salt samples were placed in gas-tight, pre-                position. The calculated internal volume of the capsules
+fluorinated Monel-400 capsules (see Fig. 1), of 100-mm                including the minitubes and connection to the calibrated
+height and 9-mm inner diameter, connected to pressure                 pressure sensors was 8.4 ± 0.2 cm3.
+sensors (model PNA161, EFE sensors) using VCR connec­                      Each capsule, providing the first containment, was
+tors, as shown in Fig. 2. Prior to fluorination, all compo­           then placed into a second containment that was then
+nents were cleaned with a solution of 0.2% Galvaclean-20              sealed. To capture any fluorine gas that may escape the
+in an ultrasonic bath, rinsed with deionized water, cleaned           first containment in the event of accidental capsule fail­
+with ethanol, and then finally dried in air. Thereafter, pos­         ure, 22 g of HTCTM NI 600 RP (Johnson-Matthey) acti­
+sibly developed oxide layers were removed from the inside             vated catalyst of high nickel surface area on an alumina
+walls of the capsules by contacting, dissolving, and rinsing          substrate was placed in each of the second
+the capsules with 0.5% HF solution (pH 1.6) for approxi­              containments.24 This catalyst was activated by reduction
+mately 3 to 4 min. The components were then rinsed again              under 95%Ar-5%H2 at 275°C for 6 h. The plenum space
+with deionized water and dried in an argon atmosphere                 in the second containment was 175.5 cm3 (excluding
+glove box. Fluorination of the inside of the capsules at              addition of the capture catalyst). The five salt-filled cap­
+ > 150°C was performed at FUB and subsequently repeated               sules and one He-filled capsule were then placed together
+at CVR. Upon completion of the fluorination, the salt                 in an aluminum capsule holder of the larger, complete
+samples were loaded into the capsules, after which the                SAGA facility, which provided the third containment
+capsules were sealed inside a helium atmosphere glove                 barrier, as shown in Figs. 2 and 3. The SAGA facility
+
+
+
+
+    Fig. 1. Salt-containing capsules: (a) BeF2, (b) LiF, (c) FLiBe-UF4, (d) UF4, and (e) ThF4.
+
+NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+636       DAVIS et al. · RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS
+
+
+
+
+      Fig. 2. SAGA assembly components: (a) salt capsule first containment, (b) pressure sensor connection to salt capsule through
+      a minitube, (c) minitube assembly, and (d) assembled SAGA capsule array inserted into third containment.
+
+
+
+was filled with N2 gas with a total plenum volume                     scheme ensured the highest possible gamma dose rates to
+of 3.5 L.                                                             the salt samples during the irradiation period.
+
+
+II.B. Gamma Irradiation Source                                        III. IRRADIATION
+
+     The SAGA facility containing the salt samples was                III.A. Pressure and Temperature Measurements
+placed in a central position surrounded by eight spent fuel
+elements in the HFR spent fuel rack (SFR) and was                          Pressure and temperature measurements from the
+irradiated in this configuration, as shown in Fig. 4. In              five salt capsules were taken at time intervals of 1 min
+aiming to reach a point of equilibrium of fluorine gas                and recorded/logged by the HFR Data Acquisition
+production and adsorption/recombination in a reasonable               System (DACOS). The pressure measurements recorded
+timescale, estimated to occur at a total absorbed dose of             during the irradiation period are shown in Fig. 5. When
+around 200 MGy (Refs. 20, 21, 22, and 25) but depend­                 subjected to gamma irradiation, all salt samples besides
+ing on the sample, spent fuel elements with the highest               UF4 exhibited a pressure increase of varying magnitude
+burnup and shortest cooling time were used.                           from their ,1-bar starting pressure. As seen in Fig. 5, the
+     The eight spent fuel elements used can be divided                pressure increase is strongest for the ThF4 sample, and in
+into two fuel types: Type-1 (F1) is a spent fuel element              addition, the pressure for this sample already increases
+coming from the most recent HFR cycle, and type-2 (F2)                before the start of irradiation. This reveals
+is a fuel element from the previous HFR cycle with an                 a nonnegligible gamma dose rate in the wider vicinity
+additional decay time of 35 to 40 days. This fuel usage               of the SFR, which cannot be easily avoided.
+
+                                                                      NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+                     RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS · DAVIS et al.            637
+
+
+                                                               pressure development was observed during irradiation.
+                                                               The UF4 pressure data were therefore considered unusa­
+                                                               ble. It is not clear whether these deviations from expecta­
+                                                               tion are due to errors related to the experimental
+                                                               equipment used, i.e., capsule sealing, pressure sensors,
+                                                               data acquisition system, and/or a combination of one or
+                                                               more of these factors. Additionally, it is considered note­
+                                                               worthy that unlike the other cations present in the salt
+                                                               samples, uranium can change its oxidation state,26,27
+                                                               which may influence the energetics and kinetics of the
+                                                               excited states in the crystal and thus its behavior during
+                                                               radiolysis. One effect that has been observed in MSRE
+                                                               spent fuel salt is the formation of UF6(g) through the
+                                                               reaction of radiolytic F2 with UF4 in the salt.22,23
+                                                                    The SAGA facility was removed from its irradiation
+                                                               position in the SFR on two occasions: the first removal
+                                                               period, which lasted 1653 min, and the second removal
+                                                               period, which lasted 54 min, indicated by points b to
+                                                               c and d to e in Figs. 5 and 6, respectively. During these
+                                                               removal periods, the facility was lifted to a temporary
+                                                               storage position above and away from the SFR but
+                                                               remained within the HFR pool. It was not expected that
+                                                               these short breaks in irradiation would have noticeable
+    Fig. 3. Assembled SAGA experimental facility.              effects on the pressure measured in the capsule, as pres­
+                                                               sure increases are related to the F2 production via radi­
+                                                               olysis of the fluoride salt and only minor temperature
+    The pressure development in the UF4 is difficult to        reductions (3°C maximum) were observed on the sample
+account for: A < 1-bar capsule pressure was recorded at        capsule surface during the removal periods compared to
+loading, while a prompt increase to 1.85 bars was              the 40°C to 42°C irradiation temperature (Fig. 6).
+observed before the start of irradiation, and a hyperbolic     Although the measured temperatures as shown in Fig. 6
+
+
+
+
+                                                               F2       F1      F2
+
+
+                                          SAGA irradiation     F1               F1
+                                          position
+                                                               F2       F1      F2
+
+
+
+
+                                          F1: Fuel type - 1
+                                          F2: Fuel type - 2
+
+
+
+
+    Fig. 4. SAGA experimental facility irradiation position.
+
+NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+638       DAVIS et al. · RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS
+
+
+                                                                   are those of the sample capsules, based on thermal calcu­
+                                                                   lations it is expected that the maximum salt temperatures
+                                                                   are < 9°C higher than the measured capsule tempera­
+                                                                   tures and thus too low for significant recombination to
+                                                                   occur (i.e., > 150°C) (Ref. 25).
+                                                                        These expectations appear to hold for BeF2 but not
+                                                                   for the other salts, which appear to exhibit an anomalous
+                                                                   trend following the first removal period, as shown in
+                                                                   Fig. 5 (after point c) and Figs. 9 through 12. The reason
+                                                                   for this anomalous trend is currently unclear. It is postu­
+                                                                   lated that this pattern indicating a pressure decrease and
+                                                                   recovery may be due to the complex radiation damage
+                                                                   accumulation and extended defect creation mechanisms
+                                                                   in the halide salt matrices, perhaps in combination with
+                                                                   hydraulic (mechanical) shock experienced by the samples
+                                                                   when lifting the facility out of its irradiation position.
+
+
+                                                                   III.B. Quantification of Gamma Field
+      Fig. 5. SAGA salt capsule pressure measurements. Point            During the SAGA irradiation period in 2019, three
+      a: SAGA beginning of irradiation, point b: SAGA out of
+                                                                   gamma dose rate measurements were made at the sample
+      irradiation, point c: SAGA in irradiation, point d: SAGA
+      out of irradiation, and point e: SAGA in irradiation.        location to quantify the gamma field: before and after the
+                                                                   experiment, and in between two irradiation periods.
+                                                                   However, considering the poor statistics of these mea­
+                                                                   surements, an additional measurement campaign was
+                                                                   conducted during the period of September to
+                                                                   November 2021 to better characterize the gamma profile
+                                                                   of the spent fuel irradiation array. For ease of reference,
+                                                                   the 2019 and 2021 gamma dose measurements are here­
+                                                                   inafter distinguished as GM-19 and GM-21, respectively.
+                                                                        Gamma dose rate measurements were conducted by
+                                                                   inserting an air-filled gamma ionization chamber into the
+                                                                   central SAGA irradiation position in the SFR (Fig. 4) and
+                                                                   measuring the gamma dose at a number of elevations over
+                                                                   the total height of the irradiation position. The position-
+                                                                   dependent gamma dose measurements were then converted
+                                                                   to overall sample dose rates by mean-value integration of
+                                                                   each measurement set (of a given day) over the height of
+                                                                   the sample. By conducting these gamma measurements
+                                                                   over an extended period, a time-evolved dose rate profile
+                                                                   is generated, as measured during the GM-19 and GM-21
+                                                                   campaigns. Supplementary information pertaining to these
+                                                                   gamma measurements is provided online.
+                                                                        To further refine the gamma dose rate profile, the dose
+                                                                   rate curves provided by the GM-19 and GM-21 measure­
+                                                                   ments were curve fitted (exponential decay fit) and linearly
+      Fig. 6. SAGA salt capsule temperature measurements.          interpolated to produce an average gamma dose rate curve
+      Point a: SAGA beginning of irradiation, point b: SAGA
+      out of irradiation, point c: SAGA in irradiation, point d:
+                                                                   for the SAGA irradiation, as shown in Fig. 7.
+      SAGA out of irradiation, and point e: SAGA in                     Since the irradiation of the SAGA facility only com­
+      irradiation.                                                 menced ,19 days after the end of the HFR operational
+
+                                                                   NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+                     RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS · DAVIS et al.             639
+
+
+                                                              gas equation of state (EOS), thereby obtaining the time-
+                                                              evolved F2 quantity in moles corresponding to each pres­
+                                                              sure-temperature data point. In doing so, minor pressure
+                                                              deviations due to temperature fluctuations are dampened/
+                                                              normalized. The use of the ideal gas EOS is considered
+                                                              a reasonable approximation to relate experimental pres­
+                                                              sures and temperatures as F2 exhibits near ideal behavior
+                                                              (compressibility factor Z ,1) at SAGA experimental
+                                                              conditions (i.e., pressure 1 to 10 bars, temperature 30°C
+                                                              to 50°C) (Refs. 28 and 29).
+                                                                   Step 2: The F2 production in each salt capsule (in
+                                                              mmol) is then divided by the mass of the salt inserted into
+                                                              the given capsule, giving F2 per gram salt (mmol F2/g
+                                                              salt).
+                                                                   Step 3: The salt capsule pressure measurements (con­
+                                                              verted to mmol/g salt) were assessed for the time period
+                                                              before t = 0 (SAGA beginning of irradiation) to obtain
+                                                              a background/baseline reading for each salt capsule.
+                                                                   Step 4: The baseline determined in step 3 is then
+                                                              subtracted from each measurement point (mmol/g) over
+                                                              the complete irradiation time period, producing normal­
+                                                              ized F2 production values.
+                                                                   To determine the F2 production efficiencies
+    Fig. 7. Gamma dose rate (in air) versus time after fuel
+    discharge, as determined from two sets of ionization      (G-values), the F2 production curves should furthermore
+    chamber measurements. Point a: start of the SAGA          be expressed in terms of dose absorbed by the salt sam­
+    irradiation.                                              ples. To accomplish this, first the gamma emission spec­
+                                                              trum of the spent fuel elements was determined by
+cycle, the characteristic equation of the average gamma       simulating the complete history of the elements in the
+dose rate curve is time-adjusted to account for the exact     HFR core using a combination of MCNP4C3 (Ref. 30)
+period elapsed between the end of the HFR cycle and the       and FISPACT-2007 (Ref. 31) calculations to determine
+beginning of SAGA irradiation (27 540 min), given by          fuel burnup and composition. This photon spectrum was
+DR ½kGy=min� ¼ ð13:56Þ expðð t þ 27540Þ=14652:63Þ­            implemented as the irradiation source, which allows for
+ þ 0:51. The derivation process used for obtaining this       computation of the time-dependent dose rates in the salt
+time-adjusted average gamma dose rate equation is pro­        and He capsules. An MCNP calculation routine was then
+vided as supplementary information which is available         employed to determine the effective time-dependent
+online. The approximate maximum uncertainty in this           energy deposition in the salt samples, with particular
+average curve is taken as ,3:5%, determined from the          attention being paid to the spatial distribution of the
+mean of the maximum noted deviation between the com­          gamma field inside the SAGA facility. This was done
+puted GM-19 and GM-21 curves from t > 27 450 min              by first developing an MCNP model of the experimental
+(insertion of SAGA into irradiation position).                geometry and materials, as shown in Fig. 8.
+                                                                   A geometrical model was also made for the air-filled
+                                                              ionization chamber measurements, allowing for a direct
+                                                              relation between physical gamma dose measurements
+IV. EXPERIMENTAL DATA PROCESSING                              with an air-filled ionization chamber and the computed
+                                                              dose rates in the samples. The computed dose rates for
+     To convert the pressure measurements obtained for        the various salts are then divided by the computed dose
+each salt capsule throughout the irradiation period to F2     rates in the ionization chamber to obtain dose rate factors
+production quantities, the following calculation routine      for the salts. These factors are provided in Table II;
+was used:                                                     statistical uncertainties for these factors are < 2%.
+     Step 1: The pressure measurements recorded for each           By applying the dose rate factor for the given salt, the
+salt capsule were temperature corrected using the ideal       cumulative absorbed dose (throughout the duration of the
+
+NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+640        DAVIS et al. · RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS
+
+
+                           TABLE II
+            Sample Dose Rate Factors Relative to the
+               Ionization Chamber Air Reference
+
+                                                  Dose Rate
+  Capsule                   Sample                 Factor
+
+       1         BeF2                                  0.796
+       2         LiF                                   0.793
+       3         He                                    0.850
+       4         71.7LiF-16BeF2-12.3UF4                2.124
+       5         UF4                                   2.909
+       6         ThF4                                  2.889
+       —         Air (reference)                       1.000
+
+
+
+SAGA irradiation) can be converted to absorbed dose per
+gram salt (in Wh/g).                                               Fig. 9. BeF2 fluorine production curve.
+
+
+
+V. RESULTS AND DISCUSSION                                      consideration but does not render the determination of
+                                                               F2 production efficiencies invalid.
+     The F2 production curves for the five fluoride salts           It is assumed here that the pressures produced in the
+irradiated in SAGA are shown in Figs. 9 through 12. As         capsules are only due to the production of F2(g). Minor
+discussed in Sec. III.A pertaining to the correlation          pressure contributions from radiolytically produced trace
+between the observed pressure decrease and recovery            gases (e.g., O2, H2O, HF) from impurities present in the
+pattern and the brief removal of the SAGA facility from        salt matrices and/or secondary reactions [e.g., F2
+irradiation, F2 production curves are far from the               + UF4 ! UF6(g)] cannot be excluded with absolute
+expected near-exponential shape except in the case of          certainty. Mass spectrometry of evolved gases is planned
+BeF2. This phenomenon does warrant future                      for future gamma irradiations. However, considering the
+                                                               reported purity of the salts and handling processes during
+                                                               the salt capsule filling, it is not expected that the pressure
+                                                               contribution of trace gases would be significant.
+                                                                    The F2 production efficiency (in molecules F2 per
+                                                               100 eV of energy deposited), also referred to as the
+                                                               G-value, can be obtained by measuring the slope of the
+                                                               linear-increasing portion of the F2 production curve.22
+                                                               The measured slope can be expressed as a G-value
+                                                               using a unit conversion factor of 2.68, which is the ratio
+                                                               of 6.022E20 F2 molecules (per 1 F2 mmol) over
+                                                               (2.247E20) × 100 eV (per 1 Wh).
+
+
+                                                               V.A. BeF2
+
+                                                                    The F2 production curve obtained for the BeF2 salt
+                                                               sample resembles an upward exponential decay shape, as
+                                                               shown in Fig. 9. The maximum G-value for the BeF2 was
+                                                               found to be ,0:009 molecules F2/100 eV, with this max­
+                                                               imum occurring as expected in the early (initial) stages of
+                                                               gamma absorption. It is not clear from the experimental
+      Fig. 8. Top view of SAGA sample holder in MCNP           data if the BeF2 reaches the F2 production plateau (equi­
+      model geometry.                                          librium), as the irradiation ends before the tail end of the
+
+                                                               NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+                     RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS · DAVIS et al.             641
+
+
+                                                                   Thus, for completeness, F2 production efficiencies
+                                                               (G-values) for LiF of both the initial production slope
+                                                               and the maximum production slope were reported and
+                                                               were found to be ,0:001 and ,0:004 molecules F2
+                                                               /100 eV, respectively. Although no directly comparable
+                                                               experimental work reporting a G-value for LiF can be
+                                                               found in literature, ORNL conducted an irradiation of LiF
+                                                               using soft X-rays with a maximum dose rate of 0.3 kGy/h
+                                                               (Ref. 32). That experimental work reports no F2 produc­
+                                                               tion during irradiation. Considering the low dose rate
+                                                               during X-ray irradiation in that ORNL work, the absence
+                                                               of observed F2 production/liberation is not a completely
+                                                               unexpected result.
+
+
+
+    Fig. 10. LiF fluorine production curve.
+                                                               V.C. FLiBe-UF4
+
+                                                                    Similarly to the LiF (and ThF4) sample, the FLiBe-
+                                                               UF4 salt sample appears to have been affected by the
+data set could be resolved. It does however appear that at
+                                                               removal and reinsertion of the SAGA facility during the
+the end of irradiation, BeF2 was approaching a F2 pro­
+                                                               irradiation period. As seen from the FLiBe-UF4 produc­
+duction plateau as the production slope appears to be
+                                                               tion curve in Fig. 11, this removal and reinsertion point is
+flattening around 12.5 Wh/g salt (45 MGy) absorbed
+                                                               noticeable from the vertical increase around 10.3 Wh/g
+dose.
+                                                               salt, after which the mentioned F2 production decrease
+                                                               and recovery occur, followed by what seems to be an
+V.B. LiF                                                       approach to equilibrium. Because of the uncertainties
+                                                               introduced by this handling action and the lack of
+     The LiF production curve, shown in Fig. 10, exhibits      a detailed model of the process, the F2 production curve
+two distinct linear regions: One region is an initial slope    beyond this vertical increase is not assessed further.
+at the start of irradiation, and the other is a maximum             For this FLiBe-UF4 data set, the maximum F2 pro­
+production slope occurring after absorbing a dose of ,8        duction (maximum slope) does appear to occur in the
+Wh/g salt (28.8 MGy). The initial linear F2 production is      early stages of irradiation and is thus not influenced by
+interrupted by a period exhibiting a production plateau        the handling error. A maximum F2 production efficiency
+after an absorbed dose of about 3.5 Wh/g salt, which is
+directly following an interruption of the irradiation
+(Sec. III.A). The plateau period continues until an
+absorbed dose of 8 Wh/g salt, leading to a strong linear
+increase in F2 production. This period of maximum pro­
+duction continues up until an absorbed dose of ,11:4
+Wh/g salt (41.04 MGy) before the production flattens,
+followed by a pressure decrease beyond an absorbed dose
+of 12.5 Wh/g salt.
+     It is not clear why the LiF exhibits these two distinct
+F2 production regions. One postulate considered is that
+the first (and longest) removal period of the SAGA facil­
+ity from its irradiation position may have induced
+mechanical/hydraulic shock to the LiF salt crystals,
+which favors the recombination (back) reaction, leading
+to a period of minimal F2 production, which is followed
+by the resumption of strong F2 production as higher
+cumulative energy absorption occurs within the salt.               Fig. 11. FLiBe-UF4 fluorine production curve.
+
+NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+642       DAVIS et al. · RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS
+
+
+(G-value) of ,0:005 molecules F2/100 eV is reported for         published in current literature. However, an ORNL
+the FLiBe-UF4 salt.                                             experiment32 in which ThF4 was subjected to soft-X-ray
+     In experimental studies conducted by ORNL                  irradiation at a maximum dose rate of 2.9 kGy/h reported
+(Refs. 23 and 32) and more recently the Kurchatov               a G-value of 0.005 molecules F2/100 eV.
+Institute33 (KI), F2 production efficiencies (G-values)
+for a number of similar mixed salts to that of the FLiBe-
+UF4 (71.7LiF-16BeF2-12.3UF4) irradiated in this work            V.E. Evaluation of F2 Production Efficiencies
+have been reported. The results from these experimental
+studies show significant scatter and are not directly com­           From the F2 production curves for the four irradiated
+parable to the FLiBe-UF4 irradiation in this work, as the       salts (UF4 not reported), G-values were obtained and are
+salt compositions (and particle sizes) vary. However, the       provided in Table III together with relevant literature
+G-values reported in these studies for similar mixed salts      values.
+range from 0.005 to 0.045, and thus, the FLiBe-UF4                   Looking at Table III, no literature value is available
+G-value in this work does fall within the lower end of          for comparison for BeF2, and the absence of F2 produc­
+this wide range.                                                tion reported previously for LiF may be explained on
+                                                                account of the relatively low dose rate applied. For
+                                                                FLiBe salt mixtures, the highest G-value reported in
+V.D. ThF4                                                       literature21 was for that of the MSRE (ORNL) salt,
+                                                                which was a LiF-BeF2-ZrF4-UF4 eutectic, reported to be
+     The removal and reinsertion point for the ThF4 can         0.045 molecules F2/100 eV. However, G-values in the
+be seen in Fig. 12 from the vertical increase around 14         range of 0.01 to 0.02 were reported to be typical from
+Wh/g salt, after which the previously discussed F2 pro­         supplementary studies23 of this MSRE salt.
+duction decrease and recovery occur. The system is              Notwithstanding the current variance and uncertainties
+clearly still far from equilibrium at the end of irradiation.   associated with radiolytic F2 production efficiencies of
+     The ThF4 production curve prior to the handling            fluoride salts, the G-values obtained from the SAGA
+activity discussed above exhibits two regions of linear         experiment appear to be within the bounds of expectation
+F2 production: One is an initial slope, and the other           for the salt samples investigated, with the current mea­
+(maximum slope) occurs prior to the facility removal            surement for FLiBe-UF4 on the low end and for ThF4 on
+activity. F2 production efficiencies (G-values) for ThF4        the high end of the range.
+of both the initial and maximum production slopes were               In short, results reported for MSR relevant fluoride
+reported and were found to be ,0:007 and ,0:021 mole­           salts (Table III) show significant scatter. The scatter is
+cules F2/100 eV, respectively. No directly comparable           thought to be caused by differences in physical form
+experimental gamma radiolysis work on ThF4 has been             (grains versus fused ingots), grain sizes, sample tempera­
+                                                                tures, and potential measurement errors.
+                                                                     An additional factor that may contribute to the var­
+                                                                iance in reported G-values is the presence of cation
+                                                                impurities in the salt matrix. It is well established that
+                                                                cation impurities act as H-center traps at low
+                                                                temperatures34 and subdue vacancy void growth,7 both
+                                                                suppressive effects in terms of halogen gas formation and
+                                                                release. Salt impurities are thus of marked relevance, as
+                                                                purity information of salts in MSR-related radiolysis
+                                                                experiments23,32,33 is not consistently given, and high
+                                                                levels of cation impurities may result in an underestima­
+                                                                tion of the reported G-value for a given pure salt matrix.
+                                                                An interesting consequence would be that as fuel salts are
+                                                                used within an MSR, through which impurity levels are
+                                                                expected to increase due to corrosion and fission pro­
+                                                                cesses, the resulting spent fuel in its frozen state would
+                                                                be less sensitive to radiolytic halogen production and
+      Fig. 12. ThF4 fluorine production curve.                  release.
+
+                                                                NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+                     RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS · DAVIS et al.                              643
+
+
+                                                            TABLE III
+                     F2 Production Efficiencies (G-Values) Obtained for Salts Irradiated in This Work and a
+                                      Number of Comparable Salts Reported in Literature.
+
+                                                                                                         Maximum
+                                                   G-Value                             Irradiation       Dose Rate
+    Salt Type          Salt Form             (Molecules F2/100 eV)                       Source           (kGy/h)         Conducted by
+
+                                         This Work           Literature
+
+ BeF2               Fine powder             0.009                                 HFR Fuel                  33           NRG
+ LiF                Fine powder             0.004                                 HFR Fuel                  33           NRG
+                    Not reported                                    0             Soft X-rays               0.3          ORNL
+                                                                                                                          (Ref. 32)
+ 71.7LiF-           Fine powder             0.005                                 HFR Fuel                   89          NRG
+   16BeF2
+   -12.3UF4
+ 65LiF-29BeF2       Solid plug                            0.005 to 0.031          Post irradiation     Not reported      ORNL
+   -5ZrF4                                                                           energy                                (Ref. 23)
+   -0.66UF4
+                                                                                  60
+                    Solid plug                                 0.045                   Co source            6.3          ORNL
+                                                                                                                          (Ref. 23)
+                    Powder                                     0.012              HFR Fuel                 175.4         ORNL
+                                                                                                                          (Ref. 23)
+                    Fine powder                            0.005 to 0.04          Soft X-rays               1.3          ORNL
+                                                                                                                          (Ref. 32)
+ 71.7LiF-           Solid plug                                 0.006              In-core test         Not reported      KI (Ref. 33)
+   16BeF2
+   -12ThF4
+   -0.3UF4
+ 66LiF-33BeF2       Solid plug                                     0.01           In-core test         Not reported      KI (Ref. 33)
+   -1UF4
+ ThF4               Fine powder             0.021                                 HFR Fuel                  121          NRG
+                    Not reported                          0.003 to 0.008          Soft X-rays               2.9          ORNL
+                                                                                                                          (Ref. 32)
+
+
+
+
+     It has been qualitatively reported35,36 that the radiation           BeF2, produce charged defect pairs (anionic vacancies and
+stability of (pure) inorganic salts is influenced by a number of          interstitial halides) in the halide sublattice when irradiated, as
+factors such as bonding nature, ionization energy, lattice free           opposed to neutral primary defects produced by alkali halide
+volume, and nature/type of defects induced by radiation                   salts. Thus, through this mechanism, BeF2 producing defects
+damage. Radiation stability, which is a measure of                        with greater electron affinity would be expected to produce
+a substance’s ability to withstand radiation-induced structural           greater radiolysis yields (higher G-value) as that of LiF.
+changes, can be taken as an inverse measure of radiation                       Furthermore, in Refs. 35 and 39, a correlation is
+yield. Thus, under the same irradiation conditions, salts with            made between radiolysis yield from an ionic salt and
+lower radiation stability are expected to yield greater quanti­           the free volume of the salt’s lattice. The free volume
+ties of radiolytic products.                                              is defined as the difference between the lattice unit
+     From the BeF2 and LiF G-values reported in this work, it             cell volume and the ions occupying the unit cell,
+appears that BeF2 has a significantly higher (more than dou­              representing the interactive behavior of the bonds in
+ble) F2 production efficiency. In Ref. 37 it is proposed that in          the ionic salt.39 The radiation-damaged sublattice is
+radiolysis processes in which the primary defect production               typically less strongly bound in salt crystals with
+occurs within the halide (anion) sublattice, the overall effi­            larger free volumes; thus, the probability for diffusion
+ciency of salt decomposition is proportional to the electron              and release of radiolysis products (i.e., halogen gas)
+affinity of the primary defect products. It has been                      from the salt crystal is higher.35 The lattice parameters
+reported18,38 that halide salts of divalent cations, such as              (a, b, c, α, β, γ) of BeF2 and LiF lattices are (4.739 Å,
+
+NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+644     DAVIS et al. · RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS
+
+
+4.739 Å, 5.1875 Å, 90 °, 90 °, 120 °) and (4.027 Å,          colloids and halogen gas filled vacancy voids is signifi­
+4.0247 Å, 4.027 Å, 90 °, 90 °, 90 °) (Ref. 40), respec­      cantly energetic, leading to a very rapid temperature and
+tively. Using these lattice parameters as a measure of       pressure increase within the vacancy void. This may
+free volume, it can be seen that BeF2 is expected to         provide a complementary/partial explanation for the
+have a greater free volume than LiF and thus by this         observed F2 increase (spike) preceding the F2 production
+measure should release greater quantities of radiolysis      decrease. It is noteworthy to mention that a similar
+products [i.e., F2(g)] compared to that of LiF.              observation was made in ORNL work21 following an
+Therefore, notwithstanding other variables and uncer­        interruption of (60Co) gamma irradiation of MSRE fuel
+tainties (i.e., grain sizes, differences in impurity type    salt.
+and quantities), both the nature (charged) of the pri­
+mary defects produced in irradiated BeF2 and the
+larger free volume of the BeF2 lattice may be (quali­        VI. CONCLUSIONS AND RECOMMENDATIONS
+tatively) contributory effects explaining the higher
+G-value observed for BeF2 as opposed to LiF.                     Powdered samples of the fluoride salts LiF, BeF2,
+     Some radiolysis experiments of this nature have         UF4, ThF4, and 71.7LiF-16BeF2-12.3UF4 (FliBe-UF4)
+reported delay of fluorine production at the start of the    were subjected to gamma radiation from spent fuel ele­
+salt irradiation, termed “induction period.”25 This induc­   ments of the HFR Petten, and pressure increase was
+tion period is thought to be related to a complementary      measured to obtain information on radiolytic fluorine
+effect of accumulation of fluorine gas within the crystal    gas production for these samples. Pressure development
+lattice of the salt and the diffusion rate of halide gas     observed for UF4 cannot be easily explained and may be
+toward the salt crystal surface.22,36 However, these         due to a defective sensor. The absence of a clear pressure
+induction periods are not consistently noted in fluoride     increase may also be related to the existence of multiple
+salt radiolysis experiments, and they are absent in this     valence states for uranium, although the most likely effect
+work.                                                        of this would be the formation of UF6(g) (Refs. 22 and
+     Finally, it appears that the observed production        23), which was not observed during post irradiation heat­
+decrease and recovery following the movement of the          ing of the samples to above the boiling point.
+SAGA facility out of and back into the radiation field           For the other samples, the maximum production
+are more significant for the heavier salts (FLiBe-UF4        rates, measured as the number of fluorine molecules
+and ThF4) compared to LiF. This may be related to            produced per 100 eV of energy absorbed (molecules
+higher accumulated radiation damage (due to higher           F2/100 eV), were found to be G(LiF) ,0:004,
+gamma absorption) in the heavier salts in the time           G(BeF2) ,0:009, G(ThF4) ,0:021; and G(FLiBe-
+period up to the first facility removal operation. For       UF4) ,0:005. The LiF, ThF4, and FLiBe-UF4 samples
+the halide sublattice of the heavier salts, the number of    showed a complex pressure response to movement
+primary defects (F-center and H-center), extended            (and assumed combinatory effects of mechanical
+defects (metallic colloids and halogen bubbles), and         shock and salt crystal lattice defect mechanisms) of
+associated vacancy voids within the salt crystal at the      the irradiation facility around the spent fuel pool.
+time of the facility movement would be higher than that          A follow-up SAGA irradiation campaign will be
+of the lighter salts. Since vacancy void growth is pro­      conducted in order to verify and refine the G-values
+portional to dose absorbed,7 the vacancy voids are           reported for these fluoride salts and the factors that
+expected to be larger in the heavier salt. The combined      influence them. The following changes are made to
+effect of higher number density and larger dimensions of     the experiment to improve measurements and scope:
+extended defects (specifically metallic colloids) and lar­         1. When repeating the gamma irradiation, the facil­
+ger vacancy voids increases the significance of the          ity should not be moved or disturbed during the irradia­
+recombination back reaction, which may explain the           tion period.
+observed pressure decrease of the heavier salt samples
+upon removal from the gamma field. In addition, the F2            2. The irradiation period will be extended in order
+production curves for the heavier FLiBe-UF4 (Fig. 11)        to verify the existence of equilibria between production
+and ThF4 (Fig. 12) salts indicate a marked F2 increase       and adsorption/recombination.
+around the period during which the SAGA facility was              3. One or more chloride salts will be added to the
+removed from the gamma field. In Refs. 41 and 42, it is      experiment to obtain information on chloride radiolysis
+shown that the recombination reaction between metallic       (NaCl, KCl, or a heavy chloride) since radiolytic gas
+
+                                                             NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+                     RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS · DAVIS et al.                                          645
+
+
+production data on chloride salts are even more limited                  Methods Phys. Res. Sect. B. 153, 1–4, 163 (1999); https://
+than for fluoride salts.                                                 doi.org/10.1016/S0168-583X(99)00043-9.
+                                                                     8. V. DUBINKO et al., “Theory of the Late Stage of
+                                                                        Radiolysis of Alkali Halides,” J. Nucl. Mater., 277, 2–
+Acknowledgments                                                         3, 184 (2000); https://doi.org/10.1016/S0022-3115(99)
+                                                                        00207-X.
+    This work is supported by the Dutch Ministry of Economic         9. A. LIDIARD, “The Radiolysis of Alkali Halides—The
+Affairs.                                                                Nucleation and Growth of Aggregates,” Z. Phys. Chem.,
+                                                                        206, 1–2, 219 (1998); https://doi.org/10.1524/zpch.1998.
+                                                                        206.Part12.219.
+Disclosure Statement                                                10. A. TURKIN et al., “Radiolysis of NaCl at High and Low
+                                                                        Temperatures: Development of Size Distribution of
+    No potential conflict of interest was reported by the               Bubbles and Colloids,” J. Phys.: Condens. Matter, 18, 24,
+author(s).                                                              5655 (2006); https://doi.org/10.1088/0953-8984/18/24/007.
+                                                                    11. C. CATLOW, K. DILLER, and L. HOBBS, “Irradiation-
+                                                                        Induced Defects in Alkali Halide Crystals,” Philos. Mag. A,
+Supplementary Material                                                  42, 2, 123 (1980); https://doi.org/10.1080/
+                                                                        01418618009365806.
+     Supplemental data for this article can be accessed online
+                                                                    12. V. DUBINKO et al., “New Mechanism for Radiation
+at https://doi.org/10.1080/00295639.2022.2129951.
+                                                                        Defect Production and Aggregation in Crystalline
+                                                                        Ceramics,” J. Nucl. Mater., 289, 1–2, 86 (2001); https://
+                                                                        doi.org/10.1016/S0022-3115(00)00686-3.
+ORCID
+                                                                    13. V. DUBINKO et al., “A New Mechanism for Radiation
+Lance Davis      http://orcid.org/0000-0003-3401-6660                   Damage Processes in Alkali Halides,” J. Appl. Phys., 86,
+Ralph Hania      http://orcid.org/0000-0003-2550-6270                   11, 5957 (1999); https://doi.org/10.1063/1.371639.
+                                                                    14. N. GAO et al., “Loop-Punching Suppression Induced by
+                                                                        Growth of Helium Bubble Pair in Tungsten,” J. Appl.
+References                                                              Phys., 124, 23, 235105 (2018); https://doi.org/10.1063/1.
+                                                                        5053138.
+ 1. H. KAMIDE et al., “Generation IV International                  15. V. DUBINKO, D. VAINSHTEIN, and H. DEN HARTOG,
+    Forum-GIF,” Annual Report 2020 INIS-FR-21-0718,                     “Mechanism of Void Growth in Irradiated NaCl Based on
+    Organisation   for  Economic  Co-operation  and                     Exiton-Induced Formation of Divacancies at Dislocations,”
+    Development (2021).                                                 Nucl. Instrum. Methods Phys. Res. Sect. B, 228, 1–4, 304
+ 2. T. DOLAN, Molten Salt Reactors and Thorium Energy,                  (2005); https://doi.org/10.1016/j.nimb.2004.10.061.
+    Woodhead Publishing Series in Energy, Elsevier Science          16. P. CALL, W. HAYES, and M. KABLER, “Optical
+    (2017).                                                             Detection of Exciton EPR in Fluorite Crystals,” J. Phys.
+                                                                        C: Solid State Phys., 8, 4, L60 (1975); https://doi.org/10.
+ 3. D. LEBLANC, “Molten Salt Reactors: A New Beginning
+                                                                        1088/0022-3719/8/4/006.
+    for an Old Idea,” Nucl. Eng. Des., 240, 6, 1644 (2010););
+    https://doi.org/10.1016/j.nucengdes.2009.12.033.                17. A. EGRANOV et al., “Radiation Defects in CaF2 and SrF2
+                                                                        Crystals Doped with Cadmium or Zinc,” J. Phys.: Condens.
+ 4. J. SERP et al., “The Molten Salt Reactor (MSR) in                   Matter, 20, 46, 465213 (2008); https://doi.org/10.1088/
+    Generation IV: Overview and Perspectives,” Prog. Nucl.              0953-8984/20/46/465213.
+    Energy, 77, 308 (2014)); https://doi.org/10.1016/j.pnucene.
+    2014.02.014.                                                    18. A.     RAMOS-BALLESTEROS                        et         al.,       “Gamma
+                                                                        Radiation-Induced Defects in KCl, MgCl2, and ZnCl2
+ 5. H. MACPHERSON, “Molten-Salt Reactors,” Proc. Int.                   Salts at Room Temperature,” Phys. Chem. Chem. Phys.,
+    Conf. Constructive Uses of Atomic Energy, Washington,               2 3 , 1 7 , 1 0 3 8 4 ( 2 0 2 1 ) ; h t t p s : / / d o i . o r g / 1 0. 1 0 3 9 /
+    D.C., 1968.                                                         D1CP00520K.
+ 6. Y. EKMANIS, “Radiolysis Behaviour in Alkali Halide              19. P. HANIA et al., “SaLIENT-01: Preparation and Start of
+    Crystals,” Nucl. Instrum. Methods Phys. Res. Sect. B, 1, 2–3,       Irradiation of Thorium-Bearing Molten Fluoride Salt in
+    473 (1984); https://doi.org/10.1016/0168-583X(84)90111-3.           Graphite Crucibles,” Proc. Int. Nuclear Fuel Cycle Conf.
+ 7. V. DUBINKO et al., “Modeling of the Radiation-Induced               and TOP FUEL 2019—Light Water Reactor Fuel
+    Microstructural Evolution in Ionic Crystals,” Nucl. Instrum.        Performance     Conf.    2020,    Seattle,   Washington,
+
+NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+646       DAVIS et al. · RADIOLYTIC PRODUCTION OF FLUORINE GAS FROM MSR RELEVANT FLUORIDE SALTS
+
+
+      September 22–27, 2019, p. 285, American Nuclear Society      32. R. BRIGGS, “Molten-Salt Reactor Program Semiannual
+      (2020).                                                          Progress Report for Period Ending July 31, 1964,”
+20. M. ROSENTHAL, R. BRIGGS, and P. KASTEN, “Molten-                   ORNL-3708, Oak Ridge National Laboratory (1964).
+    Salt Reactor Program Semiannual Progress Report for            33. V. IGNATIEV, “Molten Salts Characteristics Under
+    Period Ending February 28, 1969,” ORNL-4396, Oak                   Irradiation in Fission Related Systems,” IAEA-
+    Ridge National Laboratory (1969).                                  TECDOC 1912, p. 70, International Atomic Energy
+21. P.   HAUBENREICH,      “Fluorine Production and                    Agency (2020).
+    Recombination in Frozen MSR Salts After Reactor                34. E. KOTOMIN, M. ZAISER, and W. SOPPE, “A Mesoscopic
+    Operation.” ORNL-TM-3144, Oak Ridge National                       Approach to Radiation-Induced Defect Aggregation in Alkali
+    Laboratory (1970).                                                 Halides Stimulated by the Elastic Interaction of Mobile Frenkel
+22. A. ICENHOUR et al., “An Overview of Radiolysis Studies             Defects,” Philos. Mag. A, 70, 2, 313 (1994); https://doi.org/10.
+    for the Molten Salt Reactor Remediation Project,” Proc. Int.       1080/01418619408243187.
+    Conf. Global 2001, Paris, France, September 9–13, 2001.        35. V. V. GROMOV, “Effect of Impurities on
+23. D. WILLIAMS, G. D. CUL, and L. TOTH, “A Descriptive                Radiation-Chemical Processes in Crystals of Inorganic
+    Model of the Molten Salt Reactor Experiment After                  Salts,” Russian Chem. Rev., 43, 2, 79 (1974); https://doi.
+    Shutdown: Review of FY 1995 Progress,” ORNL/TM-                    org/10.1070/RC1974v043n02ABEH001791.
+    13142, Oak Ridge National Laboratory (1996).                   36. A. ICENHOUR, “Radiolytic Effects on Fluoride Impurities
+24. D. WILLIAMS and J. BRYNESTAD, “Evaluation of                       in a U3O8 Matrix,” ORNL/TM-2000/157, Oak Ridge
+    Fluorine-Trapping Agents for Use During Storage of the             National Laboratory (2000).
+    MSRE Fuel Salt,” ORNL/TM-13770, Oak Ridge National             37. V. BOLDYREV and L. BYSTRYKH, “The Chemical
+    Laboratory (1999).                                                 Action of Ionising Radiations on Inorganic Crystals,”
+25. L. TOTH and L. FELKER, “Fluorine Generation by                     Russian Chem. Rev., 32, 8, 426 (1963); https://doi.org/10.
+    Gamma Radiolysis of a Fluoride Salt Mixture,” Radiat.              1070/RC1963v032n08ABEH001352.
+    Eff. Defects Solids, 112, 4, 201 (1990); https://doi.org/10.   38. C. B. LUSHCHIK, I. VITOL, and M. ELANGO, “Decay of
+    1080/10420159008213046.                                            Electronic Excitations into Radiation Defects in Ionic
+26. K. KVASHNINA et al., “Chemical State of Complex                    Crystals,” Sov. Phys. Usp., 20, 6, 489 (1977); https://doi.
+    Uranium Oxides,” Phys. Rev. Lett., 111, 25, 253002                 org/10.1070/PU1977v020n06ABEH005405.
+    (2013); https://doi.org/10.1103/PhysRevLett.111.253002.        39. G. BOYD, E. W. GRAHAM, and Q. LARSON, “Recoil
+27. G. LEINDERS et al., “Evolution of the Uranium Chemical             Reactions High Intensity Slow Neutron Sources. IV. The
+    State in Mixed-Valence Oxides,” Inorg.Chem., 56, 12, 6784          Radiolysis of Crystalline Alkali Metal Bromates with γ-
+    (2017); https://doi.org/10.1021/acs.inorgchem.7b01001.             Rays,” J. Phys Chem., 66, 2, 300 (1962); https://doi.org/
+                                                                       10.1021/j100808a026.
+28. K. DE REUCK, “Fluorine International Thermodynamic
+                                                                   40. L. MEI et al., “Investigation of Thermal Neutron Scattering
+    Tables of the Fluid State,” Vol-11, IUPAC Chemical Data
+                                                                       Data for BeF2 and LiF Crystals,” J. Nucl. Sci. Technol., 50,
+    Series No. 36, International Union of Pure and Applied
+                                                                       4, 419 (2013); https://doi.org/10.1080/00223131.2013.
+    Chemistry (1990).
+                                                                       773169.
+29. H. ESLAMI and A. BOUSHEHRI, “The Equation of State
+                                                                   41. D. VAINSHTEIN et al., “Effect of the Void Formation on the
+    of Song and Mason Applied to Fluorine,” Int.
+                                                                       Explosive Fracture of Electron Irradiated NaCl Crystals,” Nucl.
+    J. Thermophys., 20, 2, 611 (1999); https://doi.org/10.1023/
+                                                                       Instrum. Methods Phys. Res. Sect. B, 166, 550 (2000); https://
+    A:1022665323146.
+                                                                       doi.org/10.1016/S0168-583X(99)00717-X.
+30. “MCNPTM—A General Monte Carlo N-Particle Transport
+                                                                   42. A. TURKIN, et al., “Kinetics of Back Reaction
+    Code,” J. F. BRIESMEISTER, Ed., Version 4C, LA-13709-
+                                                                       Between       Radiolytic    Products       Initiated   by
+    M, Los Alamos National Laboratory (2000).
+                                                                       Radiation-Induced Voids in NaCl,” J. Phys.: Condens.
+31. R. FORREST, “FISPACT-2007: User Manual,” UKAEA-                    Matter., 13, 1, 203 (2001); https://doi.org/10.1088/0953-
+    FUS-534, UKAEA Fusion Association (2007).                          8984/13/1/321.
+
+
+
+
+                                                                   NUCLEAR SCIENCE AND ENGINEERING · VOLUME 197 · APRIL 2023
+

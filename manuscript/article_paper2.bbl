@@ -1,0 +1,292 @@
+\begin{thebibliography}{40}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Akiyama et~al.(1994)Akiyama, Kitaichi, Fujiwara, and
+  Sawamura]{Akiyama1994}
+R.~Akiyama, M.~Kitaichi, T.~Fujiwara, and S.~Sawamura.
+\newblock Short-lived species produced in pulse-irradiated melts of {LiF-KF}
+  and {LiF-NaF-KF} eutectic mixtures.
+\newblock \emph{J.\ Nucl.\ Sci.\ Technol.}, 31\penalty0 (3):\penalty0 250--252,
+  1994.
+
+\bibitem[Andreades et~al.(2014)Andreades, Cisneros, Choi,
+  et~al.]{Andreades2014}
+C.~Andreades, A.~T. Cisneros, J.~K. Choi, et~al.
+\newblock Design summary of the {Mark-I} pebble-bed fluoride-salt-cooled
+  high-temperature reactor commercial power plant.
+\newblock \emph{Nuclear Technology}, 195:\penalty0 223--238, 2014.
+
+\bibitem[Briggs(1964)]{Briggs1964}
+R.~B. Briggs.
+\newblock {Molten-Salt Reactor Program semiannual progress report for the
+  period ending July 31, 1964}.
+\newblock \emph{Oak Ridge National Laboratory Report ORNL-3708}, 1964.
+
+\bibitem[Brynjarsd\'ottir and O'Hagan(2014)]{Brynjarsdottir2014}
+J.~Brynjarsd\'ottir and A.~O'Hagan.
+\newblock Learning about physical parameters: the importance of model
+  discrepancy.
+\newblock \emph{Inverse Problems}, 30\penalty0 (11):\penalty0 114007, 2014.
+\newblock \doi{10.1088/0266-5611/30/11/114007}.
+
+\bibitem[Carotti et~al.(2017)Carotti, Liu, and Scarlat]{Carotti2017}
+F.~Carotti, Y.~Liu, and R.~O. Scarlat.
+\newblock A review of corrosion mechanisms and chemistry control strategies for
+  fluoride salt-cooled high-temperature reactors.
+\newblock \emph{Annals of Nuclear Energy}, 110:\penalty0 1051--1057, 2017.
+
+\bibitem[Castro~Baldivieso et~al.(2026)Castro~Baldivieso, Iwamatsu, Cook, Sims,
+  and Horne]{CastroBaldivieso2026}
+F.~Castro~Baldivieso, K.~Iwamatsu, A.~R. Cook, H.~E. Sims, and G.~P. Horne.
+\newblock Influence of {Nd(II)} and {Nd(III)} ions on the speciation and
+  kinetic dynamics of radiolytic transients in molten {LiCl-KCl} eutectic salt
+  mixtures.
+\newblock \emph{Inorg.\ Chem.}, 65:\penalty0 1283--1293, 2026.
+\newblock \doi{10.1021/acs.inorgchem.5c04788}.
+
+\bibitem[Conrad et~al.(2023)Conrad, Cook, et~al.]{Conrad2023}
+J.~K. Conrad, A.~R. Cook, et~al.
+\newblock Impact of iodide ions on the speciation of radiolytic transients in
+  molten {LiCl-KCl} eutectic salt mixtures.
+\newblock \emph{Physical Chemistry Chemical Physics}, 2023.
+\newblock \doi{10.1039/D3CP01477K}.
+
+\bibitem[Davis et~al.(2022)Davis, Hania, Boomstra, Rossouw, Charpin-Jacobs,
+  Uhl{\'i}{\v r}, Marecek, Beckers, and Riedel]{Davis2022}
+L.~Davis, R.~Hania, D.~Boomstra, D.~Rossouw, F.~Charpin-Jacobs, J.~Uhl{\'i}{\v
+  r}, M.~Marecek, H.~Beckers, and S.~Riedel.
+\newblock Radiolytic production of fluorine gas from {MSR}-relevant fluoride
+  salts.
+\newblock \emph{Nucl.\ Sci.\ Eng.}, 197:\penalty0 633--646, 2022.
+\newblock \doi{10.1080/00295639.2022.2129951}.
+
+\bibitem[Foreman-Mackey et~al.(2013)Foreman-Mackey, Hogg, Lang, and
+  Goodman]{ForemanMackey2013}
+D.~Foreman-Mackey, D.~W. Hogg, D.~Lang, and J.~Goodman.
+\newblock emcee: The {MCMC} hammer.
+\newblock \emph{Publications of the Astronomical Society of the Pacific},
+  125\penalty0 (925):\penalty0 306--312, 2013.
+\newblock \doi{10.1086/670067}.
+
+\bibitem[Forsberg(2019)]{ForsbergSafety2019}
+C.~W. Forsberg.
+\newblock Safety and licensing aspects of the molten salt reactor.
+\newblock \emph{Nuclear Technology}, 206:\penalty0 1685--1709, 2019.
+
+\bibitem[Forsberg(2020)]{Forsberg2020}
+C.~W. Forsberg.
+\newblock Market basis for salt-cooled reactors: Dispatchable heat, hydrogen,
+  and electricity with assured peak-power capacity.
+\newblock \emph{Nuclear Technology}, 206:\penalty0 1659--1685, 2020.
+
+\bibitem[Goodman and Weare(2010)]{GoodmanWeare2010}
+J.~Goodman and J.~Weare.
+\newblock Ensemble samplers with affine invariance.
+\newblock \emph{Communications in Applied Mathematics and Computational
+  Science}, 5\penalty0 (1):\penalty0 65--80, 2010.
+\newblock \doi{10.2140/camcos.2010.5.65}.
+
+\bibitem[Hagiwara et~al.(1987)Hagiwara, Sawamura, Sumiyoshi, and
+  Katayama]{Hagiwara1987}
+H.~Hagiwara, S.~Sawamura, T.~Sumiyoshi, and M.~Katayama.
+\newblock Pulse radiolysis study of transient species in {LiCl-KCl} melt.
+\newblock \emph{Radiation Physics and Chemistry}, 30\penalty0 (2):\penalty0
+  143--148, 1987.
+
+\bibitem[Hindmarsh et~al.(2005)Hindmarsh, Brown, Grant, Lee, Serban, Shumaker,
+  and Woodward]{Hindmarsh2005}
+A.~C. Hindmarsh, P.~N. Brown, K.~E. Grant, S.~L. Lee, R.~Serban, D.~E.
+  Shumaker, and C.~S. Woodward.
+\newblock {SUNDIALS}: Suite of nonlinear and differential/algebraic equation
+  solvers.
+\newblock \emph{ACM Trans.\ Math.\ Software}, 31:\penalty0 363--396, 2005.
+\newblock \doi{10.1145/1089014.1089020}.
+
+\bibitem[Holcomb and Cetiner(2010)]{Holcomb2012}
+D.~E. Holcomb and S.~M. Cetiner.
+\newblock An overview of liquid-fluoride-salt heat transport systems.
+\newblock \emph{Oak Ridge National Laboratory ORNL/TM-2010/156}, 2010.
+
+\bibitem[Horne et~al.(2018)Horne, Gregson, et~al.]{Horne2018}
+G.~P. Horne, M.~J. Gregson, et~al.
+\newblock Chemistry of solvated electrons in molten alkali chloride salts.
+\newblock \emph{J. Phys. Chem. C}, 2018.
+\newblock \doi{10.1021/acs.jpcc.8b05716}.
+
+\bibitem[{International Atomic Energy Agency}(2013)]{IAEA2013MSR}
+{International Atomic Energy Agency}.
+\newblock Challenges related to the use of liquid metal and molten salt
+  coolants in advanced reactors.
+\newblock Technical Report {IAEA-TECDOC-1696}, IAEA, 2013.
+
+\bibitem[Iwamatsu et~al.(2022)Iwamatsu, Horne, Ramos-Ballesteros, Conrad,
+  Sayed, Phillips, Cook, LaVerne, Pimblott, and Wishart]{Iwamatsu2022}
+K.~Iwamatsu, G.~P. Horne, A.~Ramos-Ballesteros, J.~K. Conrad, A.~K. Sayed,
+  W.~C. Phillips, A.~R. Cook, J.~A. LaVerne, S.~M. Pimblott, and J.~F. Wishart.
+\newblock Radiation-induced reaction kinetics of {Zn}$^{2+}$ with
+  $e_{\mathrm{s}}^{-}$ and {Cl}$_2^{\bullet-}$ in molten {LiCl-KCl} eutectic at
+  400--600\,$^\circ$c.
+\newblock \emph{Physical Chemistry Chemical Physics}, 24:\penalty0
+  25088--25098, 2022.
+\newblock \doi{10.1039/D2CP01194H}.
+
+\bibitem[Iwamatsu et~al.(2026)Iwamatsu, Horne, Ramos-Ballesteros,
+  Castro~Baldivieso, Conrad, Woods, Phillips, LaVerne, Pimblott, and
+  Wishart]{Iwamatsu2026}
+K.~Iwamatsu, G.~P. Horne, A.~Ramos-Ballesteros, S.~Castro~Baldivieso, J.~K.
+  Conrad, M.~E. Woods, W.~C. Phillips, J.~A. LaVerne, S.~M. Pimblott, and J.~F.
+  Wishart.
+\newblock Kinetics of radiation-induced {Cr(II)} and {Cr(III)} redox chemistry
+  in molten {LiCl-KCl} eutectic.
+\newblock \emph{Physical Chemistry Chemical Physics}, 28\penalty0 (3):\penalty0
+  2061--2071, 2026.
+\newblock \doi{10.1039/D4CP04190A}.
+
+\bibitem[Janz(1988)]{Janz1988}
+G.~J. Janz.
+\newblock \emph{Thermodynamic and Transport Properties for Molten Salts:
+  Correlation Equations for Critically Evaluated Density, Surface Tension,
+  Electrical Conductance, and Viscosity Data}.
+\newblock NSRDS-NBS. American Chemical Society / American Institute of Physics
+  for the National Bureau of Standards, 1988.
+\newblock NSRDS-NBS 61, Part II.
+
+\bibitem[Kass and Raftery(1995)]{Kass1995}
+Robert~E. Kass and Adrian~E. Raftery.
+\newblock Bayes factors.
+\newblock \emph{Journal of the American Statistical Association}, 90\penalty0
+  (430):\penalty0 773--795, 1995.
+
+\bibitem[Kennedy and O'Hagan(2001)]{KennedyOHagan2001}
+M.~C. Kennedy and A.~O'Hagan.
+\newblock Bayesian calibration of computer models.
+\newblock \emph{Journal of the Royal Statistical Society: Series B},
+  63\penalty0 (3):\penalty0 425--464, 2001.
+\newblock \doi{10.1111/1467-9868.00294}.
+
+\bibitem[Kristoffersen and Metiu(2018)]{KristoffersenMetiu2018}
+H.~H. Kristoffersen and H.~Metiu.
+\newblock Chemistry of solvated electrons in molten alkali chloride salts.
+\newblock \emph{J.\ Phys.\ Chem.\ C}, 122:\penalty0 19603--19612, 2018.
+\newblock \doi{10.1021/acs.jpcc.8b05716}.
+
+\bibitem[Makarov et~al.(1982)Makarov, Zhukova, Pikaev, and
+  Spitzyn]{Makarov1982}
+I.~E. Makarov, T.~N. Zhukova, A.~K. Pikaev, and V.~I. Spitzyn.
+\newblock Oxidizing agents produced by radiolysis of alkali-metal halide melts.
+\newblock \emph{Bull.\ Acad.\ Sci.\ USSR Div.\ Chem.\ Sci.}, 31:\penalty0
+  662--669, 1982.
+\newblock \doi{10.1007/BF00949993}.
+
+\bibitem[Marcus(1965)]{Marcus1965}
+R.~A. Marcus.
+\newblock On the theory of electron-transfer reactions. {VI}. unified treatment
+  of homogeneous and electrode reactions.
+\newblock \emph{The Journal of Chemical Physics}, 43:\penalty0 679, 1965.
+
+\bibitem[Mausolf et~al.(2024)Mausolf, Cao, Phillips, et~al.]{Mausolf2024}
+E.~Mausolf, G.~Cao, W.~Phillips, et~al.
+\newblock Radiolytic effects in molten chloride salts for advanced reactor
+  applications.
+\newblock \emph{Journal of Nuclear Materials}, 593:\penalty0 154974, 2024.
+
+\bibitem[Olander(2002)]{Olander2002}
+D.~Olander.
+\newblock Redox condition in molten fluoride salts: Definition and control.
+\newblock \emph{Journal of Nuclear Materials}, 300:\penalty0 270--272, 2002.
+
+\bibitem[Phillips et~al.(2022)Phillips, Cao, Warmann, Mohr, Lovel, and
+  Core]{Phillips2022}
+W.~C. Phillips, G.~Cao, S.~A. Warmann, B.~C. Mohr, E.~R. Lovel, and G.~M. Core.
+\newblock Gamma irradiation of {NaCl-UCl$_3$} salt for the molten chloride fast
+  reactor.
+\newblock Technical Report INL/RPT-22-66727-Rev000, Idaho National Laboratory,
+  2022.
+\newblock URL \url{https://www.osti.gov/biblio/1874817}.
+
+\bibitem[Pikaev et~al.(1982)Pikaev, Makarov, and Zhukova]{Pikaev1982}
+A.~K. Pikaev, I.~E. Makarov, and T.~N. Zhukova.
+\newblock Solvated electron in irradiated melts of alkaline halides.
+\newblock \emph{Radiation Physics and Chemistry}, 19\penalty0 (5):\penalty0
+  377--389, 1982.
+\newblock \doi{10.1016/0146-5724(82)90005-X}.
+
+\bibitem[Romatoski and Hu(2017)]{Romatoski2017}
+R.~R. Romatoski and L.-W. Hu.
+\newblock Fluoride salt coolant properties for nuclear reactor applications: A
+  review.
+\newblock \emph{Annals of Nuclear Energy}, 109:\penalty0 635--647, 2017.
+\newblock \doi{10.1016/j.anucene.2017.05.036}.
+
+\bibitem[Rotermund et~al.(2024)Rotermund, Mezyk, Sperling, Beck, Wineinger,
+  Cook, Albrecht-Sch{\"o}nzart, and Horne]{Rotermund2024}
+B.~M. Rotermund, S.~P. Mezyk, J.~M. Sperling, N.~B. Beck, H.~Wineinger, A.~R.
+  Cook, T.~E. Albrecht-Sch{\"o}nzart, and G.~P. Horne.
+\newblock Chemical kinetics for the oxidation of californium({III}) ions with
+  select radiation-induced inorganic radicals ({Cl}$_2^{\bullet-}$ and
+  {SO}$_4^{\bullet-}$).
+\newblock \emph{J.\ Phys.\ Chem.\ A}, 128:\penalty0 590--598, 2024.
+\newblock \doi{10.1021/acs.jpca.3c07404}.
+
+\bibitem[Sims et~al.(2020)Sims, Reed, and Hambley]{Sims2020Ce}
+H.~E. Sims, A.~R. Reed, and D.~F. Hambley.
+\newblock Radiolysis of cerium and lanthanide ions in chloride and
+  aqueous-chloride media relevant to reprocessing solutions.
+\newblock \emph{Radiation Physics and Chemistry}, 170:\penalty0 108668, 2020.
+
+\bibitem[Sohal et~al.(2010)Sohal, Ebner, Sabharwall, and Sharpe]{Sohal2010}
+M.~S. Sohal, M.~A. Ebner, P.~Sabharwall, and P.~Sharpe.
+\newblock Engineering database of liquid salt thermophysical and thermochemical
+  properties.
+\newblock \emph{Idaho National Laboratory Report INL/EXT-10-18297}, 2010.
+
+\bibitem[Tanore-Tamales(2026)]{Tanore2026PaperI}
+M.~Tanore-Tamales.
+\newblock Hierarchical {B}ayesian mechanism-adequacy estimation for molten salt
+  radiolysis networks: A practical framework with validation against the
+  pulse-radiolysis literature.
+\newblock Companion methodology paper; submitted to SIAM/ASA J.\ Uncertainty
+  Quantification, 2026, 2026.
+\newblock Manuscript at \url{manuscript/article_paper1.tex} in the project
+  repository.
+
+\bibitem[{TerraPower}(2021)]{TerraPower2021}
+{TerraPower}.
+\newblock Molten chloride fast reactor (mcfr) overview.
+\newblock Technical brief, TerraPower LLC, 2021.
+
+\bibitem[Tobin(1958)]{Tobin1958}
+J.~Tobin.
+\newblock Estimation of relationships for limited dependent variables.
+\newblock \emph{Econometrica}, 26:\penalty0 24--36, 1958.
+
+\bibitem[Tomeck et~al.(2024)]{Tomeck2024MCFR}
+J.~Tomeck et~al.
+\newblock Survey of molten chloride fast reactor designs and {NaCl-UCl$_3$}
+  composition windows.
+\newblock \emph{Progress in Nuclear Energy}, 171:\penalty0 105180, 2024.
+
+\bibitem[Toth and Felker(1990)]{Toth1990}
+L.~M. Toth and L.~K. Felker.
+\newblock Fluorine generation by gamma radiolysis of a fluoride salt mixture.
+\newblock \emph{Radiat.\ Eff.\ Defects Solids}, 112\penalty0 (4):\penalty0
+  201--210, 1990.
+
+\bibitem[Williams et~al.(2006)Williams, Toth, and Clarno]{Williams2006}
+D.~F. Williams, L.~M. Toth, and K.~T. Clarno.
+\newblock Assessment of candidate molten salt coolants for the advanced
+  high-temperature reactor ({AHTR}).
+\newblock \emph{Oak Ridge National Laboratory Technical Report
+  ORNL/TM-2006/12}, 2006.
+
+\bibitem[Yoshikawa et~al.(2018)Yoshikawa, Tropf, et~al.]{Yoshikawa2018}
+A.~Yoshikawa, D.~R. Tropf, et~al.
+\newblock Equilibrium considerations of molten fluoride salt redox chemistry
+  relevant to molten salt reactor design.
+\newblock \emph{Nuclear Engineering and Design}, 340:\penalty0 284--292, 2018.
+
+\end{thebibliography}

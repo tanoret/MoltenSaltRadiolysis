@@ -1,0 +1,22 @@
+# Iwamatsu, Horne et al. 2022, Phys. Chem. Chem. Phys. 24, 25088-25098.
+# DOI: 10.1039/D2CP01194H
+# Source: validation/papers/d2cp01194h.pdf
+# Molar absorptivities (epsilon) used in / referenced by the paper to convert absorbance to concentration.
+# Note: this 2022 paper does NOT measure epsilon in molten salt directly. It assumes
+#   epsilon(Cl2-) = 8000 M^-1 cm^-1 in molten LiCl-KCl at 400-600 C by analogy with the aqueous value
+#   (8800 M^-1 cm^-1, Hug 1981 = ref. 28) and the rationale of Makarov et al. (ref. 10) that
+#   epsilon varies with spectral width.  This single estimated epsilon is applied at every T.
+# The dosimetry uses G*epsilon = 5.08e4 (species/100eV)*(M^-1 cm^-1) at 470 nm for (SCN)2- in
+#   N2O-saturated aqueous KSCN (Buxton & Stuart 1995 = ref. 26).
+# All temperatures converted to Kelvin.  No epsilon for e_s- or Zn+ in molten salt is given.
+species,lambda_nm,T_C,T_K,eps_M_inv_cm_inv,sigma_eps,medium,source_in_paper,reference_for_eps,notes
+Cl2-,340,400,673.15,8.0e3,,LiCl-KCl,p.25095 right col,"estimated from aqueous, Hug 1981 (ref 28) + Makarov 1982 (ref 10)",same eps used to convert k/eps*l slopes to k(eqn4)=(2.2+/-2.0)e9 and k(eqn13)=(2.0+/-0.2)e10 M^-1 s^-1
+Cl2-,340,450,723.15,8.0e3,,LiCl-KCl,p.25095 right col,assumed same eps at all T (ref 10),no T-dependence assumed by authors
+Cl2-,340,500,773.15,8.0e3,,LiCl-KCl,p.25095 right col,assumed same eps at all T (ref 10),no T-dependence assumed by authors
+Cl2-,340,550,823.15,8.0e3,,LiCl-KCl,p.25095 right col,assumed same eps at all T (ref 10),no T-dependence assumed by authors
+Cl2-,340,600,873.15,8.0e3,,LiCl-KCl,p.25095 right col,assumed same eps at all T (ref 10),no T-dependence assumed by authors
+Cl2-,340,400,673.15,8.0e3,,neat ZnCl2,p.25095 right col,same eps used for neat ZnCl2 to extract k(eqn13)=(8.8+/-0.2)e9 M^-1 s^-1 at 400 C,
+Cl2-(aq),340,25,298.15,8.8e3,,water,p.25095 right col,Hug 1981 NSRDS-NBS 69 (ref 28),reference value cited for the analogy
+Cl3-(aq),220,25,298.15,1.04e4,2.00e2,water,p.25091 right col,Wang et al. 1994 Inorg. Chem. 33 5872 (ref 29),used to support 240 nm shoulder assignment to Cl3- in molten salts
+(SCN)2-,470,25,298.15,,,water (dosimetry),p.25090 left col,Buxton & Stuart 1995 (ref 26),G*epsilon product = 5.08e4 (species/100eV)*(M^-1 cm^-1) used for absolute dose; epsilon alone not given here
+Zn+(aq),300,25,298.15,,,water,p.25093 right col,Buxton & Sellers 1975 (ref 42),only lambda_max cited; epsilon not specified; assignment guide only

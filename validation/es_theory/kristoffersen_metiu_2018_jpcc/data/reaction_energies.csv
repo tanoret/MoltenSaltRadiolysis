@@ -1,0 +1,34 @@
+# Kristoffersen & Kristoffersen, H. H.; Metiu, H. J. Phys. Chem. C 2018, 122, 19603-19612.
+# DOI: 10.1021/acs.jpcc.8b05716
+# AIMD/DFT (PBE+D3, PAW, 350 eV cutoff, Gamma-point, VASP) computed reaction energies
+# for solvated electrons (bipolaron) with various solutes in molten alkali chloride films.
+# T = 900 K for LiCl-containing systems; T = 1100 K for pure NaCl.
+# Source: Table 1, eqs (2)-(12), and section 3.7 in
+# validation/papers/Chemistry of Solvated Electrons in Molten Alkali Chloride Salts.pdf
+# Conversion: 1 eV = 96.485 kJ/mol.
+# salt_composition codes (per paper): 45LiCl, 45NaCl, 29LiCl-16NaCl (= 29LiCl + 16NaCl mixture)
+reaction,salt_composition,T_K,dE_eV,dE_kJ_mol,source,notes
+Li(g) + 45LiCl -> Li+ + e- + 45LiCl,45LiCl,900,-0.5,-48.2,Table 1; eq 2,single Li atom dissolution
+2Li(g) + 45LiCl -> 2Li+ + 2e- + 45LiCl,45LiCl,900,-2.0,-193.0,Table 1; eq 3,two Li atoms; forms bipolaron
+8Li(g) + 45LiCl -> 8Li+ + 8e- + 45LiCl,45LiCl,900,-8.5,-820.1,Table 1,Li8 cluster breaks into 4 bipolarons + 8 Li+
+2Li(g) + 29LiCl + 16NaCl -> 2Li+ + 2e- + 29LiCl + 16NaCl,29LiCl-16NaCl,900,-2.4,-231.6,Table 1; eq 4,bipolaron in mixed melt
+Na(g) + 45NaCl -> Na+ + e- + 45NaCl,45NaCl,1100,-0.9,-86.8,Table 1; eq 5,single Na atom dissolution
+2Na(g) + 45NaCl -> 2Na+ + 2e- + 45NaCl,45NaCl,1100,-1.9,-183.3,Table 1; eq 6,bipolaron formation in NaCl
+AgCl(g) + 45LiCl -> Ag+ + Cl- + 45LiCl,45LiCl,900,-1.8,-173.7,Table 1; eq 7,AgCl dissolution (no e-); paper writes Ag+ (typo of 2Ag+)
+AgCl(g) + 2Li+ + 2e- + 45LiCl -> Ag- + Li+ + 46LiCl,45LiCl,900,-4.7,-453.5,Table 1; eq 8,one AgCl + bipolaron -> Ag- (excess electron)
+2AgCl(g) + 2Li+ + 2e- + 45LiCl -> Ag2 + 47LiCl,45LiCl,900,-7.4,-714.0,Table 1; eq 9,two AgCl + bipolaron -> Ag2 dimer (in melt)
+2AgCl(g) + 2Li+ + 2e- + 45LiCl -> 2Ag(s) + 47LiCl,45LiCl,900,-10.6,-1022.7,Table 1,bulk fcc Ag reference (heat capacity corrected to 900 K)
+AgCl(g) + 45NaCl -> Ag+ + Cl- + 45NaCl,45NaCl,1100,-2.4,-231.6,Table 1,AgCl dissolution in NaCl
+AgCl(g) + 2Na+ + 2e- + 45NaCl -> Ag- + Na+ + 46NaCl,45NaCl,1100,-4.1,-395.6,Table 1,paper Table reads 'Li+' but text/context indicates Na+ (likely typo); one AgCl + Na bipolaron -> Ag-
+2AgCl(g) + 2Na+ + 2e- + 45NaCl -> Ag2 + 47NaCl,45NaCl,1100,-7.0,-675.4,Table 1,two AgCl + Na bipolaron -> Ag2 dimer
+H2(g) + 2Li+ + 2e- + 45LiCl -> 2H- + 2Li+ + 45LiCl,45LiCl,900,-2.3,-221.9,Table 1; eq 10,H2 dissociation by Li bipolaron
+H2(g) + 2Na+ + 2e- + 45NaCl -> 2H- + 2Na+ + 45NaCl,45NaCl,1100,-0.9,-86.8,Table 1; Fig 6d (red),H2 dissociation by Na bipolaron
+CH4(g) + 2Li+ + 2e- + 45LiCl -> CH3- + H- + 2Li+ + 45LiCl,45LiCl,900,-0.7,-67.5,Table 1; eq 11,CH4 dissociation by Li bipolaron
+CH4(g) + 2Na+ + 2e- + 45NaCl -> CH3- + H- + 2Na+ + 45NaCl,45NaCl,1100,0.9,86.8,Table 1; section 3.7,CH4 dissociation by Na bipolaron (endoergic)
+CH4(g) + 2Li+ + 2e- + 29LiCl + 16NaCl -> CH3- + H- + 2Li+ + 29LiCl + 16NaCl,29LiCl-16NaCl,900,-0.4,-38.6,Table 1; section 3.7,CH4 dissociation by bipolaron in mixed melt
+N2(g) + 2Li+ + 2e- + 45LiCl -> N2^2- + 2Li+ + 45LiCl (singlet),45LiCl,900,-1.7,-164.0,Table 1; eq 12,N2 -> N2(2-) singlet spin
+N2(g) + 2Li+ + 2e- + 45LiCl -> N2^2- + 2Li+ + 45LiCl (triplet),45LiCl,900,-1.5,-144.7,Table 1,N2 -> N2(2-) triplet spin
+N2(g) + 2Na+ + 2e- + 45NaCl -> N2^2- + 2Na+ + 45NaCl (singlet),45NaCl,1100,,,Table 1,qualitative_only=true: unstable; N2 desorbs in singlet
+N2(g) + 2Na+ + 2e- + 45NaCl -> N2^2- + 2Na+ + 45NaCl (triplet),45NaCl,1100,0.0,0.0,Table 1; section 3.7,triplet barely stable
+N2(g) + 2Li+ + 2e- + 29LiCl + 16NaCl -> N2^2- + 2Li+ + 29LiCl + 16NaCl (singlet),29LiCl-16NaCl,900,,,Table 1,qualitative_only=true: unstable; N2 desorbs in singlet
+N2(g) + 2Li+ + 2e- + 29LiCl + 16NaCl -> N2^2- + 2Li+ + 29LiCl + 16NaCl (triplet),29LiCl-16NaCl,900,-1.1,-106.1,Table 1; section 3.7,triplet N2(2-) stable in mixed melt

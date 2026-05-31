@@ -1,0 +1,24 @@
+# Makarov, Zhukova, Pikaev, Spitsyn 1982, Bull. Acad. Sci. USSR Div. Chem. Sci. 31(4), 662-665.
+# Original Russian: Izv. Akad. Nauk SSSR Ser. Khim. 1982, No. 4, pp. 750-755.
+# DOI: 10.1007/BF00949993
+# Source: validation/papers/BF00949993.pdf, "Experimental" section p. 662
+parameter,value,units,source_in_paper,notes
+accelerator,U-12 linear electron accelerator,,Experimental,
+electron_energy,5,MeV,Experimental,
+peak_pulse_current,0.2,A,Experimental,Maximum current per pulse
+pulse_length,2.3,microsec,Experimental,
+time_resolution,0.2,microsec,Experimental,Of fast-acting spectrophotometric system
+spectral_range,300-1600,nm,Experimental,Full operating range of spectrophotometric system
+spectral_resolution_uv,5,nm,Experimental,In the 300-400 nm region
+spectral_resolution_nir,15,nm,Experimental,In the 800-1200 nm region (OCR rendered as "15 ncn")
+lower_optical_limit_chlorides,300,nm,Experimental,Set by inherent melt absorption
+lower_optical_limit_bromides,350,nm,Experimental,Set by inherent melt absorption
+lower_optical_limit_iodides,400,nm,Experimental,Set by inherent melt absorption
+T_dep_melt_chlorides,NaCl-CsCl 34/66 mol%,,Experimental,Used for broad-range temperature dependence; mp 493 C
+T_dep_melt_bromides,LiBr-KBr 60/40 mol%,,Experimental,Used for broad-range temperature dependence; mp 348 C
+kinetics_modeling,MN-7M analog computer,,Experimental,Used to fit competing reactions 8 and 9
+es_lifetime_upper_bound,2,microsec,p. 663 text,Defined as time for 90% drop in initial concentration
+Cl2_lifetime_avg,5,microsec,p. 663 text,Average tau in respective chloride melt
+Br2_lifetime_avg,50,microsec,p. 663 text,Average tau in respective bromide melt
+I2_lifetime_avg,500,microsec,p. 663 text,Average tau in respective iodide melt
+sample_preparation_ref,refs [1 2] in paper,,Experimental,Makarov-Zhukova-Pikaev 1974 Radiat.Eff.22 71 and 1975 Dokl.Akad.Nauk SSSR 225 1103

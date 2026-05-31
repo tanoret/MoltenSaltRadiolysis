@@ -1,0 +1,70 @@
+# Publication matplotlib style for the manuscripts.
+# Use:
+#   plt.style.use("manuscript/figures/mpl_style_nse.mplstyle")
+#
+# Design choices:
+#   - Serif body font matching journal style; 8-9 pt for caption-legible axes.
+#   - Single-column 3.5 in (89 mm); double-column 7 in (178 mm).
+#   - Wong colorblind-safe palette (Nature Methods 2011).
+#   - Light frame (0.6 pt); right/top spines hidden by default.
+#   - No gridlines by default (added per-figure in light grey when useful).
+
+# ----- Fonts -----
+font.family : serif
+font.serif  : DejaVu Serif, Times, Times New Roman, Computer Modern Roman
+font.size   : 9
+axes.labelsize  : 9
+axes.titlesize  : 8
+xtick.labelsize : 8
+ytick.labelsize : 8
+legend.fontsize : 7
+
+# ----- Lines and markers -----
+lines.linewidth     : 1.4
+lines.markersize    : 5
+patch.linewidth     : 0.6
+hatch.linewidth     : 0.5
+
+# ----- Axes -----
+axes.linewidth      : 0.6
+axes.spines.right   : False
+axes.spines.top     : False
+axes.spines.left    : True
+axes.spines.bottom  : True
+axes.xmargin        : 0.02
+axes.ymargin        : 0.05
+axes.titlepad       : 3
+axes.labelpad       : 2
+axes.grid           : False
+grid.color          : "#bbbbbb"
+grid.linewidth      : 0.4
+# Wong colorblind-safe palette (Nature Methods, 2011, vol 8, p 441)
+axes.prop_cycle : cycler('color', ['000000', 'E69F00', '56B4E9', '009E73', 'F0E442', '0072B2', 'D55E00', 'CC79A7'])
+
+# ----- Ticks -----
+xtick.direction : out
+ytick.direction : out
+xtick.major.size  : 3
+ytick.major.size  : 3
+xtick.major.width : 0.6
+ytick.major.width : 0.6
+xtick.minor.visible : False
+ytick.minor.visible : False
+
+# ----- Legend -----
+legend.frameon        : False
+legend.handlelength   : 1.5
+legend.handletextpad  : 0.5
+legend.borderaxespad  : 0.4
+legend.labelspacing   : 0.35
+
+# ----- Saving -----
+figure.dpi         : 110
+savefig.dpi        : 600
+savefig.bbox       : tight
+savefig.pad_inches : 0.05
+savefig.format     : pdf
+
+# ----- Math text -----
+mathtext.fontset   : cm
+mathtext.default   : it

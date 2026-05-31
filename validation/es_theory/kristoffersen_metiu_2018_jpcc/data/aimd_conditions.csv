@@ -1,0 +1,15 @@
+# Kristoffersen, H. H.; Metiu, H. J. Phys. Chem. C 2018, 122, 19603-19612.
+# DOI: 10.1021/acs.jpcc.8b05716
+# AIMD/DFT computational details. Source: section 2 (Computational Methods).
+# VASP, PBE+D3, PAW; planewave cutoff 350 eV; Gamma-point only.
+# Nose thermostat (refs 29-31); classical ion motion; dt = 1 fs.
+# Films with periodic BC in 2 directions, vacuum in third (z).
+# n_atoms_total counts cations + anions in unit cell; pure-salt melts contain 45 cations + 45 anions.
+# Films thickness from text: 14 A (45LiCl), 15 A (29LiCl-16NaCl), 19 A (45NaCl).
+# Cell dimensions a x b x c (A). Equilibration time t0_ps is the time discarded before
+# cumulative energy averaging. Total trajectory length ~ 16-18 ps per system (Figs 1, 3, 4, 5).
+# Per paper: '~a month on 32 CPUs for one 18 ps run'.
+composition,n_atoms,T_K,dt_fs,t0_equilibration_ps,total_time_ps,functional,vdW_correction,cutoff_eV,k_points,cell_a_ang,cell_b_ang,cell_c_ang,film_thickness_ang,notes
+45LiCl,90,900,1,0.4,~16-18,PBE,D3,350,Gamma-only,12,12,32,14,45 Li+ + 45 Cl-; cell expanded to c=50 A for IE calculations with dipole correction
+29LiCl-16NaCl,90,900,1,13,~16-18,PBE,D3,350,Gamma-only,12,12,34,15,29 Li+ + 16 Na+ + 45 Cl-; long t0 needed for cation mixing; t0=2.5 ps used for CH4/N2 in prerun cell
+45NaCl,90,1100,1,2.0,~16-18,PBE,D3,350,Gamma-only,12,12,35,19,45 Na+ + 45 Cl-

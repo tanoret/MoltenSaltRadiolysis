@@ -1,0 +1,14 @@
+# Pikaev, Makarov, Zhukova 1982, Radiat. Phys. Chem. 19(5), 377-387.
+# DOI: 10.1016/0146-5724(82)90005-X
+# Source: validation/papers/1-s2.0-014657248290005X-main.pdf, text on p. 383
+# (and p. 380 for e_s-).
+# Reported lifetimes are pseudo-first-order decay timescales in pure melts.
+# The paper gives ranges rather than precise values; both endpoints are
+# captured below as tau_low and tau_high (microseconds). Where the paper
+# gives only an order of magnitude (e.g. "~10 us"), tau_low and tau_high
+# are populated equally and a note is added.
+species,melt,T_range_degC,tau_low_us,tau_high_us,source,notes
+e_s-,alkali-halide melts (pure),,2,3,text p.380/383,"decay during ~2-3 us after pulse in pure matrices"
+Cl2-,chloride melts,,10,10,text p.383,"author states approx 10 us in pure chloride melts"
+Br2-,bromide melts,,10,100,text p.383,"author states several tens of microseconds"
+I2-,iodide melts,,100,1000,text p.383,"author states several hundreds of microseconds"

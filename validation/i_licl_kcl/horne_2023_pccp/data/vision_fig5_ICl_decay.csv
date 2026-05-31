@@ -1,0 +1,18 @@
+# Vision-extracted ICl•- transient absorbance decay from Fig. 5 of Conrad et al. PCCP 2023.
+# System: 10 wt.% KI in LiCl-KCl eutectic. Probe wavelength: 671 nm.
+# 4 temperatures: 400, 500, 600, 700 °C. Decay starts at t > 1 µs (after e_s- has fully decayed).
+# Decay is 2nd-order: 1/Abs vs t is linear, slope = 2 * k_decay / (eps * path_length).
+# Extraction is approximate; the original traces are point-cloud noisy. Trace is plotted as
+# the smoothed center of the noise cloud.
+#
+# Units: t in µs (microseconds), Abs in 10^-3 (i.e., A_actual = Abs/1000).
+t_us,Abs_1e3_400C,Abs_1e3_500C,Abs_1e3_600C,Abs_1e3_700C
+1.0,2.50,2.40,2.20,2.00
+1.5,2.10,1.90,1.60,1.30
+2.0,1.80,1.50,1.30,0.90
+2.5,1.60,1.30,1.10,0.70
+3.0,1.40,1.10,0.90,0.60
+3.5,1.30,1.00,0.80,0.50
+4.0,1.20,0.90,0.70,0.45
+4.5,1.10,0.80,0.60,0.40
+5.0,1.00,0.70,0.55,0.35

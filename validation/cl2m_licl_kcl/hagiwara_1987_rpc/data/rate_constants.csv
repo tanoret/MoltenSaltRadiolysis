@@ -1,0 +1,38 @@
+# Hagiwara, Sawai, Sumiyoshi, Katayama 1987, Radiat. Phys. Chem. 30(2), 141-144.
+# No DOI; reference: ISSN 0146-5724/87, Pergamon Journals Ltd.
+# Source: validation/papers/1-s2.0-135901978790097X-main.pdf
+# Reaction rate constants for transient species in LiCl-KCl eutectic (42 mol% KCl).
+# Only one explicit numerical k is given in the text (at 400 C, lambda=700 nm for e_s-,
+# and at 400 C, lambda=340 nm for Cl2-). Additional points are read from Arrhenius plots
+# (Fig. 8 for e_s- decay; Fig. 9 for Cl2- decay) and tagged "from Fig. 8" / "from Fig. 9".
+# For Cl2-, the second-order analysis reports the composite quantity 2k/(epsilon*l), with
+# units s^-1; epsilon*l (M^-1 cm^-1 * cm) is the molar absorptivity times path length and
+# was not measured in this paper, so k2 itself is not separable.
+# Fig. 8 y-axis: ln(k) where k is the e_s- first-order decay constant in s^-1.
+# Fig. 9 y-axis: ln(k/epsilon*l) where k is the Cl2- second-order decay constant.
+# Fig. 9 markers: open circles = pure LiCl-KCl eutectic; filled circles = eutectic doped
+# with 0.05 M CdCl2.
+species,reaction,T_K,T_C,k_value,k_units,sigma,sigma_units,source,notes
+e_s-,first_order_decay,673.15,400,4.5e6,s^-1,,,Section 2 + Fig. 2,explicit text value at lambda=700 nm in eutectic
+Cl2-,2k_over_eps_l_second_order_decay,673.15,400,3.0e6,s^-1,,,Section 2 + Fig. 3 curve (b)+(c),explicit text value at lambda=340 nm in eutectic; 2k/(epsilon*l)
+Cl2-,first_order_formation,673.15,400,2.5e5,s^-1,,,Section 2 + Fig. 3 curve (b),first-order plot of rising part of 340 nm trace in eutectic
+# --- Arrhenius point set for e_s- first-order decay (Fig. 8, pure eutectic) ---
+# Points read from Fig. 8 axes (T^-1 in 10^-3 K^-1; ln k with k in s^-1). Approximate.
+e_s-,first_order_decay,909,636,1.11e7,s^-1,,,Fig. 8,T^-1~1.10e-3 K^-1; ln k ~16.22 (read from plot)
+e_s-,first_order_decay,833,560,1.13e7,s^-1,,,Fig. 8,T^-1~1.20e-3 K^-1; ln k ~16.24 (curved plateau region above 500 C)
+e_s-,first_order_decay,769,496,9.0e6,s^-1,,,Fig. 8,T^-1~1.30e-3 K^-1; ln k ~16.01 (read from plot)
+e_s-,first_order_decay,714,441,6.0e6,s^-1,,,Fig. 8,T^-1~1.40e-3 K^-1; ln k ~15.60 (linear region below 500 C)
+e_s-,first_order_decay,667,394,3.3e6,s^-1,,,Fig. 8,T^-1~1.50e-3 K^-1; ln k ~15.00 (read from plot)
+# --- Arrhenius point set for Cl2- second-order decay (Fig. 9, pure eutectic, open circles) ---
+# y-axis is ln(k/epsilon*l); values reported as the composite quantity.
+Cl2-,2k_over_eps_l_second_order_decay,909,636,5.8e6,s^-1,,,Fig. 9 open circles,T^-1~1.10e-3 K^-1; ln(k/eps*l) ~15.57 (pure eutectic)
+Cl2-,2k_over_eps_l_second_order_decay,833,560,4.8e6,s^-1,,,Fig. 9 open circles,T^-1~1.20e-3 K^-1; ln(k/eps*l) ~15.38 (pure eutectic)
+Cl2-,2k_over_eps_l_second_order_decay,769,496,3.7e6,s^-1,,,Fig. 9 open circles,T^-1~1.30e-3 K^-1; ln(k/eps*l) ~15.12 (pure eutectic)
+Cl2-,2k_over_eps_l_second_order_decay,714,441,3.0e6,s^-1,,,Fig. 9 open circles,T^-1~1.40e-3 K^-1; ln(k/eps*l) ~14.91 (pure eutectic; consistent with text value 3.0e6 at 400 C)
+Cl2-,2k_over_eps_l_second_order_decay,667,394,2.4e6,s^-1,,,Fig. 9 open circles,T^-1~1.50e-3 K^-1; ln(k/eps*l) ~14.69 (pure eutectic)
+# --- Arrhenius point set for Cl2- second-order decay (Fig. 9, doped melt, filled circles) ---
+Cl2-,2k_over_eps_l_second_order_decay_doped,909,636,5.7e6,s^-1,,,Fig. 9 filled circles,T^-1~1.10e-3 K^-1; ln(k/eps*l) ~15.55 (eutectic + 0.05 M CdCl2)
+Cl2-,2k_over_eps_l_second_order_decay_doped,833,560,4.9e6,s^-1,,,Fig. 9 filled circles,T^-1~1.20e-3 K^-1; ln(k/eps*l) ~15.40 (eutectic + 0.05 M CdCl2)
+Cl2-,2k_over_eps_l_second_order_decay_doped,769,496,4.0e6,s^-1,,,Fig. 9 filled circles,T^-1~1.30e-3 K^-1; ln(k/eps*l) ~15.19 (eutectic + 0.05 M CdCl2; deviates from straight line)
+Cl2-,2k_over_eps_l_second_order_decay_doped,714,441,3.5e6,s^-1,,,Fig. 9 filled circles,T^-1~1.40e-3 K^-1; ln(k/eps*l) ~15.07 (eutectic + 0.05 M CdCl2; deviates from straight line)
+Cl2-,2k_over_eps_l_second_order_decay_doped,667,394,3.0e6,s^-1,,,Fig. 9 filled circles,T^-1~1.50e-3 K^-1; ln(k/eps*l) ~14.91 (eutectic + 0.05 M CdCl2)

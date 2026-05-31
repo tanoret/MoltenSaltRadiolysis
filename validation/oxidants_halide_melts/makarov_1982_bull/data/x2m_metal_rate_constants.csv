@@ -1,0 +1,44 @@
+# Makarov, Zhukova, Pikaev, Spitsyn 1982, Bull. Acad. Sci. USSR Div. Chem. Sci. 31(4), 662-665.
+# Original Russian: Izv. Akad. Nauk SSSR Ser. Khim. 1982, No. 4, pp. 750-755.
+# DOI: 10.1007/BF00949993
+# Source: validation/papers/BF00949993.pdf, Table 2
+#
+# Rate constants k6 for reaction X2- + M2(2n-1)+ -> 2 X- + 2 Mn+ (Eq. 6 in paper).
+# M2(2n-1)+ is the dimer of the reduced cation form (e.g. for Na+: Na2+; for Cd2+: Cd2(3+) cluster but in this work
+# the experimental observable is the reduced cation form M(n-1)+; rate constants are obtained from the drop in X2- optical
+# absorption assuming the kinetic scheme 4-6).
+# Mixed-melt rows: NaCl-CsCl is 34/66 mol% (mp 493 C); LiBr-KBr is 60/40 mol% (mp 348 C).
+# OCR notes:
+#   - First Br2- row reads "Cd NaCl 850 C" in OCR which is clearly an OCR error: NaCl cannot host Br2- (would yield Cl2-).
+#     Reconstructed as "Na NaBr" by context (Na-NaBr at 850 C parallels the Cl2- row "Na NaCl 850 C" above).
+#   - "Cd LiBr-KBr" Cd2+ rate-constant rows show clear Arrhenius behavior (E_a ~ 5 kcal/mol per p. 664 text).
+# Rate-constant powers of ten taken from OCR with "i0" interpreted as "10" and "t0" as "10"; powers verified by
+# magnitude ordering described in the text (rate constants of Cl2- ~ 10x those of Br2- ~ 10x those of I2-).
+species,reduced_metal,melt,mix_mole_percent,T_C,T_K,k_M_inv_s_inv,sigma_k_M_inv_s_inv,source_in_paper,notes
+Cl2-,Na,NaCl,,850,1123.15,2.0e11,0.2e11,Table 2,
+Cl2-,K,KCl,,800,1073.15,1.0e11,0.3e11,Table 2,
+Cl2-,Rb,RbCl,,750,1023.15,6.7e10,0.2e10,Table 2,
+Cl2-,Na(Cs),NaCl-CsCl,34/66,550,823.15,3.6e11,0.5e11,Table 2,
+Cl2-,Na(Cs),NaCl-CsCl,34/66,600,873.15,4.0e11,0.7e11,Table 2,
+Cl2-,Na(Cs),NaCl-CsCl,34/66,700,973.15,3.7e11,0.8e11,Table 2,
+Cl2-,Na(Cs),NaCl-CsCl,34/66,750,1023.15,4.0e11,0.9e11,Table 2,
+Cl2-,Na(Cs),NaCl-CsCl,34/66,800,1073.15,4.4e11,0.9e11,Table 2,
+Cl2-,Na(Cs),NaCl-CsCl,34/66,850,1123.15,4.8e11,0.5e11,Table 2,
+Br2-,Na,NaBr,,850,1123.15,2.6e11,0.9e11,Table 2,OCR rendered "Cd NaCl" -- corrected to "Na NaBr" by chemistry/context
+Br2-,K,KBr,,800,1073.15,4.0e10,0.4e10,Table 2,
+Br2-,Cs,CsBr,,600,873.15,4.2e10,0.5e10,Table 2,
+Br2-,Li(K),LiBr-KBr,60/40,400,673.15,2.4e10,0.7e10,Table 2,
+Br2-,Li(K),LiBr-KBr,60/40,500,773.15,2.3e10,0.9e10,Table 2,
+Br2-,Li(K),LiBr-KBr,60/40,600,873.15,2.9e10,0.4e10,Table 2,
+Br2-,Li(K),LiBr-KBr,60/40,700,973.15,2.2e10,0.4e10,Table 2,
+Br2-,Li(K),LiBr-KBr,60/40,800,1073.15,2.2e10,0.2e10,Table 2,
+Br2-,Li(K),LiBr-KBr,60/40,850,1123.15,2.3e10,0.4e10,Table 2,
+Br2-,Ca,KBr,,800,1073.15,0.7e11,0.3e11,Table 2,
+Br2-,Zn,KBr,,800,1073.15,0.7e11,0.3e11,Table 2,
+Br2-,Cd,LiBr-KBr,60/40,400,673.15,3.6e10,0.4e10,Table 2,
+Br2-,Cd,LiBr-KBr,60/40,500,773.15,4.6e10,0.4e10,Table 2,
+Br2-,Cd,LiBr-KBr,60/40,600,873.15,6.4e10,0.5e10,Table 2,
+Br2-,Cd,LiBr-KBr,60/40,700,973.15,0.9e11,0.2e11,Table 2,
+Br2-,Cd,LiBr-KBr,60/40,800,1073.15,1.0e11,0.2e11,Table 2,
+Br2-,Cd,LiBr-KBr,60/40,850,1123.15,0.9e11,0.5e11,Table 2,
+I2-,K,KI,,700,973.15,3.8e9,0.4e9,Table 2,

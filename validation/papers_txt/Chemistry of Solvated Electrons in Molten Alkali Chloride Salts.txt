@@ -1,0 +1,723 @@
+                                                                                                                                                                                                                                                           Article
+
+                                                                                                                                                                   Cite This: J. Phys. Chem. C 2018, 122, 19603−19612                          pubs.acs.org/JPCC
+
+
+
+
+                                                                                                          Chemistry of Solvated Electrons in Molten Alkali Chloride Salts
+                                                                                                          Henrik H. Kristoﬀersen† and Horia Metiu*,‡
+                                                                                                          †
+                                                                                                           Department of Energy Conversion and Storage, Technical University of Denmark, 2800 Kongens Lyngby, Denmark
+                                                                                                          ‡
+                                                                                                           Department of Chemistry and Biochemistry, University of California, Santa Barbara, California 93106-9510, United States
+                                                                                                              *
+                                                                                                              S Supporting Information
+
+
+
+                                                                                                              ABSTRACT: We use ab initio molecular dynamics to study the
+                                                                                                              electronic structure and the chemistry of the solvated electrons created
+                                                                                                              when alkali atoms are dissolved in alkali chloride molten salt. We ﬁnd
+
+
+
+
+       Downloaded via IDAHO NATL LABORATORY on May 28, 2026 at 13:31:29 (UTC).
+                                                                                                              that solvated electrons pair up to form a two-electron species. This
+                                                                                                              species is a very strong reductant which reduces Ag+ to Ag− or Ag(s),
+                                                                                                              dissociates H2 to form 2H−, dissociates CH4 to form CH3− and H−, and
+                                                                                                              converts N2 to N22−. We also study how these properties depend on the
+                                                                                                              composition of the alkali chloride salt.
+
+
+
+
+                                                                                                          1. INTRODUCTION                                                                  surrounding molten salt ions. This is important in relation to
+                                                                                                          Alkali metals dissolve in molten alkali halides and ionize                       base catalysis because when the two-electron species has high
+                                                                                                          spontaneously to produce solvated electrons and alkali ions.                     energy, the electrons are more likely to be transferred to the
+                                                                                                                                                                                           reactants. Solvated electrons could therefore be very potent
+                                                                                                          Experiments have been performed to determine the solubility,
+                                                                                                                                                                                           base catalysts.
+                                                                                                          the spectroscopy, the electrical conductivity, and the phase
+                                                                                                                                                                                             Rieke28 has shown that alkali metals dissolved in organic
+                                                                                                          diagram of various systems of this type.1−7 A valuable review of
+
+
+
+
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+                                                                                                                                                                                           solvents reduce the metal salts to make metallic clusters which
+                                                                                                          this literature, by Bredig, is available on the web.8
+                                                                                                                                                                                           have remarkable reactivity. We have investigated whether
+                                                                                                             A variety of systems that catalyze many types of reactions are
+                                                                                                                                                                                           similar chemistry can be performed when the solvent is a
+                                                                                                          classiﬁed as base catalysts.9−13 These catalysts share two
+                                                                                                                                                                                           molten salt. We ﬁnd that AgCl, dissolved in molten LiCl in
+                                                                                                          characteristics: they are Lewis bases and they catalyze reactions
+                                                                                                                                                                                           which Li was dissolved, will spontaneously form metal particles
+                                                                                                          that proceed through a negative ion intermediate. A few
+                                                                                                                                                                                           when there are equal amounts of Ag+ and e−. We also ﬁnd an
+                                                                                                          examples of such catalysts are irreducible oxides pretreated at
+                                                                                                                                                                                           unexpected Ag− ion when there are two e− and one Ag+.
+                                                                                                          high temperature,9 supported alkali metals,13 zeolites doped
+                                                                                                                                                                                             In the last part, we consider the reactions between the
+                                                                                                          with alkali metals,14−19 alkali hydroxides, amines tethered to
+                                                                                                                                                                                           solvated electrons and gaseous H2, CH4, and N2 to form 2H−,
+                                                                                                          solid surfaces, hydrotalcite, supported metal clusters with alkali
+                                                                                                                                                                                           CH3− + H−, and N22−. The reaction energies are strongly
+                                                                                                          metal promoters,20−22 and others.9−13 Examples of the type of
+                                                                                                                                                                                           dependent on the molten salt composition, which indicates
+                                                                                                          reactions aﬀected by the base catalysts are alkene and alkyne
+                                                                                                                                                                                           that the reactivity of the solvated electrons can be tuned by
+                                                                                                          isomerization, alkylation reactions, Tishchenko reactions,
+                                                                                                                                                                                           changing the nature of the molten salt.
+                                                                                                          Michael addition, Knovenagel condensations, epoxide reac-
+                                                                                                                                                                                             Other possible advantages of using solvated electrons as base
+                                                                                                          tions with CO2 to make organic carbonates, and others.9−13 It
+                                                                                                                                                                                           catalysts are enumerated in the Summary section.
+                                                                                                          is believed that most (or perhaps all) base catalysts act by
+                                                                                                          donating an electron to the substrate to create a negative ion                   2. COMPUTATIONAL METHODS
+                                                                                                          intermediate which then reacts to generate products. The
+                                                                                                          electron donated to the substrate is returned to the catalyst                    The molten salts are modeled as freestanding ﬁlms with
+                                                                                                          when the products are desorbed. In a manner of speaking, the                     periodic boundary conditions in two directions and vacuum on
+                                                                                                          electron is the catalyst. It is therefore natural to ask whether                 both sides of the ﬁlm (in the direction perpendicular to the
+                                                                                                          solvated electrons in molten salts might be used as base                         ﬁlm). Three such ﬁlms have been studied: one contains 45LiCl
+                                                                                                          catalysts.                                                                       in the unit cell, the second contains 45NaCl, and the third is a
+                                                                                                             It has been stated23−27 that a solvated electron is the                       29LiCl−16NaCl mixture. These choices were made to ﬁnd out
+                                                                                                          strongest possible reductant in any given solvent. In this article,              how the properties of a solvated electron change when the
+                                                                                                          we study the solvated electrons originating from Li dissolved in                 cation in the molten salt is changed.
+                                                                                                          molten LiCl, Li dissolved in a molten LiCl−NaCl mixture, and
+                                                                                                          Na dissolved in molten NaCl. We ﬁnd that the solvated                            Received: June 14, 2018
+                                                                                                          electrons pair up to form a two-electron species, whose energy                   Revised: July 25, 2018
+                                                                                                          ﬂuctuates strongly over time because of the motion of the                        Published: August 17, 2018
+
+                                                                                                                                        © 2018 American Chemical Society           19603                                                  DOI: 10.1021/acs.jpcc.8b05716
+                                                                                                                                                                                                                              J. Phys. Chem. C 2018, 122, 19603−19612
+The Journal of Physical Chemistry C                                                                                                              Article
+
+  The thickness of the 45LiCl ﬁlm is roughly 14 Å, that of                    (because of the movement of the ions) are reported. In this
+29LiCl−16NaCl is 15 Å, and that of 45NaCl is 19 Å. The                        study, e is the proton charge.
+dimensions of the cells repeated periodically in the direction
+parallel to the surface of the ﬁlm are 12 Å × 12 Å. In the                    3. RESULTS AND DISCUSSION
+perpendicular direction, the dimension of the cell is 32 Å for                   3.1. Solvation of Li in LiCl. In this section, we investigate
+45LiCl, 34 Å for the 29LiCl−16NaCl mixture, and 35 Å for                      the dissolution of one Li atom and two Li atoms in a molten
+45NaCl.                                                                       45LiCl ﬁlm. Figure 1 shows the cumulative energy for these
+  The molten salts are studied with ab initio, constant                       two systems.
+temperature molecular dynamics (MD),29−31 which is
+implemented in the VASP program.32−35 The energy in
+these simulations is provided by density functional theory
+(DFT), with a plane wave basis set (350 eV energy cutoﬀ), and
+Γ-point sampling of the reciprocal space. The exchange−
+correlation eﬀects are approximated by the Perdew, Burke, and
+Ernzerhof (PBE) functional,36 and we use the D3 van der
+Waals correction.37 The calculations use the projector
+augmented-wave method38,39 and include 1, 1, 1, 4, 5, 7, and
+11 valence electrons for every Li, Na, H, C, N, Cl, and Ag
+atom, respectively. Spin polarization is included in all
+calculations; unless otherwise stated, the spin state is a singlet.
+  Constant temperature MD simulations are performed at 900
+K for LiCl and LiCl−NaCl mixtures and at 1100 K for NaCl.
+These temperatures are slightly above the experimental values                 Figure 1. Cumulative mean energy as a function of time (t − t0) for
+                                                                              one Li atom dissolved in the 45LiCl melt (red line) and two Li atoms
+for the melting points of LiCl (883 K), the LiCl−NaCl mixture                 dissolved in the 45LiCl melt (black line). The blue line shows the
+(845 K), and NaCl (1074 K).40 A visual inspection of the                      energy of 2Li(g) + 45LiCl(liq). The longtime energy value of 2Li(g)
+movies (Supporting Information) showing the motion of the                     + 45LiCl(liq) is the reference energy (it is set equal to zero).
+ions conﬁrms that the systems are liquid. The motion of the
+ions is treated classically, and the time step is 1 fs.
+  The cumulative average energy [U(t), eq 1] of a given                          As the graph contains cumulative averages, we use the
+system, which is the same as the thermodynamic internal                       energy values obtained at the longest times to judge the
+energy, is calculated as the time average of the instantaneous                stability of diﬀerent systems. In the calculations reported in
+                                                                              Figure 1, the longtime energy of 2Li(g) + 45LiCl(liq) was set
+total energy, which consists of the classical kinetic energy Ekin
+                                                                              equal to zero, and this is the reference energy for the red and
+of the ions and the interaction energy provided by DFT
+                                                                              black curves. For example, the red curve shows the diﬀerence
+                1            t                                                between the energy of the system Li(g) + Li+ + e− +
+   U (t ) =
+              t − t0
+                       ∫t (EDFT(τ) + E kin(τ)) dτ              (1)
+                                                                              45LiCl(liq) and the energy of 2Li(g) + 45LiCl(liq).
+                         0
+                                                                                 When inserted into the 45LiCl(liq) melt, a Li atom ionizes
+                                                                              rapidly to form a Li+ ion and a solvated electron. This Li+ ion is
+   Because the system is held at constant temperature, the total              indistinguishable from the other Li ions present in the melt.
+energy ﬂuctuates as time evolves. The motion prior to time t0 is              This process is represented by the equation
+not included in the average energy, and t0 is chosen such that
+the system is suﬃciently randomized to “forget” the initial                      2Li(g) + 45LiCl(liq) → Li(g) + Li+ + e− + 45LiCl(liq)
+conditions. For LiCl, the energy U(t) became stable after t0 =
+                                                                                    ΔE = −0.5 eV                                                        (2)
+0.4 ps, for NaCl after t0 = 2.0 ps, and for the LiCl−NaCl
+mixture after t0 = 13 ps. Presumably, the long time required for                 In all equations of this kind in what follows, it is understood
+equilibrating LiCl−NaCl is due to the need to achieve a proper                that the ion and the electron are dissolved in the molten salt.
+mixing of the two cations. Hence, t0 = 2.5 ps is suﬃcient to                  The transfer of a Li atom from the gas into the melt stabilizes
+study CH4 and N2 solvation in the prerun LiCl−NaCl mixture.                   the total energy by −0.5 eV (Figure 1 and Table 1). This
+   MD simulations are used to calculate reaction energies, that               energy is the diﬀerence between the red curve and the blue
+is, the energy diﬀerence between the ﬁnal state and the initial               curve, at the longest simulation time. Because we perform
+state of a reaction. In the case when a gas molecule reacts with              constant temperature MD simulations, the energy of each
+(or dissolves in) a melt, we calculate the diﬀerence between                  system ﬂuctuates. The longtime values of the mean energy are
+the energy of the liquid and the molecule after reaction (or                  the most reliable, because one has better statistics for the
+dissolution) minus the energy of the pure liquid, minus the                   cumulative average. The electron produced by Li ionization
+energy of the molecule in the gas phase. The energies of the                  forms a cavity in the melt. The solvated electron is detached
+gas-phase molecules are calculated as follows: The center of                  from and is uncorrelated with the Li ion formed by the
+mass of the molecule is ﬁxed, but the molecule can rotate and                 ionization of the Li atom. The cavity is surrounded by moving
+vibrate. Therefore, the calculation delivers the electronic,                  Li ions.
+classical vibrational, and classical rotational energy of the                    When two Li ions are taken from the gas and placed into the
+molecule in vacuum. To this, we add the translational energy                  melt, they ionize spontaneously in a process represented by
+3kBT/2 (kB is the Boltzmann constant).                                           2Li(g) + 45LiCl(liq) → 2Li+ + 2e− + 45LiCl(liq)
+   The Bader charges41−43 of various species are calculated at 1
+ps intervals, and the average charge and its standard deviation                     ΔE = −2.0 eV                                                        (3)
+
+                                                                      19604                                                     DOI: 10.1021/acs.jpcc.8b05716
+                                                                                                                    J. Phys. Chem. C 2018, 122, 19603−19612
+The Journal of Physical Chemistry C                                                                                                              Article
+
+Table 1. Solvation and Reaction Energies
+                      reaction (900 K)                            ΔE (eV)                       reaction (1100 K)                            ΔE (eV)
+                                                      Alkali Metal Solvation in Alkali Chlorides
+Li(g) + 45LiCl → Li+ + e− + 45LiCl                                    −0.5         Na(g) + 45NaCl → Na+ + e− + 45NaCl                          −0.9
+2Li(g) + 45LiCl → 2Li+ + 2e− + 45LiCl                                 −2.0         2Na(g) + 45NaCl → 2Na+ + 2e− + 45NaCl                       −1.9
+8Li(g) + 45LiCl → 8Li+ + 8e− + 45LiCl                                 −8.5
+2Li(g) + 29LiCl + 16NaCl → 2Li+ + 2e− + 29LiCl + 16NaCl               −2.4
+                                                   Ag+ Reacting with Alkali Metal/Alkali Chlorides
+AgCl(g) + 45LiCl → Ag+ + Cl− + 45LiCl                                 −1.8         AgCl(g) + 45NaCl → Ag+ + Cl− + 45NaCl                       −2.4
+AgCl(g) + 2Li+ + 2e− + 45LiCl → Ag− + Li+ + 46LiCl                    −4.7         AgCl(g) + 2Na+ + 2e− + 45NaCl → Ag− + Li+ +                 −4.1
+                                                                                    46NaCl
+2AgCl(g) + 2Li+ + 2e− + 45LiCl → Ag2 + 47LiCl                         −7.4         2AgCl(g) + 2Na+ + 2e− + 45NaCl → Ag2 + 47NaCl               −7.0
+2AgCl(g) + 2Li+ + 2e− + 45LiCl → 2Ag(s) + 47LiCl                     −10.6
+                                            H2, N2, and CH4 Reacting with Alkali Metal/Alkali Chlorides
+H2(g) + 2Li+ + 2e− + 45LiCl → 2H− + 2Li+ + 45LiCl                     −2.3         H2(g) + 2Na+ + 2e− + 45NaCl → 2H− + 2Na+ +                  −0.9
+                                                                                    45NaCl
+CH4(g) + 2Li+ + 2e− + 45LiCl → CH3− + H− + 2Li+ + 45LiCl              −0.7         CH4(g) + 2Na+ + 2e− + 45NaCl → CH3− + H− +                   +0.9
+                                                                                    2Na+ + 45NaCl
+                   −
+N2(g) + 2Li + 2e + 45LiCl → N2 + 2Li + 45LiCl
+           +                     2−     +
+                                                                      −1.7         N2(g) + 2Na+ + 2e− + 45NaCl → N22− + 2Na+ +             unstable, N2
+                                                                                    45NaCl                                                    desorbs
+N2(g) + 2Li+ + 2e− + 45LiCl→ N22− + 2Li+ + 45LiCl (triplet)           −1.5         N2(g) + 2Na+ + 2e− + 45NaCl→ N22− + 2Na+ +                  0.0
+                                                                                    45NaCl (triplet)
+CH4(g) + 2Li+ + 2e− + 29LiCl + 16NaCl → CH3− + H− + 2Li+ +            −0.4
+  29LiCl + 16NaCl
+N2(g) + 2Li+ + 2e− + 29LiCl + 16NaCl → N22− + 2Li+ + 29LiCl +     unstable, N2
+  16NaCl                                                             desorbs
+N2(g) + 2Li+ + 2e− + 29LiCl + 16NaCl → N22− + 2Li+ + 29LiCl +         −1.1
+  16NaCl (triplet)
+
+   The evolution of the energy of 2Li+ + 2e− + 45LiCl is shown                a proxy for the ability of 2Li+ + 2e− + 45LiCl to donate
+by the black curve in Figure 1. This is referenced to the blue                electrons. As base catalysts act through the formation of a
+curve of the same ﬁgure. If the two solvated electrons                        negative ion intermediate, the higher the energy of the
+produced by this process were spatially separated and did not                 electron-donating orbitals, the more likely is the formation of
+interact with each other, dissolving two Li atoms in the melt                 such an intermediate. The HOMO energy varies signiﬁcantly
+would stabilize the energy by 1 eV (0.5 eV per electron,                      with time because of the ionic motion in the melt; the standard
+according to eq 2). However, adding two Li atoms in the melt                  deviation of the orbital energies is 0.36 eV. The diﬀerence
+stabilizes the energy by −2.0 eV. This indicates that the                     between the highest energy and the lowest energy, of the same
+electrons form a combined chemical species. Indeed, the                       orbital, is close to 1 eV. Therefore, the ability of the bipolaron
+simulations show that the two electrons occupy the same cavity                to donate an electron changes with time because of the
+in the liquid and form a singlet spin state. We call this species a           continuous changes in its environment. This is an important
+“bipolaron” and note that bipolaron formation was reported in                 distinction between the bipolarons in a melt and the F-centers
+previous simulations for Na in NaCl(liq).44                                   in solids; in the latter, the ions vibrate but do not travel.
+   The measured activity coeﬃcient in dilute solutions of Li in                  A surface of equal charge density of the electrons in the
+LiCl is small, and Liu and Poignet45 suggested that this is due               bipolaron is shown in Figure 2b. The pictures were made at
+to the formation of a compound through the association of Li                  times t − t0 = 3.6 and 15.6 ps. A long series of such pictures,
+with LiCl. The presence of Li8 clusters has been reported46 in a              taken at diﬀerent times, is given in Figure S1 (Supporting
+solution of roughly 1 mol % Li in LiCl−3 wt % Li2O.                           Information). The snapshots show that most of the time the
+Therefore, we examined the behavior of a Li8 cluster                          bipolaron is localized in a single cavity and that the cavity is
+introduced into the molten LiCl ﬁlm. We found that the Li8                    surrounded by Li+ ions. Because of the thermal motion of the
+cluster quickly breaks apart and forms four bipolarons and                    ions, the shape of the equal charge density surface of the
+eight Li ions (see the Supporting Information for details).                   orbital changes continuously. Occasionally, the bipolaron
+   3.2. Electronic Properties of Li−LiCl. Figure 2 gives                      jumps out of its cavity to a new cavity, where it is localized
+information about the electronic structure of the 2Li+ + 2e− +                for a while. An example of such a jump happens at t − t0 = 7.0
+45LiCl system. Figure 2a shows the time evolution of the eigen                ps, when, for about ∼0.1 ps, the bipolaron is localized
+energy for several orbitals. The observed oscillations are caused             simultaneously in two cavities having comparable electron
+by the thermal motion of the ions. The blue graph (LUMO)                      densities, after which both electrons are localized in the new
+shows the energy of the lowest unoccupied orbital of the salt                 cavity (Figure S1, Supporting Information).
+(the “conduction” band) and the green graph (HOMO − 1)                           The solvation energy of the dissolved alkali atoms is
+shows the top of the “valence band” of the salt. As usual, the                determined by the ionization energy of the atom (in gas phase)
+band gap provided by DFT is too small. Of more interest to us                 and the solvation energies of the electrons and the ions formed
+are the two degenerate spin−orbitals in the band gap, one with                by ionization. The latter quantities cannot be determined
+spin up [HOMO(+)] and the other with spin down                                separately; we can only determine their sum. To assess the
+[HOMO(−)]. These are the orbitals occupied by the two                         stability of the solvated electrons independently of the
+electrons forming the bipolaron. The energy of these orbitals is              solvation of the alkali ion, we calculated the ionization
+                                                                      19605                                                     DOI: 10.1021/acs.jpcc.8b05716
+                                                                                                                    J. Phys. Chem. C 2018, 122, 19603−19612
+The Journal of Physical Chemistry C                                                                                                                  Article
+
+                                                                                  Table 2. Mean IE ± Standard Deviation (the Energy to
+                                                                                  Move One Electron from the Melt to Inﬁnity) Averaged
+                                                                                  Over Around 16 Conﬁgurations Selected at Intervals of 1
+                                                                                  psa
+                                                                                               melt composition                            IE (eV)
+                                                                                         2Li+ + 2e− + 45LiCl                             3.03 ± 0.54
+                                                                                         2Li+ + 2e− + 29LiCl + 16NaCl                    2.77 ± 0.40
+                                                                                         2Na+ + 2e− + 45NaCl                             2.89 ± 0.44
+                                                                                  a
+                                                                                    The energy to remove the electron through the upper face of the ﬁlm
+                                                                                  diﬀers from the energy of removing it through the lower face. We use
+                                                                                  the lower of the two values at each point in time.
+
+
+                                                                                  function, which are consistent with the large ﬂuctuations in the
+                                                                                  HOMO orbital energies (Figure 2a). These ﬂuctuations are
+                                                                                  very rapid (<1 ps timescale), and any experimental measure-
+                                                                                  ment will determine the time average. However, they are very
+                                                                                  important if one attempts to use the electrons for a reduction
+                                                                                  reaction, as electron transfer will be aﬀected by the orbital
+                                                                                  energies. Given the large standard deviation in IE, we conclude
+                                                                                  that the ﬂuctuations in the binding energy of the electron are
+                                                                                  such that, roughly, half of the time the IE of the 2Li+ + 2e− +
+                                                                                  45LiCl melt is more facile than the ionization of solid Li. The
+                                                                                  melt could therefore be a better electron donor than metallic
+                                                                                  Li.
+                                                                                     Alkali metals supported on oxides have been used as base
+                                                                                  catalysts9,10,13 for many classes of reactions because they are
+                                                                                  good electron donors (Lewis bases). The ionization energies
+                                                                                  calculated here show that the solvated electrons produced
+Figure 2. (a) Time evolution of the frontier orbital energies in 2Li+ +           when an alkali is dissolved in a molten salt are likely to catalyze
+2e− + 45LiCl. Blue shows the energy of the bottom of the conduction               the same reactions as supported alkali metals. The diﬀerence in
+band (LUMO), green shows the top of the valence band (HOMO −                      the IE of solvated electrons, in the melts of diﬀerent
+1), and red and dashed cyan show the energies of the bipolaron                    compositions, shows that the catalytic activity of the solvated
+orbitals [HOMO(+) and HOMO(−)]. (b) Atomic conﬁguration of                        electron can be tuned by changing the nature of the molten
+2Li+ + 2e− + 45LiCl at 3.6 and 15.6 ps. In red color, we show the                 salt. If the melt is a mixture of two halides, an additional tuning
+surface |ψ ΗΟΜΟ(+) (r)| 2 + |ψ ΗΟΜΟ(−) (r)| 2 = 0.02 Å −3, where
+                                                                                  of the electron properties can be achieved by varying the salt
+ψΗΟΜΟ(+/−)(r) are the orbitals occupied by the electrons in the
+bipolaron.                                                                        composition. The stability of the ionic species formed by the
+                                                                                  reactions with the solvated electrons also is signiﬁcantly
+                                                                                  aﬀected by the molten salt composition.
+energy47 (IE) of the melts containing a bipolaron. IE varies in                       3.3. Solvation of Li in LiCl−NaCl Mixture. One of the
+time and was determined from the atomic conﬁgurations taken                       goals of this paper is to study how the chemistry of solvated
+at 1 ps intervals along the MD trajectories. For the IE                           electrons can be modiﬁed by using a binary solution of molten
+calculations, we increased the computational cell to 50 Å in the                  salts. Binary solutions are particularly convenient if one needs
+direction (z) perpendicular to the molten salt ﬁlm, applied a                     to use solvated electrons to perform chemistry at lower
+dipole correction in the z direction, and averaged the resulting                  temperature because mixtures melt at substantially lower
+electrostatic potentials in the directions parallel to the ﬁlm (x                 temperatures than their pure components.40,49 Because of this,
+and y). The molten salt ﬁlm has vacuum on both sides and                          we examined the dissolution of two Li atoms into a molten
+therefore has two surfaces. At any given time, the energy to                      mixture containing 29LiCl and 16NaCl. The reaction
+remove the electron through the upper surface diﬀers from the
+energy to remove it through the lower surface. This happens                          2Li(g) + 29LiCl−16NaCl(liq) → 2Li+ + 2e− + 29LiCl−
+because the ions at the two faces are arranged diﬀerently. We                           16NaCl(liq)           ΔE = −2.4 eV                                  (4)
+use the lower of the two values at each point in time, report the
+average value and the standard deviation in Table 2, and ﬁnd                      is exoergic and produces −1.2 eV per dissolved Li atom
+IE to be 3.03 ± 0.54 eV for 2Li+ + 2e− + 45LiCl. For                              (Figure 3a). The increased stabilization of 2Li+ + 2e− in the
+comparison, the IE of Li metal is 2.9 eV.48 Table 2 also shows                    binary molten salt compared to pure LiCl (−2.4 eV compared
+the energy for the removal of an electron from 2Li+ + 2e− +                       to −2.0 eV) indicates that more Li can be solvated in a LiCl−
+29LiCl + 16NaCl and from 2Na+ + 2e− + 45NaCl. A higher                            NaCl mixture than in a pure LiCl molten salt. The solubility of
+stability of the bipolaron in LiCl (higher IE) is to be expected,                 Li in LiCl is quite low, and experiments have found 0.45 mol %
+given the smaller radius of Li+ than that of Na+. However, it is                  Li solubility in LiCl(l) at 881 K50 and 0.5 ± 0.2 mol % at 913
+surprising that the binary system (2Li+ + 2e− + 29LiCl +                          K.5
+16NaCl) has the lowest IE of the three molten salts.                                 In 2Li+ + 2e− + 29LiCl−16NaCl, the two electrons, donated
+   The large values of the standard deviation in IE (Table 2)                     by the two Li atoms, form a bipolaron. The bipolaron is
+indicate that there are very large ﬂuctuations in the work                        located close to the surface of the melt (Figure 3b), the
+                                                                          19606                                                     DOI: 10.1021/acs.jpcc.8b05716
+                                                                                                                        J. Phys. Chem. C 2018, 122, 19603−19612
+The Journal of Physical Chemistry C                                                                                                              Article
+
+                                                                                noninteracting solvated electrons is that the bipolaron
+                                                                                electrons occasionally move apart. This is seen at time t − t0
+                                                                                = 13 ps in Figure S3c in the Supporting Information, which
+                                                                                shows the time evolution of the HOMO(+) and HOMO(−)
+                                                                                eigen energies in 2Na+ + 2e− + 45NaCl.
+                                                                                   3.5. Reactions between AgCl and Li/LiCl. Alkali metals
+                                                                                are strong reducing agents and have been used to prepare very
+                                                                                reactive metal particles suspended in organic solvents.28 We
+                                                                                hope that a similar reduction might produce interesting metal
+                                                                                nanoparticle catalysts or exotic metal ions in the molten salts.
+                                                                                Here, we report the reduction of Ag+ ions by solvated electrons
+                                                                                in molten LiCl. Four cases are investigated: (1) An AgCl
+                                                                                molecule is added to the 45LiCl melt to test whether it is
+                                                                                dissolved and ionized. (2) An AgCl molecule is added to 2Li+
+                                                                                + 2e− + 45LiCl to study what happens when there are more
+                                                                                solvated electrons than Ag ions, and we ﬁnd that an Ag− ion is
+                                                                                formed. (3) Two AgCl molecules are added to 2Li+ + 2e− +
+                                                                                45LiCl, resulting in one e− per Ag+ ion and the formation of an
+                                                                                Ag2 species. (4) We calculate whether the Ag2 species formed
+                                                                                in step (3) would be more stable than the two atoms in bulk
+                                                                                solid Ag; we ﬁnd that energy favors the formation of solid Ag.
+                                                                                In all these calculations, the energy of two isolated AgCl
+                                                                                molecules in the gas phase is used as reference. The energies of
+                                                                                these processes are given in Table 1 and in Figure 4a.
+                                                                                   Moving one AgCl molecule from the gas phase into the
+                                                                                45LiCl melt stabilizes the energy
+
+                                                                                   AgCl(g) + 45LiCl(liq) → 2Ag + + 2Cl− + 45LiCl(liq)
+                                                                                      ΔE = −1.8 eV                                                      (7)
+
+                                                                                   In the molten 45LiCl solvent, AgCl dissociates into ions.
+                                                                                The Bader charge on Ag+ is +0.49 ± 0.03e (Table 3). The large
+                                                                                energy gain is likely due to the solvation energy of the ions. It
+Figure 3. (a) Blue curve is the energy of 2Li(g) + 29LiCl−16NaCl.               is interesting to note that AgCl is not soluble in water.
+Zero energy is the cumulative mean energy of this system after 16 ps.              When one AgCl molecule is added to 2Li+ + 2e− + 45LiCl,
+The black curve is the cumulative mean energy of 2Li+ + 2e− +                   the reaction is
+29LiCl−16NaCl. The energy diﬀerence between the two curves is the
+energy of 2Li(g) + 29LiCl + 16NaCl → 2Li+ + 2e− + 29LiCl +                         AgCl(g) + 2Li+ + 2e− + 45LiCl(liq) → Ag − + Li+
+16NaCl. (b) Atomic conﬁguration of 2Li+ + 2e− + 29LiCl + 16NaCl
+after t − t0 = 3.0 ps and t − t0 = 15.0 ps. In red color, we show the                 + 46LiCl(liq)          ΔE = −4.7 eV                               (8)
+constant density surface |ψΗΟΜΟ(+)(r)|2 + |ψΗΟΜΟ(−)(r)|2 = 0.02 Å−3.
+                                                                                   The formation of Ag− is probably aided by the fact that this
+                                                                                ion is better solvated than the bipolaron electrons. The Bader
+position of which is diﬀerent from that of the bipolaron in LiCl                charge on Ag− is −0.75 ± 0.04e (Table 3), and the Ag− ion is
+(Figure 2b).                                                                    surrounded by Li+ ions (Figure 4b) which causes a large
+   3.4. Solvation of Na in Molten NaCl. Bipolarons are also                     solvation energy. The electrons from the bipolaron have been
+formed when 2Na atoms are dissolved in molten 45NaCl.                           transferred to the 5s-state of Ag whose energy is in the band
+Details about the sodium−sodium chloride systems are given                      gap of the molten salt. This electron transfer converts Ag+ to
+in the Supporting Information. Here, we note that                               Ag−. The shape of the 5s orbital is not spherical and is
+                                                                                distorted toward the Li+ ions situated close to Ag−, as shown
+   2Na(g) + 45NaCl(liq) → Na(g) + e− + Na +
+                                                                                by the constant electron density plot of the two electrons (red
+      + 45NaCl(liq)            ΔE = −0.9 eV                      (5)            surface in Figure 4b).
+                                                                                   In the previous calculation, the system had two solvated
+   2Na(g) + 45NaCl(liq) → 2e− + 2Na + + 45NaCl(liq)                             electrons and one Ag atom. This excess of electrons causes the
+                                                                                formation of the Ag− ion. Next, we examine what happens
+      ΔE = −1.9 eV                                               (6)            when two AgCl molecules are added to 2Li+ + 2e− + 45LiCl.
+   The energy of formation of two noninteracting solvated                       The two solvated electrons reduce both Ag ions to form a
+electrons, for 2Na dissolved in NaCl(liq), is −1.8 eV (−0.9 eV                  neutral Ag2 species
+multiplied by 2), whereas the energy of the system in which a
+bipolaron is formed is −1.9 eV. Therefore, in the sodium−                          2AgCl(g) + 2Li+ + 2e− + 45LiCl(liq) → Ag 2(in melt)
+sodium chloride system, the bipolaron formation energy, from                                                                                            (9)
+                                                                                     + 47LiCl           ΔE = − 7.4 eV
+the two noninteracting solvated electrons, is −0.1 eV, which is
+within the errors in the simulations. A consequence of the                        The driving force of −7.4 eV for this reduction is very high,
+small energy diﬀerence between the bipolaron and the two                        emphasizing the strong reducing nature of the solvated
+                                                                        19607                                                   DOI: 10.1021/acs.jpcc.8b05716
+                                                                                                                    J. Phys. Chem. C 2018, 122, 19603−19612
+The Journal of Physical Chemistry C                                                                                                                   Article
+
+                                                                                Table 3. Bader Charges on Product Species
+                                                                                                                  Bader charge                  Bader charge
+                                                                                      system            species       (e)          species          (e)
+                                                                                                           2Li/45LiCl Systems
+                                                                                Ag+ + Cl− + 45LiCl      Ag+      +0.49 ± 0.03
+                                                                                Ag− + Li+ + 46LiCl      Ag−      −0.75 ± 0.04
+                                                                                Ag2 + 47LiCl            Ag2      −0.19 ± 0.08
+                                                                                2H− + 2Li+ + 45LiCl     H−       −0.81 ± 0.01         H−        −0.82 ± 0.01
+                                                                                CH3− + H− + 2Li+ +      CH3−     −0.85 ± 0.01         H−        −0.82 ± 0.01
+                                                                                 45LiCl
+                                                                                N22− + 2Li+ + 45LiCl    N22−      −1.62 ± 0.04
+                                                                                N22− + 2Li+ + 45LiCl    N22−      −1.66 ± 0.02
+                                                                                 (triplet)
+                                                                                                       2Li/29LiCl + 16NaCl Systems
+                                                                                CH3− + H− + 2Li+ +       CH3−     −0.84 ± 0.02   H−             −0.80 ± 0.02
+                                                                                 29LiCl + 16NaCl
+                                                                                N22− + 2Li+ + 29LiCl    N22−      −1.47 ± 0.23
+                                                                                 + 16NaCl (triplet)
+                                                                                                         2Na/45NaCl Systems
+                                                                                CH3− + H− + 2Na+        CH3−   −0.79 ± 0.02           H−        −0.73 ± 0.02
+                                                                                 + 45NaCl
+                                                                                N22− + 2Na+ +           N22−      −0.41 ± 0.17
+                                                                                 45NaCl (triplet)
+                                                                                2H− + 2Na+ +            H−        −0.73 ± 0.02        H−        −0.73 ± 0.02
+                                                                                 45NaCl
+
+
+
+                                                                                possible that an electrostatic repulsion between such clusters
+                                                                                will prevent their coarsening. The catalytic properties of such
+                                                                                negatively charged clusters have not been explored.
+                                                                                   Given the use of alkali to reduce salts to metals in many
+                                                                                industrial processes, we assume that practically all halides
+                                                                                dissolved in an alkali halide melt containing dissolved Li will be
+Figure 4. (a) Mean solvation energies as a function of time (t − t0)            reduced to form metal clusters. This may provide a route for
+for one AgCl molecule (blue) and two AgCl molecules (cyan)                      preparing metal nanoparticle catalysts.
+dissolved in 2Li+ + 2e− + 45LiCl. The reference energy is that of two              The reactions between AgCl and Na/NaCl are discussed in
+AgCl in the gas phase and 2Li+ + 2e− + 45LiCl (0 eV, black). Also               detail in section S2.3 in the Supporting Information. We ﬁnd
+included is the reaction energy of 2AgCl(g) + 2Li+ + 2e− + 45LiCl →             the same qualitative results as for Li/LiCl: one AgCl molecule
+47LiCl + 2Ag(s) (green). Side view of (b) Ag− + Li+ + 46LiCl at t −
+                                                                                added to 2Na+ + 2e− + 45NaCl results in the formation of Ag−,
+t0 = 12.6 ps and (c) Ag2 + 47LiCl at t − t0 = 12.6 ps. The Li and Cl
+atoms within 3.0 Å of the Ag atoms are enlarged. In red color, we               whereas two AgCl molecules added to 2Na+ + 2e− + 45NaCl
+show the constant density surface |ψΗΟΜΟ(+)(r)|2 + |ψΗΟΜΟ(−)(r)|2 =             result in the formation of an Ag2 dimer. The main diﬀerence
+0.08 Å−3.                                                                       between NaCl and LiCl is that AgCl has lower energy in
+                                                                                45NaCl (−2.4 eV) than in 45LiCl (−1.8 eV), whereas AgCl
+                                                                                has higher energy in 2Na+ + 2e− + 45NaCl (−4.1 eV for one
+electrons. However, the reaction energy is less than twice the                  AgCl unit and −7.0 eV for two AgCl units) than in 2Li+ + 2e−
+reaction energy of Ag− formation (eq 8). This suggests that by                  + 45LiCl (−4.7 eV for one AgCl unit and −7.4 eV for two
+adjusting the ratio of solvated electrons and Ag+, we can form                  AgCl units). This means that the solvated electrons in molten
+negatively charged Ag clusters. This is important because if all                NaCl are weaker reducing agents than the solvated electrons in
+Ag clusters were neutral, they would aggregate to form bulk Ag                  molten LiCl. Because the solvated electrons in LiCl are more
+metal. Figure 4c shows that the Ag2 species is surrounded by                    stable (have higher IE, Table 2) than in NaCl, the main
+both Li+ and Cl− ions and that the electrons from the                           diﬀerence in reduction strength must come from Li+ being
+bipolaron form a covalent bond between the Ag atoms, that is,                   better than Na+ at stabilizing the negative reaction products.
+the constant electron density surface of the HOMO orbitals is                      3.6. Reactions of Li/LiCl with H2, CH4, or N2. At this
+situated between the Ag atoms (red surface in Figure 4c). The                   point, we expect that the solvated electrons are very reactive
+Bader charge on Ag2 is −0.19 ± 0.08e.                                           and have therefore examined the reactions between 2Li+ + 2e−
+   Finally, we calculate the energy of taking out Ag2 and                       + 45LiCl(liq) and H2(g), CH4(g), or N2(g). The time
+forming two Ag units in a bulk Ag fcc crystal. We use the heat                  evolution of various reaction energies is given in Figure 5a.
+capacity of solid Ag to account for the energy to heat it from 0                The zero on the energy scale is the average energy of 2Li+ +
+to 900 K (section S5 in the Supporting Information). The                        2e− + 45LiCl(liq) after 16 ps and the energy of H2, CH4, or N2
+energy of 47LiCl + 2Ag(s) is −10.6 eV, which is more stable                     in the gas phase. The red curve shows the time evolution of the
+than that of 2AgCl(g) + 2Li+ + 2e− + 45LiCl; hence, the                         energy of the reaction
+calculation indicates that it is energetically favorable to form
+larger metallic clusters of solid Ag if the Ag to solvated electron                H 2(g) + 2Li+ + 2e− + 45LiCl(liq) → 2H− + 2Li+
+ratio is 1:1. However, if the amount of Li exceeds that of Ag,
+the system will likely make negatively charged Ag clusters. It is                     + 45LiCl(liq)               ΔE = −2.3 eV                             (10)
+
+                                                                        19608                                                        DOI: 10.1021/acs.jpcc.8b05716
+                                                                                                                         J. Phys. Chem. C 2018, 122, 19603−19612
+The Journal of Physical Chemistry C                                                                                                                 Article
+
+
+
+
+Figure 5. (a) Mean energies as a function of elapsed time (t − t0) for the dissociation of H2(g), dissociation of CH4(g), and for the formation of
+N22− from N2(g), all dissolved in 2Li+ + 2e− + 45LiCl. Side view of (b) 2H− + 2Li+ + 45LiCl after t − t0 = 16.6 ps, (c) H− + CH3− + 2Li+ + 45LiCl
+after t − t0 = 14.6 ps, and (d) N22− + 2Li+ + 45LiCl in singlet spin state after t − t0 = 16.6 ps. The Li and Cl atoms within 2.3 Å of the solute are
+enlarged. In red color, we show the constant density surface |ψΗΟΜΟ(+)(r)|2 + |ψΗΟΜΟ(−)(r)|2 = 0.10 Å−3.
+
+
+
+
+Figure 6. (a) Mean solvation energies as a function of elapsed time (t − t0) for dissociated CH4 and N2 solvated in 2Li+ + 2e− + 29LiCl + 16NaCl
+and compared to the molecules in the gas phase and 29LiCl + 16NaCl (0 eV). Side view of (b) H− + CH3− + 2Li+ + 29LiCl + 16NaCl after t − t0 =
+15.5 ps and (c) N22− + 2Li+ + 29LiCl + 16NaCl in triplet spin state after t − t0 = 15.5 ps. (d) Mean solvation energies as a function of elapsed time
+(t − t0) for dissociated CH4, nondissociated N2, and dissociated H2 solvated in 2Na+ + 2e− + 45NaCl and compared to the molecules in the gas
+phase and 2Na+ + 2e− + 45NaCl (0 eV). Side view of (e) H− + CH3− + 2Na+ + 45NaCl after t − t0 = 16.5 ps and (f) N22− + 2Na+ + 45NaCl in
+triplet spin state after t − t0 = 15.0 ps. All Li, Na, and Cl atoms within 2.3 Å of the solutes are enlarged in (b,c,e,f). The constant density surface
+|ψΗΟΜΟ(+)(r)|2 + |ψΗΟΜΟ(−)(r)|2 = 0.10 Å−3 is shown in red color in (b,e). The constant density surfaces of |ψΗΟΜΟ(+)(r)|2 = 0.10 Å−3 and
+|ψΗΟΜΟ−1(+)(r)|2 = 0.10 Å−3 are shown in red and light red color in (c). In (f), the electron density of HOMO(+) and HOMO − 1(+) is less than
+0.10 Å−3 everywhere.
+
+   One can think of the ﬁnal state as being a solution of lithium               to that of the H− ions. In this simulation, the two H atoms
+hydride in the molten LiCl. Lithium hydride is a stable ionic                   were placed far apart in the melt. The two electrons forming
+hydride, which forms eutectics with a large number of salts. It                 the bipolaron migrated quickly to the H atoms to form the
+is therefore reasonable to expect that it will mix well with the                hydride ions having Bader charges of −0.81e and −0.82e
+45LiCl(liq) melt. The large reaction energy is surprising in
+                                                                                (Table 3). The H− ions are surrounded by several Li+ ions
+view of the fact that the hydrogen−hydrogen bond in H2 must
+be broken. We speculate that this large reaction energy                         (Figure 5b). At the time t − t0 = 16.6 ps shown in Figure 5b,
+indicates that the energy of solvation of the two hydride ions is               the constant electron density plot (red) of the HOMO
+much larger than the energy of solvation of the bipolaron. This                 electrons shows that they are situated in the 1s state of one of
+is consistent with the diﬀuse charge of the bipolaron compared                  the H atoms. The other H atom also has electrons occupying
+                                                                        19609                                                      DOI: 10.1021/acs.jpcc.8b05716
+                                                                                                                       J. Phys. Chem. C 2018, 122, 19603−19612
+The Journal of Physical Chemistry C                                                                                                           Article
+
+its 1s state, but the state is mixed with the valence band of the           The increase of entropy upon N2 desorption will lower the free
+molten salt.                                                                energy of the gas and increase the driving force for desorption.
+   The green curve in Figure 5a shows the evolution of the                     The N22− species in the triplet spin state stays solvated
+energy of the reaction                                                      throughout the MD simulation and has a solvation energy of
+                                                                            −1.1 eV. The N22− is predominantly solvated by Li+ ions
+   CH4(g) + 2e− + 2Li+ + 45LiCl(liq) → CH3− + H−                            (Figure 6c and section S4.1 in the Supporting Information). In
+     + 2Li+ + 45LiCl(liq)            ΔE = −0.7 eV                           the triplet spin state, the two unpaired electrons occupy two
+                                                            (11)
+                                                                            diﬀerent π orbitals on N22− that point in perpendicular
+   The Bader charge on CH3− is −0.85e and that on H− is                     directions (red and light red constant electron density plots in
+−0.82e. The CH3− and the H− ions are both surrounded by Li+                 Figure 6c). It is possible that N22− with a triplet spin does not
+ions (Figure 5c). The solvation energy of the negative ions                 desorb because that would leave behind an unfavorable triplet
+plays an important role in lowering the energy of CH4                       spin bipolaron.
+dissociation. It is challenging to ﬁnd eﬃcient catalysts that                  The results above show that the solvation energy of N2 and
+break the C−H bond of methane at the temperatures used                      of CH4 is smaller in the LiCl−NaCl mixture than in LiCl
+here.51 The reaction is exoergic mainly because the negative                (Table 1).
+ion products are solvated. Figure 5c shows a constant electron                 The energy of CH4 reacting with 2Na+ + 2e− + 45NaCl to
+density plot from the HOMO orbitals, which shows that the                   form CH3− + H− + 2Na+ + 45NaCl is +0.9 eV, and the energy
+electron occupies a p state on the carbon atom.                             of N2 reacting with 2Na+ + 2e− + 45NaCl to form
+   The addition of N2 molecule to 2Li+ + 2e− + 45LiCl resulted              N22−(triplet) + 2Li+ + 29LiCl + 16NaCl is 0.0 eV (Figure
+in the reaction                                                             6d, Table 1). These reactions are therefore signiﬁcantly less
+                                                                            exoergic than the reactions of CH4 and N2 with 2Li+ + 2e− +
+   N2(g) + 2e− + 2Li+ + 45LiCl(liq) → N2 2 − + 2Li+                         29LiCl + 16NaCl or 2Li+ + 2e− + 45LiCl (Table 1). The lower
+                                                                            reaction energies are caused by a weaker stabilization of the
+     + 45LiCl(liq)          ΔE = −1.7 eV                    (12)            negative product ions in NaCl, which correlates with the lower
+where the two electrons transferred     to N22−   form a singlet            Bader charge on the product ions (Table 3) and lower number
+(Figure 5d). The reaction energy for the triplet is −1.5 eV. The            of alkali ion neighbors (Figure 6e,f, and section S4 in the
+Bader charge of N22− is −1.62e for the singlet and −1.66e for               Supporting Information).
+the triplet. The charge diﬀerence between the two species is                   The Bader charge on N22−(triplet) in 45NaCl is only −0.41
+below the accuracy with which the Bader charge is determined.               ± 0.17e, and this is because the bipolaron electrons sometimes
+Figure 5d shows a constant electron density plot from the                   move away from N22− and form solvated electrons in a triplet
+HOMO orbitals, and it is seen that the two electrons form a π               spin state instead. This is the case at t − t0 = 15 ps (Figure 6f),
+bond on the N22− species.                                                   in which the constant electron density plots (with
+   The calculations in this section show that the bipolaron                 |ψΗΟΜΟ(+)(r)|2 and |ψΗΟΜΟ−1(+)(r)|2 equal to 0.10 Å−3) of the
+reacts with H2 and CH4, causing them to dissociate and form                 unpaired orbitals do not show any orbitals on the N2 species.
+solvated negative ions. N2 reacts with the bipolaron to form                   Finally, Figure 6d includes the energy of the reaction 2Na+ +
+N22−. Because these calculations take a very long time (∼a                  2e + 45NaCl + H2(g) → 2H− + 2Na+ + 45NaCl (red curve).
+                                                                              −
+
+month on 32 CPUs for one 18 ps run), we have not examined                   The reaction energy is −0.9 eV. Solid NaH decomposes
+the reactivity of H−, CH3−, or N22−. We speculate that H− and               thermally at ∼700 K,52 which gives some indication that the
+CH3− will react vigorously with Lewis acids. It is also                     species with lower solvation energy (i.e., CH4 solvated in 2Li+
+conceivable that if the system had more than two electrons,                 + 2e− + 45LiCl, 2Li+ + 2e− + 29LiCl + 16NaCl, and 2Na+ +
+N2 might dissociate into ionic species.                                     2e− + 45NaCl and N2 solvated in 2Na+ + 2e− + 45NaCl)
+   3.7. Reactions of CH4 and N2 with Solvated Electrons                     might only have short lifetimes before desorbing again.
+in LiCl−NaCl and NaCl. To investigate the reactivity of the                 However, in those cases, the solvated electrons can function
+solvated electrons in a molten salt of a diﬀerent composition,              as catalysts if the lifetime is long enough to allow for the
+we examined the interaction of CH4 and N2 with 2Li+ + 2e− +                 reactions between CH3−, H−, or N22− and other reactants.
+29LiCl(liq) + 16NaCl(liq) and H2, CH4, and N2 with 2Na+ +                      The calculations in this section highlight how changing the
+2e− + 45NaCl(liq). Figure 6 summarizes the reactions between                molten salt cation composition modiﬁes the chemistry of
+the gaseous species and the two melts, and the reaction                     solvated electrons. However, it might be possible to further
+energies are included in Table 1.                                           modify the reactivity by changing the anion composition from
+   To study the energetics of CH4 dissociation by 2Li+ + 2e− +              Cl− to F−, Br−, or I−. The inﬂuence of the anion can be seen in
+29LiCl + 16NaCl, we added a H atom and a CH3 species into                   computational studies for H2O solvated in molten LiI and
+the melt. The electrons from the bipolaron moved very rapidly               molten LiCl. In both solvents, the H2O molecule binds closely
+to form H− (Bader charge of −0.80 ± 0.02e) and CH3− (Bader                  to the Li+ ions, but the solvation energy is −0.7 eV in LiCl53
+charge of −0.84 ± 0.02e, Table 3). The energy of the reaction               and −1.0 eV in LiI.54
+is ΔE = −0.4 eV (Figure 6a). The ionic dissociation products,
+CH3− and H−, are predominantly solvated by the Li+ ions                     4. SUMMARY
+(Figure 6b and section S4.2 in the Supporting Information).                 The computations in this article show that solvated electrons
+   A N2 molecule was added to 2Li+ + 2e− + 29LiCl + 16NaCl                  in molten salts are powerful reducing agents and are likely to
+and MD simulation was performed for both a singlet and a                    be interesting base catalysts. In principle, these electron-in-
+triplet spin state. In both cases, the bipolaron electrons move             molten-salt catalysts have a number of advantages: (1) The
+to N2, forming N22−. However, in the simulation in which the                chemical potential of the solvated electron can be tuned by
+spin state was a singlet, the N2 eventually desorbed from the               changing the molten salt. In the case of molten halides, which
+molten salt to form N2(g) and a bipolaron with a singlet spin.              are of interest here, the melt may contain any alkali cation
+                                                                    19610                                                    DOI: 10.1021/acs.jpcc.8b05716
+                                                                                                                 J. Phys. Chem. C 2018, 122, 19603−19612
+The Journal of Physical Chemistry C                                                                                                             Article
+
+combined with any halogen ion, and the melt could be a pure                Notes
+halide or a mixture of halides. One can dissolve in such a melt            The authors declare no competing ﬁnancial interest.
+
+                                                                           ■
+any alkali metal. (2) Molten salts containing solvated electrons
+can be used in a wide temperature range because the salts                      ACKNOWLEDGMENTS
+make eutectics that melt at low temperature, and they can be
+heated to high temperature because they have low vapor                     Financial support was provided the Department of Energy,
+pressure. (3) Molten catalysts do not coarsen, are much easier             Oﬃce of Science, Oﬃce of Basic Energy Sciences DE-FG03-
+to prepare than the customary heterogeneous catalysts, and are             89ER14048, and by an individual postdoctoral grant from
+less susceptible to poisoning.55−57 (4) Many important                     VILLUM FONDEN. We acknowledge support from the
+catalyzed reactions are plagued by coking. This is not a                   Center for Scientiﬁc Computing from the CNSI, MRL: an
+problem when using a molten salt catalyst because the carbon               NSF MRSEC (DMR-1720256) and NSF CNS-0960316.
+
+                                                                           ■
+ﬂoats to the surface of the melt where it could be skimmed oﬀ.
+Traditional solid catalysts are deactivated by coke. (5) The                   REFERENCES
+high heat conductivity and heat capacity of the molten salts are
+                                                                            (1) Bredig, M. A.; Bronstein, H. R.; Smith, W. T. Miscibility of
+helpful for heat management. (6) Solvated electrons are                    Liquid Metals with Salts. II. The Potassium-Potassium Fluoride and
+produced in the electrochemical industrial process for the                 Cesium-Cesium Halide Systems1. J. Am. Chem. Soc. 1955, 77, 1454−
+preparation of Li or Na, and understanding their properties or             1458.
+possible use is of interest. (7) One can envision a “universal”             (2) Bredig, M. A.; Johnson, J. W. Miscibility of Metals with Salts. V.
+method of preparing clusters of a metal M, in a molten alkali              The Rubidium-Rubidium Halide Systems. J. Phys. Chem. 1960, 64,
+halide salt, by dissolving the halide of M in the melt and                 1899−1900.
+reducing it by adding an alkali metal to provide solvated                   (3) Bredig, M. A.; Johnson, J. W.; Smith, W. T. Miscibility of Liquid
+electrons. If the amount of alkali metal exceeds the amount                Metals with Salts. I. The Sodium-Sodium Halide Systems1. J. Am.
+needed for the reduction of the halide of M, one can charge the            Chem. Soc. 1955, 77, 307−312.
+metallic clusters negatively. Such charging is often invoked                (4) Bronstein, H. R.; Bredig, M. A. The Electrical Conductivity of
+when explaining the role of alkali metal promoters; prominent              Solutions of Alkali Metals in their Molten Halides1. J. Am. Chem. Soc.
+                                                                           1958, 80, 2077−2081.
+examples are the Fe20 and Ru catalysts21 for ammonia                        (5) Dworkin, A. S.; Bronstein, H. R.; Bredig, M. A. Miscibility of
+synthesis. (8) The simplest way to use a solvated electron                 Metals with Salts. VI. Lithium-Lithium Halide Systems. J. Phys. Chem.
+catalyst is to bubble the gaseous substrate through a molten               1962, 66, 572−573.
+salt bed containing solvated electrons. If the surface of the               (6) Johnson, J. W.; Bredig, M. A. Miscibility of Metals with Salts in
+bubbles is too small, one can use a supported molten alkali                the Molten State. III. The Potassium-Potassium Halide Systems. J.
+halide in which one dissolves an alkali metal. Supported molten            Phys. Chem. 1958, 62, 604−607.
+halides have been used in a ﬁxed-bed reactor for oxidative                  (7) Levy, H. A.; Agron, P. A.; Bredig, M. A.; Danford, M. D. X-Ray
+ethane dehydrogenation;58,59 supported molten CuCl2 has                    and Neutron Diffraction Studies of Molten Alkali Halides. Ann. N.Y.
+been used as a Deacon catalyst;60 and supported vanadium                   Acad. Sci. 1960, 79, 762−780.
+oxide dissolved in molten alkali pyrosulfate is the catalyst for            (8) Bredig, M. A. Mixtures of Metals with Molten Salts (ORNL-
+SO2 oxidation in sulfuric acid production.61 It is therefore               3391) [Online], 1963. http://moltensalt.org/references/static/
+                                                                           downloads/pdf/ORNL-3391.pdf (accessed May 4, 2018).
+possible to envision a ﬁxed-bed catalytic system consisting of a
+                                                                            (9) Hattori, H. Heterogeneous Basic Catalysis. Chem. Rev. 1995, 95,
+supported molten halide in which an alkali metal is dissolved.
+
+■
+                                                                           537−558.
+                                                                            (10) Ono, Y.; Hattori, H. Solid Base Catalysis; Springer: Berlin, 2011.
+     ASSOCIATED CONTENT                                                     (11) Pines, H. Base-Catalyzed Carbon-Carbon Addition of Hydro-
+* Supporting Information
+ S                                                                         carbons and of Related Compounds. Acc. Chem. Res. 1974, 7, 155−
+The Supporting Information is available free of charge on the              162.
+ACS Publications website at DOI: 10.1021/acs.jpcc.8b05716.                  (12) Pines, H. The Chemistry of Catalytic Hydrocarbon Conversion;
+                                                                           Academic Press: New York, 1981.
+     Illustration of bipolaron movement in the 2Li+ + 2e− +                 (13) Pines, H.; Stalick, W. M. Base-Catalyzed Reactions of
+     45LiCl system, evidence against the formation of Li                   Hydrocarbons and Related Compounds; Academic Press: New York,
+     clusters in Li/LiCl, details concerning Na solvation in               2012.
+     NaCl, evidence against the formation of Na2 clusters in                (14) Bordawekar, S. V.; Davis, R. J. Probing the Basic Character of
+     Na/NaCl, details concerning reactions between AgCl                    Alkali-Modified Zeolites by CO2 Adsorption Microcalorimetry,
+                                                                           Butene Isomerization, and Toluene Alkylation with Ethylene. J.
+     and Na/NaCl, ionic mixing in LiCl−NaCl, distribution
+                                                                           Catal. 2000, 189, 79−90.
+     of cations around solutes in diﬀerent molten salts, and                (15) Davis, R. J. New Perspectives on Basic Zeolites as Catalysts and
+     enthalpy of solid Ag at 900 K (PDF)                                   Catalyst Supports. J. Catal. 2003, 216, 396−405.
+     Movement of a bipolaron (MPG)                                          (16) Davis, R. J.; Doskocil, E. J.; Bordawekar, S. Structure/Function
+     Movement of ions in the CH4 + 2Li + 45LiCl system                     Relationships for Basic Zeolite Catalysts Containing Occluded Alkali
+     (MPG)                                                                 Species. Catal. Today 2000, 62, 241−247.
+
+
+■
+                                                                            (17) Doskocil, E. J.; Bordawekar, S. V.; Kaye, B. G.; Davis, R. J. UV−
+                                                                           Vis Spectroscopy of Iodine Adsorbed on Alkali-Metal-Modified
+     AUTHOR INFORMATION                                                    Zeolite Catalysts for Addition of Carbon Dioxide to Ethylene
+Corresponding Author                                                       Oxide. J. Phys. Chem. B 1999, 103, 6277−6282.
+*E-mail: metiu@chem.ucsb.edu. Phone: 805-893-2256.                          (18) Doskocil, E. J.; Davis, R. J. Spectroscopic Characterization and
+                                                                           Catalytic Activity of Zeolite X Containing Occluded Alkali Species. J.
+ORCID                                                                      Catal. 1999, 188, 353−364.
+Henrik H. Kristoﬀersen: 0000-0001-6943-0752                                 (19) Tu, M.; Davis, R. J. Cycloaddition of CO2 to Epoxides over
+Horia Metiu: 0000-0002-3134-4493                                           Solid Base Catalysts. J. Catal. 2001, 199, 85−91.
+
+                                                                   19611                                                       DOI: 10.1021/acs.jpcc.8b05716
+                                                                                                                   J. Phys. Chem. C 2018, 122, 19603−19612
+The Journal of Physical Chemistry C                                                                                                                   Article
+
+ (20) Ertl, G. Surface Science and Catalysis-Studies on the                        (45) Liu, J.; Poignet, J.-C. Measurement of the Activity of Lithium in
+Mechanism of Ammonia Synthesis: The P. H. Emmett Award                            Dilute Solutions in Molten Lithium Chloride between 650 °C and
+Address. Catal. Rev. 1980, 21, 201−223.                                           800 °C. J. Appl. Electrochem. 1990, 20, 864−867.
+ (21) Appl, M. Ammonia, 2. Production Processes. Ullmann’s                         (46) Merwin, A.; Phillips, W. C.; Williamson, M. A.; Willit, J. L.;
+Encyclopedia of Industrial Chemistry; Wiley-VCH Verlag GmbH &                     Motsegood, P. N.; Chidambaram, D. Presence of Li Clusters in
+Co. KGaA, 2000.                                                                   Molten LiCl-Li. Sci. Rep. 2016, 6, 25435.
+ (22) Kitano, M.; Kanbara, S.; Inoue, Y.; Kuganathan, N.; Sushko, P.               (47) Kahn, A. Fermi Level, Work Function and Vacuum Level.
+V.; Yokoyama, T.; Hara, M.; Hosono, H. Electride Support Boosts                   Mater. Horiz. 2016, 3, 7−10.
+Nitrogen Dissociation over Ruthenium Catalyst and Shifts the                       (48) Michaelson, H. B. The Work Function of the Elements and Its
+Bottleneck in Ammonia Synthesis. Nat. Commun. 2015, 6, 6731.                      Periodicity. J. Appl. Phys. 1977, 48, 4729−4733.
+ (23) Dye, J. L. Electrides: Early Examples of Quantum Confinement.                (49) Janz, G. J. Molten Salts Handbook; Academic Press: New York,
+Acc. Chem. Res. 2009, 42, 1564−1572.                                              1967.
+ (24) Dye, J. L.; DeBacker, M. G. Physical and Chemical Properties                 (50) Nakajima, T.; Minami, R.; Nakanishi, K.; Watanabe, N.
+of Alkalides and Electrides. Annu. Rev. Phys. Chem. 1987, 38, 271−                Miscibility of Lithium with Lithium Chloride and Lithium Chloride−
+299.                                                                              Potassium Chloride Eutectic Mixture. Bull. Chem. Soc. Jpn. 1974, 47,
+ (25) Ichimura, A. S.; Dye, J. L.; Camblor, M. A.; Villaescusa, L. A.             2071−2072.
+Toward Inorganic Electrides. J. Am. Chem. Soc. 2002, 124, 1170−                    (51) Crabtree, R. H. Aspects of Methane Chemistry. Chem. Rev.
+1171.                                                                             1995, 95, 987−1007.
+ (26) Tsai, K. L.; Dye, J. L. Nanoscale Metal Particles by                         (52) Grochala, W.; Edwards, P. P. Thermal Decomposition of the
+Homogeneous Reduction with Alkalides or Electrides. J. Am. Chem.                  Non-Interstitial Hydrides for the Storage and Production of
+Soc. 1991, 113, 1650−1652.                                                        Hydrogen. Chem. Rev. 2004, 104, 1283−1316.
+ (27) Wagner, M. J.; Dye, J. L. Alkalides, Electrides, and Expanded                (53) Kristoffersen, H. H.; Metiu, H. Molten LiCl Layer Supported
+Metals. Annu. Rev. Mater. Sci. 1993, 23, 223−253.                                 on MgO: Its Possible Role in Enhancing the Oxidative Dehydrogen-
+ (28) Rieke, R. D. Preparation of Highly Reactive Metal Powders and               ation of Ethane. J. Phys. Chem. C 2015, 119, 8681−8691.
+Their Use in Organic and Organometallic Synthesis. Acc. Chem. Res.                 (54) Huang, C.; Kristoffersen, H. H.; Gong, X.-Q.; Metiu, H.
+1977, 10, 301−306.                                                                Reactions of Molten LiI with I2, H2O, and O2 Relevant to Halogen-
+ (29) Nosé, S. A Molecular Dynamics Method for Simulations in the                Mediated Oxidative Dehydrogenation of Alkanes. J. Phys. Chem. C
+Canonical Ensemble. Mol. Phys. 2002, 100, 191−198.                                2016, 120, 4931−4936.
+ (30) Nosé, S. A Molecular Dynamics Method for Simulations in the                 (55) Chekryshkin, Y. S.; Rozdyalovskaya, T. A.; Fedorov, A. A.;
+Canonical Ensemble. Mol. Phys. 1984, 52, 255−268.                                 Lisichkin, G. V. Oxidative Catalysis on High-Temperature Ionic
+ (31) Nosé, S. A Unified Formulation of the Constant Temperature                 Melts. Russ. Chem. Rev. 2007, 76, 153−168.
+Molecular Dynamics Methods. J. Chem. Phys. 1984, 81, 511−519.                      (56) Villadsen, J.; Livejerg, H. Supported Liquid-Phase Catalysts.
+ (32) Kresse, G.; Hafner, J. Ab Initio Molecular Dynamics for Liquid              Catal. Rev. 1978, 17, 203−272.
+Metals. Phys. Rev. B: Condens. Matter Mater. Phys. 1993, 47, 558−561.              (57) Kenney, C. N. Molten Salt Catalysis of Gas Reactions. Catal.
+ (33) Kresse, G.; Hafner, J. Ab Initio Molecular-Dynamics Simulation              Rev. 1975, 11, 197−224.
+of the Liquid-Metal-Amorphous-Semiconductor Transition in Ger-                     (58) Gärtner, C. A.; van Veen, A. C.; Lercher, J. A. Oxidative
+manium. Phys. Rev. B: Condens. Matter Mater. Phys. 1994, 49, 14251−               Dehydrogenation of Ethane: Common Principles and Mechanistic
+14269.                                                                            Aspects. ChemCatChem 2013, 5, 3196−3217.
+ (34) Kresse, G.; Furthmüller, J. Efficiency of Ab-Initio Total Energy            (59) Kumar, C. P.; Gaab, S.; Müller, T. E.; Lercher, J. A. Oxidative
+Calculations for Metals and Semiconductors Using a Plane-Wave                     Dehydrogenation of Light Alkanes on Supported Molten Alkali Metal
+Basis Set. Comput. Mater. Sci. 1996, 6, 15−50.                                    Chloride Catalysts. Top. Catal. 2008, 50, 156−167.
+ (35) Kresse, G.; Furthmüller, J. Efficient Iterative Schemes Forab               (60) Weissermel, K.; Arpe, H.-J. Industrial Organic Chemistry, 4th
+Initiototal-Energy Calculations Using a Plane-Wave Basis Set. Phys.               ed.; Wiley-VCH Verlag GmbH: Weinheim, 2003.
+Rev. B: Condens. Matter Mater. Phys. 1996, 54, 11169−11186.                        (61) Boghosian, S.; Fehrmann, R. Catalysis in Molten Ionic Media.
+ (36) Perdew, J. P.; Burke, K.; Ernzerhof, M. Generalized Gradient                Molten Salts Chemistry; Elsevier: Oxford, 2013; pp 131−158.
+Approximation Made Simple. Phys. Rev. Lett. 1996, 77, 3865−3868.
+ (37) Grimme, S.; Antony, J.; Ehrlich, S.; Krieg, H. A Consistent and
+Accurate Ab Initio Parametrization of Density Functional Dispersion
+Correction (DFT-D) for the 94 Elements H-Pu. J. Chem. Phys. 2010,
+132, 154104.
+ (38) Blöchl, P. E. Projector Augmented-Wave Method. Phys. Rev. B:
+Condens. Matter Mater. Phys. 1994, 50, 17953−17979.
+ (39) Kresse, G.; Joubert, D. From Ultrasoft Pseudopotentials to the
+Projector Augmented-Wave Method. Phys. Rev. B: Condens. Matter
+Mater. Phys. 1999, 59, 1758−1775.
+ (40) Sangster, J.; Pelton, A. D. Phase Diagrams and Thermodynamic
+Properties of the 70 Binary Alkali Halide Systems Having Common
+Ions. J. Phys. Chem. Ref. Data 1987, 16, 509−561.
+ (41) Bader, R. Atoms in Molecules: A Quantum Theory; Clarendon:
+Oxford, 1994.
+ (42) Sanville, E.; Kenny, S. D.; Smith, R.; Henkelman, G. Improved
+Grid-Based Algorithm for Bader Charge Allocation. J. Comput. Chem.
+2007, 28, 899−908.
+ (43) Tang, W.; Sanville, E.; Henkelman, G. A Grid-Based Bader
+Analysis Algorithm without Lattice Bias. J. Phys.: Condens. Matter
+2009, 21, 084204.
+ (44) Liu, M.; Masset, P.; Gray-Weale, A. Solubility of Sodium in
+Sodium Chloride: A Density Functional Theory Molecular Dynamics
+Study. J. Electrochem. Soc. 2014, 161, E3042−E3048.
+
+                                                                          19612                                                      DOI: 10.1021/acs.jpcc.8b05716
+                                                                                                                         J. Phys. Chem. C 2018, 122, 19603−19612
+

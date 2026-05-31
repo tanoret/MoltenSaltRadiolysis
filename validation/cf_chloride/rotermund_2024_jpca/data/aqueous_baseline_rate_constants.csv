@@ -1,0 +1,9 @@
+# Rotermund et al. 2024, J. Phys. Chem. A 128, 590-598.
+# DOI: 10.1021/acs.jpca.3c07404
+# Background water/persulfate radiolysis rate constants cited in main text (Eqs. 1, 15-17).
+# Eq. 1 is the canonical water-radiolysis scheme; no k values given there.
+# All values at T ~ 22 +/- 1 C (295.15 K) unless noted; cited from Buxton, Padmaja, Buxton/Salmon/Wood.
+reactant,coreactant,product,k_value,k_units,sigma,T_C,T_K,equation_number,source,notes
+eaq-,S2O8^2-,SO4^2- + SO4-,1.2e10,M^-1 s^-1,,22,295.15,Eq. 15,Eq. 15 citing ref 64 (Buxton 1988),quantitative SO4- generation route used in sample preparation
+SO4-,Cl-,Cl- + SO4^2-,2.8e8,M^-1 s^-1,,22,295.15,Eq. 16,Eq. 16 citing ref 77 (Padmaja 1993),Cl radical generation from sulfate-chloride exchange
+OH,S2O8^2-,OH- + S2O8-,1.2e7,M^-1 s^-1,,22,295.15,Eq. 17,Eq. 17 citing ref 78 (Buxton/Salmon/Wood 1989),OH-scavenging by persulfate to suppress ClOH- formation

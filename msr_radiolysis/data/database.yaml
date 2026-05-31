@@ -44,12 +44,14 @@ kernels:
         products:  {"Cl2_diss": 1}
         params: { k_ref: 5.0e6, T_ref: 673.15, Ea_J_mol: 2.0e4 }
         notes: "Placeholder; adjust with data"
-      # R4: Cl2•- disproportionation
+      # R4: Cl2•- disproportionation. Iwamatsu et al. PCCP 2022 (Eq. 4):
+      # k(400 °C) = (2.2 ± 2.0)e9 M^-1 s^-1 -> 2.2e6 SI; Ea = 26 ± 2 kJ/mol in LiCl-KCl.
+      # In ZnCl2 melt Ea increases to 30 ± 3 kJ/mol; Hagiwara reports Ea = 24 kJ/mol.
       - name: "2 Cl2•- -> Cl3- + Cl-"
         reactants: {"Cl2•-": 2}
         products:  {"Cl3-": 1, "Cl-": 1}
         params: { k_ref: 2.2e6, T_ref: 673.15, Ea_J_mol: 2.6e4 }
-        notes: "From pulse-radiolysis trend: ~2.2e9 L/mol/s at 400°C -> 2.2e6 SI"
+        notes: "Iwamatsu et al. PCCP 2022 (Eq. 4); 2.2e9 M^-1 s^-1 at 400 °C, Ea = 26 ± 2 kJ/mol."
       # R5: Cl3- <-> Cl2 + Cl-   (lumped as forward only unless K is provided)
       - name: "Cl3- -> Cl2_diss + Cl-"
         reactants: {"Cl3-": 1}
@@ -83,16 +85,23 @@ metals:
   Zn:
     species: ["Zn2+", "Zn+"]
     chloride_templated_reactions:
+      # e_s- + Zn2+ -> Zn+. Originally reported in Iwamatsu/Horne PCCP 2022 (Eq. 5)
+      # with Ea = 30.31 ± 0.09 kJ/mol; re-fit in Iwamatsu/Horne PCCP 2026 (Cr paper) using
+      # density-corrected concentrations across 400-600 °C, giving
+      # A = (2.4 ± 0.5)e13 M^-1 s^-1, Ea = 35.6 ± 1.2 kJ/mol. We adopt the density-corrected
+      # values here. k at 400 °C from the original spans (4.2-16.1)e10 M^-1 s^-1 across T.
       - name: "e_s- + Zn2+ -> Zn+"
         reactants: {"e_s-": 1, "Zn2+": 1}
         products:  {"Zn+": 1}
-        params: { k_ref: 1.0e7, T_ref: 673.15, Ea_J_mol: 3.031e4 }
-        notes: "Pulse-radiolysis: (4.2–16.1)×10^10 M^-1 s^-1 @400°C; use 1e10 as baseline -> 1e7 SI"
+        params: { A: 2.4e10, Ea_J_mol: 3.56e4 }
+        notes: "Iwamatsu et al. PCCP 2022 (10.1039/d2cp01194h), refit in 2026 PCCP (10.1039/d4cp04190a)."
+      # Cl2•- + Zn+ -> 2 Cl- + Zn2+ (Eq. 15a in Iwamatsu et al. PCCP 2022).
+      # Ea = 25 ± 3 kJ/mol; k at 400 °C reported on the order of 2e10 M^-1 s^-1 -> 2e7 SI.
       - name: "Cl2•- + Zn+ -> 2Cl- + Zn2+"
         reactants: {"Cl2•-": 1, "Zn+": 1}
         products:  {"Cl-": 2, "Zn2+": 1}
         params: { k_ref: 2.0e7, T_ref: 673.15, Ea_J_mol: 2.5e4 }
-        notes: "~2e10 M^-1 s^-1 @400°C -> 2e7 SI"
+        notes: "Iwamatsu et al. PCCP 2022 (Eq. 15a); k(400 °C) ~2e10 M^-1 s^-1 -> 2e7 SI, Ea = 25 ± 3 kJ/mol."
     fluoride_templated_reactions:
       - name: "e_s- + Zn2+ -> Zn+"
         reactants: {"e_s-": 1, "Zn2+": 1}
@@ -104,6 +113,52 @@ metals:
         products:  {"Zn2+": 2, "F-": 2}
         params: { k_ref: 1.0e4, T_ref: 873.15, Ea_J_mol: 3.0e4 }
         notes: "Lumped oxidation by F2 (kinetic placeholder)"
+
+  Cr:
+    species: ["Cr2+", "Cr3+", "Cr+"]
+    chloride_templated_reactions:
+      # e_s- + Cr2+ -> Cr+ (Eq. 5 in Iwamatsu et al. PCCP 2026).
+      # k5(400 °C) = (4.1 ± 0.2)e10 M^-1 s^-1 -> 4.1e7 SI.
+      # Arrhenius (400-600 °C, density-corrected): A = (1.7 ± 0.2)e13 M^-1 s^-1, Ea = 33.5 ± 0.6 kJ/mol.
+      # A in SI = 1.7e10 m^3/(mol s). Verify: k(673K) = 1.7e13 * exp(-33500/(8.314*673)) ~ 4.3e10 M^-1 s^-1.
+      - name: "e_s- + Cr2+ -> Cr+"
+        reactants: {"e_s-": 1, "Cr2+": 1}
+        products:  {"Cr+": 1}
+        params: { A: 1.7e10, Ea_J_mol: 3.35e4 }
+        notes: "Iwamatsu et al. PCCP 2026, 28, 2061 (Eq. 5). Arrhenius across 400-600 °C; density-corrected. ΔH‡ = 27.2 ± 1.6 kJ/mol, ΔS‡ = -4.6 ± 2.1 J/mol/K."
+      # e_s- + Cr3+ -> Cr2+ (Eq. 6 in Iwamatsu et al. PCCP 2026).
+      # k6(400 °C) = (6.1 ± 0.3)e10 M^-1 s^-1 -> 6.1e7 SI.
+      # Arrhenius (400-600 °C, density-corrected): A = (2.0 ± 0.5)e13 M^-1 s^-1, Ea = 31.8 ± 0.5 kJ/mol.
+      # A in SI = 2.0e10 m^3/(mol s). Verify: k(673K) = 2.0e13 * exp(-31800/(8.314*673)) ~ 6.8e10 M^-1 s^-1.
+      - name: "e_s- + Cr3+ -> Cr2+"
+        reactants: {"e_s-": 1, "Cr3+": 1}
+        products:  {"Cr2+": 1}
+        params: { A: 2.0e10, Ea_J_mol: 3.18e4 }
+        notes: "Iwamatsu et al. PCCP 2026, 28, 2061 (Eq. 6). Arrhenius across 400-600 °C; density-corrected. ΔH‡ = 32.0 ± 1.3 kJ/mol, ΔS‡ = -1.9 ± 1.7 J/mol/K."
+      # Cl2•- + Cr2+ -> Cr3+ + 2 Cl- (Eq. 9 in Iwamatsu et al. PCCP 2026).
+      # k9(400 °C) = (7.2 ± 0.3)e9 M^-1 s^-1 -> 7.2e6 SI. Ea not separately reported.
+      - name: "Cl2•- + Cr2+ -> Cr3+ + 2 Cl-"
+        reactants: {"Cl2•-": 1, "Cr2+": 1}
+        products:  {"Cr3+": 1, "Cl-": 2}
+        params: { k_ref: 7.2e6, T_ref: 673.15 }
+        notes: "Iwamatsu et al. PCCP 2026 (Eq. 9); k at 400 °C only — extend with Ea if measured."
+      # Cl2•- + Cr3+ -> ??? (Eq. 10 in Iwamatsu et al. PCCP 2026).
+      # k10(400 °C) = (1.4 ± 0.1)e9 M^-1 s^-1 -> 1.4e6 SI.
+      # Paper states two possible mechanisms: (a) Cr3+ + Cl2•- -> Cr4+ + 2Cl- (oxidation), or
+      # (b) Cr3+ + Cl2•- -> Cr2+ + Cl2 (reduction). We adopt (b) here as the more chemically plausible
+      # pathway in chloride melt; flag for revision if/when Cr4+ is identified spectroscopically.
+      - name: "Cl2•- + Cr3+ -> Cr2+ + Cl2_diss"
+        reactants: {"Cl2•-": 1, "Cr3+": 1}
+        products:  {"Cr2+": 1, "Cl2_diss": 1}
+        params: { k_ref: 1.4e6, T_ref: 673.15 }
+        notes: "Iwamatsu et al. PCCP 2026 (Eq. 10). Mechanism ambiguous in paper — (b) reduction adopted; alternative (a) goes to Cr4+ + 2Cl-."
+      # Cr3+ + Cr+ -> 2 Cr2+ (comproportionation). Not measured in Iwamatsu et al.; carried over
+      # from the standalone Cr script as a literature-style placeholder. Verify before reporting.
+      - name: "Cr3+ + Cr+ -> 2 Cr2+"
+        reactants: {"Cr3+": 1, "Cr+": 1}
+        products:  {"Cr2+": 2}
+        params: { k_ref: 1.7e7, T_ref: 673.15 }
+        notes: "Comproportionation placeholder ~1.7e10 M^-1 s^-1 -> 1.7e7 SI. Source needed."
 
   U:
     species: ["U4+", "U3+"]

@@ -1,0 +1,14 @@
+# Rotermund et al. 2024, J. Phys. Chem. A 128, 590-598.
+# DOI: 10.1021/acs.jpca.3c07404
+# Cl2- (dichlorine radical anion) formation and disproportionation kinetics cited in Eqs. 4-11.
+# Equilibrium forward/reverse not separately quantified in paper; numerical k only given for Eq. 8.
+# Eqs. 4, 5, 6, 7, 9, 10, 11 are mechanistic, no k provided in text.
+reactant,coreactant,product,k_value,k_units,k_low,k_high,T_C,T_K,equation_number,source,notes
+Cl-,direct radiolysis,eaq + Cl,,,,,22,295.15,Eq. 4,Eq. 4 of paper,mechanistic step; no k provided
+Cl-,OH,ClOH-,,,,,22,295.15,Eq. 5,Eq. 5 of paper,equilibrium; no k provided
+ClOH-,H+,Cl + H2O,,,,,22,295.15,Eq. 6,Eq. 6 of paper,equilibrium; no k provided
+Cl,Cl-,Cl2-,,,,,22,295.15,Eq. 7,Eq. 7 of paper,equilibrium formation of Cl2-; no k provided
+Cl2-,Cl2-,Cl3- + Cl-,,M^-1 s^-1,0.7e9,9.0e9,22,295.15,Eq. 8,Eq. 8 of paper citing refs 35-50,disproportionation; k reported as range 0.7-9.0 x 10^9
+solute,Cl2-,solute+ + 2Cl-,,,,,22,295.15,Eq. 9,Eq. 9 of paper,electron transfer (generic); no k provided
+CH2Cl2,es-,CH2Cl2*-,,,,,22,295.15,Eq. 10,Eq. 10 of paper citing ref 27,DCM radiolysis pathway; no k provided
+CH2Cl2*-,,CH2Cl + Cl-,,,,,22,295.15,Eq. 11,Eq. 11 of paper citing ref 27,DCM dissociation; no k provided

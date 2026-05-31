@@ -1,0 +1,24 @@
+# Davis et al. 2022, Nucl. Sci. Eng. 197:4, 633-646, Table III.
+# F2 production G-values for MSR-relevant fluoride salts under HFR gamma irradiation.
+# G units: molecules F2 / 100 eV. Irradiation T = 40-60 C (low-T solid-phase).
+# Source: validation/papers/Radiolytic Production of Fluorine Gas...pdf, Table III
+# Authors: Lance Davis, Ralph Hania, Dennis Boomstra, Dillon Rossouw,
+#          Florence Charpin-Jacobs, Jan Uhlir, Martin Marecek, Helmut Beckers, Sebastian Riedel
+salt,form,G_F2,sigma,dose_rate_kGy_per_hr,irradiation_source,reference,total_dose_MGy
+BeF2,fine_powder,0.009,0.001,33,HFR_fuel,this_work_Davis2022,~45
+LiF,fine_powder,0.004,0.001,33,HFR_fuel,this_work_Davis2022,~45
+LiF_initial_slope,fine_powder,0.004,0.001,33,HFR_fuel,this_work_Davis2022,~45
+LiF_max_slope,fine_powder,0.004,0.001,33,HFR_fuel,this_work_Davis2022,~45
+FLiBe_UF4,fine_powder,0.005,0.001,89,HFR_fuel,this_work_Davis2022,~80
+FLiBe_UF4_max_slope,fine_powder,0.007,0.001,89,HFR_fuel,this_work_Davis2022,~80
+ThF4,fine_powder,0.021,0.003,121,HFR_fuel,this_work_Davis2022,~170
+LiF_X-ray,fine_powder,0.0,,0.3,soft_X_rays,ORNL_Ref32,
+MSRE_fuel_max_slope,fine_powder,0.021,0.003,121,HFR_fuel,this_work_Davis2022,~170
+65LiF_29BeF2_5ZrF4_0.66UF4_low,solid_plug,0.005,,unknown,post_irradiation,ORNL_Ref23,
+65LiF_29BeF2_5ZrF4_0.66UF4_high,solid_plug,0.031,,unknown,post_irradiation,ORNL_Ref23,
+65LiF_29BeF2_5ZrF4_0.66UF4_Co60,solid_plug,0.045,,6.3,Co_60,ORNL_Ref23,
+65LiF_29BeF2_5ZrF4_0.66UF4_HFR,powder,0.012,,175.4,HFR_fuel,ORNL_Ref23,
+71.7LiF_16BeF2_12ThF4_0.3UF4,solid_plug,0.006,,unknown,in_core,KI_Ref33,
+66LiF_33BeF2_1UF4,solid_plug,0.01,,unknown,in_core,KI_Ref33,
+ThF4_X-ray_low,fine_powder,0.003,,2.9,soft_X_rays,ORNL_Ref32,
+ThF4_X-ray_high,fine_powder,0.008,,2.9,soft_X_rays,ORNL_Ref32,

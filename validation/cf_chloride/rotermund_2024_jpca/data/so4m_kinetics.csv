@@ -1,0 +1,12 @@
+# Rotermund et al. 2024, J. Phys. Chem. A 128, 590-598.
+# DOI: 10.1021/acs.jpca.3c07404
+# SO4- (sulfate radical anion) formation and disproportionation kinetics cited in Eqs. 12-17, 22.
+# Eq. 12 reports a k range, Eq. 13 reports a k range, Eq. 14 is mechanistic.
+# Eq. 22 (oxygen-adduct formation) only quoted as k ~ 10^9-10^10 M^-1 s^-1 in prose on page 594.
+# 2*kY from fit to zero-Cf SO4- decay trace at 450 nm (this work, used as constant when fitting Cf decays).
+reactant,coreactant,product,k_value,k_units,k_low,k_high,sigma,T_C,T_K,equation_number,source,notes
+HSO4-,OH,SO4- + H2O,,M^-1 s^-1,0.7e6,1.7e6,,22,295.15,Eq. 12,Eq. 12 of paper citing refs 63-66,SO4- formation; reported as range 0.7-1.7 x 10^6
+SO4-,SO4-,S2O8^2-,,M^-1 s^-1,0.2e9,1.8e9,,22,295.15,Eq. 13,Eq. 13 of paper citing refs 2-4, 65-74,disproportionation; reported as range 0.2-1.8 x 10^9
+solute,SO4-,solute+ + SO4^2-,,,,,,22,295.15,Eq. 14,Eq. 14 of paper,electron transfer / H-atom abstraction / addition (generic); no k provided
+S2O8-,O2,(S2O8.O2)-,1e10,M^-1 s^-1,1e9,1e10,,22,295.15,Eq. 22,page 594 prose citing ref 84 (Clarke 2008),peroxyl adduct formation; complete within ~500 ns implies k ~ 10^9-10^10
+SO4- (zero Cf),SO4-,S2O8^2- (fitted),2.70e8,M^-1 s^-1,,,0.18e8,22,295.15,Eq. 20 fit,Figure 3A fit (this work),"2*kY value from mixed-order fit (Eq. 20) to 0 mM Cf trace; held constant during Cf fits; this is the apparent second-order decay including S2O8.O2 adduct contribution at 450 nm"

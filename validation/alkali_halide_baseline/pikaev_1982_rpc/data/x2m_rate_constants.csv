@@ -1,0 +1,49 @@
+# Pikaev, Makarov, Zhukova 1982, Radiat. Phys. Chem. 19(5), 377-387.
+# DOI: 10.1016/0146-5724(82)90005-X
+# Source: validation/papers/1-s2.0-014657248290005X-main.pdf, Table 4 (p. 385)
+# and Table 5 (p. 386).
+#
+# Rate constants for molecular radical-anion (X2-) reactions in alkaline-halide melts.
+# Two reaction families are included here:
+#   (a) Reaction (10) Me_2+ + X2-  ->  2 Me+ + 2 X-  (disproportionation route),
+#       reported as k_10 in Table 4. In the paper the X2- decay follows
+#       -d[X2-]/dt = k_10 [X2-]^2 (eq. 14) so k_10 is the bimolecular constant.
+#       Reported precision: +/-20% (Table 4 footnote b).
+#   (b) Reaction (19) Cd+ + X2-  ->  Cd2+ + 2 X-  and analogues
+#       (X2- with reduced cation of transition metal Me+), Table 5.
+#       Reported precision: +/-20% (Table 5 footnote b).
+# Units: k in dm^3 mol^-1 s^-1 (== M^-1 s^-1).
+# T converted from degC to K (T_K = T_degC + 273.15).
+# 2k/eps and the bimolecular 2k separately requested by the user: the paper
+# reports k_10 directly (not 2k/eps); see notes column.
+reaction_id,X2_minus_species,partner_species,melt,T_degC,T_K,k_M1_s1,k_sigma_rel,source_table,notes
+10,Cl2-,Na (reduced),NaCl,850,1123.15,2.0e11,0.20,Table 4,disproportionation Me_2+ + X2- -> 2Me+ + 2X- (eq 10)
+10,Cl2-,K (reduced),KCl,800,1073.15,1.0e11,0.20,Table 4,disproportionation Me_2+ + X2- -> 2Me+ + 2X- (eq 10)
+10,Cl2-,Rb (reduced),RbCl,750,1023.15,6.7e10,0.20,Table 4,disproportionation Me_2+ + X2- -> 2Me+ + 2X- (eq 10)
+10,Cl2-,Na(Cs) (reduced),34% NaCl + 66% CsCl,550,823.15,3.6e11,0.20,Table 4,mole percent mixture; eq 10
+10,Cl2-,Na(Cs) (reduced),34% NaCl + 66% CsCl,600,873.15,4.0e11,0.20,Table 4,mole percent mixture; eq 10
+10,Cl2-,Na(Cs) (reduced),34% NaCl + 66% CsCl,700,973.15,3.7e11,0.20,Table 4,mole percent mixture; eq 10
+10,Cl2-,Na(Cs) (reduced),34% NaCl + 66% CsCl,750,1023.15,4.0e11,0.20,Table 4,mole percent mixture; eq 10
+10,Cl2-,Na(Cs) (reduced),34% NaCl + 66% CsCl,800,1073.15,4.4e11,0.20,Table 4,mole percent mixture; eq 10
+10,Cl2-,Na(Cs) (reduced),34% NaCl + 66% CsCl,850,1123.15,4.8e11,0.20,Table 4,mole percent mixture; eq 10
+10,Br2-,K (reduced),KBr,800,1073.15,4.0e10,0.20,Table 4,disproportionation; eq 10
+10,Br2-,Cs (reduced),CsBr,600,873.15,4.2e10,0.20,Table 4,disproportionation; eq 10
+10,Br2-,Li(K) (reduced),60% LiBr + 40% KBr,400,673.15,2.4e10,0.20,Table 4,mole percent mixture; eq 10
+10,Br2-,Li(K) (reduced),60% LiBr + 40% KBr,500,773.15,2.3e10,0.20,Table 4,mole percent mixture; eq 10
+10,Br2-,Li(K) (reduced),60% LiBr + 40% KBr,600,873.15,2.9e10,0.20,Table 4,mole percent mixture; eq 10
+10,Br2-,Li(K) (reduced),60% LiBr + 40% KBr,700,973.15,2.2e10,0.20,Table 4,mole percent mixture; eq 10
+10,Br2-,Li(K) (reduced),60% LiBr + 40% KBr,800,1073.15,2.2e10,0.20,Table 4,mole percent mixture; eq 10
+10,Br2-,Li(K) (reduced),60% LiBr + 40% KBr,850,1123.15,2.3e10,0.20,Table 4,mole percent mixture; eq 10
+10,I2-,K (reduced),KI,700,973.15,3.8e9,0.20,Table 4,disproportionation; eq 10
+19,Cl2-,Cd+,NaCl,850,1123.15,2.6e11,0.20,Table 5,X2- + reduced transition-metal cation -> Me(n+) + 2X- (eq 19)
+19,Br2-,Cd+,KBr,800,1073.15,7.0e10,0.20,Table 5,eq 19
+19,Br2-,Zn+,KBr,800,1073.15,7.0e10,0.20,Table 5,eq 19
+19,Br2-,Cd+,60% LiBr + 40% KBr,400,673.15,3.6e10,0.20,Table 5,mole percent mixture; eq 19
+19,Br2-,Cd+,60% LiBr + 40% KBr,500,773.15,4.6e10,0.20,Table 5,mole percent mixture; eq 19
+19,Br2-,Cd+,60% LiBr + 40% KBr,600,873.15,6.4e10,0.20,Table 5,mole percent mixture; eq 19
+19,Br2-,Cd+,60% LiBr + 40% KBr,700,973.15,9.0e10,0.20,Table 5,mole percent mixture; eq 19
+19,Br2-,Cd+,60% LiBr + 40% KBr,800,1073.15,1.0e11,0.20,Table 5,mole percent mixture; eq 19
+19,Br2-,Cd+,60% LiBr + 40% KBr,850,1123.15,9.0e10,0.20,Table 5,mole percent mixture; eq 19
+16,Br2-,Ca+,KBr,800,1073.15,7e10,,text,"k16 ~ k17 ~ 7e10 dm3 mol-1 s-1, KBr melt with Ca2+ at 800C (p.386 text); approximate value"
+17,Ca+,Ca+,KBr,800,1073.15,7e10,,text,"k17 ~ k16 ~ 7e10 dm3 mol-1 s-1 (Ca+ + Ca+ -> Ca0 + Ca2+); approximate (p.386 text)"
+18,X2-,X2-,KBr,800,1073.15,1e9,,text,"k18 < 1e9 dm3 mol-1 s-1 (X2- + X2- -> X3- + X-) in KBr with Ca2+ at 800C; upper bound (p.386 text)"

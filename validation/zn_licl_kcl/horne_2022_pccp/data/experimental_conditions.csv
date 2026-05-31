@@ -1,0 +1,62 @@
+# Iwamatsu, Horne et al. 2022, Phys. Chem. Chem. Phys. 24, 25088-25098.
+# DOI: 10.1039/D2CP01194H
+# Source: validation/papers/d2cp01194h.pdf
+# Experimental conditions: BNL LEAF and INL Van de Graaff pulse radiolysis of molten LiCl-KCl/ZnCl2.
+parameter,value,units,source_in_paper,notes
+facility_LEAF,Brookhaven National Laboratory LEAF,,p.25090 left col,Laser-Electron Accelerator Facility (ref 23)
+facility_VdG,INL Van de Graaff,,p.25090 left col,Van de Graaff pulse radiolysis / transient absorption (ref 24)
+LEAF_electron_energy,8.7,MeV,p.25090 right col,
+LEAF_pulse_width_short,30,ps,p.25090 right col,3 ps tripled (266 nm) Ti-Sapphire laser on Mg photocathode
+LEAF_pulse_width_long,7,ns,p.25090 right col,quadrupled (266 nm) Nd:YAG laser on Mg photocathode
+VdG_electron_energy,2.0,MeV,p.25090 right col,
+VdG_pulse_width,2,us,p.25090 right col,thermionic cathode pulsed electrical potential
+dose_per_pulse_typical,6-9,Gy water-equivalent,Source.txt,(folder note from prior extraction; not stated explicitly with these limits in main text)
+dose_per_pulse_Fig6A,70-77,Gy/pulse,Fig 6A caption,Cl2- decay kinetics at 340 nm in 0-9.41 mM Zn2+
+dose_per_pulse_high,>75,Gy/pulse,p.25095 right col,used for neat LiCl-KCl and 9.41 mM ZnCl2 in Fig 6B inset
+dose_per_pulse_low,<60,Gy/pulse,p.25095 right col,impurity scavenger effects significant; data discarded for kinetic fits
+dose_per_pulse_Hagiwara,50-85,Gy/pulse,p.25095 right col,Hagiwara 1987 (ref 12) for comparison
+sample_cuvette,5x5,mm,p.25090 left col,Spectrosil Quartz fluorescence cuvettes (Starna Inc.) with Teflon valve stems
+optical_path_length,5,mm,inferred from 5x5 mm cuvettes,optical path = cuvette inner dimension
+sample_atmosphere,Ar,,p.25090 left col,Ar 99.998% inside sealed cuvettes prior to irradiation; evacuated before heat
+detector_short_t,FND-100QH (EG&G Optoelectronics) silicon photodiode,,p.25090 right col,
+detector_long_t,S5973-01 (Hamamatsu) silicon photodiode,,p.25090 right col,
+detector_VdG,9659QB (EMI Electronic) photomultiplier,,p.25090 right col,
+oscilloscope_HRO,LeCroy WaveRunner HRO 66Zi,,p.25090 right col,600 MHz 12 bit
+oscilloscope_fast,LeCroy 640Zi,,p.25090 right col,4 GHz 8 bit
+oscilloscope_VdG,LeCroy HDO 4034,,p.25090 right col,350 MHz 12 bit
+wavelength_range,300-1000,nm,p.25090 right col,LEAF transient kinetics probe range
+interference_filter_bw,10,nm,p.25090 right col,bandpass for <=800 nm (Edmund Optics)
+interference_filter_bw_IR,25,nm,p.25090 right col,bandpass for >800 nm (Edmund Optics)
+data_acquisition_software,LabVIEW (National Instruments),,p.25090 right col,
+data_analysis_software_kinetics,Igor Pro (Wavemetrics),,p.25090 right col,
+data_analysis_software_spectra,SK-Ana (Spectro-Kinetic Analysis),,p.25090 right col,Pernot 2018 ref 27; SVD + MCR-ALS with positive constraints
+dosimetry_solution,N2O-saturated 10 mM KSCN(aq),,p.25090 right col,measured at lambda_max = 470 nm
+dosimetry_Geps,5.08e4,(species/100 eV)*(M^-1 cm^-1),p.25090 right col,Buxton & Stuart 1995 (ref 26)
+salt_LiCl_KCl_eutectic_composition,58/42,mol% LiCl / mol% KCl,p.25090 left col,99.99% trace metal basis (Sigma-Aldrich)
+salt_LiCl_KCl_mp,357,C,p.25090 left col,
+salt_ZnCl2_mp,293,C,p.25090 left col,anhydrous Redi-Drit reagent grade >=98% purity (Sigma-Aldrich)
+salt_purification_method,vacuum distillation,,p.25090 left col,three-chamber fused silica tube; furnace at 800 C; 1e-3 Torr dynamic vacuum; ~80% sublimed (ESI Fig S1/S2)
+ZnCl2_purification_ref,Dai 1995 / Kurley 2019,,p.25090 left col,refs 21 and 22
+sample_homogenization,450 C, 3 h, glassy carbon crucible,p.25090 left col,Sigradur GAT6 64 mL; Ar glovebox
+salt_impurity_Na_ppm,26.9,ppm,p.25091 left col,batch # 0000054157 source # 0000040181 from Sigma-Aldrich cert.
+salt_impurity_Ca_ppm,4.3,ppm,p.25091 left col,
+salt_impurity_Zn_ppm,3.2,ppm,p.25091 left col,
+salt_impurity_Rb_ppm,3.0,ppm,p.25091 left col,
+salt_impurity_Mg_ppm,2.9,ppm,p.25091 left col,
+salt_impurity_Sr_ppm,2.6,ppm,p.25091 left col,
+salt_impurity_others,<1,ppm each,p.25091 left col,all other trace metals
+temperature_range,400-600,C,p.25090 right col + p.25088 abstract,400-600 C in 50 C steps for LiCl-KCl; 400 C only for neat ZnCl2 (m.p. 293 C)
+temperature_stability,<1.0,C,p.25090 left col,monitored via thermocouple in heating block <1 cm from sample
+equilibration_time,10,min,p.25090 left col,minimum before kinetic measurements
+ICP_MS_instrument,PerkinElmer 350D,,p.25090 left col,used for Zn quantification at INL
+ICP_MS_precision,<2,%,p.25090 left col,relative percent precision for all analytes
+ZnCl2_concentrations_LiCl_KCl,"0,1.88,3.76,7.30,9.41,142",mM,p.25092 + Fig 4A caption,plus neat ZnCl2 (m.p. 293 C)
+e_s-_lifetime_neat_LiCl_KCl,145,ns,p.25091 left col + Fig 2A,first-order; attributed to impurity scavenging
+e_s-_lifetime_Hagiwara,250,ns,p.25091 left col,Hagiwara 1987 (ref 12) for the same salt at 400 C
+C37_Zn2_LiCl_KCl_400C,77,mM,p.25093 left col + Conclusions,77 +/- 10 mM; C37 = concentration to reduce e_s- yield to 1/e
+C37_Zn2_LiCl_KCl_400C_sigma,10,mM,p.25093 left col,
+Cl2-_decay_neat_ZnCl2_400C_plateau,2.0e6,s^-1,p.25095 right col,k/eps*l plateau slope for neat ZnCl2 at high dose
+Cl2-_decay_LiCl_KCl_400C_plateau,1.5e6,s^-1,p.25095 right col,2k/eps*l plateau slope for neat LiCl-KCl at >75 Gy/pulse
+Cl2-_decay_ZnCl2_in_LiCl_KCl_400C_plateau,4.5e6,s^-1,p.25095 right col,k/eps*l plateau slope for 3.76-9.41 mM ZnCl2 in LiCl-KCl at 400 C
+viscosity_LiCl_KCl_400C,4.0,cP,p.25096 + ref 45/46,Kwon 2016 / Janz NSRDS-NBS61 Part II
+viscosity_ZnCl2_400C,360,cP,p.25096 + ref 45/46,~360 cP; 90x more viscous than LiCl-KCl

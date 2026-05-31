@@ -1,0 +1,709 @@
+                                                                                                 Volume 24
+                                                                                                 Number 41
+                                                                                                 7 November 2022
+                                                                                                 Pages 25053–25676
+
+
+
+
+PCCP
+Physical Chemistry Chemical Physics
+rsc.li/pccp
+
+
+
+
+                               ISSN 1463-9076
+
+
+
+
+                               PAPER
+                               Kazuhiro Iwamatsu, Gregory P. Horne et al.
+                               Radiation-induced reaction kinetics of Zn2+ with e S− and Cl2−
+                               in Molten LiCl–KCl eutectic at 400–600 °C
+                                                                                         PCCP
+                                                                                                                                                                                                                     View Article Online
+                                                                                             PAPER                                                                                                                   View Journal | View Issue
+
+
+
+
+                                                                                                                                   Radiation-induced reaction kinetics of Zn2+
+                                                                                                                                   with eS and Cl2  in Molten LiCl–KCl eutectic
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                         Cite this: Phys. Chem. Chem. Phys.,
+                                                                                         2022, 24, 25088                           at 400–600 8C†
+                                                                                                                                   Kazuhiro Iwamatsu,*a Gregory P. Horne, *b Ruchi Gakhar,b Phillip Halstenberg,c
+                                                                                                                                   Bobby Layne,a Simon M. Pimblott b and James F. Wishart a
+
+                                                                                                                                   Molten chloride salts are currently under consideration as combined coolant and liquid fuel for next-
+                                                                                                                                   generation molten salt nuclear reactors. Unlike complementary light-water reactor technologies, the
+                                                                                                                                   radiation science underpinning molten salts is in its infancy, and thus requires a fundamental
+                                                                                                                                   mechanistic investigation to elucidate the radiation-driven chemistry within molten salt reactors. Here
+                                                                                                                                   we present an electron pulse radiolysis kinetics study into the behaviour of the primary radiolytic species
+                                                                                                                                   generated in molten chloride systems, i.e., the solvated electron (eS) and di-chlorine radical anion
+                                                                                                                                   (Cl2 ). We examine the reaction of eS with Zn2+ from 400–600 1C (Ea = 30.31  0.09 kJ mol1), and
+                                                                                                                                   the kinetics and decay mechanisms of Cl2  in molten lithium chloride-potassium chloride (LiCl–KCl)
+                                                                                                                                   eutectic. In the absence of Zn2+, the lifetime of eS was found to be dictated by residual impurities in
+                                                                                         Received 11th March 2022,                 ostensibly ‘‘pure’’ salts, and thus the observed decay is dependent on sample history rather than being
+                                                                                         Accepted 9th May 2022                     an intrinsic property of the salt. The decay of Cl2  is complex, owing to the competition of Cl2 
+                                                                                         DOI: 10.1039/d2cp01194h                   disproportionation with several other chemical pathways, one of which involves reduction by
+                                                                                                                                   radiolytically-produced Zn+ species. Overall, the reported findings demonstrate the richness and com-
+                                                                                         rsc.li/pccp                               plexity of chemistry involving the interactions of ionizing radiation with molten salts.
+
+
+
+
+                                                                                         Introduction                                                                        metal ion speciation from molten salt radiolysis are worrisome to
+                                                                                                                                                                             MSR development. This knowledge gap in the radiation chemistry
+                                                                                         Interest in the chemistry of molten salts in radiation environ-                     of molten salts is in part due to the extreme environments
+                                                                                         ments is in resurgence due to the potential of molten salt                          necessary to perform such investigations (i.e., high temperatures
+                                                                                         reactors (MSRs) to revolutionize the nuclear energy                                 coupled with corrosive media and intense ionizing radiation
+                                                                                         landscape.1,2 Both fluoride and chloride salt systems have been                     fields), and because early MSR studies concluded that radiation-
+                                                                                         proposed as reactor coolant and fuel matrix candidates.                             induced chemical changes were absent in the molten state.6
+                                                                                         However, the radiation science underpinning molten salts is                         Subsequently, and to the contrary, several studies reported
+                                                                                         in its infancy compared to water radiolysis, which is critically                    radiation-induced formation of oxidizing and reducing transients
+                                                                                         important for managing water-cooled reactor technologies.3–5                        in a variety of alkali metal halide molten salt systems.7–14 These
+                                                                                         In parallel to safety and corrosion concerns associated with the                    studies have shown that the absorption of ionizing radiation by
+                                                                                         formation of molecular hydrogen (H2) and hydrogen peroxide                          molten halide salt systems (represented as M+X) initiates pro-
+                                                                                         (H2O2) from water radiolysis, the formation of volatile, corro-                     duction of an energetic excess electron (e) and corresponding
+                                                                                         sive species (e.g., chlorine and fluorine gas) and changes in                       ‘hole’ (electron vacancy) that localizes on the halide component
+                                                                                                                                                                             (X) to produce a halide radical (X ). As in water, the initial
+                                                                                         a
+                                                                                                                                                                             energetic e passes through states of partial or pre-solvation prior
+                                                                                           Brookhaven National Laboratory, Upton, New York, 11973, USA.
+                                                                                           E-mail: iwamatsu@bnl.gov
+                                                                                                                                                                             to complete solvation (eS, absorbing in the visible and near-IR),
+                                                                                         b
+                                                                                           Idaho National Laboratory, 1955 N. Freemont Ave., Idaho Falls, 83415, USA.        while X rapidly forms an anion-radical dimer with other halide
+                                                                                           E-mail: gregory.horne@inl.gov                                                     anions (X2 , predominantly absorbing in the UV):11,15,16
+                                                                                         c
+                                                                                           Oak Ridge National Laboratory Oak Ridge, TN 37830, USA
+                                                                                         † Electronic supplementary information (ESI) available: Salt purification appara-                       M+X        M + + X  + e ,                    (1)
+                                                                                         tus schematics, high-temperature-controlled Van de Graaﬀ cuvette holder, tem-
+                                                                                         perature dependent reaction kinetics at 700 nm, time dependent spectra at                                  e - epre - eS,                            (2)
+                                                                                         400 1C, and 240 nm transient absorption kinetics at 400 1C. See DOI: https://
+                                                                                         doi.org/10.1039/d2cp01194h                                                                                  X + X - X2 .                            (3)
+
+
+
+                                                                                         25088 | Phys. Chem. Chem. Phys., 2022, 24, 25088–25098                                                       This journal is © the Owner Societies 2022
+                                                                                                                                                                                                                  View Article Online
+
+                                                                                         Paper                                                                                                                              PCCP
+
+                                                                                         The identification and optical characterization of these transient       The work described above demonstrates that there is rich
+                                                                                         species in molten salt systems is fundamentally significant, as       chemistry involving the interactions of ionizing radiation with
+                                                                                         they are analogous to the highly-reactive hydrated electron (eaq)    molten salts, which will be especially important for the design,
+                                                                                         and hydroxyl radical ( OH) produced by water radiolysis, and         development, and deployment of MSRs. However, very large
+                                                                                         thus are expected to participate in similar chemical reactivity       areas of molten salt radiation-induced chemical kinetics and
+                                                                                         that may negatively influence MSR performance and durability.3        reaction mechanisms remain undetermined. For example, in
+                                                                                             Consequently, understanding the reactivity of eS and X2        the studies cited above, the mechanism of eS decay in the
+                                                                                         in molten salt solutions is necessary to determine the eﬀects of      absence of scavengers was generally attributed to reaction with
+                                                                                         radiation on the physical and chemical properties of molten           the metal cation of the bulk salt to form an alkali metal atom
+                                                                                         salt matrices for reactor applications. Further, radiation-driven     (M0) or dimer metal cation (M2+) without any specific proof.9
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                         chemistry may also lead to the degradation of reactor materials,      This interpretation would seem to be unlikely because alkali
+                                                                                         e.g., the metal alloys used for MSR vessels. Elucidating              metals dissociate into cations and eS when they are added to
+                                                                                         the fundamental properties of radiation-induced transients has        molten alkali salts in low concentrations (on a par with pulse
+                                                                                         historically been achieved by scavenger studies utilizing electron    radiolysis conditions).18–20 At higher concentrations, electron
+                                                                                         pulse radiolysis techniques, whereby solutes are introduced to        pairing (bipolaron formation) occurs.20 Since it is very difficult
+                                                                                         react with said transients, confirming their identification, and      to purify salts and avoid contamination from oxygen, moisture,
+                                                                                         establishing their chemical reactivity.3,17 Pikaev and coworkers      or other materials, it is much more likely that similar residual
+                                                                                         performed the most extensive investigation to date into the           impurities are responsible for decay of eS in ostensibly ‘‘pure’’
+                                                                                         reactions of eS with scavengers and of X2  with radiolysis         salts,12,13 and, consequently, the observed decay would be
+                                                                                         products in molten salt systems.9,11 They observed the absorp-        dependent on sample history rather than being an intrinsic
+                                                                                         tion spectra of eS and X2  in several neat molten salt systems,    property of the salt, with the result being that scavenging rate
+                                                                                         their eutectics, and other mixtures, obtaining apparent second-       coefficients that are referenced in competition to these pro-
+                                                                                         order rate coeﬃcients (k) for eS scavenging by divalent barium       cesses might not be reliable.9,11
+                                                                                         (Ba2+), strontium (Sr2+), calcium (Ca2+), cadmium (Cd2+), and            Here we present a focused eﬀort towards the development of
+                                                                                         zinc (Zn2+) ions, and by monovalent tellurium (Tl+) and silver        more quantitative and detailed insights into the radiation-
+                                                                                         (Ag+) ions in molten sodium chloride (NaCl), potassium chloride       driven chemistry of molten salt systems by examining the
+                                                                                         (KCl), and potassium bromide (KBr) systems using an indirect          reaction of eS with Zn2+ and the kinetics and mechanism of
+                                                                                         method based on initial absorbance ratios as a function of            di-chlorine radical anion (Cl2 ) decay in molten LiCl–KCl
+                                                                                         scavenger concentration. However, due to the relatively long          eutectic at 400–600 1C.
+                                                                                         (2.3 ms) width of the electron pulses from their accelerator,
+                                                                                         overlap with the observed electron decay kinetics resulted in
+                                                                                         reported rate coeﬃcient uncertainties of B30%. Pikaev and             Experimental
+                                                                                         coworkers also examined the second-order decay kinetics of            Chemicals
+                                                                                         X2  reacting, according to their interpretation, with the reduced
+                                                                                         parent salt dimer metal cation (M2+) or with monovalent calcium       Acetone (Z99.5% purity, ACS reagent), isopropanol (Z99.5%
+                                                                                         (Ca+), zinc (Zn+), or cadmium (Cd+) ions formed by eS scaven-        purity, ACS reagent), lithium chloride-potassium chloride
+                                                                                         ging by the corresponding divalent metal ions.                        eutectic (LiCl–KCl, anhydrous beads, 99.99% trace metal basis),
+                                                                                             More recently, Sawamura and coworkers performed nano-             nitric acid (HNO3, Z99.999% trace metals basis), and potassium
+                                                                                         second electron pulse radiolysis experiments on molten lithium        thiocyanate (KSCN, Z99.0% ACS Reagent Grade) were sourced
+                                                                                         chloride-potassium chloride (LiCl–KCl), lithium bromide-              from Sigma-Aldrich and used without further purification. Zinc
+                                                                                         potassium bromide (LiBr–KBr), lithium fluoride-potassium              chloride (ZnCl2, anhydrous, free-flowing, Redi-Drit, reagent
+                                                                                         fluoride (LiF–KF), and lithium fluoride-sodium fluoride-              grade, Z98% purity) was purified and prepared as described
+                                                                                         potassium fluoride (LiF–NaF–KF) systems.12–14 In each salt            below, and different concentrations of ZnCl2 in LiCl–KCl were
+                                                                                         system, they observed the absorption band of eS, with peak           prepared by mixing the purified salt with the eutectic of the
+                                                                                         absorbances between 500 and 800 nm depending on salt                  mixed alkali metal salts. Argon gas (Ar, 499.998%) nitrogen (N2,
+                                                                                         mixture composition and temperature, which decayed via                499.998%) and nitrous oxide (N2O, UHP) were purchased from
+                                                                                         first-order kinetics with lifetimes on the order of hundreds of       Airgas USA, LLC.
+                                                                                         nanoseconds. In each case, the addition of 50 mM Cd2+ caused
+                                                                                         the eS absorption band to disappear, and the appearance of           Sample preparation
+                                                                                         an additional absorption with a peak around 330 nm that               Commercial ZnCl2 was purified by distillation.21,22 The distilla-
+                                                                                         indicated the formation of Cd+. Reaction rate coefficients for        tion apparatus was a three-chamber fused silica tube with each
+                                                                                         the scavenging of eS by Cd2+ were not determined for any of          chamber separated by a quartz slide insert fused to the walls of
+                                                                                         these salt systems. However, in the chloride and bromide cases,       the tube, shown in ESI,† Fig. S1 and S2. The salt was loaded into
+                                                                                         rate coefficients and activation energies (Ea) for the observed       the chamber furthest from the opening via a funnel inside a
+                                                                                         second-order decay of X2  (measured at 340 and 360 nm,              N2-atmosphere glovebox. Once loaded into the column, the end
+                                                                                         respectively) were reported.                                          was sealed with a compression fitting connected to a Teflon
+
+
+
+                                                                                         This journal is © the Owner Societies 2022                                   Phys. Chem. Chem. Phys., 2022, 24, 25088–25098 | 25089
+                                                                                                                                                                                                                    View Article Online
+
+                                                                                         PCCP                                                                                                                                 Paper
+
+                                                                                         stopcock. The column was placed in a three-inch tube furnace        evacuated to avoid cell rupture by gas expansion upon heating.
+                                                                                         and a vacuum line was connected to the column through the           Samples were then loaded into bespoke, high-temperature-
+                                                                                         fitting. The valve was opened, and the column evacuated until       controlled cuvette holders, and heated to above their respective
+                                                                                         the pressure reached B1  103 Torr. After evacuation, the          melting points (400 1C for neat ZnCl2 and 400–600 1C for
+                                                                                         tube furnace was programmed to reach a setpoint of 800 1C at a      LiCl–KCl) and allowed to thermally equilibrate for at least
+                                                                                         ramp rate of 10 1C min1 from room temperature. The column          10 minutes prior to study. Sample temperatures were moni-
+                                                                                         remained at the setpoint under dynamic vacuum until approxi-        tored using a thermocouple installed in the sample holder’s
+                                                                                         mately 80% of the original volume of salt added to the column       heating block, located less than 1 cm between the sample
+                                                                                         had sublimed and re-condensed in the chamber closest to the         cuvette and heater. Temperature variations were determined
+                                                                                         opening of the column. After enough of the salt had collected in    to be less than 1.0 1C during each experiment. Measurements
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                         the condensation chamber, the valve was closed while still          at a given temperature were made over a period of 5–
+                                                                                         under vacuum and the column transferred into the glovebox.          10 minutes, and were found to be self-consistent, indicating
+                                                                                         Once in the glovebox, the column was refilled with a                that there was no significant temperature variation between
+                                                                                         N2-atmosphere and the compression fitting removed. The              measurements over this time frame. For LEAF experiments, the
+                                                                                         column was then inverted, and the distillate recovered from         design and fabrication of the high-temperature-controlled
+                                                                                         the collection chamber. The distilled salt was then transferred     cuvette holder has been previously discussed.25 For Van de
+                                                                                         to a glass jar with a Teflon-lined lid for shipment.                Graaff experiments, a new high-temperature-controlled cuvette
+                                                                                             The preparation of salt mixtures involved mixing ZnCl2 with     holder was developed and is discussed in ESI,† Fig. S3.
+                                                                                         LiCl–KCl in a glassy carbon crucible (GAT6, 64 mL Sigradur              Radiation-induced reactions were initiated by either 30 ps-
+                                                                                         tapered crucible) in an Ar-atmosphere glovebox. The glassy          or 7 ns-long, 8.7 MeV electron pulses from the BNL LEAF
+                                                                                         carbon crucibles were rinsed with acetone and isopropanol,          accelerator,23 and by 2 ms-long, 2.0 MeV electron pulses from
+                                                                                         dried in a vacuum oven at 150 1C for 3 hours and then dried         the Van de Graaﬀ accelerator. For LEAF experiments, pulse
+                                                                                         inside an Ar-atmosphere glovebox at 600 1C overnight prior to       widths were determined by the choice of the laser system used
+                                                                                         use, to remove any residue. The desired amount of ZnCl2 and         to illuminate the accelerator’s magnesium photocathode. For
+                                                                                         LiCl–KCl eutectic salts were weighed using a Mettler Toledo         the 30 ps-long electron pulse, a 3 ps pulse from a tripled
+                                                                                         microbalance. The contents were left to melt at 450 1C for          (266 nm) Ti-Sapphire laser was used, while a 7 ns electron
+                                                                                         3 hours, to ensure complete homogeneity. The salt systems           pulse from a quadrupled (266 nm) Nd:YAG laser was used for
+                                                                                         were then allowed to solidify and cool, prior to removal from       the 7 ns-long pulse. Transient kinetics were followed at selected
+                                                                                         the crucible and being broken into small chunks for loading         wavelengths (300–1000 nm) using either an FND-100QH (EG&G
+                                                                                         into quartz radiolysis cells.                                       Optoelectronics) or S5973-01 (Hamamatsu) silicon photodiode
+                                                                                                                                                             detector and recorded with either a LeCroy WaveRunner HRO
+                                                                                         Inductively coupled plasma mass spectrometry analysis               66Zi (600 MHz, 12 bit) or LeCroy 640Zi (4 GHz, 8 bit) oscillo-
+                                                                                         Quantification of Zn2+ in salt mixtures was performed by            scope, depending on the time resolution required. Interference
+                                                                                         elemental analysis at INL using a PerkinElmer 350D Inductively      filters (10 nm bandpass for 800 nm or less, 25 nm bandpass
+                                                                                         Coupled Plasma Mass Spectrometer (ICP-MS). Instrument               above 800 nm, Edmund Optics) were used for wavelength
+                                                                                         parameters were held constant at 8 mL min1 Ar plasma flow,         selection of the analyzing light. For Van de Graaff experiments,
+                                                                                         0.7 mL min1 Ar nebulizer gas flow, 0.2 mL min1 Ar auxiliary       the electron pulse width was controlled by a pulsed electrical
+                                                                                         gas flow, 1600 watts radio frequency (RF) power, and introduction   potential to the thermionic cathode. A monochromator
+                                                                                         pump at 1 mL min1 flow to the spray chamber. Zinc standards,       (Gemini 180, Horiba) and appropriate long-pass filters (200,
+                                                                                         for calibration and quality control, were prepared at concentra-    250, 280, 385, 475 and 630 nm) were used for wavelength
+                                                                                         tions between 5 and 1000 ng mL1. Approximately 0.5 g of each       selection of the analyzing light. Optical signals were recorded
+                                                                                         solid salt sample was dissolved in 10 mL total volume of 7% trace   using a photomultiplier tube (9659QB, EMI Electronic) and
+                                                                                         metal grade HNO3 and appropriately diluted for quantitative         LeCroy HDO 4034 oscilloscope (350 MHz, 12 bit). Data acquisi-
+                                                                                         analysis. The relative percent precision of the ICP-MS determina-   tion at both accelerators is controlled by LabVIEW software
+                                                                                         tions for all analytes was better than 2%.                          (National Instruments) and collected transient absorption data
+                                                                                                                                                             was stored and analyzed using Igor Pro (Wavemetrics).
+                                                                                         Time-resolved pulse radiolysis experiments                              Electron pulse dosimetry was determined at ambient tem-
+                                                                                         Molten salt reaction kinetics were investigated using the Broo-     perature using N2O-saturated, aqueous 10 mM KSCN solutions
+                                                                                         khaven National Laboratory (BNL) Laser-Electron Accelerator         measured at lmax = 470 nm (Ge = 5.08  104, where G is the
+                                                                                         Facility (LEAF) and Van de Graaﬀ electron pulse radiolysis/         radiolytic yield in species/100 eV, and e is the molar extinction
+                                                                                         transient absorption systems.23,24 Samples of pure ZnCl2 (m.p.      coeﬃcient in M1 cm1)26 and corrected for the relative
+                                                                                         293 1C) and LiCl–KCl eutectic (58 mol% LiCl, 42 mol% KCl,           electron density diﬀerence between the dosimetry solution
+                                                                                         m.p. 357 1C) containing ZnCl2, were received sealed in custom       and the investigated molten salt systems. Second-order rate
+                                                                                         5  5 mm Spectrosils Quartz fluorescence cuvettes (Starna,          coeﬃcients (k) were either derived from linear fits to pseudo
+                                                                                         Inc.), with stems terminating in Teflon valves. Prior to irradia-   first-order (k 0 ) eS decays rates as a function of solute (i.e., Zn2+)
+                                                                                         tion, the Ar-atmosphere inside the sample cuvettes was              concentration, or by taking the fitted slope of the reciprocal
+
+
+
+                                                                                         25090 | Phys. Chem. Chem. Phys., 2022, 24, 25088–25098                                         This journal is © the Owner Societies 2022
+                                                                                                                                                                                                                         View Article Online
+
+                                                                                         Paper                                                                                                                                     PCCP
+
+                                                                                         absorbance plot at 340 nm for Cl2  decay. Transient absor-
+                                                                                         bances were also used to calculate the product Ge, by using the
+                                                                                         known absorbed dose and optical path length. Quoted errors
+                                                                                         are a combination of measurement precision and sample
+                                                                                         concentration errors.
+
+                                                                                         Absorption spectra kinetic analysis
+                                                                                         The acquired data matrix of time-resolved absorption spectra
+                                                                                         and kinetics were comprised of multiple species and absorption
+                                                                                         components. Data deconvolution was achieved by a combination
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                         of singular value decomposition (SVD) and multivariate curve
+                                                                                         resolution alternating least squares (MCR-ALS) methods using
+                                                                                         Spectro-Kinetic Analysis (SK-Ana) software.27 Positive constraints
+                                                                                         for spectra and kinetics were imposed for the analysis.
+
+
+
+                                                                                         Results and discussion
+                                                                                         Molten LiCl–KCl radiolysis
+                                                                                         The transient absorption spectra and decay kinetics at selected
+                                                                                         wavelengths from the pulse radiolysis of molten LiCl–KCl at
+                                                                                         400 1C are shown in Fig. 1(A) and 2(A), respectively. Two major
+                                                                                         transient species can be distinguished from the spectra shown
+                                                                                         in Fig. 1(A), one in the visible to near-IR region and the second
+                                                                                         in the UV region. In agreement with Hagiwara et al.,12 the first
+                                                                                         transient exhibits a broad absorption spectrum in the visible to
+                                                                                         near IR wavelength region with an absorption maximum (lmax)
+                                                                                         at 660 nm, which is attributed to eS. This transient reducing
+                                                                                         species is formed within the rise time of the signal and exhibits     Fig. 1 Transient absorption spectra at selected times: 5 ns (’), 10 ns ( ),
+                                                                                         a first-order decay with a lifetime of 145 ns, as shown in            20 ns ( ), 100 ns ( ), 200 ns ( ), 500 ns ( ), 1 ms ( ), 2 ms ( ) and 10 ms
+                                                                                         Fig. 2(A). Hagiwara et al.12 observed a longer lifetime of            ( ) at 400 1C: (A) neat LiCl–KCl and (B) 142 mM ZnCl2 in LiCl–KCl. The
+                                                                                         250 ns in the same salt composition, also at 400 1C. As stated        transient molten salt spectra are compared with the spectrum for Cl2  in
+                                                                                                                                                               water derived from ref. 28, indicated with a solid black line.
+                                                                                         in the introduction, we believe that the observed eS lifetime is
+                                                                                         determined by residual reactive impurities rather than being
+                                                                                         an intrinsic property of the LiCl–KCl salt system. The manu-          profile of Cl2  in molten LiCl–KCl is broader, particularly on
+                                                                                         facturer’s trace metal analysis certificate for this batch (batch #   the red side. As is evident from Fig. 2(A), Cl2  decays at a much
+                                                                                         0000054157, source # 0000040181) of LiCl–KCl eutectic lists           slower rate (B105 s1) than eS, and by a process that is
+                                                                                         impurities as follows (in ppm): Na 26.9, Ca 4.3, Zn 3.2, Rb           predominantly second-order (vide infra). Interestingly, following
+                                                                                         3.0, Mg 2.9, Sr 2.6, and others less than 1. As these impurity        the decay of Cl2 , a residual transient is observed in the UV
+                                                                                         abundances are of the order of mM, and some have previously           region at Z10 ms in Fig. 1(A) and (B).
+                                                                                         been identified as electron scavengers in molten salt systems,11          Deconvolution of these time-resolved absorption spectra
+                                                                                         our observed eS lifetime is consistent with scavenging by            and associated kinetics was achieved by SK-Ana analysis.27
+                                                                                         impurities. Scavenging by protons (H+), produced from residual        The results for neat LiCl–KCl at 400 1C are shown in Fig. 3(A)
+                                                                                         moisture that might be introduced in handling, is also a strong       and (B), respectively. The spectra for eS and Cl2  were
+                                                                                         possibility.                                                          obtained from early timescale data (B1 ms) using multiple data
+                                                                                            The second spectroscopically-resolved transient shown in           matrices to reduce the effect of products and ambiguity on the
+                                                                                         Fig. 1(A) exhibits a narrower absorption spectrum in the UV           shape of the spectra. The two spectra were clearly separated,
+                                                                                         region. At 5 ns after the electron pulse, this band is visible as a   and were used as constraints for longer time (B20 ms) SK-Ana
+                                                                                         shoulder peak on the broad eS spectrum. Once eS has fully           calculations to derive the three components shown Fig. 3. The
+                                                                                         decayed (B500 ns), a band peaking at 340 nm is observed               deconvoluted kinetics for eS and Cl2  in Fig. 3(B) are in good
+                                                                                         clearly; this band has been attributed previously to Cl2 .7–13      agreement with our experimentally resolved data shown in
+                                                                                         Support for this assignment is also given by comparison of this       Fig. 2(A). The aforementioned UV region residual at Z10 ms,
+                                                                                         band with the known absorption spectrum of Cl2  in aqueous          i.e., the third component in Fig. 3, is attributed to the trichloride
+                                                                                         solution,28 overlaid to scale with a solid black line in Fig. 1(A)    anion (Cl3) generated from the disproportionation of Cl2 :
+                                                                                         and (B). The molten salt and aqueous peak absorption wave-
+                                                                                         lengths (lmax) are close, although we note that the absorption                            Cl2  + Cl2  - Cl3 + Cl,                     (4)
+
+
+
+                                                                                         This journal is © the Owner Societies 2022                                    Phys. Chem. Chem. Phys., 2022, 24, 25088–25098 | 25091
+                                                                                                                                                                                                                           View Article Online
+
+                                                                                         PCCP                                                                                                                                        Paper
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                         Fig. 2 Decay kinetics for eS ( ) and Cl2  ( ) measured at 671 and
+                                                                                         340 nm, respectively: (A) neat LiCl–KCl and (B) 142 mM ZnCl2 in LiCl–KCl   Fig. 3 Normalized spectra from SK-Ana deconvolution (A) and compli-
+                                                                                         at 400 1C. Inset: Early-time kinetics.                                     mentary kinetic contributions at each peak wavelength (B) for neat LiCl–
+                                                                                                                                                                    KCl at 400 1C.
+
+
+
+                                                                                         as its yield increases as Cl2  decreases. Furthermore, the lmax                                   Zn2+ + eS - Zn+,                         (5)
+                                                                                         for Cl3 in aqueous solution has been reported at 220 nm with a
+                                                                                         large molar extinction coeﬃcient, e = 10 400  200 M1 cm1,29             and consistent with previous measurements for the reaction of
+                                                                                         which agrees with the SK-Ana spectra prediction and our assign-            Zn2+ with the eaq from water radiolysis:30–35
+                                                                                         ment. Although we still observe a residual transient in the UV
+                                                                                         region in Fig. 1(B), the profile and associated kinetics of this                     Zn2+ + eaq - Zn+       k6 = 1.5  109 M1 s1.          (6)
+                                                                                         species are diﬀerent and attributed here to the low-oxidation-
+                                                                                         state Zn+ cations, for which a more detailed discussion is                 Here, analysis of the transient decay of eS at 700 nm as a
+                                                                                         presented below.                                                           function of Zn2+ concentration (0–9.41 mM) and temperature
+                                                                                                                                                                    (400–600 1C) in molten LiCl–KCl afforded second-order rate
+                                                                                         Eﬀect of Zn2+ on eS                                                       coefficients of k5 = (4.2–16.1)  1010 M1 s1.29 The pseudo-first
+                                                                                         The transient absorption spectra at selected times after pulse             order kinetics as a function of Zn2+ concentration are shown in
+                                                                                         radiolysis of 142 mM Zn2+ in molten LiCl–KCl are shown in                  Fig. 4(B), and the individual kinetics per temperature in ESI,†
+                                                                                         Fig. 1(B). Comparison of Fig. 1(A) and (B) clearly shows that the          Fig. S3. Pikaev et al. reported rate coefficients for eqn (5) in
+                                                                                         presence of Zn2+ suppresses the eS absorption band in the                 other molten chloride salt systems using microsecond electron
+                                                                                         visible to near-IR and increases the intensity of the Cl2  UV            pulse radiolysis: k5 = 1.7  109 M1 s1 in NaCl at 850 1C, and
+                                                                                         absorption band, Fig. 1(B). These spectral observations are also           2.8  109 M1 s1 in KCl at 800 1C.11 However, these values are
+                                                                                         evident in the corresponding kinetic growth and decay traces               essentially best-guess estimates, as they are based on observed
+                                                                                         shown in Fig. 2(A) and (B).                                                eS yields at the edge of a 2.3 ms-long electron pulse, and thus
+                                                                                            The absorption intensity of eS is progressively reduced                do not account for shorter time-scale processes, the importance
+                                                                                         with increasing Zn2+ concentration, as shown in Fig. 4(A).                 of which are clearly shown in Fig. 2(A) and (B), and ESI,† Fig. S3.
+                                                                                         These observations are indicative of eS scavenging by Zn2+,               The coefficients presented here are obtained directly from
+                                                                                         in agreement with observations reported by Pikaev et al.:9,11              well-resolved decay curves that include nanosecond time-scale
+
+
+
+                                                                                         25092 | Phys. Chem. Chem. Phys., 2022, 24, 25088–25098                                                This journal is © the Owner Societies 2022
+                                                                                                                                                                                                                              View Article Online
+
+                                                                                         Paper                                                                                                                                          PCCP
+
+                                                                                                                                                                        The initial yield of eS, estimated from extrapolation, decreases
+                                                                                                                                                                        with increasing Zn2+ concentration, which is indicative of
+                                                                                                                                                                        precursor scavenging. Additionally, the corresponding C37
+                                                                                                                                                                        value—the concentration of scavenger needed to decrease the
+                                                                                                                                                                        yield of eS to 37% (1/e)—is estimated to be 77  10 mM Zn2+ in
+                                                                                                                                                                        molten LiCl–KCl at 400 1C. C37 values below 100 mM are
+                                                                                                                                                                        indicative of high reactivity towards epre.36–40
+
+                                                                                                                                                                        Eﬀect of Zn2+ on Cl2 
+                                                                                                                                                                        As previously highlighted, the absorption intensity of the Cl2 
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                                                                                                        UV absorption band increases in the presence of Zn2+, relative
+                                                                                                                                                                        to neat molten LiCl–KCl, as shown in Fig. 2(A) and (B). The
+                                                                                                                                                                        absorption intensity (Ge) of Cl2  at 340 nm, where there is no
+                                                                                                                                                                        overlap at any timescale between the respective absorption
+                                                                                                                                                                        bands of Cl2  and eS, increases by B45% (47 000 to 65 000)
+                                                                                                                                                                        in going from 0 to 9.41 mM Zn2+ and settles at B55% (68 000)
+                                                                                                                                                                        for 142 mM Zn2+, owing to either complete inhibition of
+                                                                                                                                                                        electron-mediated processes and/or overlapped spectra with
+                                                                                                                                                                        reduced Zn+ species.
+                                                                                                                                                                           In the absence of Zn2+, excess electrons (ei = e, epre, and eS)
+                                                                                                                                                                        can either recombine with Cl (through geminate and non-
+                                                                                                                                                                        geminate recombination processes), reduce surrounding metal
+                                                                                                                                                                        cations (Mn+), and/or react with Cl2 :41
+
+                                                                                                                                                                                                     Cl + ei - Cl,                     (8)
+
+                                                                                                                                                                                                 Mn+
+                                                                                                                                                                                                       + ei - M(n1)+,                   (9)
+                                                                                                                                                                                                 Cl2  + ei - 2Cl.                   (10)
+                                                                                                                                                                                     +       +
+                                                                                                                                                                        Although Li and K reduction is possible in molten LiCl–KCl,
+                                                                                         Fig. 4 (A) Transient absorption spectra at 5 ns after pulse as a function of
+                                                                                         ZnCl2 concentration: 0 (’), 1.88 ( ), 3.76 ( ), 9.41 ( ), and 142 mM ( )
+                                                                                                                                                                        the rate of monovalent cation reduction by ei would appear to
+                                                                                         ZnCl2 in LiCl–KCl, and neat ZnCl2 ( ) at 400 1C. (B) Observed pseudo first-    be slow, which may explain the relatively long decay of eS in
+                                                                                         order rate coefficients measured at 700 nm as a function of ZnCl2              neat LiCl–KCl, Fig. 2(A). Further, reduction of Li+ and K+ affords
+                                                                                         concentration and temperature: 400 (’), 450 ( ), 500 ( ), 550 ( ),             neutral metal atoms (M0) which can be expected to undergo
+                                                                                         and 600 1C ( ). Solid lines are linear fits to data, for which the gradient    rapid dissociation based on the measured eS lifetime:
+                                                                                         corresponds to the second-order rate coefficient at a given temperature.
+                                                                                         Inset: Arrhenius plot, Ea = 30.31  0.09 kJ mol1.                                                          M0 - M+ + e.                      (11)
+
+                                                                                                                                                                        This interpretation is consistent with our findings and those of
+                                                                                         kinetics. The corresponding Arrhenius plot for eqn (5) is shown                Pikaev and coworkers,11 and is supported by the absence of an
+                                                                                         in the inset of Fig. 4(B), yielding an Ea = 30.31  0.09 kJ mol1.             eS signal in neat molten ZnCl2, ESI,† Fig. S5. Consequently, in
+                                                                                            Electron scavenging by Zn2+ is not limited to only the                      the presence of Zn2+, the recombination processes eqn (8) and
+                                                                                         reaction with eS as described above, it may be further decon-                 (10) are progressively disfavoured with increasing Zn2+ concen-
+                                                                                         voluted based on the electron’s level of solvation. As indicated in            tration as the eﬀectiveness of eqn (9) increases, aﬀording the
+                                                                                         eqn (2), the excess electron (e) goes through stages of partial or            larger observed yield of Cl2  in Fig. 2(B).
+                                                                                         pre-solvation before becoming completely solvated. The thermal                    Further, the observed absorption at 240 nm in the absence
+                                                                                         precursor (epre) to eS may also be subject to scavenging by Zn2+:            of Zn2+ in Fig. 5(A) is attributed to Cl3. The absorption of Cl3
+                                                                                                                                                                        initially (B2 ms onwards, Fig. 5(A)) decreases due to its dis-
+                                                                                                                  Zn2+ + epre - Zn+.                          (7)      sociation into Cl and Cl2:
+                                                                                                                                                                                                 Cl3 " Cl + Cl2.                      (12)
+                                                                                         Partitioning between these electron scavenging reactions,
+                                                                                         eqn (5) and (7), can only be indirectly determined with our                    However, after B100 ms, the equilibrium of eqn (12) is estab-
+                                                                                         current experimental time resolution, since precursor scaven-                  lished, resulting in the observed plateau in the Cl3 absorption
+                                                                                         ging processes are typically gated by the timescale of                         Fig. 5(A). In the presence of Zn2+, Fig. 5(B) and (C), the
+                                                                                         solvation,40 which we expect to be on the picosecond timescale.                absorption at 240 nm is made up of contributions from both
+                                                                                         However, evidence for precursor scavenging by Zn2+ was                         Cl3 and Zn+. Although there is no spectral data for Zn+ in
+                                                                                         obtained by the classical method36–39 of extrapolating the eS                 molten salts, Zn+ has been reported to exhibit a peak at lmax =
+                                                                                         decay curves (400 1C data in ESI,† Fig. S4) back to time zero.                 300 nm in aqueous media.42 Further, there is also evidence for
+
+
+
+                                                                                         This journal is © the Owner Societies 2022                                            Phys. Chem. Chem. Phys., 2022, 24, 25088–25098 | 25093
+                                                                                                                                                                                                                                   View Article Online
+
+                                                                                         PCCP                                                                                                                                                Paper
+
+                                                                                                                                                                     decay mechanisms are Cl2  disproportionation (eqn (4)) and
+                                                                                                                                                                     reduction by reaction with Zn+ (eqn (13)) produced by eqn (9),
+                                                                                                                                                                     where Mn+ = Zn2+:11
+
+                                                                                                                                                                                           Cl2  + Zn+ - 2Cl + Zn2+,                        (13)
+
+                                                                                                                                                                     Both eqn (4) and (13) imply that we should observe kinetics that
+                                                                                                                                                                     are second order with respect to radiolytic dose; eqn (4) being
+                                                                                                                                                                     the model of A + A, and eqn (13) being the model of A + B where
+                                                                                                                                                                     [A] D [B]. If either case applies, a reciprocal plot (of 1/absor-
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                                                                                                     bance vs. time) should produce a straight line with a slope of
+                                                                                                                                                                     2k/el or k/el, respectively. The inset graph in Fig. 6(A) shows that
+                                                                                                                                                                     is indeed the case for 3.76–9.41 mM ZnCl2 in LiCl–KCl, but not
+                                                                                                                                                                     for neat LiCl–KCl or neat ZnCl2.
+                                                                                                                                                                         The fact that the reciprocal plots for the ZnCl2 solutions in
+                                                                                                                                                                     LiCl–KCl are linear implies that one of the two reactions in
+
+
+
+
+                                                                                         Fig. 5 Absorption spectra at longer time scales for neat LiCl–KCl (A) and
+                                                                                         10 (B) and 50 (C) mM ZnCl2 in LiCl–KCl at 400 1C.
+
+                                                                                                                                                                     Fig. 6 (A) Transient absorption kinetics at 340 nm as a function of ZnCl2
+                                                                                                                                                                     concentration: 0 (black), 3.76 (red), 7.30 (blue), 9.41 (green) mM ZnCl2 in
+                                                                                         relatively long-lived metal dimers (M2n+) below 300 nm.42,43
+                                                                                                                                                                     LiCl–KCl, and neat ZnCl2 (purple) at 400 1C (Dose 70–77 Gy pulse1). Inset:
+                                                                                         In this work, the kinetic lifetime of the transient with the                Reciprocal plot (1/absorbance), for which the fitted time scales are 1–10 ms,
+                                                                                         absorption maximum at 240 nm, Fig. 5(B) and (C), decreases                  except for neat LiCl–KCl, which was from 1–5 ms. (B) Reciprocal plot slopes
+                                                                                         with increasing Zn2+ concentration (e.g., B9.5 ms for 10 mM                 (2k/el for disproportionations, and k/el; for cross reactions) estimated from
+                                                                                         Zn2+ and B4.0 ms for 50 mM Zn2+, estimated from ESI,†                       fitting at 1–5 ms as a function of dose for Cl2  in: 0 (’), 3.76 ( ), 5.88 ( ),
+                                                                                                                                                                     7.30 ( ) 9.41 ( ), and 142 mM ( ) ZnCl2 in LiCl–KCl, and neat ZnCl2 ( ) at
+                                                                                         Fig. S6), suggesting a reaction between zinc dimer ions
+                                                                                                                                                                     400 1C. The decay of (SCN)2  ( ) from the decay of aqueous 10 mM
+                                                                                         (Zn2n+) and/or other zinc species (Zn2+, Zn+, and/or Zn2n+).                KSCN is also included. Inset: Difference in slope values (2k/el or k/el) at
+                                                                                            The observed decay of Cl2  as a function of Zn2+ concen-               different fitting time scales for neat LiCl–KCl (’) and 9.41 mM ZnCl2 in
+                                                                                         tration at 340 nm is shown in Fig. 6(A), for which the candidate            LiCl–KCl ( ).
+
+
+
+
+                                                                                         25094 | Phys. Chem. Chem. Phys., 2022, 24, 25088–25098                                                    This journal is © the Owner Societies 2022
+                                                                                                                                                                                                                      View Article Online
+
+                                                                                         Paper                                                                                                                                  PCCP
+
+                                                                                         eqn (4) and (13) is faster and therefore dominant. For reasons          responsible for the observed Cl2  decay, while eqn (4) gradually
+                                                                                         that will be explained below, we believe that eqn (13) prevails.        predominates with increasing dose, due to the greater abundance
+                                                                                         For one thing, the asymptotic slope of the black trace for neat         of Cl2  formed per pulse. Thus, for our operating conditions,
+                                                                                         LiCl–KCl at long time in the inset of Fig. 6(A) is substantially        doses above 70 Gy pulse1 permit us to focus on eqn (4) in neat
+                                                                                         less than when millimolar levels of ZnCl2 are present. Metal            LiCl–KCl.
+                                                                                         cation mediated Cl2  reduction has been reported for several              The Zn2+-containing salt systems exhibit little to no dose
+                                                                                         metal cations in various molten salt solutions.11,44 For example,       dependence above 60 Gy pulse1, with plateau slope values of
+                                                                                         Zn+ has been shown to reduce the di-bromine radical anion               B4.5  106 s1 for 3.76–9.41 mM ZnCl2 in LiCl–KCl at 400 1C,
+                                                                                         (Br2 ) with a rate coefficient of 7.0  1010 M1 s1 at 800 1C.11     and B2.0  106 s1 for neat ZnCl2 at 400 1C. Additionally, there
+                                                                                            As seen in Fig. 6(A) the reciprocal plot for neat ZnCl2 is           is no [Zn2+]-dependence of the slope values for millimolar ZnCl2
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                         curved at short timescales (o1 ms), while for neat LiCl–KCl the         concentrations in LiCl–KCl at 400 1C. This observation
+                                                                                         curvature covers essentially the entire time window. Curvature          indicates that eqn (16) is rendered ineffective because eqn (9)
+                                                                                         in the reciprocal plots for the neat salts indicates that an            (where Mn+ = Zn2+) outcompetes eqn (15a) in the investigated
+                                                                                         additional Cl2  loss mechanism is significant and required            ZnCl2 concentration regime, and the effect of eqn (15b), if it
+                                                                                         to describe the system. As in the case of the electron-scavenging       applies, is minimized by overwhelming [S] with the larger dose.
+                                                                                         impurities discussed above, the presence of inadvertent Cl2           Thus, the observed slope plateau corresponds to the rate
+                                                                                         scavengers (S or S) due to impurities in even highly purified          coefficient of eqn (13). For lower doses (o60 Gy pulse1) the
+                                                                                         salts is practically inevitable. Two mechanisms might apply:            effects of impurities do contribute to higher fitted slopes
+                                                                                         direct reaction of the impurity S with Cl2 , eqn (14), and            especially for the ZnCl2 solutions in LiCl–KCl.
+                                                                                         electron capture by S followed by the reaction of S with Cl2             For comparison, the 1/absorbance slope behavior of the
+                                                                                         eqn (15) and (16), where eqn (15a) applies to LiCl–KCl and              decay kinetics of (SCN)2  in aqueous KSCN solution as a
+                                                                                         eqn (15b) applies to neat ZnCl2.                                        function of dose is also shown in Fig. 6(B). It is understood
+                                                                                                                                                                 to undergo simple bimolecular decay via disproportionation as
+                                                                                                              Cl2  + S - 2Cl + S+,                  (14)
+                                                                                                                                                                 in eqn (4).26 Consequently, no dependence of the observed
+                                                                                                                   S + eS - S,                      (15a)      slope with dose is observed.
+                                                                                                                                                                     The slope values presented in Fig. 6(B) inset are fitted over
+                                                                                                               S + Zn+ - S + Zn2+,                  (15b)       1 ms windows at diﬀerent time delays as depicted on the x-axis.
+                                                                                                                                                                 Those for neat LiCl–KCl and 9.41 mM ZnCl2 used higher doses
+                                                                                                              Cl2  + S - 2Cl + S.                  (16)
+                                                                                                                                                                 (475 Gy pulse1). Under these irradiation conditions, the slope
+                                                                                         In the case of eqn (14), S would be some sort of impurity that          decreased for neat LiCl–KCl, reaching a plateau at B1.5 
+                                                                                         can be directly oxidized by Cl2 , and the expected kinetic form       106 s1, whereas there was no slope change as a function of
+                                                                                         of such a reaction in the range of the radiolytic doses used here       time scale in the presence of 9.41 mM Zn2+. The slopes of the
+                                                                                         would be pseudo-first order, or mixed-order at higher doses and         reciprocal plots in Fig. 6(B) inset are equal to 2k/el and k/el for
+                                                                                         low [S]. The observed kinetic traces for the neat molten salts do       neat LiCl–KCl and 9.41 mM ZnCl2, respectively. The apparent
+                                                                                         not seem to comport with that form. We feel it is more likely           rate coefficient for Cl2  decay in neat LiCl–KCl was reported by
+                                                                                         that the additional loss mechanism operates by eqn (15) and             Hagiwara and coworkers as k/el = 3.0  106 s1 and attributed
+                                                                                         (16), particularly since we attribute eqn (15a) to be the principal     solely to disproportionation.12 Their dose was 50–85 Gy per
+                                                                                         decay mechanism for eS in LiCl–KCl under our conditions. In            pulse, which is in the same region as that used here. Although
+                                                                                         this case, S could be H+ or trace metal ions. Eqn (15a) and (15b)       they did not differentiate between potential Cl2  decay reac-
+                                                                                         limit the yield of S to the lesser of [S] and [eS] or [Zn+], so the   tions, nor report an optical path length, their apparent decay
+                                                                                         kinetic form of eqn (16) corresponds to the second-order model          rate is consistent with our estimated value of 1.5  106 s1.
+                                                                                         of A + B where [A] Z [B].                                                   Rate coeﬃcients for Cl2  decay in aqueous solution have been
+                                                                                             To unambiguously quantify the reactions in eqn (4) and (13)         previously reported in the range of k/e = 2.7–9.5  105 M1 s1,30–34
+                                                                                         it is necessary to isolate them from the eﬀects of eqn (16),            where e(Cl2 (aq)) was 8800 M1 cm1.28 These values are lower
+                                                                                         which adds an obscuring faster component to the observed                than those reported in molten salt systems, however, they were
+                                                                                         Cl2  decay. The fact that eqn (15a) and (15b) limit the yield of      measured at temperatures significantly lower than the 400 1C
+                                                                                         S allows us to do that by increasing the radiolytic dose to            used here. Although there are no reported values for e(Cl2 ) in
+                                                                                         overwhelm the eﬀect of the scavenger. Fig. 6(B) shows the               molten LiCl–KCl salt systems, it is expected to be around
+                                                                                         eﬀects of increasing radiolytic dose on the slopes of 1/absor-          8000 M1 cm1. Makarov and coworkers reported that the
+                                                                                         bance data fitted between 1–5 ms.                                       variation in e with salt system formulation corresponds to
+                                                                                             Analysis of the reciprocal plot slopes in Fig. 6(B) clearly         the spectral width.10 Therefore, if we employ the same e =
+                                                                                         shows the eﬀects of dose. A large dose dependence is observed           8000 M1 cm1 to estimate the rate coefficients for eqn (4) and
+                                                                                         for neat LiCl–KCl at 400 1C, the reciprocal slopes for which            (13), we get (2.2  2.0)  109 and (2.0  0.2)  1010 M1 s-1,
+                                                                                         decrease with increasing dose from B1.4  107 to B4.1  106 s-1,        respectively, for the system of 0–9.41 mM Zn2+ in LiCl–KCl at
+                                                                                         as shown in Fig. 6(B). This decrease agrees with the premise that       400 1C. From these values, in conjunction with the remaining
+                                                                                         at lower doses in neat LiCl–KCl, both eqn (4) and (16) are              450–600 1C data shown in Fig. 7(A), we calculate an activation
+
+
+
+                                                                                         This journal is © the Owner Societies 2022                                     Phys. Chem. Chem. Phys., 2022, 24, 25088–25098 | 25095
+                                                                                                                                                                                                                            View Article Online
+
+                                                                                         PCCP                                                                                                                                         Paper
+
+                                                                                                                                                                       by a Grotthuss-type mechanism involving the exchange of chlor-
+                                                                                                                                                                       ide anions:
+
+                                                                                                                                                                                     (Cl–Cl)  + Cl - Cl + (Cl–Cl) .             (17)
+
+                                                                                                                                                                       Similar mechanisms have been employed to explain the transport
+                                                                                                                                                                       properties of triiodide ions in iodide-based ionic liquids used in
+                                                                                                                                                                       photoelectrochemical solar cells.47,48 This provocative result
+                                                                                                                                                                       requires further experimental and theoretical investigation, but
+                                                                                                                                                                       if it is substantiated it has profound implications for under-
+                                                                                                                                                                       standing the mobility and reactivity of charge-deficient (‘‘hole’’)
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                                                                                                       species in halide molten salts.
+
+
+
+                                                                                                                                                                       Conclusions
+                                                                                                                                                                       Irradiation of molten LiCl–KCl systems yields two important
+                                                                                                                                                                       observable radiolytic transients, eS and Cl2 . In the presence
+                                                                                                                                                                       of Zn2+, eS is rapidly scavenged at rates of (4.2  0.1)  (16.1 
+                                                                                                                                                                       0.6)  1010 M1 s1 for 400–600 1C (Ea = 30.31  0.09 kJ mol1),
+                                                                                                                                                                       a value significantly faster than previously reported, owing to
+                                                                                                                                                                       greater time-resolution afforded by picosecond electron pulse
+                                                                                                                                                                       radiolysis detection. Evidence for pre-solvated electron scaven-
+                                                                                                                                                                       ging by Zn2+ was observed in the kinetic data, with C37 = 77 
+                                                                                                                                                                       10 mM. Consumption of eS by Zn2+ promotes greater Cl2 
+                                                                                                                                                                       yields through suppression of two charge recombination pro-
+                                                                                                                                                                       cesses: Cl + eS - Cl and Cl2  + eS - 2Cl.
+                                                                                                                                                                          Rate coeﬃcients and activation energies for the dispropor-
+                                                                                         Fig. 7 (A) Arrhenius plot for Cl2  decay reactions eqn (4) for neat LiCl–   tionation of Cl2  and its cross-reaction with radiolytically-
+                                                                                         KCl ( ) and eqn (13) for 9.41 mM ( ) ZnCl2 in LiCl–KCl and neat ZnCl2 ( ).
+                                                                                                                                                                       produced Zn+ (Zn+ + Cl2  - Zn2+ + 2Cl) were obtained, after
+                                                                                         (B) Arrhenius plot for the fluidities of neat LiCl–KCl ( ) and ZnCl2 ( ).
+                                                                                                                                                                       accounting for interference by side reactions with adventitious
+                                                                                                                                                                       scavengers, by using a wide range of radiolytic doses. In LiCl–
+                                                                                                                                                                       KCl at 400 1C, the cross-reaction of Cl2  with Zn+ was nine
+                                                                                         energy for eqn (4), the disproportionation of Cl2 , of Ea = 26             times faster than disproportionation. This is a key point
+                                                                                         2 kJ mol1 in LiCl–KCl, which is in good agreement with Ea =                  because the cross-reaction is effectively a charge recombination
+                                                                                         24 kJ mol1 obtained by Hagiwara and coworkers.12 The                         that leads to no net radiolytic products, while disproportiona-
+                                                                                         activation energy for eqn (13), the reaction of Cl2  with Zn+,              tion produces relatively stable Cl3 in equilibrium with volatile
+                                                                                         is Ea = 25  3 kJ mol1 in the case of 9.41 mM Zn2+ in LiCl–KCl,              Cl2 (+Cl), possibly leading to accumulation of permanent salt
+                                                                                         and Ea = 30  3 kJ mol1 in neat ZnCl2.                                       radiolysis products. Long-term, stable management of MSR fuel
+                                                                                             For comparison with the reaction activation enthalpies, the               salt depends on the dominance of charge recombination over
+                                                                                         activation energies of viscous flow in the neat molten salts were             product accumulation, and this study is just one step in
+                                                                                         calculated as shown in Fig. 7(B). Ea = 14  2 and 79  5 kJ mol1             establishing the knowledge base required to manage salt radi-
+                                                                                         were obtained for neat LiCl–KCl and neat ZnCl2, respectively.                 olysis issues.
+                                                                                         Comparison of the activation energies in LiCl–KCl (14 kJ mol1                   Comparison of the kinetics and activation energies for
+                                                                                         for flow or diffusion vs. 26 kJ mol1 for eqn (4)) indicates that             Cl2 reactions measured in highly fluid molten LiCl–KCl
+                                                                                         the disproportionation of Cl2  is an activated process, i.e., not           eutectic and viscous, glassy molten ZnCl2 revealed that there
+                                                                                         diffusion-controlled. Even more remarkable is the fact that the               were only small differences in the rate coefficients and
+                                                                                         activation energy for eqn (13) in neat ZnCl2 is 30 kJ mol1 while             activation energies measured in the two media despite their
+                                                                                         that for viscous flow is 79 kJ mol-1, which is consistent with its            vast differences in viscosity and its temperature dependence.
+                                                                                         glassy nature and much higher viscosity, e.g., B4.0 cP for neat               This evidence points towards the existence of a Grotthuss
+                                                                                         LiCl–KCl at 400 1C, and B360 cP for neat ZnCl2 at 400 1C.45,46                mechanism of chloride ion exchange for the diffusion of Cl2 ,
+                                                                                         The rate coefficient we obtained for eqn (13) in LiCl–KCl (2.0               which implies a mobility significantly higher than the consti-
+                                                                                         1010 M1 s1) is only 2.27 higher than the one obtained for                  tuent ions of the salt. Such a mechanism for providing rapid
+                                                                                         neat ZnCl2 ((8.8  0.2)  109 M1 s1), although the viscosity is             mobility of electron-deficient halide species has positive impli-
+                                                                                         90 lower. This implies that Cl2  is diffusing more easily (and             cations for the promotion of charge recombination over per-
+                                                                                         presumably faster) than the constituent ions of the molten salt.              manent radiolytic product accumulation, and it deserves
+                                                                                         It is therefore reasonable to suggest that Cl2  diffusion operates          detailed experimental and theoretical study.
+
+
+
+                                                                                         25096 | Phys. Chem. Chem. Phys., 2022, 24, 25088–25098                                                 This journal is © the Owner Societies 2022
+                                                                                                                                                                                                                  View Article Online
+
+                                                                                         Paper                                                                                                                              PCCP
+
+                                                                                         Conflicts of interest                                               12 H. Hagiwara, S. Sawamura, T. Sumiyoshi and M. Katayama,
+                                                                                                                                                                Radiat. Phys. Chem., 1987, 30, 141.
+                                                                                         There are no conflicts to declare.                                  13 S. Sawamura, J. L. Gebicki, J. Mayer and J. Kroh, Radiat.
+                                                                                                                                                                Phys. Chem., 1990, 36, 133.
+                                                                                         Acknowledgements                                                    14 R. Akiyama, M. Kitaichi, T. Fujiwara and S. Sawamura,
+                                                                                                                                                                J. Nucl. Sci. Tech., 1994, 31, 250.
+                                                                                         This work was supported as part of the Molten Salts in Extreme      15 G. G. Jayson, B. J. Parsons and A. J. Swallow, J. Chem. Soc.,
+                                                                                         Environments Energy Frontier Research Center, funded by the            Faraday Trans. 1, 1973, 69, 1597.
+                                                                                         U.S. Department of Energy (US-DOE), Oﬃce of Science, Basic          16 V. Nagarajan and R. W. Fessenden, J. Phys. Chem., 1985,
+                                                                                         Energy Sciences, at BNL, INL and ORNL under contracts DE-              89, 2330.
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                         SC0012704, DE-AC07-05ID14517, and DE-AC05-00OR22725,                17 P. Neta, R. E. Huie and A. B. Ross, J. Phys. Chem. Ref. Data,
+                                                                                         respectively. The Laser Electron Accelerator Facility of the           1988, 17, 1027.
+                                                                                         BNL Accelerator Center for Energy Research is supported by          18 W. Freyland, K. Garbade and E. Pfeiﬀer, Phys. Rev. Lett.,
+                                                                                         the US-DOE Oﬃce of Basic Energy Sciences, Division of                  1983, 51, 1304.
+                                                                                         Chemical Sciences, Geosciences, and Biosciences under con-          19 D. Nattland, T. Rauch and W. Freyland, J. Chem. Phys., 1993,
+                                                                                         tract DE-SC0012704.                                                    98, 4429.
+                                                                                                                                                             20 H. H. Kristoﬀersen and H. Metiu, J. Phys. Chem. C, 2018,
+                                                                                         Notes and references                                                   122, 19603.
+                                                                                                                                                             21 S. Dai, G. M. Begun, J. P. Young and G. Mamantov, J. Raman
+                                                                                          1 J. Serp, M. Allibert, O. Benes, S. Delpech, O. Feynberg,            Spectrosc., 1995, 26, 929.
+                                                                                            V. Ghetta, D. Heur, D. Holcomb, V. Ignatiev,                     22 J. M. Kurley, P. W. Halstenberg, A. McAlister, S. Raiman,
+                                                                                            J. L. Kloosterman, L. Luzzi, E. Merle-Lucotte, J. Uhhr,             S. Dai and R. T. Mayes, RSC Adv., 2019, 9, 25602.
+                                                                                            R. Yoshioka and D. Zhimin, Prog. Nucl. Energy, 2014, 77, 308.    23 J. F. Wishart, A. R. Cook and J. R. Miller, Rev. Sci. Instrum,
+                                                                                          2 C. Forsberg, Nucl. Tech., 2020, 206, 1659.                          2004, 75, 4359.
+                                                                                          3 B. C. Garrett, D. A. Dixon, D. M. Camaioni, D. M. Chipman,       24 J. F. Wishart, J. Sun, M. Cho, C. Su and S. S. Isied, J. Phys.
+                                                                                            M. A. Johnson, C. D. Jonah, G. A. Kimmel, J. H. Miller,             Chem. B, 1997, 101, 687.
+                                                                                            T. N. Rescigno, P. J. Rossky, S. S. Xantheas, S. D. Colson,      25 W. C. Phillips, R. Gakhar, G. P. Horne, B. Layne, K. Iwamatsu,
+                                                                                            A. H. Laufer, D. Ray, P. F. Barbara, D. M. Bartels,                 A. Ramos-Ballesteros, M. R. Shaltry, J. A. LaVerne, S. M. Pimblott
+                                                                                            K. H. Becker, K. H. Bowen, S. E. Bradforth, I. Carmichael,          and J. F. Wishart, Rev. Sci. Instrum., 2020, 91, 083105.
+                                                                                            J. V. Coe, L. R. Corrales, J. P. Cowin, M. Dupuis,               26 G. V. Buxton and C. R. Stuart, J. Chem. Soc., Faraday Trans.,
+                                                                                            K. B. Eisenthal, J. A. Franz, M. S. Gutowski, K. D. Jordan,         1995, 92, 279.
+                                                                                            B. D. Kay, J. A. LaVerne, S. V. Lymar, T. E. Madey,              27 P. Pernot, SK-Ana: Analysis of Spectro-Kinetic Data, 2018, last
+                                                                                            C. W. McCurdy, D. Meisel, S. Mukamel, A. R. Nilsson,                accessed on 03/14/2022, DOI: 10.5281/zenodo.1064370.
+                                                                                            T. M. Orlando, N. G. Petrik, S. M. Pimblott, J. R. Rustad,       28 G. L. Hug, Optical Spectra of Nonmetallic Inorganic Tran-
+                                                                                            G. K. Schenter, S. J. Singer, A. Tokmakoﬀ, L.-S. Wang and           sient Species in Aqueous Solution. U.S. Department of
+                                                                                            T. S. Zwier, Chem. Rev., 2005, 105, 355.                            Commerce/National Bureau of Standards, NSRDS-NBS 69,
+                                                                                          4 A. J. Elliot and D. M. Bartels, The Reaction Set, Rate              1981.
+                                                                                            Constants and G-Values for the Simulation of the Radiolysis      29 T. X. Wang, M. D. Kelley, J. N. Cooper, R. C. Beckwith and
+                                                                                            of Light Water Over the Range 201 to 350 1C Based on                D. W. Margerum, Inorg. Chem., 1994, 33, 5872.
+                                                                                            Information Available in 2008. AECL Nuclear Platform             30 M. Anbar and E. J. Hart, J. Phys. Chem., 1965, 69, 973.
+                                                                                            Research and Development  Report 153-127160-450- 001.           31 J. H. Baxendale, E. M. Fielden and J. P. Keene, Proc. Roy. Soc.
+                                                                                            2009.                                                               (London) Ser. A, 1965, 286, 320.
+                                                                                          5 G. V. Buxton, C. L. Greenstock, W. P. Helman and A. B. Ross,     32 D. Meyerstein and W. A. Mulac, Trans. Faraday Soc, 1969,
+                                                                                            J. Phys. Chem. Ref. Data, 1988, 17, 513.                            65, 1818.
+                                                                                          6 W. R. Grimes, ORNL-TM-1853, 1967.                                33 F. Barat, L. Gilles, B. Hickel and B. Lesigne, J. Phys. Chem.,
+                                                                                          7 I. E. Makarov, T. N. Zhukova and A. K. Pikaev, Radiat. Eﬀects,      1973, 77, 1711.
+                                                                                            1974, 22, 71.                                                    34 J. Rabani, W. A. Mulac and M. S. Matheson, J. Phys. Chem.,
+                                                                                          8 I. E. Makarov, T. N. Zhukova and A. K. Pikaev, Dokl. Akad.          1977, 81, 99.
+                                                                                            Nauk SSSR, 1975, 225, 1103.                                      35 A. Blum and L. I. Grossweiner, Photochem. Photobiol., 1982,
+                                                                                          9 A. K. Pikaev, B. G. Ershov and I. E. Makarov, J. Phys. Chem.,       36, 617.
+                                                                                            1975, 79, 3025.                                                  36 R. K. Wolﬀ, M. J. Bronskill and J. W. Hunt, J. Chem. Phys.,
+                                                                                         10 I. E. Makarov, T. N. Zhukova, A. K. Pikaev and V. I. Spistyn,       1970, 53, 4211.
+                                                                                            Bull. Acad. Sci. USSR, Div. Chem. Sci. (Engl. Transl.), 1982,    37 J. E. Aldrich, M. J. Bronskill, R. K. Wolﬀ and J. W. Hunt,
+                                                                                            31, 662.                                                            J. Chem. Phys., 1971, 55, 530.
+                                                                                         11 A. K. Pikaev, I. E. Makarov and T. N. Zhukova, Radiat. Phys.     38 K. Y. Lam and J. W. Hunt, Int. J. Radiat. Phys. Chem., 1975,
+                                                                                            Chem., 1982, 19, 377.                                               7, 317.
+
+
+
+                                                                                         This journal is © the Owner Societies 2022                                 Phys. Chem. Chem. Phys., 2022, 24, 25088–25098 | 25097
+                                                                                                                                                                                                                View Article Online
+
+                                                                                         PCCP                                                                                                                             Paper
+
+                                                                                         39 C. D. Jonah, J. R. Miller and M. S. Matheson, J. Phys. Chem.,   45 C. Kwon, J. Kang, W. Kang, D. Kwak and B. Han, Electro-
+                                                                                            1977, 81, 1618.                                                    chim. Acta, 2016, 195, 216.
+                                                                                         40 J. F. Wishart, A. M. Funston, T. Szreder, A. R. Cook and        46 G. J. Janz, F. W. Dampier, G. R. Lakshminarayanan,
+                                                                                            M. Gohdo, Faraday Discuss., 2012, 154, 353.                        P. K. Lorenz and R. P.-T. Tomkins, Molten Salts: Volume 1,
+                                                                                         41 A. K. El Omar, U. Schmidhammer, B. Rousseau, J. A. LaVerne         Electrical Conductance, Density, and Viscosity Data, U.S.
+                                                                                            and M. Mostafavi, J. Phys. Chem. A, 2012, 116, 11509.              Department of Commerce/National Bureau of Standards,
+                                                                                         42 G. V. Buxton and R. M. Sellers, J. Chem. Soc., Faraday Trans.      NSRDS-NBS61, Part II, 1979.
+                                                                                            1, 1975, 71, 558.                                               47 V. K. Thorsmolle, G. Rothenberger, D. Topgaard,
+                                                                                         43 G. V. Buxton, R. M. Sellers and D. R. McCracken, J. Chem.          J. C. Brauer, D. B. Kuang, S. M. Zakeeruddin, B. Lindman,
+                                                                                            Soc., Faraday Trans. 1, 1976, 72, 1464.                            M. Gratzel and J. E. Moser, ChemPhysChem, 2011, 12, 145.
+
+
+
+
+Published on 05 July 2022. Downloaded by INL Research Library on 5/28/2026 6:26:46 PM.
+                                                                                         44 I. E. Makarov, T. N. Zhukova and A. K. Pikaev, High Energy      48 A. Byrne, E. M. Bringa, M. G. Del Popolo, J. J. Kohanoﬀ,
+                                                                                            Chem., 1995, 29, 151.                                              V. Galassi and N. J. English, Int. J. Mol. Sci., 2019, 20, 1123.
+
+
+
+
+                                                                                         25098 | Phys. Chem. Chem. Phys., 2022, 24, 25088–25098                                      This journal is © the Owner Societies 2022
+

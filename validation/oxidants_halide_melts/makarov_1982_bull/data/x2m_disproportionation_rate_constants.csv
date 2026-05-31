@@ -1,0 +1,11 @@
+# Makarov, Zhukova, Pikaev, Spitsyn 1982, Bull. Acad. Sci. USSR Div. Chem. Sci. 31(4), 662-665.
+# Original Russian: Izv. Akad. Nauk SSSR Ser. Khim. 1982, No. 4, pp. 750-755.
+# DOI: 10.1007/BF00949993
+# Source: validation/papers/BF00949993.pdf, p. 664-665 text (Eq. 9 and analog-computer modeling discussion)
+# Rate constants for X2- disproportionation: 2 X2- -> X3- + X- (reaction 9 in paper).
+# Measured on the slow section of the Br2- decay curve in KBr melt with added alkaline-earth cations (Ca2+, Ba2+, Sr2+)
+# at 800 C, where 1/D vs t is linear. The paper reports a single numerical value: k9 = (1.5 +/- ?) x 10^9 L/(mol s).
+# The reported uncertainty is partially obscured in the OCR; the value appears as "(1.5 +/- ...)x10^9" with the
+# uncertainty digit not legibly recovered. We capture sigma_k as blank with a note.
+reaction,melt,additive,T_C,T_K,k_M_inv_s_inv,sigma_k,source_in_paper,notes
+2 Br2- -> Br3- + Br-,KBr,Ca2+/Ba2+/Sr2+,800,1073.15,1.5e9,,p. 665 text (Eq. 9),"Determined on slow section of Br2- decay where 1/D vs t is linear; alkaline-earth cation present. Reported uncertainty digit not legibly recovered from OCR."

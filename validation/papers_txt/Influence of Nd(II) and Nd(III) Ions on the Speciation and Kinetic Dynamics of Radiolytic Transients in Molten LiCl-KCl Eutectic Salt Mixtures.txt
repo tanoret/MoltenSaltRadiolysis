@@ -1,0 +1,608 @@
+                                                                                                          pubs.acs.org/IC                                                                                                                                       Article
+
+
+
+                                                                                                          Influence of Nd(II) and Nd(III) Ions on the Speciation and Kinetic
+                                                                                                          Dynamics of Radiolytic Transients in Molten LiCl-KCl Eutectic Salt
+                                                                                                          Mixtures
+                                                                                                          Stephanie Castro Baldivieso,* Gregory P. Horne, Davis Bryars, Alejandro Ramos Ballesteros,
+                                                                                                          Andrew R. Cook, Bobby Layne, Kazuhiro Iwamatsu, and Jacy K. Conrad*
+                                                                                                                Cite This: Inorg. Chem. 2026, 65, 1283−1291                                       Read Online
+
+
+
+
+       Downloaded via IDAHO NATL LABORATORY on May 28, 2026 at 13:07:27 (UTC).
+                                                                                                          ACCESS                       Metrics & More                              Article Recommendations                 * Supporting Information
+                                                                                                                                                                                                                            sı
+
+
+                                                                                                          ABSTRACT: In the pyrochemical reprocessing of used nuclear fuel, understanding the
+                                                                                                          effects of ionizing radiation on the chemical behavior of fission products in molten chloride
+                                                                                                          eutectic salt is crucial. This study investigates the impact of radiation on the chemical and
+                                                                                                          kinetic speciation of Nd ions in molten LiCl-KCl eutectic, which are challenging to separate
+                                                                                                          due to their multivalent oxidation states and comproportionation reactions. Electron pulse
+                                                                                                          radiolysis techniques were used to determine transient absorption spectra, chemical kinetics,
+                                                                                                          and activation parameters for the reaction of Nd ions with the primary products of molten
+                                                                                                          LiCl-KCl eutectic radiolysis: the solvated electron (eS−) and dichlorine radical anion (Cl2•−).
+                                                                                                          Initially, Nd(III) reacted rapidly with eS−, forming Nd(II) with a second-order rate coefficient of k = (4.54 ± 0.07) × 1010 M−1 s−1 at
+                                                                                                          673 K. The resulting Nd(II) ions then reacted slowly with Cl2•−, regenerating Nd(III) with an estimated rate of k = (1.72 ± 0.04) ×
+                                                                                                          1010 M−1 s−1 at 673 K. Additionally, the comproportionation reaction of Nd(III) and Nd(s) to form Nd(II) was monitored
+                                                                                                          chemically and electrochemically. This work suggests that the comproportionation reaction of Nd(III) with Nd(s) to form Nd(II) is
+                                                                                                          unstable in molten LiCl-KCl eutectic.
+
+
+
+
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+                                                                                                          1. INTRODUCTION                                                                   occurrence of either reaction depends on the stability and
+                                                                                                          Understanding the electrochemically-induced transitions of                        temperature of the molten chloride salt. Additionally, rare
+                                                                                                          rare earth elements is essential for developing innovative                        earth metals can undergo dissolution in molten LiCl-KCl
+                                                                                                          recovery methods for recycling and separating end-of-life                         eutectic when exposed to the melt for extended periods of
+                                                                                                          products from energy sources, such as in the recovery of                          time.10,11 These complicating factors can alter the melting
+                                                                                                          permanent magnets or in the pyrochemical reprocessing of                          point, viscosity, and ionic conductivity of the melt, which
+                                                                                                          used nuclear fuel (UNF).1,2 For instance, in pyrochemical                         affects the longevity and recyclability of the recovery process.12
+                                                                                                          reprocessing, metallic UNF is dissolved in molten lithium                         While the two-step reduction for Nd(III)/Nd(s) has been
+                                                                                                          chloride-potassium chloride (LiCl-KCl) eutectic salt at 773 K.                    measured using multiple electroanalytical techniques,13,14 the
+                                                                                                          Uranium metal can then be recovered onto an immersed                              stability of Nd(II) in molten chloride salt and the effects of
+                                                                                                          cathode3,4 via electrorefining for fabrication into new fuel. As                  Nd(II) on the recovery efficiency of Nd metal are not well
+                                                                                                          the uranium is recovered in this manner, the remaining fission                    understood. Furthermore, the impacts of ionizing radiation on
+                                                                                                          products, including rare earth elements, accumulate in the                        this system and the final redox distribution of Nd remain
+                                                                                                          molten salt. To preserve process efficiency and maximize salt                     unknown.
+                                                                                                          recyclability, fission products, specifically rare earth elements,                   Given previous findings on the radiation-induced chemical
+                                                                                                          can be removed by electrodeposition onto a liquid metal5,6 or a                   behavior of zinc (Zn) and chromium (Cr) ions in molten LiCl-
+                                                                                                          solid inert cathode. The latter process, known as lanthanide/                     KCl eutectic,15,16 the redox distribution of Nd(II,III) is
+                                                                                                          actinide drawdown,7 has a relatively low recovery efficiency for                  expected to be strongly dependent on their respective
+                                                                                                          certain rare-earth elements, such as neodymium (Nd): 30−                          interactions with the primary products of salt radiolysis.
+                                                                                                          55%.8 Nd is an abundant rare earth fission product in UNF,
+                                                                                                                                                                                            Initially, the absorption of ionizing radiation by a simple
+                                                                                                          accounting for ∼ 7% of the overall rare earth fission product
+                                                                                                          yield.9 The reduced recovery efficiency of Nd metal is due to
+                                                                                                          its ability to access multiple oxidation states and undergo a                     Received: October 13, 2025
+                                                                                                          comproportionation reaction in molten chloride salt:5                             Revised: December 1, 2025
+                                                                                                                                                                                            Accepted: December 11, 2025
+                                                                                                             Nd(s) + 2NdCl3 F 3NdCl 2                                          (1)          Published: January 2, 2026
+                                                                                                            Due to the equilibrium nature of this reaction, compro-
+                                                                                                          portionation can also reverse to disproportionation. The
+                                                                                                                                                © 2026 The Authors. Published by
+                                                                                                                                                      American Chemical Society                                              https://doi.org/10.1021/acs.inorgchem.5c04788
+                                                                                                                                                                                     1283                                                  Inorg. Chem. 2026, 65, 1283−1291
+Inorganic Chemistry                                                       pubs.acs.org/IC                                                             Article
+
+molten chloride salt such as LiCl-KCl eutectic, results in the                  chloride eutectic (LiCl-KCl, 99.99% trace metal basis anhydrous
+formation of solvated electrons (eS−) and chlorine atoms                        beads), potassium thiocyanate (KSCN, ≥ 99.0% ACS reagent grade),
+(Cl•):15−17                                                                     and silver chloride (AgCl, 99.999% anhydrous) were procured from
+                                                                                MilliporeSigma. Neodymium chloride (NdCl3, anhydrous, 99.995%
+   Cl      eS + Cl•                                                (2)          trace metal basis), silver wires (Ag, 99.99%, 1 mm diameter), and
+                                                        −
+                                                                                tungsten wires (99.9%, 1 mm diameter and 15 cm length) were
+  which can combine with a neighboring Cl                   to form a           purchased from Thermo Fisher Scientific. A neodymium metal rod
+dichlorine radical anion (Cl2•−):                                               (99.9%, 3 mm diameter and 15 cm length) was sourced from Stanford
+                                                                                Instruments. Argon (>99.998%) and nitrous oxide (UHP) gases were
+   Cl• + Cl        Cl 2•                                           (3)          supplied by Airgas.
+  In a perfectly pure salt, the eS− reacts with either Cl• or Cl2•−             2.2. Sample and Electrode Preparation
+to reform Cl−:                                                                  All salt manipulations were performed in an argon atmosphere (<0.1
+   eS + Cl•        Cl                                                           ppm of O2, < 0.1 ppm of H2O) glovebox (VTI, VTISS1−1809−
+                                                                   (4)
+                                                                                0100) at Idaho National Laboratory (INL).
+   eS + Cl 2   •
+                        2Cl                                                        2.2.1. Sample Salt Mixtures. Mixtures of 36 and 65 mM of
+                                                                   (5)          NdCl3 in LiCl-KCl eutectic were prepared by weighing the desired
+and the excess energy is dissipated as heat into the surrounding                amounts of NdCl3 and LiCl-KCl eutectic salt using a Mettler Toledo
+medium. However, in real-world salts, trace metal ion                           balance (Model: TLE204E). The resulting salt mixtures were loaded
+contaminants (Mcn+) are inevitable and have an affinity for                     into a Sigradur glassy carbon tapered crucible (GAT6, 64 mL HTW
+                                                                                Germany), heated to 373 K for 2 h, and then to 543 K inside a Fisher
+reacting with the eS−, creating a break in the charge                           Scientific Thermolyne box furnace (Model: FB1315M) for 2 h to
+recombination process:                                                          remove any residual moisture. The salt mixtures were then melted at
+                                                                                973 K and maintained at that temperature for 3 h to ensure
+   Mc n + + eS       Mc(n 1) +                                     (6)          homogeneity before cooling to room temperature (∼298 K) and
+  Under these conditions, the Cl2              •−
+                                                    is susceptible to           grinding into a fine powder using an agate mortar and pestle.
+disproportionation:                                                                2.2.2. Pulse Radiolysis Samples. A stock mixture of 130 mM
+                                                                                NdCl3 in LiCl-KCl eutectic was prepared and samples for irradiation
+   Cl 2• + Cl 2•           Cl + Cl3                                (7)          were made by diluting the stock salt mixture with additional LiCl-KCl
+                                                                                eutectic, to provide a Nd(III) concentration range of 0−50 mM (wt
+   Cl3 F Cl + Cl 2                                                 (8)          % compositions are provided in Table S1 of the Supporting
+                               n+
+                                                                                Information, SI). Once prepared, the sample salt mixtures were
+and reactions involving Mc          /Mc(n−1)+ species, as demonstrated          crushed and loaded into 5 × 5 mm quartz cuvettes (Spectrocell, RF-
+                                                 15,16
+previously for Zn(II) and Cr(II,III) ions:                                      305) custom-made with elongated stems and Teflon valves
+                                                                                (Chemglass, CG-512). Prior to salt loading, the cuvettes were cleaned
+   Mc n +/Mc(n 1) + + Cl 2•            Mc(n + 1) +/Mc n + + 2Cl    (9)          with IPA and baked under argon at 873 K overnight. Once loaded, the
+                                                                                cuvettes were sealed under argon using the valves and transferred to a
+  In the case of Nd(II,III), the following processes are                        bespoke Schlenk line where they were flame-sealed under slight
+plausible, albeit mediated by competition kinetics:                             vacuum (∼13 kPa). The samples were then securely shipped to
+                                                                                Brookhaven National Laboratory (BNL) for pulsed electron
+   Ndn + + eS           Nd(n 1) +                                 (10)          irradiation.
+                                                                                   2.2.3. Electrodes. The surface of the tungsten wires of the
+   Ndn + + Cl 2•           Nd(n + 1) + + 2Cl                      (11)          working and counter electrodes (WEs and CEs, respectively) were
+                                                                                polished with silicon carbide sanding paper (up to 800 grit) and then
+   This dynamic scenario can be further complicated by the                      cleaned with IPA. Afterward, both electrodes were inserted into a two-
+formation of metal particulates seeded by radiolytically                        hole alumina tube (McMaster Carr, 1.02 mm inner diameter, 3 mm
+reduced species such as Nd+ and Nd0. Similar behavior has                       outer diameter) and placed in the cell. To fabricate the reference
+been observed for nickel (Ni) ions in molten ZnCl2 exposed to                   electrode (RE), the appropriate amounts of AgCl and LiCl-KCl
+X-rays.18 Consequently, accurately predicting the redox                         eutectic were weighed to give a 1 wt.% AgCl-LiCl-KCl salt mixture,
+distribution of Nd in irradiated molten chloride salts and                      which was then premelted, crushed and poured into a Ceramic
+determining the impacts of radiolysis on the efficiency of                      Solutions mullite tube (6.35 mm outer diameter, 4.77 mm inner
+pyrochemical processes using liquid metal5,19 and inert                         diameter, and 30.4 cm length). Prior to salt loading, the bottom of the
+                                                                                mullite tube was sanded to provide better connectivity with the salt. A
+cathodes,7 requires a comprehensive understanding of the                        silver wire was polished by the same procedure used for the WEs and
+chemical kinetics underpinning eq 10 and 11.                                    CEs and then placed inside the salt-loaded mullite tube.
+   To address this knowledge gap, this work focused on the
+                                                                                2.3. Electron Pulse Radiolysis Experiments
+radiation-induced chemistry of Nd(II,III) ions in molten LiCl-
+KCl eutectic, applying electron pulse radiolysis techniques to                  Chemical kinetics for the reaction of Nd(III) with the eS− and Cl2•−
+determine transient absorption spectra, chemical kinetics, and                  in molten LiCl-KCl eutectic were measured at BNL using the Laser
+                                                                                Electron Accelerator Facility (LEAF)20 and colocated Van de Graaff
+activation parameters (Arrhenius and Eyring) for eq 10 and 11.                  (VdG) electron accelerator.21 Individual flame-sealed salt samples
+These time-resolved measurements were complemented by                           (Table S2) were loaded into bespoke high temperature-controlled
+electrochemical and optical spectroscopy techniques, which                      cuvette holders15,22 installed at the end of the LEAF and VdG
+were employed to identify the characteristic absorption bands                   accelerator beamlines. Prior to making a measurement, each loaded
+of Nd(III) and Nd(II) in molten LiCl-KCl eutectic.                              sample was heated above their melting temperature (>623 K) and left
+                                                                                for 20 min to reach thermal equilibrium. Sample temperatures were
+2. METHODS                                                                      measured with a K-type thermocouple installed ∼ 1 cm from the
+                                                                                sample in each cuvette holder.
+2.1. Materials                                                                     2.3.1. LEAF Irradiations. The LEAF system was used to measure
+Acetone (99.9% reagent grade), ethanol (absolute anhydrous),                    transient absorption spectra (300−1050 nm) and reaction kinetics
+isopropanol (IPA, 99.9% reagent grade), lithium chloride-potassium              over the initial 20 μs following a ∼ 30 ps pulse of 8.7 MeV electrons.
+
+                                                                         1284                                      https://doi.org/10.1021/acs.inorgchem.5c04788
+                                                                                                                                 Inorg. Chem. 2026, 65, 1283−1291
+Inorganic Chemistry                                                       pubs.acs.org/IC                                                             Article
+
+Transient spectra measurements involved averaging 3−4 electron                  2.5. Spectro-electrochemical Measurements
+pulses per wavelength to minimize the accumulated dose to the salt.             Further insight into the chemical behavior and spectral properties of
+Kinetic measurements comprised of 4−8 individual pulses in                      Nd(II,III) ions in molten LiCl-KCl eutectic salt mixtures was
+triplicate, which were then averaged. Wavelength selection was                  obtained using electrochemical methods. A 65 mM NdCl3-LiCl-KCl
+achieved using a series of Edmund Optics bandpass interference filters          salt mixture was loaded into a Spectrocell quartz cuvette (20 mm × 10
+(fwhm: ∼ 10 nm <800 nm, and fwhm: ∼ 25 nm ≥ 800 nm). Signals                    mm) and then placed in a stainless-steel rack. The entire spectro-
+were captured at a given wavelength as a function of time using either          electrochemical cell was then positioned inside a furnace and heated
+a silicon PIN photodiode (FND-100QH, EG&G Optoelectronics) or                   to 773 K. Under these conditions, the RE was immersed and allowed
+a silicon PIN photodiode (S5973−01, Hamamatsu Photonics).20                     to equilibrate overnight. After approximately 18 h, cyclic voltammetry
+Collected signals were digitized using a Teledyne LeCroy WaveR-                 and chronoamperometry techniques were applied to the salt mixture
+unner oscilloscope, either HRO 66Zi (600 MHz, 12 bit) or 640Zi (4               to investigate the electrochemical behavior of Nd(III). The WE was
+GHz, 8 bit). The choice of detector for a given measurement was                 immersed in the molten salt for 30 min before initiating any
+based upon the lifetime of the targeted transient.                              electrochemical measurements. The WE, CE, and RE were arranged
+   2.3.2. VdG Irradiations. To access higher doses per pulse for                inside the cuvette as shown in Figure 1. Electrochemical measure-
+elucidating second-order processes, the VdG electron accelerator was
+used. Irradiations consisted of 0.1−1.0 μs duration pulses of 2.0 MeV
+electrons. A monochromator (Gemini 180, Horiba) with a set of long-
+pass filters (200, 250, 280, 385, 475, and 630 nm) was used for
+wavelength selection. Optical signals were recorded using a photo-
+multiplier tube (9659QB, EMI Electronics Ltd.) and a LeCroy HDO
+4034 oscilloscope (350 MHz, 12 bit).
+   2.3.3. Dosimetry. Electron pulse dosimetry was performed each
+day at LEAF under ambient temperature conditions using the decay
+of the hydrated electron in aqueous solution at 650 nm (Gε = 7.2 ×
+10−4 m2 J−1) for up to 5 μs.23 For the VdG, dosimetry was measured
+by monitoring the growth and decay of the thiocyanate radical anion
+dimer, (SCN)2•− from irradiated N2O-saturated 10 mM KSCN
+solutions monitored at 475 nm (Gε = 2.59 × 10−4 m2 J−1).24 The
+resulting absorbed doses were subsequently adjusted to account for
+the electron density difference between the ambient temperature
+(∼298 K) aqueous dosimeter solution and the molten LiCl-KCl
+eutectic base-salt at a given temperature. These doses were further
+adjusted by a factor of 0.86 to correct for the mass attenuation
+difference between the aqueous dosimeters and the molten salt                   Figure 1. Three-electrode cell employed for electrochemical measure-
+                                                                                ments of molten NdCl3-LiCl-KCl eutectic at 773 K.
+mixtures. This correction factor was determined by calculating the
+number of electrons per unit mass in NdCl3-LiCl-KCl, considering
+the mass fractions of each component. Given the low mass fraction of
+NdCl3 in the samples, the dose ratio for the molten salts was                   ments were performed using a Gamry 1010E potentiostat-galvanostat,
+                                                                                with cell temperatures monitored by a K-type thermocouple. To
+approximated using the values for neat LiCl-KCl eutectic. The final
+                                                                                detect the formation of Nd(II), simultaneous in situ UV−vis
+doses per LEAF or VdG electron pulse are summarized in Table S3.
+                                                                                absorption spectroscopy measurements were taken during electrolysis
+   2.3.4. Absorption Spectra Kinetic Analysis (SK-Ana). The
+                                                                                using an Ocean Optics HR6 high-resolution diode array spectrometer
+time-resolved absorption spectra collected at both accelerators                 with a DH-2000-BAL deuterium/tungsten light source (covering
+comprised of multiple absorbing and often overlapping species: the              250−1100 nm) with a 2−4 min acquisition time, an integration time
+eS−, Cl2•−, and Nd(II). These components and their respective                   between 0.04−0.06 s, and two scans averaged per spectrum. The data
+kinetics were deconvoluted using SK-Ana software (v. 3.4, Pernot,               were processed using SpectraGryph 1.2 software, with baseline
+2018),25 which utilizes singular value decomposition and alternating            corrections as detailed in SI. An internal resistance (IR) correction
+least squared methods.                                                          was applied to the cyclic voltammogram by performing potentiostatic
+2.4. Comproportionation Measurements                                            electrochemical impedance spectroscopy (EIS) to determine the
+                                                                                solution resistance, followed by manual corrections using Ohm’s law.
+To achieve chemical comproportionation, a 3 mm diameter Nd metal
+rod was submerged in a molten 36 mM NdCl3-LiCl-KCl salt mixture                 2.6. Characterization of Molten Chloride Products
+at 773 K. The electrolyte mixture was initially loaded into a                   Compositional analysis of the NdCl3-LiCl-KCl salt mixtures used in
+Spectrocell quartz cuvette (20 mm × 10 mm) precleaned with IPA                  this study, before and after irradiation or electrochemical manipu-
+and dried under vacuum at 398 K for 3 h. Approximately 10 g of the              lation, was determined with an accuracy of <5% by inductively
+salt mixture was poured into the cuvette and heated above its melting           coupled plasma atomic emission spectroscopy (ICP-AES) using a
+point to 773 K. Once the salt was molten, the Nd rod was submerged              Thermo Fisher iCap Duo. A summary of these values is provided in
+in the salt mixture, and the system was monitored continuously for 30           Table S1.
+min until the Nd rod was removed. Optical absorption spectra were
+obtained using an Ocean Optics HR6 high-resolution diode array                  3. RESULTS AND DISCUSSION
+spectrometer, which was equipped with a DH-2000-BAL deuterium/                  3.1. Transient Spectra in Molten NdCl3-LiCl-KCl Salt
+tungsten light source (covering 250−950 nm). Each measurement                   Mixtures
+involved a 30 s acquisition time, with two scans averaged per
+spectrum. The data were processed using SpectraGryph 1.2                        The radiation-induced absorption spectra for molten LiCl-KCl
+software,26 with baseline corrections applied utilizing adaptative and          eutectic and 10 mM NdCl3-LiCl-KCl at selected times
+scattering functions. The raw data, experiment photo conditions,                following an electron pulse at 673 K are shown in Figure
+along with the baseline correction instructions for the spectroscopy            2a,b, respectively. For the neat molten LiCl-KCl eutectic, two
+figures can be found in the SI under Kinetic Parameters and                     transient species were observed which are typical for this
+Spectroscopy Raw Data.                                                          molten salt system. The deconvoluted spectra and species
+                                                                         1285                                      https://doi.org/10.1021/acs.inorgchem.5c04788
+                                                                                                                                 Inorg. Chem. 2026, 65, 1283−1291
+Inorganic Chemistry                                                   pubs.acs.org/IC                                                            Article
+
+
+
+
+Figure 2. Transient absorption spectra for molten (a) LiCl-KCl              Figure 3. (a) Normalized spectra of components from SK-Ana
+eutectic and (b) 10 mM NdCl3-LiCl-KCl at select times following an          deconvolution of molten 10 mM NdCl3-LiCl-KCl up to 1 μs
+electron pulse at 673 K.                                                    following an electron pulse at 673 K. (b) SK-Ana derived kinetics at
+                                                                            the wavelength absorption maxima for each component: the eS−,
+                                                                            Cl2•−, and Nd(II).
+kinetics for neat LiCl-KCl are shown in SI Figure S1. These
+species were assigned to the eS− (λmax ∼ 700 nm) and Cl2•−                  reduced compared to neat LiCl-KCl eutectic, with no eS−
+(λmax ∼ 350 nm), in agreement with previous studies.15,17                   remaining after 10 ns. These optical changes are consistent
+Here, the eS− decayed within 600 ns (short-lived), whereas                  with chemical reactivity between Nd(III) and the eS− (eq 10).
+Cl2•− remained for over 1 μs (longer-lived). When 10 mM                     Although the Cl2•− spectrum was fixed for deconvolution
+NdCl3 was added to the salt the eS− absorption band was                     purposes, analysis of its derived kinetics (Figure 3b) indicates
+suppressed (Figure 2b), indicating that Nd(III) is an effective             that it is formed with the electron and then slowly decays. The
+scavenger of the eS−.                                                       additional third component, was found to have a rate of
+   In the presence of 10 mM NdCl3, the transient spectra                    formation equivalent to the decay of the eS− (Figure 3b),
+contained three statistically consistent principal components,              further supporting its assignment as Nd(II), produced from eq
+including a new peak at 500 nm, as shown in Figure 2b. To                   10.
+deconvolute these spectra with SK-Ana, the isolated absorption                To confirm the growth and decay of Nd(II) in the irradiated
+spectrum of Cl2•− from neat LiCl-KCl eutectic (Figure S1) was               NdCl3-LiCl-KCl salt mixtures, a series of spectroscopic and
+fixed, while the other two components were derived. The                     spectro-electrochemical measurements were made using a
+rotational ambiguity plots for these fits are shown in Figure S2.           high-temperature spectroscopy furnace22 inside an inert
+The deconvoluted spectra (Figure 3a) show a mixture of the                  atmosphere glovebox. First, Nd(II) formation was chemically
+eS−, Cl2•−, and a species growing in the visible region, which              induced via comproportionation (eq 1), wherein a Nd metal
+appears as a shoulder on the Cl2•− absorption band in Figure                rod was submerged in molten 36 mM NdCl3-LiCl-KCl at 773
+2b.                                                                         K. The resulting absorption spectra are shown in Figure 4.
+   This component was found to have a deconvoluted λmax at                  Initially, the spectrum consisted of the absorption bands for
+approximately 500 nm, which is presumed to be Nd(II) based                  Nd(III) only. Once the Nd metal rod was immersed in the salt
+on previous molten salt spectroscopy of NdCl2 by Hayashi et                 mixture, a new absorption band developed over time at
+al., who observed a peak evolving at 500 nm when Nd metal                   approximately 430−500 nm (Figure S3), and all the Nd(III)
+was added to molten NdCl3-LiCl-KCl.27 The eS− was again                     bands decreased slightly. After 30 min, the accumulation of
+observed with an λmax of approximately 700 nm (Figure 3a);                  Nd(II) darkened the molten salt, increasing the background
+however, its absorption intensity and lifetime were significantly           (Figure S3). Yamana et al. determined that the Nd(II)
+                                                                     1286                                     https://doi.org/10.1021/acs.inorgchem.5c04788
+                                                                                                                            Inorg. Chem. 2026, 65, 1283−1291
+Inorganic Chemistry                                                   pubs.acs.org/IC                                                            Article
+
+                                                                            double reduction−oxidation waves remained consistent
+                                                                            between different scan rates (0.050−0.300 V s−1), consistent
+                                                                            with previous studies.13,14,29
+                                                                              Chronoamperometry was then employed to reduce Nd(III)
+                                                                            to Nd(II) and observe any change in its absorption spectra. A
+                                                                            potential of − 1.95 V (vs Ag/AgCl) was applied for 24 min, as
+                                                                            shown in Figure 6a. As the solution darkened, an increase in
+
+
+
+
+Figure 4. Absorption spectra for molten 36 mM NdCl3-LiCl-KCl at
+select times after submerging a neodymium metal rod at 773 K.
+
+
+absorption band represented an f−d transition in molten LiCl-
+KCl eutectic,27,28 indicating that this transition leads to a high
+molar absorptivity. In addition to salt darkening due to the
+formation of Nd(II), the quartz cuvette was etched. Etching
+contributed to light scattering, further modifying the back-
+ground. These observations align with the findings of Hayashi
+et al., who attributed a broad peak at ∼ 500 nm to Nd(II) and
+observed an increase in the spectrum baseline due to the
+darkening of the salt and quartz etching. Depending on the salt
+conditions, Nd(II) can disproportionate into Nd metal and
+Nd(III) (eq 1). The Nd metal formed in this way can also
+react with the quartz cuvette. Yamana et al. observed similar
+behavior, noting that Nd(II) reacts with the quartz cuvette,
+leading to light scattering, and that Nd metal interacts with the
+quartz surface.
+   Further confirmation of the absorption spectrum of Nd(II)
+and the redox behavior of this species in molten LiCl-KCl
+eutectic was attained through a combination of electrochemical
+techniques. First, the electrochemical behavior of Nd(II,III)
+ions in molten LiCl-KCl was investigated using cyclic
+voltammetry at 773 K (Figure 5). The initial cathodic
+reduction at − 1.8 V corresponds to the reduction of Nd(III)
+to Nd(II), followed by the reduction of Nd(II) to Nd(s) at −
+2.0 V, indicating a multistep electron transfer. The observed
+                                                                            Figure 6. (a) Current response vs applied potential (−1.95 V vs Ag/
+                                                                            AgCl) and (b) Absorption spectra for molten LiCl-KCl eutectic at
+                                                                            select times following the addition of ∼2 g of the electrochemically
+                                                                            induced salt (65 mM NdCl3-LiCl-KCl) at 773 K.
+
+
+                                                                            the cathodic current was detected, but no significant growth of
+                                                                            the Nd(II) absorption band at ∼ 500 nm was observed (Figure
+                                                                            S4). After 24 min, the applied potential was stopped, the salt
+                                                                            mixture was recovered, and a sample was taken to dilute in
+                                                                            LiCl-KCl eutectic with a final concentration of ∼ 15 mM of
+                                                                            Nd(III,II) at 773 K. The UV−vis spectra following the
+                                                                            dissolution of the recovered salt, Figure 6b, revealed that the
+                                                                            Nd(II) absorption band decreased as the solution reached
+                                                                            equilibrium. Under the investigated conditions, Nd(II)
+                                                                            disproportionation was complete within 10 min, as evidenced
+                                                                            by the remaining absorption bands belonging to Nd(III) and
+Figure 5. Cyclic voltammograms of 65 mM NdCl3-LiCl-KCl at 773 K             the appearance of suspended metallic Nd particles (Figure S5).
+using tungsten WE vs Ag/AgCl over a scan rate range of 0.050−0.300          These observations indicate that Nd(II) is not stable at high
+V s−1. Surface area of WE: 0.134 cm2, IR corrected.                         temperatures in molten LiCl-KCl eutectic.
+                                                                     1287                                     https://doi.org/10.1021/acs.inorgchem.5c04788
+                                                                                                                            Inorg. Chem. 2026, 65, 1283−1291
+Inorganic Chemistry                                                        pubs.acs.org/IC                                                            Article
+
+   Comparison of the chemically and electrochemically                            Table 1. Second-Order Rate Coefficients (k) Calculated for
+induced Nd(II) spectra (Figure 6b) with the third component                      the Reaction of Nd(III) with the eS− in Molten LiCl-KCl
+from SK-Ana deconvolution in the pulse radiolysis experiments                    Eutectic
+(Figure 3a) confirms our assignment of Nd(II). Further, the
+                                                                                   Temperature (K)       Second-order rate coefficient (×1010 M−1 s−1)
+observed rate of Nd(II) disproportionation (minutes)
+indicates that the decay of the Nd(II) signal in Figure 3b                               673                              4.54 ± 0.07
+(seconds) cannot be solely attributed to eq 1 in radiation                               723                              7.21 ± 0.66
+environments.                                                                            773                              9.63 ± 0.85
+                                                                                         823                             13.80 ± 0.85
+3.2. Solvated Electron Reduction of Nd(III)
+                                                                                         873                              17.53 ± 0.68
+To determine the rate coefficient for eq 10, the decay of the
+eS− over a range of Nd(III) concentrations (1−10 mM NdCl3)                          By plotting the natural logarithm of each temperature-
+was fitted using a single exponential decay beginning at 0.4 ns                  dependent k-value as a function of the inverse temperature (1 T
+after the electron pulse to obtain pseudo first-order rate                       ), the Arrhenius parameters can be derived for eq 10, as shown
+coefficients (k’, s−1) at a given temperature (673−873 K).                       in Figure 8. This gave an activation energy (Ea) of 33.20 ± 0.42
+These fits are given in Figure 7a for 673 K, and Figure S6 for
+the remaining temperatures.
+
+
+
+
+                                                                                 Figure 8. Arrhenius and Eyring plots for the reaction of Nd(III) with
+                                                                                 the eS− in molten LiCl-KCl eutectic.
+
+
+                                                                                 kJ mol−1, and a pre-exponential factor (A) of 1.71 ± 0.13 ×
+                                                                                 1013 M−1 s−1. These values are comparable with previous
+                                                                                 measurements for the reduction of Cr(III) by the eS− in
+                                                                                 molten LiCl-KCl eutectic: Ea = 33.50 ± 0.6 kJ mol−1 and A =
+                                                                                 1.70 ± 0.2 × 1013 M−1 s.15,16
+                                                                                    Additionally, plotting the natural logarithm of k T against 1 T
+                                                                                 yields the corresponding Eyring activation parameters for eq
+                                                                                 10: an enthalpy of activation (ΔH‡) of 26.51 ± 1.06 kJ mol−1,
+                                                                                 and an entropy of activation (ΔS‡) of − 8.08 ± 1.39 J mol−1
+                                                                                 deg−1. The negative ΔS‡ value indicates that the reduction of
+                                                                                 Nd(III) to Nd(II) proceeds through a single transition state
+                                                                                 species via an associative reaction mechanism. Moreover, the
+Figure 7. (a) Fitted 671 nm absorbances for the decay of the eS− in              eS− acts a “structure-breaking” ion in polar media30 which
+molten LiCl-KCl and 1−10 mM NdCl3-LiCl-KCl following an                          increases a system’s entropy. When the eS− is removed by
+electron pulse at 673 K. (b) Linear fits used for deriving second-order          reacting with Nd(III), the extended networks of the salt can
+rate coefficients for the reaction of Nd(III) with the eS− for each
+                                                                                 reestablish,31−33 leading to a decrease in the system’s entropy.
+investigated temperature. Individual data points are the fitted pseudo
+first-order decay rate coefficients.                                             3.3. Dichlorine Radical Anion Oxidation of Nd(II)
+                                                                                 As discussed in the introduction, Cl2•− can react with metal ion
+  Linear fits to these pseudo first-order rate coefficients                      solutes and impurities (eq 9) in competition with charge
+plotted against the density-corrected Nd(III) concentration                      recombination (eq 5) and disproportion (eq 7) processes. The
+gave the corresponding second-order rate coefficients (k, M−1                    rate of Cl2•− decay changed in the presence of NdCl3, as
+s−1) for each investigated temperature, which conform to                         shown in Figure 9a. However, this change was independent of
+Arrhenius behavior, i.e., increasing rate with increasing                        the concentration of NdCl3 (1−10 mM) at a given applied
+temperature. This process is presented in Figure 7b, and the                     dose, as summarized in Figure S7. These observations indicate
+derived k-values are summarized in Table 1.                                      that Nd(III) is not oxidized to Nd(IV) by Cl2•− (eq 11).
+                                                                          1288                                     https://doi.org/10.1021/acs.inorgchem.5c04788
+                                                                                                                                 Inorg. Chem. 2026, 65, 1283−1291
+Inorganic Chemistry                                                     pubs.acs.org/IC                                                            Article
+
+                                                                              the apparent rate for eq 11 is higher because the relatively low
+                                                                              yield of Cl2•− per pulse means that eq 11 is now in competition
+                                                                              with reactions of Nd(II) and metal impurities (eq 9) in the
+                                                                              system. In contrast, the higher doses applied using the VdG
+                                                                              (47−189 Gy pulse−1) produce enough Nd(II) and Cl2•− to
+                                                                              outcompete other potential decay pathways. Linear fitting of
+                                                                              the reciprocal absorbance plots yields an average second-order
+                                                                              rate coefficient of k673 K = (1.72 ± 0.01) × 1010 M−1 s−1, where
+                                                                              the path length is 0.5 cm, and the ε = 8000 M−1 cm−1. The ε-
+                                                                              value was derived from adjusting the value from Cl2•− in
+                                                                              aqueous solution according to Hug34 based on the work by
+                                                                              Makarov et al..35 The rate coefficient obtained from the
+                                                                              reciprocal absorbance plots aligns well with previously reported
+                                                                              rate coefficients obtained for the reactions of Zn(I) and Cr(II)
+                                                                              with Cl2•−: kZn(I) = 2.2 × 1010 M−1 s−1 and kCr(II) = 1.70 × 1010
+                                                                              M−1 s−1.
+
+                                                                              4. CONCLUSIONS
+                                                                              This study investigated the chemical kinetics underlying the
+                                                                              reactions of Nd(III,II) with transient radical products (eS− and
+                                                                              Cl2•−) arising from the electron pulse irradiation of molten
+                                                                              LiCl-KCl eutectic. The eS− was found to rapidly reduce
+                                                                              Nd(III) to Nd(II) at a rate of k = (4.54 ± 0.07) × 1010 M−1
+                                                                              s−1 at 673 K, with the concomitant formation of Nd(II). The
+                                                                              formation of Nd(II) was confirmed through complementary
+                                                                              electrochemical and optical spectroscopy methods, which
+                                                                              showed that Nd(II) exhibits an absorption band in the
+                                                                              wavelength range of 430−500 nm, consistent with the transient
+                                                                              growth observed in the pulsed electron radiolysis spectra. The
+                                                                              Nd(II) formed through radiolysis was found to be shorter lived
+                                                                              compared to its chemically or electrochemically generated
+                                                                              counterpart (microseconds vs seconds), which is inherently
+                                                                              unstable and prone to disproportionation. This is a
+                                                                              consequence of Nd(II), and not Nd(III), reacting with Cl2•−
+                                                                              at a rate of k = (1.72 ± 0.01) × 1010 M−1 s−1 at 673 K. This
+                                                                              reoxidation process limits further decomposition of the salt.
+                                                                                 The instability of Nd(II) at high temperatures and its rapid
+                                                                              cycling between oxidation states complicate the recovery of Nd
+Figure 9. (a) Decay kinetics for Cl2•− at 340 nm for molten LiCl-KCl          metal in pyrochemical reprocessing of UNF. These findings
+and 10 mM NdCl3-LiCl-KCl and (b) transient absorbances for the                enhance our understanding of this complex redox behavior in
+decay of Cl2•− at 340 nm in molten 50 mM NdCl3-LiCl-KCl eutectic              molten chloride salts under both chemical and radiolytic
+as a function of dose per electron pulse at 673 K. Inset: the                 conditions, providing valuable insights for developing more
+corresponding reciprocal absorbance plot.                                     efficient pyrochemical reprocessing techniques.
+
+Instead, the increased rate of Cl2•− decay is due to its reaction
+with the Nd(II) product from eq 10 via eq 11.
+                                                                              ■      ASSOCIATED CONTENT
+                                                                              * Supporting Information
+                                                                               sı
+   Assuming the reaction occurs between two radiolysis
+products, eq 11 should obey second-order kinetics, and the                    The Supporting Information is available free of charge at
+rate should remain constant with respect to the applied dose,                 https://pubs.acs.org/doi/10.1021/acs.inorgchem.5c04788.
+as the two reactants are generated in approximately equal                              Chemical analysis of all the salt compositions (in wt.%
+amounts. The corresponding reciprocal plot of the absorbance                           and mM) containing NdCl3 in LiCl-KCl eutectic salt;
+at 340 nm versus time is given in Figure 9b for the VdG                                kinetic parameters and absorption spectra of electron
+irradiation of 50 mM NdCl3-LiCl-KCl at 673 K.                                          pulse irradiation of molten LiCl-KCl eutectic and NdCl3
+   Figure 9b clearly demonstrates that the reciprocal                                  containing salts; raw data for the absorption spectra
+absorbance plots for the decay of Cl2•− exhibit linear behavior                        from the figures described in the manuscript, along with
+and are independent of the applied dose, confirming that the                           an explanation of Spectragryph parameters (PDF)
+reaction of Cl2•− with Nd(II) via eq 11 follows second-order
+kinetics. Since this relationship remains consistently linear over
+time, the results indicate that this reaction is the dominant
+Cl2•− decay pathway, out-competing any contributions from eq
+                                                                              ■      AUTHOR INFORMATION
+                                                                              Corresponding Authors
+7. The corresponding rate coefficients (k/εl) as a function of                      Stephanie Castro Baldivieso − Center for Radiation
+the dose per pulse are summarized in Figure S8. At the                                Chemistry Research and Glenn T. Seaborg Institute, Idaho
+significantly lower doses applied using LEAF (3.9 Gy pulse−1),                        National Laboratory, Idaho Falls, Idaho 83415, United
+                                                                       1289                                     https://doi.org/10.1021/acs.inorgchem.5c04788
+                                                                                                                              Inorg. Chem. 2026, 65, 1283−1291
+Inorganic Chemistry                                                   pubs.acs.org/IC                                                               Article
+
+    States; orcid.org/0000-0003-3610-1762;                                  Biosciences under contract DE-SC0012704. Iwamatsu was
+    Email: stephanie.castrobaldivieso@inl.gov                               supported as part of the Molten Salts in Extreme Environments
+  Jacy K. Conrad − Center for Radiation Chemistry Research,                 Energy Frontier Research Center, funded by the U.S. DOE,
+    Idaho National Laboratory, Idaho Falls, Idaho 83415,                    Office of Science, BES at BNL under contracts DE-
+    United States; orcid.org/0000-0002-0745-588X;                           SC0012704. Additionally, the authors would like to thank
+    Email: jacy.conrad@inl.gov                                              Brittany Tague for ICP analysis, as well as James Lainsbury for
+                                                                            his assistance with technical editing.
+Authors
+  Gregory P. Horne − Center for Radiation Chemistry Research,
+    Idaho National Laboratory, Idaho Falls, Idaho 83415,
+    United States; orcid.org/0000-0003-0596-0660
+                                                                            ■    REFERENCES
+                                                                              (1) Bailey, G.; Mancheri, N.; Van Acker, K. Sustainability of
+  Davis Bryars − Department of Nuclear Engineering, North                   Permanent Rare Earth Magnet Motors in (H)EV Industry. Journal of
+    Carolina State University, Rayleigh, North Carolina 27607,              Sustainable Metallurgy 2017, 3 (3), 611−626.
+                                                                              (2) Williamson, M. A.; Willit, J. L. Pyroprocessing Flowsheets for
+    United States                                                           Recycling of Used Nuclear Fuel. Nuclear Engineering and Technology
+  Alejandro Ramos Ballesteros − Center for Radiation                        2011, 43 (4), 329−334.
+    Chemistry Research, Idaho National Laboratory, Idaho Falls,               (3) Kersten, B.; Hawthorne, K.; Williamson, M.; Akolkar, R.; Duval,
+    Idaho 83415, United States; orcid.org/0000-0002-4350-                   C. E. The Future of Nuclear Energy: Electrochemical Reprocessing of
+    6824                                                                    Fuel Takes Center Stage. Electrochem. Soc. Interface 2021, 30 (3), 47−
+  Andrew R. Cook − Department of Chemistry, Brookhaven                      51.
+    National Laboratory, Upton, New York 11973, United                        (4) Williamson, M. Recycling Used Nuclear Fuel for a Sustainable
+    States; orcid.org/0000-0001-6633-3447                                   Energy Future. In Pyroprocessing Technologies, Chemical and fuel cycle
+  Bobby Layne − Department of Chemistry, Brookhaven                         technologies; Argonne National Laboratory: 2012.
+    National Laboratory, Upton, New York 11973, United States                 (5) Baldivieso, S. C.; Smith, N. D.; Im, S.; Kim, H. Thermodynamic
+  Kazuhiro Iwamatsu − Department of Chemistry, Brookhaven                   properties of Gd-Bi alloys determined by emf measurements in LiCl-
+                                                                            KCl-GdCl3 electrolyte. J. Alloys Compd. 2021, 886, No. 161229.
+    National Laboratory, Upton, New York 11973, United States
+                                                                              (6) Baldivieso, S. C.; Varnell, K.; Asghari-Rad, P.; Im, S.; Kim, H.
+Complete contact information is available at:                               Electrochemical recovery of Gd into liquid Bi in molten LiCl-KCl-
+https://pubs.acs.org/10.1021/acs.inorgchem.5c04788                          GdCl3. J. Electroanal. Chem. 2025, 996, No. 119291.
+                                                                              (7) Rose, M. A.; Ezell, D. Molten Salt Reactor Fuel Cycle Chemistry
+Author Contributions                                                        Workshop; ANL/CFCT-23/50; Argonne National Laboratory: 2023.
+                                                                              (8) Zhu, H. Rare Earth Metal Production by Molten Salt
+Baldivieso: conceptualization, methodology, validation, formal              Electrolysis. In Encyclopedia of Applied Electrochemistry; Springer:
+analysis, investigation, data curation, writing (original draft),           2014; pp 1765−1772.
+writing (review and editing), visualization, and funding                      (9) Bruno, J.; Ewing, R. C. Spent nuclear fuel. Elements 2006, 2 (6),
+acquisition; Horne: conceptualization, methodology, formal                  343−349.
+analysis, data curation, writing (original draft), writing (review            (10) Bredig, M. A. Mixtures of Metals with Molten Salts; 4658668;
+& editing), visualization, supervision, and funding acquisition;            Oak Ridge National Laboratory: 1963.
+Bryars: investigation, data curation, and writing (review and                 (11) Keneshea, F. J.; Cubicciotti, D. Lanthanum-Lanthanum
+editing); Cook: methodology, validation, formal analysis, and               Trichloride Phase Diagram. J. Chem. Eng. Data 1961, 6 (4), 507−509.
+writing (review and editing); Layne: methodology and writing                  (12) Bronstein, H. R.; Bredig, M. A. The Electrical Conductivity of
+(review and editing); Ramos Ballesteros: methodology,                       Solutions of Alkali Metals in Their Molten Halides. J. Am. Chem. Soc.
+validation, data curation, and writing (review and editing);                1958, 80 (9), 2077−2081.
+                                                                              (13) Diaz, L.; Chamelot, P.; Gibilaro, M.; Massot, L.; Serp, J.
+Iwamatsu: methodology, formal analysis, and writing (review
+                                                                            Electrochemical Behavior of Neodymium in Molten Chloride Salts. In
+and editing); Conrad: methodology, formal analysis, data                    Rare Metal Technology 2017; Springer: San Diego, CA, 2017, 2017; pp
+curation, writing (original draft), writing (review and editing),           77−86. DOI: .
+visualization, and supervision.                                               (14) Fukasawa, K.; Uehara, A.; Nagai, T.; Fujii, T.; Yamana, H.
+Notes                                                                       Electrochemical and spectrophotometric study on neodymium ions in
+                                                                            molten alkali chloride mixtures. J. Alloys Compd. 2011, 509 (16),
+The authors declare no competing financial interest.
+                                                                            5112−5118.
+
+■    ACKNOWLEDGMENTS
+Baldivieso was supported by the Idaho National Laboratory
+                                                                              (15) Iwamatsu, K.; Horne, G. P.; Gakhar, R.; Halstenberg, P.; Layne,
+                                                                            B.; Pimblott, S. M.; Wishart, J. F. Radiation-induced reaction kinetics
+                                                                            of Zn2+ with eS− and Cl2− in Molten LiCl-KCl eutectic at 400−600
+(INL) Laboratory Directed Research and Development                          °C. Phys. Chem. Chem. Phys. 2022, 24 (41), 25088−25098.
+(LDRD) Program under Department of Energy (DOE)                               (16) Iwamatsu, K.; Horne, G. P.; Ramos-Ballesteros, A.; Baldivieso,
+Idaho Operations Office Contract DE-AC07-05ID14517.                         S. C.; Conrad, J. K.; Woods, M. E.; Phillips, W. C.; Laverne, J. A.;
+Conrad and Horne were supported by the U.S. DOE, Office                     Pimblott, S. M.; Wishart, J. F. Kinetics of radiation-induced Cr(ii) and
+of Science, Basic Energy Sciences (BES) through the Chemical                Cr(iii) redox chemistry in molten LiCl-KCl eutectic. Phys. Chem.
+and Materials Sciences to Advance Clean Energy Technologies                 Chem. Phys. 2025. DOI: .
+                                                                              (17) Hagiwara, H.; Sawamura, S.; Sumiyoshi, T.; Katayama, M.
+and Low-Carbon Manufacturing initiative under contract DE-                  Pulse-Radiolysis Study of transient Species in LiCl-KCl Melt. Radiat.
+AC07-05ID14517 for electron pulse irradiation experiments.                  Phys. Chem. 1987, 30 (2), 141−144.
+Bryars was supported under a University Nuclear Leadership                    (18) Dias, E. T.; Gill, S. K.; Liu, Y.; Halstenberg, P.; Dai, S.; Huang,
+Program Graduate fellowship. Cook, Layne, and electron pulse                J. H.; Mausz, J.; Gakhar, R.; Phillips, W. C.; Mahurin, S.; Pimblott, S.
+irradiation experiments at the LEAF of the BNL Accelerator                  M.; Wishart, J. F.; Frenkel, A. I. Radiation-Assisted Formation of
+Center for Energy Research were supported by the U.S. DOE,                  Metal Nanoparticles in Molten Salts. J. Phys. Chem. Lett. 2021, 12 (1),
+BES, Division of Chemical Sciences, Geosciences, and                        157−164.
+
+                                                                     1290                                        https://doi.org/10.1021/acs.inorgchem.5c04788
+                                                                                                                               Inorg. Chem. 2026, 65, 1283−1291
+Inorganic Chemistry                                                         pubs.acs.org/IC                                      Article
+
+ (19) Im, S.; Smith, N. D.; Baldivieso, S. C.; Gesualdi, J.; Liu, Z. K.;
+Kim, H. Electrochemical recovery of Nd using liquid metals (Bi and
+Sn) in LiCl-KCl-NdCl3. Electrochim. Acta 2022, 425, No. 140655.
+ (20) Wishart, J. F.; Cook, A. R.; Miller, J. R. The LEAF picosecond
+pulse radiolysis facility at Brookhaven National Laboratory. Rev. Sci.
+Instrum. 2004, 75 (11), 4359−4366.
+ (21) Kynman, A. E.; Dang, A. N.; Grimes, T. S.; Mezyk, S. P.;
+Wilbanks, J. R.; Zarzana, C. A.; Deokar, R. G.; Cook, A. R.;
+Boglaienko, D.; Hall, G. B.; Horne, G. P. Influence of Metal Ion
+Complexation on the Radiolytic Longevity of Butyramide Extractants
+under Direct Dissolution Process Conditions. ACS OMEGA 2025, 10,
+7822−7830.
+ (22) Phillips, W. C.; Gakhar, R.; Horne, G. P.; Layne, B.; Iwamatsu,
+K.; Ramos-Ballesteros, A.; Shaltry, M. R.; LaVerne, J. A.; Pimblott, S.
+M.; Wishart, J. F. Design and performance of high-temperature
+furnace and cell holder for in situ spectroscopic, electrochemical, and
+radiolytic investigations of molten salts. Rev. Sci. Instrum. 2020, 91
+(8), No. 083105.
+ (23) Cook, A. R.; Bird, M. J.; Asaoka, S.; Miller, J. R. Rapid ″Step
+Capture″ of Holes in Chloroform during Pulse Radiolysis. J. Phys.
+Chem. A 2013, 117 (33), 7712−7720.
+ (24) Buxton, G. V.; Stuart, C. R. Re-evaluation of the Thiocyanate
+Dosimeter for Pulse Radiolysis. J. of the Chemical Society. Faraday
+Trans 1995, 91, 279−281.
+ (25) Pernot, P. SK-Ana: Analysis of Spectro-Kinetic Data (Version
+v3.4.7b). 2018.
+ (26) Menges, F. Spectragryph Optical Spectroscopy Software. http://
+www.effemm2.de/spectragryph/.
+ (27) Hayashi, H.; Akabori, M.; Ogawa, T.; Minato, K.
+Spectrophotometric study of Nd2+ ions in LiCl-KCl eutectic melt.
+Zeitschrift Fur Naturforschung Section a-a Journal of Physical Sciences
+2004, 59 (10), 705−710.
+ (28) Yamana, H.; Park, B. G.; Shirai, O.; Fujii, T.; Uehara, A.;
+Moriyama, H. Electrochemically produced divalent neodymium in
+chloride melt. J. Alloys Compd. 2006, 408, 66−70.
+ (29) Uehara, A.; Fukasawa, K.; Nagai, T.; Fujii, T.; Yamana, H.
+Separation of Nd metal by using disproportionation reaction of
+Nd(II) in molten chlorides. J. Nucl. Mater. 2011, 414 (2), 336−339.
+ (30) Han, P.; Bartels, D. M. On the hydrated electron as a sutrcture-
+breaking ion. J. Phys. Chem. 1991, 95 (14), 5367−5370.
+ (31) Roy, S.; Brehm, M.; Sharma, S.; Wu, F.; Maltsev, D. S.;
+Halstenberg, P.; Gallington, L. C.; Mahurin, S. M.; Dai, S.; Ivanov, A.
+S.; Margulis, C. J.; Bryantsev, V. S. Unraveling Local Structure of
+Molten Salts via X-ray Scattering, Raman Spectroscopy, and Ab Initio
+Molecular Dynamics. J. Phys. Chem. B 2021, 125 (22), 5971−5982.
+ (32) Emerson, M. S.; Sharma, S.; Roy, S.; Bryantsev, V. S.; Ivanov, A.
+S.; Gakhar, R.; Woods, M. E.; Gallington, L. C.; Dai, S.; Maltsev, D.
+S.; Margulis, C. J. Complete Description of the LaCl3−NaCl Melt
+Structure and the Concept of a Spacer Salt That Causes Structural
+Heterogeneity. J. Am. Chem. Soc. 2022, 144 (47), 21751−21762.
+ (33) Nguyen, H. H.; Bryantsev, V. S.; Margulis, C. J. Are High-
+Temperature Molten Salts Reactive with Excess Electrons? Case of
+ZnCl2. J. Phys. Chem. B 2023, 127 (42), 9155−9164.
+ (34) Hug, G. L. Optical Spectra of Nonmetallic Inorganic Transient
+Species in Aqueous Solution; U.S. Department of Commerce/National
+Bureau of Standards, NSRDS-NBS 1981, 69.
+ (35) Makarov, I. E.; Zhukova, T. N.; Pikaev, A. K.; Spistyn, V. I.
+Oxidizing agents produced by radiolysis of alkali-metal halide melts.
+Bull. Acad. Sci. USSR, Div. Chem. Sci. 1982, 31 (4), 662.
+
+
+
+
+                                                                           1291               https://doi.org/10.1021/acs.inorgchem.5c04788
+                                                                                                            Inorg. Chem. 2026, 65, 1283−1291
+

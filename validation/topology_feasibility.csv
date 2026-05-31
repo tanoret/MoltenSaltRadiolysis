@@ -1,0 +1,443 @@
+gamma,R1_Cl_Clminus_to_Cl2m,R2_e_plus_Cl_to_Clminus,R3_2Cl_to_Cl2diss,R4_Cl2m_dispro_to_Cl3,R5_Cl3_to_Cl2diss,R6_e_plus_Cr2_to_Crp,R7_e_plus_Cr3_to_Cr2,R8_Cl2m_plus_Cr2_to_Cr3,R9_Cl2m_plus_Cr3_to_Cl2diss,R10_Cr3_plus_Crp_to_2Cr2,reason
+feasible,0,0,1,0,0,0,1,0,0,0,feasible
+feasible,0,0,1,0,0,0,1,0,0,1,feasible
+feasible,0,0,1,0,0,0,1,0,1,0,feasible
+feasible,0,0,1,0,0,0,1,0,1,1,feasible
+feasible,0,0,1,0,0,0,1,1,0,0,feasible
+feasible,0,0,1,0,0,0,1,1,0,1,feasible
+feasible,0,0,1,0,0,0,1,1,1,0,feasible
+feasible,0,0,1,0,0,0,1,1,1,1,feasible
+feasible,0,0,1,0,0,1,0,0,0,1,feasible
+feasible,0,0,1,0,0,1,0,0,1,1,feasible
+feasible,0,0,1,0,0,1,0,1,0,1,feasible
+feasible,0,0,1,0,0,1,0,1,1,1,feasible
+feasible,0,0,1,0,0,1,1,0,0,1,feasible
+feasible,0,0,1,0,0,1,1,0,1,1,feasible
+feasible,0,0,1,0,0,1,1,1,0,1,feasible
+feasible,0,0,1,0,0,1,1,1,1,1,feasible
+feasible,0,0,1,0,1,0,1,0,0,0,feasible
+feasible,0,0,1,0,1,0,1,0,0,1,feasible
+feasible,0,0,1,0,1,0,1,0,1,0,feasible
+feasible,0,0,1,0,1,0,1,0,1,1,feasible
+feasible,0,0,1,0,1,0,1,1,0,0,feasible
+feasible,0,0,1,0,1,0,1,1,0,1,feasible
+feasible,0,0,1,0,1,0,1,1,1,0,feasible
+feasible,0,0,1,0,1,0,1,1,1,1,feasible
+feasible,0,0,1,0,1,1,0,0,0,1,feasible
+feasible,0,0,1,0,1,1,0,0,1,1,feasible
+feasible,0,0,1,0,1,1,0,1,0,1,feasible
+feasible,0,0,1,0,1,1,0,1,1,1,feasible
+feasible,0,0,1,0,1,1,1,0,0,1,feasible
+feasible,0,0,1,0,1,1,1,0,1,1,feasible
+feasible,0,0,1,0,1,1,1,1,0,1,feasible
+feasible,0,0,1,0,1,1,1,1,1,1,feasible
+feasible,0,0,1,1,1,0,1,0,0,0,feasible
+feasible,0,0,1,1,1,0,1,0,0,1,feasible
+feasible,0,0,1,1,1,0,1,0,1,0,feasible
+feasible,0,0,1,1,1,0,1,0,1,1,feasible
+feasible,0,0,1,1,1,0,1,1,0,0,feasible
+feasible,0,0,1,1,1,0,1,1,0,1,feasible
+feasible,0,0,1,1,1,0,1,1,1,0,feasible
+feasible,0,0,1,1,1,0,1,1,1,1,feasible
+feasible,0,0,1,1,1,1,0,0,0,1,feasible
+feasible,0,0,1,1,1,1,0,0,1,1,feasible
+feasible,0,0,1,1,1,1,0,1,0,1,feasible
+feasible,0,0,1,1,1,1,0,1,1,1,feasible
+feasible,0,0,1,1,1,1,1,0,0,1,feasible
+feasible,0,0,1,1,1,1,1,0,1,1,feasible
+feasible,0,0,1,1,1,1,1,1,0,1,feasible
+feasible,0,0,1,1,1,1,1,1,1,1,feasible
+feasible,0,1,0,0,0,0,0,0,0,0,feasible
+feasible,0,1,0,0,0,0,0,0,0,1,feasible
+feasible,0,1,0,0,0,0,0,0,1,0,feasible
+feasible,0,1,0,0,0,0,0,0,1,1,feasible
+feasible,0,1,0,0,0,0,0,1,0,0,feasible
+feasible,0,1,0,0,0,0,0,1,0,1,feasible
+feasible,0,1,0,0,0,0,0,1,1,0,feasible
+feasible,0,1,0,0,0,0,0,1,1,1,feasible
+feasible,0,1,0,0,0,0,1,0,0,0,feasible
+feasible,0,1,0,0,0,0,1,0,0,1,feasible
+feasible,0,1,0,0,0,0,1,0,1,0,feasible
+feasible,0,1,0,0,0,0,1,0,1,1,feasible
+feasible,0,1,0,0,0,0,1,1,0,0,feasible
+feasible,0,1,0,0,0,0,1,1,0,1,feasible
+feasible,0,1,0,0,0,0,1,1,1,0,feasible
+feasible,0,1,0,0,0,0,1,1,1,1,feasible
+feasible,0,1,0,0,0,1,0,0,0,1,feasible
+feasible,0,1,0,0,0,1,0,0,1,1,feasible
+feasible,0,1,0,0,0,1,0,1,0,1,feasible
+feasible,0,1,0,0,0,1,0,1,1,1,feasible
+feasible,0,1,0,0,0,1,1,0,0,1,feasible
+feasible,0,1,0,0,0,1,1,0,1,1,feasible
+feasible,0,1,0,0,0,1,1,1,0,1,feasible
+feasible,0,1,0,0,0,1,1,1,1,1,feasible
+feasible,0,1,0,0,1,0,0,0,0,0,feasible
+feasible,0,1,0,0,1,0,0,0,0,1,feasible
+feasible,0,1,0,0,1,0,0,0,1,0,feasible
+feasible,0,1,0,0,1,0,0,0,1,1,feasible
+feasible,0,1,0,0,1,0,0,1,0,0,feasible
+feasible,0,1,0,0,1,0,0,1,0,1,feasible
+feasible,0,1,0,0,1,0,0,1,1,0,feasible
+feasible,0,1,0,0,1,0,0,1,1,1,feasible
+feasible,0,1,0,0,1,0,1,0,0,0,feasible
+feasible,0,1,0,0,1,0,1,0,0,1,feasible
+feasible,0,1,0,0,1,0,1,0,1,0,feasible
+feasible,0,1,0,0,1,0,1,0,1,1,feasible
+feasible,0,1,0,0,1,0,1,1,0,0,feasible
+feasible,0,1,0,0,1,0,1,1,0,1,feasible
+feasible,0,1,0,0,1,0,1,1,1,0,feasible
+feasible,0,1,0,0,1,0,1,1,1,1,feasible
+feasible,0,1,0,0,1,1,0,0,0,1,feasible
+feasible,0,1,0,0,1,1,0,0,1,1,feasible
+feasible,0,1,0,0,1,1,0,1,0,1,feasible
+feasible,0,1,0,0,1,1,0,1,1,1,feasible
+feasible,0,1,0,0,1,1,1,0,0,1,feasible
+feasible,0,1,0,0,1,1,1,0,1,1,feasible
+feasible,0,1,0,0,1,1,1,1,0,1,feasible
+feasible,0,1,0,0,1,1,1,1,1,1,feasible
+feasible,0,1,0,1,1,0,0,0,0,0,feasible
+feasible,0,1,0,1,1,0,0,0,0,1,feasible
+feasible,0,1,0,1,1,0,0,0,1,0,feasible
+feasible,0,1,0,1,1,0,0,0,1,1,feasible
+feasible,0,1,0,1,1,0,0,1,0,0,feasible
+feasible,0,1,0,1,1,0,0,1,0,1,feasible
+feasible,0,1,0,1,1,0,0,1,1,0,feasible
+feasible,0,1,0,1,1,0,0,1,1,1,feasible
+feasible,0,1,0,1,1,0,1,0,0,0,feasible
+feasible,0,1,0,1,1,0,1,0,0,1,feasible
+feasible,0,1,0,1,1,0,1,0,1,0,feasible
+feasible,0,1,0,1,1,0,1,0,1,1,feasible
+feasible,0,1,0,1,1,0,1,1,0,0,feasible
+feasible,0,1,0,1,1,0,1,1,0,1,feasible
+feasible,0,1,0,1,1,0,1,1,1,0,feasible
+feasible,0,1,0,1,1,0,1,1,1,1,feasible
+feasible,0,1,0,1,1,1,0,0,0,1,feasible
+feasible,0,1,0,1,1,1,0,0,1,1,feasible
+feasible,0,1,0,1,1,1,0,1,0,1,feasible
+feasible,0,1,0,1,1,1,0,1,1,1,feasible
+feasible,0,1,0,1,1,1,1,0,0,1,feasible
+feasible,0,1,0,1,1,1,1,0,1,1,feasible
+feasible,0,1,0,1,1,1,1,1,0,1,feasible
+feasible,0,1,0,1,1,1,1,1,1,1,feasible
+feasible,0,1,1,0,0,0,0,0,0,0,feasible
+feasible,0,1,1,0,0,0,0,0,0,1,feasible
+feasible,0,1,1,0,0,0,0,0,1,0,feasible
+feasible,0,1,1,0,0,0,0,0,1,1,feasible
+feasible,0,1,1,0,0,0,0,1,0,0,feasible
+feasible,0,1,1,0,0,0,0,1,0,1,feasible
+feasible,0,1,1,0,0,0,0,1,1,0,feasible
+feasible,0,1,1,0,0,0,0,1,1,1,feasible
+feasible,0,1,1,0,0,0,1,0,0,0,feasible
+feasible,0,1,1,0,0,0,1,0,0,1,feasible
+feasible,0,1,1,0,0,0,1,0,1,0,feasible
+feasible,0,1,1,0,0,0,1,0,1,1,feasible
+feasible,0,1,1,0,0,0,1,1,0,0,feasible
+feasible,0,1,1,0,0,0,1,1,0,1,feasible
+feasible,0,1,1,0,0,0,1,1,1,0,feasible
+feasible,0,1,1,0,0,0,1,1,1,1,feasible
+feasible,0,1,1,0,0,1,0,0,0,1,feasible
+feasible,0,1,1,0,0,1,0,0,1,1,feasible
+feasible,0,1,1,0,0,1,0,1,0,1,feasible
+feasible,0,1,1,0,0,1,0,1,1,1,feasible
+feasible,0,1,1,0,0,1,1,0,0,1,feasible
+feasible,0,1,1,0,0,1,1,0,1,1,feasible
+feasible,0,1,1,0,0,1,1,1,0,1,feasible
+feasible,0,1,1,0,0,1,1,1,1,1,feasible
+feasible,0,1,1,0,1,0,0,0,0,0,feasible
+feasible,0,1,1,0,1,0,0,0,0,1,feasible
+feasible,0,1,1,0,1,0,0,0,1,0,feasible
+feasible,0,1,1,0,1,0,0,0,1,1,feasible
+feasible,0,1,1,0,1,0,0,1,0,0,feasible
+feasible,0,1,1,0,1,0,0,1,0,1,feasible
+feasible,0,1,1,0,1,0,0,1,1,0,feasible
+feasible,0,1,1,0,1,0,0,1,1,1,feasible
+feasible,0,1,1,0,1,0,1,0,0,0,feasible
+feasible,0,1,1,0,1,0,1,0,0,1,feasible
+feasible,0,1,1,0,1,0,1,0,1,0,feasible
+feasible,0,1,1,0,1,0,1,0,1,1,feasible
+feasible,0,1,1,0,1,0,1,1,0,0,feasible
+feasible,0,1,1,0,1,0,1,1,0,1,feasible
+feasible,0,1,1,0,1,0,1,1,1,0,feasible
+feasible,0,1,1,0,1,0,1,1,1,1,feasible
+feasible,0,1,1,0,1,1,0,0,0,1,feasible
+feasible,0,1,1,0,1,1,0,0,1,1,feasible
+feasible,0,1,1,0,1,1,0,1,0,1,feasible
+feasible,0,1,1,0,1,1,0,1,1,1,feasible
+feasible,0,1,1,0,1,1,1,0,0,1,feasible
+feasible,0,1,1,0,1,1,1,0,1,1,feasible
+feasible,0,1,1,0,1,1,1,1,0,1,feasible
+feasible,0,1,1,0,1,1,1,1,1,1,feasible
+feasible,0,1,1,1,1,0,0,0,0,0,feasible
+feasible,0,1,1,1,1,0,0,0,0,1,feasible
+feasible,0,1,1,1,1,0,0,0,1,0,feasible
+feasible,0,1,1,1,1,0,0,0,1,1,feasible
+feasible,0,1,1,1,1,0,0,1,0,0,feasible
+feasible,0,1,1,1,1,0,0,1,0,1,feasible
+feasible,0,1,1,1,1,0,0,1,1,0,feasible
+feasible,0,1,1,1,1,0,0,1,1,1,feasible
+feasible,0,1,1,1,1,0,1,0,0,0,feasible
+feasible,0,1,1,1,1,0,1,0,0,1,feasible
+feasible,0,1,1,1,1,0,1,0,1,0,feasible
+feasible,0,1,1,1,1,0,1,0,1,1,feasible
+feasible,0,1,1,1,1,0,1,1,0,0,feasible
+feasible,0,1,1,1,1,0,1,1,0,1,feasible
+feasible,0,1,1,1,1,0,1,1,1,0,feasible
+feasible,0,1,1,1,1,0,1,1,1,1,feasible
+feasible,0,1,1,1,1,1,0,0,0,1,feasible
+feasible,0,1,1,1,1,1,0,0,1,1,feasible
+feasible,0,1,1,1,1,1,0,1,0,1,feasible
+feasible,0,1,1,1,1,1,0,1,1,1,feasible
+feasible,0,1,1,1,1,1,1,0,0,1,feasible
+feasible,0,1,1,1,1,1,1,0,1,1,feasible
+feasible,0,1,1,1,1,1,1,1,0,1,feasible
+feasible,0,1,1,1,1,1,1,1,1,1,feasible
+feasible,1,0,0,0,0,0,1,0,1,0,feasible
+feasible,1,0,0,0,0,0,1,0,1,1,feasible
+feasible,1,0,0,0,0,0,1,1,0,0,feasible
+feasible,1,0,0,0,0,0,1,1,0,1,feasible
+feasible,1,0,0,0,0,0,1,1,1,0,feasible
+feasible,1,0,0,0,0,0,1,1,1,1,feasible
+feasible,1,0,0,0,0,1,0,0,1,1,feasible
+feasible,1,0,0,0,0,1,0,1,0,1,feasible
+feasible,1,0,0,0,0,1,0,1,1,1,feasible
+feasible,1,0,0,0,0,1,1,0,1,1,feasible
+feasible,1,0,0,0,0,1,1,1,0,1,feasible
+feasible,1,0,0,0,0,1,1,1,1,1,feasible
+feasible,1,0,0,0,1,0,1,0,1,0,feasible
+feasible,1,0,0,0,1,0,1,0,1,1,feasible
+feasible,1,0,0,0,1,0,1,1,0,0,feasible
+feasible,1,0,0,0,1,0,1,1,0,1,feasible
+feasible,1,0,0,0,1,0,1,1,1,0,feasible
+feasible,1,0,0,0,1,0,1,1,1,1,feasible
+feasible,1,0,0,0,1,1,0,0,1,1,feasible
+feasible,1,0,0,0,1,1,0,1,0,1,feasible
+feasible,1,0,0,0,1,1,0,1,1,1,feasible
+feasible,1,0,0,0,1,1,1,0,1,1,feasible
+feasible,1,0,0,0,1,1,1,1,0,1,feasible
+feasible,1,0,0,0,1,1,1,1,1,1,feasible
+feasible,1,0,0,1,1,0,1,0,0,0,feasible
+feasible,1,0,0,1,1,0,1,0,0,1,feasible
+feasible,1,0,0,1,1,0,1,0,1,0,feasible
+feasible,1,0,0,1,1,0,1,0,1,1,feasible
+feasible,1,0,0,1,1,0,1,1,0,0,feasible
+feasible,1,0,0,1,1,0,1,1,0,1,feasible
+feasible,1,0,0,1,1,0,1,1,1,0,feasible
+feasible,1,0,0,1,1,0,1,1,1,1,feasible
+feasible,1,0,0,1,1,1,0,0,0,1,feasible
+feasible,1,0,0,1,1,1,0,0,1,1,feasible
+feasible,1,0,0,1,1,1,0,1,0,1,feasible
+feasible,1,0,0,1,1,1,0,1,1,1,feasible
+feasible,1,0,0,1,1,1,1,0,0,1,feasible
+feasible,1,0,0,1,1,1,1,0,1,1,feasible
+feasible,1,0,0,1,1,1,1,1,0,1,feasible
+feasible,1,0,0,1,1,1,1,1,1,1,feasible
+feasible,1,0,1,0,0,0,1,0,1,0,feasible
+feasible,1,0,1,0,0,0,1,0,1,1,feasible
+feasible,1,0,1,0,0,0,1,1,0,0,feasible
+feasible,1,0,1,0,0,0,1,1,0,1,feasible
+feasible,1,0,1,0,0,0,1,1,1,0,feasible
+feasible,1,0,1,0,0,0,1,1,1,1,feasible
+feasible,1,0,1,0,0,1,0,0,1,1,feasible
+feasible,1,0,1,0,0,1,0,1,0,1,feasible
+feasible,1,0,1,0,0,1,0,1,1,1,feasible
+feasible,1,0,1,0,0,1,1,0,1,1,feasible
+feasible,1,0,1,0,0,1,1,1,0,1,feasible
+feasible,1,0,1,0,0,1,1,1,1,1,feasible
+feasible,1,0,1,0,1,0,1,0,1,0,feasible
+feasible,1,0,1,0,1,0,1,0,1,1,feasible
+feasible,1,0,1,0,1,0,1,1,0,0,feasible
+feasible,1,0,1,0,1,0,1,1,0,1,feasible
+feasible,1,0,1,0,1,0,1,1,1,0,feasible
+feasible,1,0,1,0,1,0,1,1,1,1,feasible
+feasible,1,0,1,0,1,1,0,0,1,1,feasible
+feasible,1,0,1,0,1,1,0,1,0,1,feasible
+feasible,1,0,1,0,1,1,0,1,1,1,feasible
+feasible,1,0,1,0,1,1,1,0,1,1,feasible
+feasible,1,0,1,0,1,1,1,1,0,1,feasible
+feasible,1,0,1,0,1,1,1,1,1,1,feasible
+feasible,1,0,1,1,1,0,1,0,0,0,feasible
+feasible,1,0,1,1,1,0,1,0,0,1,feasible
+feasible,1,0,1,1,1,0,1,0,1,0,feasible
+feasible,1,0,1,1,1,0,1,0,1,1,feasible
+feasible,1,0,1,1,1,0,1,1,0,0,feasible
+feasible,1,0,1,1,1,0,1,1,0,1,feasible
+feasible,1,0,1,1,1,0,1,1,1,0,feasible
+feasible,1,0,1,1,1,0,1,1,1,1,feasible
+feasible,1,0,1,1,1,1,0,0,0,1,feasible
+feasible,1,0,1,1,1,1,0,0,1,1,feasible
+feasible,1,0,1,1,1,1,0,1,0,1,feasible
+feasible,1,0,1,1,1,1,0,1,1,1,feasible
+feasible,1,0,1,1,1,1,1,0,0,1,feasible
+feasible,1,0,1,1,1,1,1,0,1,1,feasible
+feasible,1,0,1,1,1,1,1,1,0,1,feasible
+feasible,1,0,1,1,1,1,1,1,1,1,feasible
+feasible,1,1,0,0,0,0,0,0,1,0,feasible
+feasible,1,1,0,0,0,0,0,0,1,1,feasible
+feasible,1,1,0,0,0,0,0,1,0,0,feasible
+feasible,1,1,0,0,0,0,0,1,0,1,feasible
+feasible,1,1,0,0,0,0,0,1,1,0,feasible
+feasible,1,1,0,0,0,0,0,1,1,1,feasible
+feasible,1,1,0,0,0,0,1,0,1,0,feasible
+feasible,1,1,0,0,0,0,1,0,1,1,feasible
+feasible,1,1,0,0,0,0,1,1,0,0,feasible
+feasible,1,1,0,0,0,0,1,1,0,1,feasible
+feasible,1,1,0,0,0,0,1,1,1,0,feasible
+feasible,1,1,0,0,0,0,1,1,1,1,feasible
+feasible,1,1,0,0,0,1,0,0,1,1,feasible
+feasible,1,1,0,0,0,1,0,1,0,1,feasible
+feasible,1,1,0,0,0,1,0,1,1,1,feasible
+feasible,1,1,0,0,0,1,1,0,1,1,feasible
+feasible,1,1,0,0,0,1,1,1,0,1,feasible
+feasible,1,1,0,0,0,1,1,1,1,1,feasible
+feasible,1,1,0,0,1,0,0,0,1,0,feasible
+feasible,1,1,0,0,1,0,0,0,1,1,feasible
+feasible,1,1,0,0,1,0,0,1,0,0,feasible
+feasible,1,1,0,0,1,0,0,1,0,1,feasible
+feasible,1,1,0,0,1,0,0,1,1,0,feasible
+feasible,1,1,0,0,1,0,0,1,1,1,feasible
+feasible,1,1,0,0,1,0,1,0,1,0,feasible
+feasible,1,1,0,0,1,0,1,0,1,1,feasible
+feasible,1,1,0,0,1,0,1,1,0,0,feasible
+feasible,1,1,0,0,1,0,1,1,0,1,feasible
+feasible,1,1,0,0,1,0,1,1,1,0,feasible
+feasible,1,1,0,0,1,0,1,1,1,1,feasible
+feasible,1,1,0,0,1,1,0,0,1,1,feasible
+feasible,1,1,0,0,1,1,0,1,0,1,feasible
+feasible,1,1,0,0,1,1,0,1,1,1,feasible
+feasible,1,1,0,0,1,1,1,0,1,1,feasible
+feasible,1,1,0,0,1,1,1,1,0,1,feasible
+feasible,1,1,0,0,1,1,1,1,1,1,feasible
+feasible,1,1,0,1,1,0,0,0,0,0,feasible
+feasible,1,1,0,1,1,0,0,0,0,1,feasible
+feasible,1,1,0,1,1,0,0,0,1,0,feasible
+feasible,1,1,0,1,1,0,0,0,1,1,feasible
+feasible,1,1,0,1,1,0,0,1,0,0,feasible
+feasible,1,1,0,1,1,0,0,1,0,1,feasible
+feasible,1,1,0,1,1,0,0,1,1,0,feasible
+feasible,1,1,0,1,1,0,0,1,1,1,feasible
+feasible,1,1,0,1,1,0,1,0,0,0,feasible
+feasible,1,1,0,1,1,0,1,0,0,1,feasible
+feasible,1,1,0,1,1,0,1,0,1,0,feasible
+feasible,1,1,0,1,1,0,1,0,1,1,feasible
+feasible,1,1,0,1,1,0,1,1,0,0,feasible
+feasible,1,1,0,1,1,0,1,1,0,1,feasible
+feasible,1,1,0,1,1,0,1,1,1,0,feasible
+feasible,1,1,0,1,1,0,1,1,1,1,feasible
+feasible,1,1,0,1,1,1,0,0,0,1,feasible
+feasible,1,1,0,1,1,1,0,0,1,1,feasible
+feasible,1,1,0,1,1,1,0,1,0,1,feasible
+feasible,1,1,0,1,1,1,0,1,1,1,feasible
+feasible,1,1,0,1,1,1,1,0,0,1,feasible
+feasible,1,1,0,1,1,1,1,0,1,1,feasible
+feasible,1,1,0,1,1,1,1,1,0,1,feasible
+feasible,1,1,0,1,1,1,1,1,1,1,feasible
+feasible,1,1,1,0,0,0,0,0,1,0,feasible
+feasible,1,1,1,0,0,0,0,0,1,1,feasible
+feasible,1,1,1,0,0,0,0,1,0,0,feasible
+feasible,1,1,1,0,0,0,0,1,0,1,feasible
+feasible,1,1,1,0,0,0,0,1,1,0,feasible
+feasible,1,1,1,0,0,0,0,1,1,1,feasible
+feasible,1,1,1,0,0,0,1,0,1,0,feasible
+feasible,1,1,1,0,0,0,1,0,1,1,feasible
+feasible,1,1,1,0,0,0,1,1,0,0,feasible
+feasible,1,1,1,0,0,0,1,1,0,1,feasible
+feasible,1,1,1,0,0,0,1,1,1,0,feasible
+feasible,1,1,1,0,0,0,1,1,1,1,feasible
+feasible,1,1,1,0,0,1,0,0,1,1,feasible
+feasible,1,1,1,0,0,1,0,1,0,1,feasible
+feasible,1,1,1,0,0,1,0,1,1,1,feasible
+feasible,1,1,1,0,0,1,1,0,1,1,feasible
+feasible,1,1,1,0,0,1,1,1,0,1,feasible
+feasible,1,1,1,0,0,1,1,1,1,1,feasible
+feasible,1,1,1,0,1,0,0,0,1,0,feasible
+feasible,1,1,1,0,1,0,0,0,1,1,feasible
+feasible,1,1,1,0,1,0,0,1,0,0,feasible
+feasible,1,1,1,0,1,0,0,1,0,1,feasible
+feasible,1,1,1,0,1,0,0,1,1,0,feasible
+feasible,1,1,1,0,1,0,0,1,1,1,feasible
+feasible,1,1,1,0,1,0,1,0,1,0,feasible
+feasible,1,1,1,0,1,0,1,0,1,1,feasible
+feasible,1,1,1,0,1,0,1,1,0,0,feasible
+feasible,1,1,1,0,1,0,1,1,0,1,feasible
+feasible,1,1,1,0,1,0,1,1,1,0,feasible
+feasible,1,1,1,0,1,0,1,1,1,1,feasible
+feasible,1,1,1,0,1,1,0,0,1,1,feasible
+feasible,1,1,1,0,1,1,0,1,0,1,feasible
+feasible,1,1,1,0,1,1,0,1,1,1,feasible
+feasible,1,1,1,0,1,1,1,0,1,1,feasible
+feasible,1,1,1,0,1,1,1,1,0,1,feasible
+feasible,1,1,1,0,1,1,1,1,1,1,feasible
+feasible,1,1,1,1,1,0,0,0,0,0,feasible
+feasible,1,1,1,1,1,0,0,0,0,1,feasible
+feasible,1,1,1,1,1,0,0,0,1,0,feasible
+feasible,1,1,1,1,1,0,0,0,1,1,feasible
+feasible,1,1,1,1,1,0,0,1,0,0,feasible
+feasible,1,1,1,1,1,0,0,1,0,1,feasible
+feasible,1,1,1,1,1,0,0,1,1,0,feasible
+feasible,1,1,1,1,1,0,0,1,1,1,feasible
+feasible,1,1,1,1,1,0,1,0,0,0,feasible
+feasible,1,1,1,1,1,0,1,0,0,1,feasible
+feasible,1,1,1,1,1,0,1,0,1,0,feasible
+feasible,1,1,1,1,1,0,1,0,1,1,feasible
+feasible,1,1,1,1,1,0,1,1,0,0,feasible
+feasible,1,1,1,1,1,0,1,1,0,1,feasible
+feasible,1,1,1,1,1,0,1,1,1,0,feasible
+feasible,1,1,1,1,1,0,1,1,1,1,feasible
+feasible,1,1,1,1,1,1,0,0,0,1,feasible
+feasible,1,1,1,1,1,1,0,0,1,1,feasible
+feasible,1,1,1,1,1,1,0,1,0,1,feasible
+feasible,1,1,1,1,1,1,0,1,1,1,feasible
+feasible,1,1,1,1,1,1,1,0,0,1,feasible
+feasible,1,1,1,1,1,1,1,0,1,1,feasible
+feasible,1,1,1,1,1,1,1,1,0,1,feasible
+feasible,1,1,1,1,1,1,1,1,1,1,feasible
+infeasible,0,0,0,0,0,0,0,0,0,0,empty network has no consumption of radiolytic sources
+infeasible,0,0,0,0,0,0,0,0,0,1,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,0,0,1,0,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,0,0,1,1,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,0,1,0,0,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,0,1,0,1,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,0,1,1,0,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,0,1,1,1,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,1,0,0,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,1,0,0,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,1,0,1,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,1,0,1,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,1,1,0,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,1,1,0,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,1,1,1,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,0,1,1,1,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,0,0,0,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,0,0,0,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,0,0,1,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,0,0,1,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,0,1,0,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,0,1,0,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,0,1,1,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,0,1,1,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,1,0,0,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,1,0,0,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,1,0,1,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,1,0,1,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,1,1,0,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,1,1,0,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,1,1,1,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,0,1,1,1,1,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,0,0,0,0,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,0,0,0,1,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,0,0,1,0,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,0,0,1,1,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,0,1,0,0,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,0,1,0,1,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,0,1,1,0,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,0,1,1,1,e_s- is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,1,0,0,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,1,0,0,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,1,0,1,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,1,0,1,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,1,1,0,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,1,1,0,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,1,1,1,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,0,1,1,1,1,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,1,0,0,0,0,Cl• is sourced but no active reaction consumes it
+infeasible,0,0,0,0,1,1,0,0,0,1,Cl• is sourced but no active reaction consumes it

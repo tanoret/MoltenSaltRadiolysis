@@ -1,0 +1,17 @@
+Iwamatsu, K.; Horne, G. P.; Ramos-Ballesteros, A.; Conrad, J. K.; Sayed, A. K.; Phillips, W. C.;
+Cook, A. R.; LaVerne, J. A.; Pimblott, S. M.; Wishart, J. F.
+"Radiation-induced reaction kinetics of Zn2+ with eS- and Cl2•- in molten LiCl-KCl eutectic at 400-600 °C."
+Phys. Chem. Chem. Phys. 2022, 24, 25088-25098. DOI: 10.1039/D2CP01194H
+OSTI preprint: BNL-228524-2022-JAAM (https://www.osti.gov/servlets/purl/1870398)
+
+Reported values in this folder are extracted from the OSTI preprint PDF text (pdftotext).
+
+Probe wavelengths:
+- e_s-: 671 nm (also visible at 700 nm — see Fig. 1)
+- Cl2•-: 340 nm
+Pulse dose: 6-9 Gy water-equivalent per pulse at the BNL LEAF facility.
+
+[ZnCl2] concentrations used: 0, 1.88, 3.76, 7.30, 9.41 mM in LiCl-KCl, plus 142 mM ZnCl2 in LiCl-KCl
+and neat ZnCl2 (m.p. 293 °C).
+
+Salt impurity composition (ppm) reported: Na 26.9, Ca 4.3, Zn 3.2, Rb 3.0, Mg 2.9, Sr 2.6.

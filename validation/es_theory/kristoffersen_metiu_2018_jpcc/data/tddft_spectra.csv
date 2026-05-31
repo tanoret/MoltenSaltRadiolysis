@@ -1,0 +1,10 @@
+# Kristoffersen, H. H.; Metiu, H. J. Phys. Chem. C 2018, 122, 19603-19612.
+# DOI: 10.1021/acs.jpcc.8b05716
+# TDDFT / optical absorption predictions for the solvated electron (bipolaron).
+#
+# RESULT: The paper does NOT perform TDDFT and does NOT report any predicted
+# absorption spectrum, lambda_max, oscillator strength, or molar absorptivity.
+# Only ground-state ab initio MD energies and Kohn-Sham orbital energies are reported.
+# This file is intentionally empty (header only); no theoretical analog of the
+# experimental epsilon(lambda, T) of Pikaev 1982 or Sotnikov is provided.
+composition,T_K,lambda_max_nm,oscillator_strength,predicted_epsilon_M_minus1_cm_minus1,source,notes

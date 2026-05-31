@@ -1,0 +1,36 @@
+# Rotermund et al. 2024, J. Phys. Chem. A 128, 590-598.
+# DOI: 10.1021/acs.jpca.3c07404
+# Experimental conditions for picosecond electron pulse radiolysis at BNL-LEAF.
+parameter,value,units,notes
+temperature,22 +/- 1,degC,ambient; single temperature - no T-dependence study
+temperature_K,295.15 +/- 1,K,converted from 22 C
+isotope,Cf-249,,half-life 351 yr; E_alpha 6.30 MeV
+source_form,CfCl3,,from ORNL Isotope Development and Production for Research and Applications Program / REDC
+purified_mass,5.99,mg,final recovered after triple-column purification
+experiment_mass,2.0,mg,Cf3+ aliquot used (333.4 uL of 2 M HCl stock) redissolved in 3 mM HClO4
+stock_solvent,3 mM HClO4,,Cf/HClO4 stock used for sample dilutions
+Cf3+_sample_concentrations,"0, 0.2, 0.4, 0.6, 0.8, 1.0",mM,nominal series; Cl2- experiments actually used 0/0.48/0.73/0.97/1.21 mM and SO4- used 0/0.24/0.48/0.73/1.21 mM per figure captions
+medium_Cl2_experiments,1 M NaCl + 0.1 M K2S2O8 + 3 mM HClO4 aerated aqueous,,solution for Cl2- radical anion isolation
+medium_SO4_experiments,0.1 M K2S2O8 + 3.0 mM HClO4 aerated aqueous,,solution for SO4- radical anion isolation
+observation_wavelength_Cl2,350,nm,Cl2- decay monitoring; 10 nm bandpass interference filter
+observation_wavelength_SO4,450,nm,SO4- decay monitoring; 10 nm bandpass interference filter
+dose_per_pulse,~9.8,Gy,from chemical dosimetry (eaq- decay at 650 nm in Ar-sparged 1 M NaOH / 20% EtOH)
+dosimetry_standard,Ar-sparged 1.0 M NaOH + 20 vol% ethanol in Millipore DI water,,monitored at 650 nm via es-
+optical_path_length,1.0,cm,Starna semimicro spectrosil quartz screwcap-sealed cuvettes
+facility,BNL Laser Electron Accelerator Facility (LEAF),,picosecond electron pulse radiolysis (ref 79)
+spectral_window,300-1000,nm,selectable via 10 nm bandpass interference filters (Edmund Optics)
+probe_lamp,pulsed xenon arc (Photon Technology Intl housing + Ushio bulb + custom pulser),,
+detector,FND-100 silicon diode,,
+digitizer,Teledyne LeCroy WaveRunner 640Zi,4 GHz / 8-bit oscilloscope,
+fit_function,mixed pseudo-first-order + second-order (Eq. 20),,kX first-order Cf reaction; kY second-order disproportionation
+replicates,3 decay traces of 8 measured pulses per sample,,quoted errors are standard deviations of decay traces
+ionic_strength_correction,Bronsted-Bjerrum / extended Debye-Huckel (Eq. 18),,log(k0) = log(k) - 2*Z_a*Z_b*[A*sqrt(mu)/(1+sqrt(mu))]
+charge_radical,-1,e,Cl2- and SO4- both Z = -1
+charge_Cf,+3,e,Cf3+ Z = +3
+debye_hueckel_A_formula,A = e^3*(2000*NA)^(1/2) / [2.303*(8*pi)*(eps0*eps*kB*T)^(3/2)],Eq. 19,
+electron_charge_e,1.602e-19,C,
+avogadro_NA,6.022e23,mol^-1,
+vacuum_permittivity_eps0,8.854e-12,F m^-1,
+dielectric_constant_water_eps,78.84,dimensionless,at experimental T
+boltzmann_kB,1.380e-23,J K^-1,
+temperature_dependence_study,no,,single-temperature measurement only; no Arrhenius / Ea reported

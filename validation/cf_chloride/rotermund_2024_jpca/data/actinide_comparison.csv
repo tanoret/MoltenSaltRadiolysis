@@ -1,0 +1,21 @@
+# Rotermund et al. 2024, J. Phys. Chem. A 128, 590-598.
+# DOI: 10.1021/acs.jpca.3c07404
+# Comparison of trivalent actinide rate constants with Cl2- and SO4- radical anions.
+# This paper does NOT include a numerical Table of comparison values; Figure 2 shows the
+# comparison graphically only (k vs E0(IV/III)). The other-actinide numerical values
+# referenced live in:
+#   - ref 4 (Mincher & Mezyk 2009, Radiochim. Acta 97, 519-534) - reviewed kinetics
+#   - ref 12 (Horne et al. 2022, Inorg. Chem. 61, 10822-10832) - Bk3+/Cf3+ with OH/NO3
+#   - ref 86 (Horne et al. 2021, Dalton Trans. 50, 10853-10859) - Cm3+ kinetics
+# Below: only Cf3+ rows that are explicitly numerical in this paper plus the implicit
+# comparison set noted in the prose (Cf with OH, NO3 from ref 12). Figure 2 numerical
+# values for other actinides require digitization of Figure 2A/2B / SI Figure S2 axes -
+# they are NOT tabulated in this paper.
+actinide,oxidation_state,coreactant,k_value,k_units,sigma,T_C,T_K,reduction_potential_V_IV_III,figure_panel,source,notes
+Cf,III,Cl2-,8.28e5,M^-1 s^-1,0.61e5,22,295.15,+3.2,Figure 2A,this work (Rotermund 2024),"E0(Cf4+/Cf3+) = +3.2 V vs E0(Cl2-) = +2.13 V from refs 51, 76"
+Cf,III,SO4-,9.50e8,M^-1 s^-1,0.43e8,22,295.15,+3.2,Figure 2B,this work (Rotermund 2024),
+Cf,III,OH,2.07e8,M^-1 s^-1,0.12e8,22,295.15,+3.2,SI Figure S2A,ref 12 (Horne 2022),cited in Eq. 3
+Cf,III,NO3,1.78e8,M^-1 s^-1,0.19e8,22,295.15,+3.2,SI Figure S2B,ref 12 (Horne 2022),cited page 594 prose
+# NOTE: Other trivalent actinides (Th, U, Np, Pu, Am, Cm, Bk) are shown only graphically
+# in Figure 2 and SI Figure S2 - numerical values would require figure axis digitization
+# (source_figure_axis) and are sourced from refs 4, 12, 86. Not tabulated in this paper.
