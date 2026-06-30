@@ -4,7 +4,7 @@ Single-file radiolysis model (flattened from your MoltenSaltRadiolysis repo).
 
 - Keeps your config shape (kernel/volumes/kLa/dose_rate/radiation/G overrides/metals/gas species)
 - Offers build_system(), integrate_system(), quick_plot(), and a small CLI:
-      python msr_radiolysis_onefile.py examples_config.json
+      python direct_integration_no_demo.py config.json
 
 Notes:
 - Units:
@@ -51,9 +51,9 @@ class Species:
 @dataclass
 class Reaction:
     name: str
-    reactants: Dict[str, float]         # species -> stoich coeff (consumed)
-    products: Dict[str, float]          # species -> stoich coeff (formed)
-    reversible: bool = False            # reverse not parameterized here; add explicit reverse reaction instead
+    reactants: Dict[str, float]
+    products: Dict[str, float]
+    reversible: bool = False
     k_ref: Optional[float] = None
     T_ref: Optional[float] = None
     Ea_J_mol: Optional[float] = None
@@ -66,13 +66,12 @@ class Reaction:
         if self.A is not None and self.Ea_J_mol is not None:
             return float(self.A) * math.exp(-self.Ea_J_mol/(Rgas*T))
         if self.k_ref is not None and self.T_ref is not None and self.Ea_J_mol is not None:
-            # k(T) = k_ref * exp(-Ea/R * (1/T - 1/T_ref))
             return float(self.k_ref) * math.exp(-self.Ea_J_mol/Rgas * (1.0/T - 1.0/self.T_ref))
         return float(self.k_ref) if self.k_ref is not None else 0.0
 
 @dataclass
 class GasExchange:
-    """Linear mass transfer with Henry’s law:
+    """Linear mass transfer with Henry's law:
        flux [mol/L/s] = kLa * (C_liq - kH * p_gas)
        gas variable is mol in headspace; p_gas = n_gas * R * T / V_gas
     """
@@ -87,7 +86,7 @@ class System:
     species: List[Species]
     species_index: Dict[str, int]
     reactions: List[Reaction]
-    sources: Dict[str, float]                 # species -> mol/L/s source into LIQUID pool
+    sources: Dict[str, float]
     T: float                                  # K
     V_liq_m3: float
     V_gas_m3: float
@@ -99,37 +98,58 @@ def build_sources_from_G(g_values: Dict[str, float], dose_rate_J_m3_s: float) ->
     """S_i [mol/L/s] = G_i [molecules/100eV] * dose_rate / (100 eV in J) / N_A"""
     if dose_rate_J_m3_s == 0.0 or not g_values:
         return {}
-    factor = dose_rate_J_m3_s / (100.0 * EV_J) / NA
+    factor = (dose_rate_J_m3_s/1000) / (100.0 * EV_J) / NA
     return {sp: float(G) * factor for sp, G in g_values.items()}
 
-# ---- a tiny embedded DB you can extend/replace with your real numbers
-# Structure mirrors what your builder expected: kernels, phases, reactions, henry, metals, G_values...
+#The reactions with k-eff of 1e10 are order of magnitude estimations. Further literature exploring these reactions would aid in model development.
+#Fortunately, the model output is relatively non-dependant on these parameters due to the Cl radical having micromolar concentrations and the Cr ions having millimolar
 MINI_DB = {
     "kernels": {
         "chloride": {
-            "species": ["Cl-", "Cl2•-", "Cl2_diss", "e_s-", "Cl•", "Cl3-"],   # add/adjust as needed
+            "species": ["Cl-", "Cl2•-", "Cl2_diss", "e_s-", "Cl•", "Cl3-"],
             "phases":  {"Cl-": "liq", "Cl2•-": "liq", "Cl2_diss": "liq", "e_s-": "liq", "Cl•": "liq", "Cl3-": "liq"},
-            "reactions": [
+            "reactions": [ 
                 {"name": "e + Cl2_diss -> Cl2•-",
                  "reactants": {"e_s-": 1.0, "Cl2_diss": 1.0},
                  "products":  {"Cl2•-": 1.0},
                  "reversible": False,
-                 "params": {"k_ref": 1.0e10}},   # L/(mol*s)
-                {"name": "e + Cl2•- -> 2Cl-",
+                 "params": {"k_ref": 1.0e10}},
+                {"name": "e + Cl2•- -> 2Cl-",    #This reaction could be excluded since the molten salt screening negative affects it (Claude chat 'Reaction Coeff. at 400C)
                  "reactants": {"e_s-": 1.0, "Cl2•-": 1.0},
                  "products":  {"Cl-": 2.0},
                  "reversible": False,
-                 "params": {"k_ref": 1.0e10}},   # L/(mol*s)
+                 "params": {"k_ref": 1.0e10}},
                 {"name": "Cl- + Cl• -> Cl2•-",
                  "reactants": {"Cl-": 1.0, "Cl•": 1.0},
-                 "products":  {"Cl2•-": 2.0},
+                 "products":  {"Cl2•-": 1.0},
                  "reversible": False,
-                 "params": {"k_ref": 1.0e10}},   # L/(mol*s)
-                 {"name": "Cl2•- + Cl2•- -> Cl- + Cl3-",
+                 "params": {"k_ref": 1.0e10}},
+                {"name": "Cl2•- + Cl2•- -> Cl- + Cl3-",
                  "reactants": {"Cl2•-": 2.0},
                  "products":  {"Cl-": 1.0, "Cl3-": 1.0},
                  "reversible": False,
-                 "params": {"k_ref": 2.2e9}},   # L/(mol*s)
+                 "params": {"k_ref": 2.2e9}},
+                {"name": "Cl• + e_s- -> Cl-",
+                 "reactants": {"Cl•": 1.0, "e_s-": 1.0},
+                 "products":  {"Cl-": 1.0},
+                 "reversible": False,
+                 "params": {"k_ref": 1.0e10}},
+                 #The following two reactions are also order of magnitude estimations prevent a buildup of Cl3-
+                {"name": "Cl3- -> Cl- + Cl2_diss",
+                 "reactants": {"Cl3-": 1.0,},
+                 "products":  {"Cl-": 1.0, "Cl2_diss": 1.0},
+                 "reversible": False,
+                 "params": {"k_ref": 1e4}},
+                {"name": "Cl- + Cl2_diss -> Cl3-",
+                 "reactants": {"Cl-": 1.0, "Cl2_diss": 1.0},
+                 "products":  {"Cl3-": 1.0},
+                 "reversible": False,
+                 "params": {"k_ref": 1e3}},
+                 {"name": "Cl2•- -> 2Cl- (background impurity scavenging)",
+                 "reactants": {"Cl2•-": 1.0},
+                 "products":  {"Cl-": 2.0},
+                 "reversible": False,
+                 "params": {"k_ref": 3.3e6}}  # s^-1, from Fig 4B intercept, Iwamatsu 2026
             ],
         },
         "fluoride": {
@@ -143,84 +163,70 @@ MINI_DB = {
                  "params": {"k_ref": 1.0e-3}},
             ],
         },
-        
     },
-    "henry": {  # placeholder Henry constants
-        "Cl2_mol_m3_Pa": 2.0e-5,   # mol/(L*Pa)
+    "henry": {
+        "Cl2_mol_m3_Pa": 2.0e-5,
         "F2_mol_m3_Pa":  1.0e-5,
     },
-    # Metal section shows structure only; add your real species/reactions
     "metals": {
         "Zn": {
             "species": ["Zn2+", "Zn+"],
             "chloride_templated_reactions": [],
             "fluoride_templated_reactions": [],
         },
-        "U":  {
+        "U": {
             "species": ["U4+", "U3+"],
             "chloride_templated_reactions": [],
             "fluoride_templated_reactions": [],
         },
         "chromium": {
-            "species": ["Cr2+", "Cr3+", "Cr+", "e_s-"],   # add/adjust as needed
-            "phases":  {"Cr2+": "liq", "Cr+": "liq", "Cr+": "liq", "e_s-": "liq"},
+            "species": ["Cr2+", "Cr3+", "Cr+", "e_s-"],
+            "phases":  {"Cr2+": "liq", "Cr3+": "liq", "Cr+": "liq", "e_s-": "liq"},
             "chloride_templated_reactions": [
-                 {"name": "e + Cr3+ -> Cr2+",
+                {"name": "e + Cr3+ -> Cr2+",
                  "reactants": {"e_s-": 1.0, "Cr3+": 1.0},
                  "products":  {"Cr2+": 1.0},
                  "reversible": False,
-                 "params": {"k_ref": 6.1e10}},   # L/(mol*s)
-                 {"name": "e + Cr2+ -> Cr+",
+                 "params": {"k_ref": 6.1e10}},
+                {"name": "e + Cr2+ -> Cr+",
                  "reactants": {"e_s-": 1.0, "Cr2+": 1.0},
                  "products":  {"Cr+": 1.0},
                  "reversible": False,
-                 "params": {"k_ref": 4.1e10}},   # L/(mol*s)
-                 {"name": "Cr2+ + Cl2•- -> Cr3+ + 2Cl-",
+                 "params": {"k_ref": 4.1e10}},
+                {"name": "Cr2+ + Cl2•- -> Cr3+ + 2Cl-",
                  "reactants": {"Cr2+": 1.0, "Cl2•-": 1.0},
                  "products":  {"Cr3+": 1.0, "Cl-": 2.0},
                  "reversible": False,
-                 "params": {"k_ref": 7.2e9}},   # L/(mol*s)
-                 {"name": "Cr3+ + Cl2•- -> Cr2+ + Cl2_diss",
+                 "params": {"k_ref": 7.2e9}},
+                {"name": "Cr3+ + Cl2•- -> Cr2+ + Cl2_diss",
                  "reactants": {"Cr3+": 1.0, "Cl2•-": 1.0},
                  "products":  {"Cr2+": 1.0, "Cl2_diss": 1.0},
                  "reversible": False,
-                 "params": {"k_ref": 1.4e9}},   # L/(mol*s)
-                 {"name": "Cr3+ + Cr+ -> 2Cr2+",
+                 "params": {"k_ref": 1.4e9}},
+                {"name": "Cr3+ + Cr+ -> 2Cr2+",
                  "reactants": {"Cr3+": 1.0, "Cr+": 1.0},
                  "products":  {"Cr2+": 2.0},
                  "reversible": False,
-                 "params": {"k_ref": 1.7e10}},   # L/(mol*s)
+                 "params": {"k_ref": 1.7e10}},
             ],
         },
     },
-    # Example layout for G-values (put your real ones here or pass via config override)
     "G_values": {
         "gamma": {
-            "chloride": {"Cl2_diss": 0.8, "e_s-": 2.7, "Cl2•-": 1.7},   # molecules/100eV
+            "chloride": {"Cl2_diss": 0.8, "e_s-": 2.8, "Cl2•-": 2.8},
             "fluoride": {"F2_diss": 0.001, "e_s-": 0.001},
         }
     }
 }
 
-# ---- builder (flattened)
+# ---- builder
 def _species_list_to_objects(spec_names: List[str], phases: Dict[str, str]) -> List[Species]:
     return [Species(name=s, phase=phases.get(s, "liq"), index=i) for i, s in enumerate(spec_names)]
 
 def build_system(config: Dict, db: Optional[Dict] = None) -> System:
-    """
-    Build a System from a configuration dictionary.
-    Required/recognized keys (matching your README/builder):
-      kernel: "chloride" | "fluoride"
-      temperature_K, liquid_volume_m3, headspace_volume_m3, kLa_s^-1
-      dose_rate_J_m3_s, radiation
-      G_values_override: {species -> G (molecules/100eV)}
-      initial_concentrations: {species -> mol/L}
-      metals: {MetalName -> {species -> mol/L}}
-      gas_species: list subset of ["Cl2","F2"] to activate gas exchange
-    """
     db = db or MINI_DB
     kernel = config["kernel"]; assert kernel in db["kernels"]
-    T_K  = float(config.get("temperature_K", 673.15))
+    T_K   = float(config.get("temperature_K", 673.15))
     V_liq = float(config.get("liquid_volume_m3", 1.0e-3))
     V_gas = float(config.get("headspace_volume_m3", 0.0))
     kLa   = float(config.get("kLa_s^-1", 0.0))
@@ -234,11 +240,9 @@ def build_system(config: Dict, db: Optional[Dict] = None) -> System:
     phases = dict(kdb["phases"])
     reactions: List[Reaction] = []
 
-    # base reactions
     for row in kdb.get("reactions", []):
         reactions.append(_reaction_from_row(row))
 
-    # gas phases & exchanges
     gas_exchanges: List[GasExchange] = []
     if "Cl2" in gas_flags and kernel == "chloride":
         if "Cl2_g" not in species_list:
@@ -257,7 +261,6 @@ def build_system(config: Dict, db: Optional[Dict] = None) -> System:
             kLa_s=kLa, kH_molm3Pa=db["henry"]["F2_mol_m3_Pa"]
         ))
 
-    # metals (species + template reactions if present)
     metals_cfg = dict(config.get("metals", {}) or {})
     for metal, conc_map in metals_cfg.items():
         if metal not in db["metals"]:
@@ -271,16 +274,13 @@ def build_system(config: Dict, db: Optional[Dict] = None) -> System:
         for row in md.get(tmpl_key, []):
             reactions.append(_reaction_from_row(row))
 
-    # finalize species + index
     species_objs = _species_list_to_objects(species_list, phases)
     idx = {s.name: s.index for s in species_objs}
 
-    # sources from G-values (kernel+radiation, overridden by config)
     g_kernel = db.get("G_values", {}).get(radiation, {}).get(kernel, {}) or {}
     g_all = {**g_kernel, **g_override}
     sources = build_sources_from_G(g_all, dose_rate)
 
-    # system
     sysobj = System(
         species=species_objs, species_index=idx, reactions=reactions, sources=sources,
         T=T_K, V_liq_m3=V_liq, V_gas_m3=V_gas, gas_exchanges=gas_exchanges
@@ -312,100 +312,123 @@ def _assemble_initial(system: System, config: Dict) -> np.ndarray:
     for s, v in init.items():
         if s in system.species_index:
             C0[system.species_index[s]] = float(v)
-    # metals init
     for _, conc_map in (config.get("metals", {}) or {}).items():
         for s, v in conc_map.items():
             if s in system.species_index:
                 C0[system.species_index[s]] = float(v)
-    # gas species start at 0 mol (headspace)
     return C0
 
-# ---- RHS assembly
+# ---- RHS
 def _rate_law_C(system: System, sp_name: str, y: np.ndarray) -> float:
-    """Return concentration for rate law (liquid phases only)."""
     s = system.species[system.species_index[sp_name]]
     if s.phase == "gas":
-        return 0.0  # do not involve gas moles in homogeneous kinetics
+        return 0.0
     return max(0.0, y[s.index])
 
-def _rhs(system: System, t: float, y: np.ndarray) -> np.ndarray:
+def _pulse_source_rate(system: System, t: float, 
+                        pulse_width: float) -> np.ndarray:
+    """
+    Returns source rates [mol/L/s] for species with nonzero
+    initial_concentrations, ramping linearly from 0 at t=0
+    to C0/pulse_width at t=pulse_width, then 0 afterward.
+    Only liquid-phase species are sourced.
+    
+    This produces a linear ramp in concentration that reaches
+    exactly C0 at t=pulse_width, equivalent to a constant
+    production rate of C0/pulse_width over the pulse duration.
+    """
+    if pulse_width <= 0.0 or t >= pulse_width:
+        return np.zeros(len(system.species))
+    
+    dy = np.zeros(len(system.species))
+    C0 = system.initial_concentrations
+    for i, sp in enumerate(system.species):
+        if sp.phase == "liq" and C0[i] > 0.0:
+            dy[i] = C0[i] / pulse_width
+    return dy
+
+
+def _rhs(system: System, t: float, y: np.ndarray,
+         pulse_width: float = 0.0) -> np.ndarray:
     dy = np.zeros_like(y)
 
-    # homogeneous reactions (liquid)
+    # Reaction network
     for rxn in system.reactions:
         k = rxn.k(system.T)
         if k == 0.0:
             continue
-        # mass action term
         rate = k
-        if rxn.reactants:
-            for sp, sto in rxn.reactants.items():
-                order = rxn.order_overrides.get(sp, sto) if rxn.order_overrides else sto
-                Ci = _rate_law_C(system, sp, y)
-                if order == 0:
-                    continue
+        for sp, sto in rxn.reactants.items():
+            order = rxn.order_overrides.get(sp, sto) if rxn.order_overrides else sto
+            Ci = _rate_law_C(system, sp, y)
+            if order != 0:
                 rate *= Ci ** float(order)
         if rate == 0.0 or not math.isfinite(rate):
             continue
-        # apply stoichiometry to liquids
         for sp, nu in rxn.reactants.items():
             i = system.species_index.get(sp)
-            if i is None: continue
-            if system.species[i].phase == "liq":
+            if i is not None and system.species[i].phase == "liq":
                 dy[i] -= rate * nu
         for sp, nu in rxn.products.items():
             i = system.species_index.get(sp)
-            if i is None: continue
-            if system.species[i].phase == "liq":
+            if i is not None and system.species[i].phase == "liq":
                 dy[i] += rate * nu
 
-    # radiolytic sources (liquid only)
-    for sp, S in system.sources.items():
-        i = system.species_index.get(sp)
-        if i is not None and system.species[i].phase == "liq":
-            dy[i] += float(S)
+    # Radiolytic source: boxcar during pulse only
+    # (system.sources is nonzero only if dose_rate_J_m3_s > 0)
+    if t <= pulse_width:
+        for sp, S in system.sources.items():
+            i = system.species_index.get(sp)
+            if i is not None and system.species[i].phase == "liq":
+                dy[i] += float(S)
 
-    # gas exchange
+    # Gas exchange
     if system.gas_exchanges and system.V_gas_m3 > 0.0:
         for gx in system.gas_exchanges:
             il = system.species_index[gx.liq_species]
             ig = system.species_index[gx.gas_species]
             C_liq = max(0.0, y[il])
             n_gas = max(0.0, y[ig])
-            p_gas = n_gas * Rgas * system.T / system.V_gas_m3  # Pa
+            p_gas = n_gas * Rgas * system.T / system.V_gas_m3
             C_eq = gx.kH_molm3Pa * p_gas
-            flux = gx.kLa_s * (C_liq - C_eq)  # mol/L/s (positive = to gas)
-            # liquid conc drops by flux
+            flux = gx.kLa_s * (C_liq - C_eq)
             dy[il] -= flux
-            # gas moles increase by flux * liquid volume
             dy[ig] += flux * system.V_liq_m3
+
     return dy
 
 # ---- integration
-def integrate_system(system: System, t_final: float, n_steps: int = 10000,
-                     method: str = "auto") -> Tuple[np.ndarray, np.ndarray, Dict]:
-    """Return (t, Y, extras) with Y shape [n_times, n_species]."""
+def integrate_system(system: System, t_final: float, n_steps: int = 100000,
+                     method: str = "auto",
+                     pulse_width: float = 0.0) -> Tuple[np.ndarray, np.ndarray, Dict]:
     t0 = 0.0
     t = np.linspace(t0, float(t_final), int(n_steps))
+
+    # Always start from initial_concentrations.
+    # For pulse mode, radiolytic species (e_s-, Cl2•-, etc.) should be
+    # zero in the config and will be built up by the boxcar source.
+    # Non-radiolytic species (Cl-, Cr2+, etc.) retain their physical
+    # starting concentrations.
     y0 = np.array(system.initial_concentrations, dtype=float)
 
     if _HAVE_SCIPY and method == "auto":
-        sol = solve_ivp(lambda tt, yy: _rhs(system, tt, yy), (t0, t[-1]), y0,
-                        t_eval=t, method="Radau", vectorized=False, atol=1e-12, rtol=1e-8)
+        sol = solve_ivp(
+            lambda tt, yy: _rhs(system, tt, yy, pulse_width=pulse_width),
+            (t0, t[-1]), y0,
+            t_eval=t, method="Radau", vectorized=False,
+            atol=1e-12, rtol=1e-8
+        )
         Y = sol.y.T
-        info = {"scipy": True, "status": int(sol.status), "nfev": getattr(sol, "nfev", None)}
+        info = {"scipy": True, "status": int(sol.status),
+                "nfev": getattr(sol, "nfev", None)}
     else:
-        # Simple semi-implicit fallback: backward Euler with 1 fixed-point sweep
         Y = np.zeros((t.size, y0.size))
         Y[0] = y0
         for k in range(1, t.size):
             dt = t[k] - t[k-1]
             y_prev = Y[k-1].copy()
-            # predictor: explicit Euler
-            y = y_prev + dt * _rhs(system, t[k-1], y_prev)
-            # one corrector sweep
-            y = y_prev + dt * _rhs(system, t[k], y)
-            # keep non-negative
+            y = y_prev + dt * _rhs(system, t[k-1], y_prev, pulse_width=pulse_width)
+            y = y_prev + dt * _rhs(system, t[k], y, pulse_width=pulse_width)
             Y[k] = np.maximum(0.0, y)
         info = {"scipy": False, "note": "backward-Euler (1 sweep) fallback"}
 
@@ -413,20 +436,128 @@ def integrate_system(system: System, t_final: float, n_steps: int = 10000,
               "phases": [s.phase for s in system.species]}
     return t, Y, extras
 
+# ---- CSV export
+def export_Cl2_csv(t: np.ndarray, C: np.ndarray, system: System,
+                        species_name: str = "Cl2•-",
+                        path: str = "Cl2_concentration.csv") -> None:
+    """Export solvated Cl2 concentration vs time to CSV."""
+    if species_name not in system.species_index:
+        print(f"Warning: '{species_name}' not found in system. Available: {list(system.species_index)}")
+        return
+    i = system.species_index[species_name]
+    out = pathlib.Path(path)
+    data = np.column_stack([t, C[:, i]])
+    np.savetxt(out, data, delimiter=",",
+               header="t_s,Cl2_mol_L", comments="")
+    print(f"Cl2 concentration written to {out.resolve()} ({len(t)} points)")
+
+# CSV export for both e_s- and Cl2•-
+
+def export_species_csv(t: np.ndarray,
+                       C: np.ndarray,
+                       system: System,
+                       species_names: List[str],
+                       path: str = "species_concentration.csv") -> None:
+    """
+    Export one or more liquid-phase species concentrations vs time to CSV.
+
+    Parameters
+    ----------
+    t            : time array [s], shape (n_steps,)
+    C            : concentration array [mol/L], shape (n_steps, n_species)
+    system       : System object (provides species_index)
+    species_names: list of species name strings to export, e.g. ["Cl2•-","e_s-"]
+                   Names must match exactly those in system.species_index.
+    path         : output file path (default "species_concentration.csv")
+
+    Output columns
+    --------------
+    t_s, <species_name_0>, <species_name_1>, ...
+
+    Notes
+    -----
+    Only liquid-phase species are meaningful concentration columns.
+    Gas-phase species are stored as moles in the headspace, not mol/L,
+    and are silently skipped with a warning.
+    Missing species names also produce a warning and are skipped.
+    """
+    valid_names: List[str] = []
+    valid_indices: List[int] = []
+
+    for name in species_names:
+        if name not in system.species_index:
+            print(f"Warning: '{name}' not found in system. "
+                  f"Available: {list(system.species_index)}")
+            continue
+        idx = system.species_index[name]
+        if system.species[idx].phase != "liq":
+            print(f"Warning: '{name}' is a gas-phase species (stored as mol, "
+                  f"not mol/L) — skipping.")
+            continue
+        valid_names.append(name)
+        valid_indices.append(idx)
+
+    if not valid_names:
+        print("Error: no valid liquid-phase species to export.")
+        return
+
+    out = pathlib.Path(path)
+    # Build header: t_s, then each species name
+    # Use a sanitised column name (replace • and spaces for CSV safety)
+    def _safe(s: str) -> str:
+        return s.replace("•", "rad").replace(" ", "_")
+
+    header = "t_s," + ",".join(_safe(n) for n in valid_names)
+    data   = np.column_stack([t] + [C[:, i] for i in valid_indices])
+    np.savetxt(out, data, delimiter=",", header=header, comments="")
+    print(f"Species concentrations written to {out.resolve()} "
+          f"({len(t)} points, columns: {['t_s'] + valid_names})")
+
+
+# ---- Updated main() — replace the export block inside main() with this ----
+
+# def main(argv=None):
+#     argv = argv or sys.argv[1:]
+#     if not argv:
+#         print("Usage: python direct_integration_no_demo.py <config.json> [t_final] [n_steps]")
+#         sys.exit(0)
+
+#     cfg = _load_config(argv[0])
+#     t_final = float(argv[1]) if len(argv) > 1 else 50e-9
+#     n_steps = int(argv[2]) if len(argv) > 2 else 100000
+#     pulse_width = float(cfg.get("pulse_width_s", 0.0))
+
+#     system = build_system(cfg)
+#     t, C, extra = integrate_system(
+#         system, t_final=t_final, n_steps=n_steps,
+#         pulse_width=pulse_width
+#     )
+
+#     # ── Quick plot ───────────────────────────────────────────────────────────
+#     quick_plot(t, C, system,
+#                species_to_plot=["Cl2•-", "e_s-", "Cr2+", "Cr3+", "Cr+"],
+#                absorbance_csv=None)
 
 # ---- plotting
-def quick_plot(t: np.ndarray, C: np.ndarray, system: System, species_to_plot: Optional[List[str]] = None, absorbance_csv: Optional[str] = None):
+def quick_plot(t: np.ndarray, C: np.ndarray, system: System,
+               species_to_plot: Optional[List[str]] = None,
+               absorbance_csv: Optional[str] = None,
+               t_start_s: float = 7e-9):
     if not _HAVE_MPL:
         print("matplotlib not available; skipping plot.")
         return
+
+    # ── Trim to t >= t_start_s ──────────────────────────────────────────────
+    mask = t >= t_start_s
+    t = t[mask]
+    C = C[mask]
+    # ────────────────────────────────────────────────────────────────────────
 
     sp_idx = system.species_index
     names = [s.name for s in system.species]
     targets = species_to_plot or [s for s in names if system.species[sp_idx[s]].phase == "liq"]
 
     fig, ax1 = plt.subplots()
-
-    # Plot concentrations on the left y-axis
     for s in targets:
         i = sp_idx[s]
         y = C[:, i]
@@ -436,31 +567,22 @@ def quick_plot(t: np.ndarray, C: np.ndarray, system: System, species_to_plot: Op
     ax1.set_ylabel("Concentration [mol/L]")
     ax1.legend(loc="upper left")
 
-    # Add absorbance on the right y-axis from CSV
     if absorbance_csv is not None:
-        # Load data from CSV
         try:
             absorbance_data = pd.read_csv(absorbance_csv)
-
-            # Convert time from milliseconds to seconds
-            absorbance_data['time'] = absorbance_data['time'] * 1e-9
-
-            # Extract time and absorbance columns
-            absorbance_time = absorbance_data['time'].to_numpy()  # Time in seconds
-            absorbance_values = absorbance_data['absorbance'].to_numpy()  # Absorbance values
-
-            # Plot absorbance data on the right y-axis
-            ax2 = ax1.twinx()  # Create a secondary y-axis
-            ax2.semilogy(absorbance_time, absorbance_values, color='red', label="Absorbance Data for 0.99 mM Cr2+")
+            absorbance_data['time'] = absorbance_data['time'] * 1e-9 + 7e-9
+            absorbance_time = absorbance_data['time'].to_numpy()
+            absorbance_values = absorbance_data['absorbance'].to_numpy()
+            ax2 = ax1.twinx()
+            ax2.semilogy(absorbance_time, absorbance_values, color='red', label="Absorbance Data")
             ax2.set_ylabel("Absorbance")
             ax2.legend(loc="upper right")
         except Exception as e:
-            print(f"Error loading or processing absorbance data from CSV: {e}")
+            print(f"Error loading absorbance data from CSV: {e}")
 
     plt.tight_layout()
-    plt.savefig('youplot_with_absorbance.png')
+    plt.savefig('your_plot_with_absorbance.png')
     plt.show()
-
 
 # ---- CLI
 def _load_config(path: str) -> Dict:
@@ -470,54 +592,41 @@ def _load_config(path: str) -> Dict:
 def main(argv=None):
     argv = argv or sys.argv[1:]
     if not argv:
-        print("Usage: python msr_radiolysis_onefile.py <config.json> [t_final] [n_steps]")
-        # print("No config provided; running a tiny demo...")
-        demo = {
-            "kernel": "chloride",
-            "metals": {
-                    "chromium": {  # Add chromium species with initial concentrations
-                        "Cr2+": 0.99e-3,
-                        "Cr3+": 0,
-                        "Cr+": 0
-                        }
-                    },
-            "temperature_K": 673.15,
-            "liquid_volume_m3": 1.0e-3,
-            "headspace_volume_m3": 1.0e-3,
-            "kLa_s^-1": 0.01,
-            "dose_rate_J_m3_s": 1.0e6,
-            "radiation": "gamma",
-            "G_values_override": {"Cl2_diss": 0.002},  # molecules/100eV
-            "initial_concentrations": {
-                "Cl-": 20.0, #Very large concentration, essentially constant
-                "Cl2•-": 0,
-                "Cl2_diss": 0,
-                "e_s-": 1e-3, #Small initial concentration modeling pulse
-            },
-            "gas_species": ["Cl2"]
-        }
-        system = build_system(demo)
-        t, C, extra = integrate_system(system, t_final=20e-9, n_steps=10000)
-        print("Species:", extra["species"])
-        print("Final state:", C[-1])
-        quick_plot(t, C, system, species_to_plot=["e_s-"], absorbance_csv="AbsorbanceCSVs/absorbance1mMCr2.csv")
-        return
+        print("Usage: python direct_integration_no_demo.py <config.json> [t_final] [n_steps]")
+        sys.exit(0)
 
     cfg = _load_config(argv[0])
-    t_final = float(argv[1]) if len(argv) > 1 else 20e-9
-    n_steps = int(argv[2]) if len(argv) > 2 else 10000
-    system = build_system(cfg)
-    t, C, extra = integrate_system(system, t_final=t_final, n_steps=n_steps)
+    t_final = float(argv[1]) if len(argv) > 1 else 27e-9
+    n_steps = int(argv[2]) if len(argv) > 2 else 100000
+    pulse_width = float(cfg.get("pulse_width_s", 0.0))
 
-    # write CSV
+    system = build_system(cfg)
+    t, C, extra = integrate_system(
+        system, t_final=t_final, n_steps=n_steps,
+        pulse_width=pulse_width
+    )
+
+    # ── Export Cl2•- and eS- together for the two-species comparison script ──
+    export_species_csv(
+        t, C, system,
+        species_names=["Cl2•-", "e_s-"],
+        path="species_concentration.csv",
+    )
+
+    # # ── Full output (all species) ────────────────────────────────────────────
+    # out    = pathlib.Path("radiolysis_output.csv")
+    # header = ",".join(["t_s"] + extra["species"])
+    # data   = np.column_stack([t, C])
+    # np.savetxt(out, data, delimiter=",", header=header, comments="")
+    # print(f"Full output written to {out.resolve()}")
+
     out = pathlib.Path("radiolysis_output.csv")
     header = ",".join(["t_s"] + extra["species"])
     data = np.column_stack([t, C])
     np.savetxt(out, data, delimiter=",", header=header, comments="")
-    print(f"Wrote {out.resolve()}")
+    print(f"Full output written to {out.resolve()}")
 
-    # plot
-    quick_plot(t, C, system)
+    quick_plot(t, C, system, species_to_plot=["e_s-"], absorbance_csv="absorbance1mMCr3.csv")
 
 if __name__ == "__main__":
     main()
