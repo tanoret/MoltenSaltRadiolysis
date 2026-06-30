@@ -1,0 +1,31 @@
+{
+    "kernel": "chloride",
+    "temperature_K": 673.15,
+    "liquid_volume_m3": 1.0e-3,
+    "headspace_volume_m3": 1.0e-3,
+    "kLa_s^-1": 0.01,
+    "dose_rate_J_m3_s": 6.5618e12,
+    "radiation": "gamma",
+    "G_values_override": {
+        "Cl2_diss": 1.0,
+        "e_s-": 2.8,
+        "Cl2•-": 2.8
+    },
+    "initial_concentrations": {
+        "Cl-": 20.0,
+        "Cl2•-": 0.0,
+        "Cl2_diss": 0.0,
+        "e_s-": 0.0,
+        "Cl•": 0.0,
+        "Cl3-": 0.0
+    },
+    "metals": {
+        "chromium": {
+            "Cr2+": 0.0,
+            "Cr3+": 0.0,
+            "Cr+": 0.0
+        }
+    },
+    "gas_species": ["Cl2"],
+    "pulse_width_s": 7e-9
+}
