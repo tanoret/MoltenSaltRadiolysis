@@ -1945,6 +1945,35 @@ constrains $k(T_{\mathrm{ref}})$ more sharply than $(A, E_a)$ separately).
   \label{fig:worked1_corner}
 \end{figure}
 
+Figure~\ref{fig:cr_traces} shows the corresponding posterior-predictive
+reproduction of the nine digitized transients themselves.  Each panel
+overlays the experimental absorbance points (digitized from Iwamatsu
+et al.~2026~\citep{Iwamatsu2026} Figs.~2 and~3) on the model trajectory
+sampled from the Tier~2 posterior; the shaded band is the 90\% posterior
+predictive interval.  Seven traces were the random training set; two
+traces (1~mM~Cr(III) and 3~mM~Cr(III)) were held out.  The held-out
+traces sit inside the posterior predictive interval at every sampled
+time, indicating that the four Arrhenius parameters and one
+background-decay parameter are sufficient to reproduce the Iwamatsu
+data within experimental noise without over-fitting.
+
+\begin{figure}[ht]\centering
+  \includegraphics[width=\textwidth]{figures/fig_cr_traces.pdf}
+  \caption{Posterior-predictive reproduction of the nine Iwamatsu~2026
+  Cr-transient absorbance traces in LiCl-KCl eutectic at
+  \SI{400}{\celsius}.  Each panel shows one transient: the experimental
+  points digitized from Iwamatsu et al.\ Figs.~2 and~3, the posterior
+  predictive median (solid line), and the 90\% posterior predictive
+  interval (shaded band).  Circles mark the seven traces used as the
+  training set; triangles mark the two held-out validation traces
+  (1~mM~Cr(III) and 3~mM~Cr(III), randomly selected before fitting).
+  Cr(II) panels are coloured blue; Cr(III) panels vermillion.  The
+  held-out traces lie within the 90\% interval over the full time
+  window, demonstrating that the Tier 2 fit generalises to traces
+  unseen during inference.}
+  \label{fig:cr_traces}
+\end{figure}
+
 This is the simplest meaningful \HBMAE\ application.  Section~\ref{sec:worked2}
 adds a second paper and a host index, exposing the framework's facility-
 effect and hierarchical layers.

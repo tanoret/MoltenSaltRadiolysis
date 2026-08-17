@@ -1198,6 +1198,33 @@ because it is one-sided;
 \label{fig:master}
 \end{figure}
 
+Panel~(n) of Figure~\ref{fig:master} shows a single representative
+Cr$^{3+}$ trace.  Because the Iwamatsu~2026 dataset is the principal
+transient-resolved anchor of the chloride kernel, we also reproduce all
+nine Cr-transient absorbance curves in Figure~\ref{fig:cr_traces},
+together with the corresponding posterior predictive median and 90\,\%
+credible band.  The two traces marked as held-out (1~mM~Cr(III) and
+3~mM~Cr(III)) were drawn at random before fitting and were excluded
+from the inference; their experimental points nonetheless lie inside
+the 90\,\% predictive band over the full time window, indicating that
+the calibrated Arrhenius pairs and background-decay constant generalise
+beyond the training subset.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_cr_traces.pdf}
+\caption{Posterior-predictive reproduction of the nine Iwamatsu~2026
+Cr-transient absorbance traces in LiCl-KCl eutectic at
+\SI{400}{\celsius}~\citep{Iwamatsu2026}.  Each panel shows one
+transient: the digitized experimental points, the posterior predictive
+median (solid line) and the 90\,\% credible band (shaded).  Circles
+mark training traces; triangles mark the two held-out validation
+traces (1~mM~Cr(III) and 3~mM~Cr(III)).  Cr(II) panels are coloured
+blue; Cr(III) panels vermillion.  Held-out residuals lie within the
+90\,\% interval at every sampled time.}
+\label{fig:cr_traces}
+\end{figure}
+
 \subsection{Per-dataset $\chi^2$ analysis}\label{sec:val:chi2}
 
 For each dataset $d$ with $N_d$ observations $\{y_i\}$ and corresponding
